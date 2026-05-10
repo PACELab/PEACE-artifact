@@ -1,0 +1,86 @@
+2025-05-05 19:36:10,024 - INFO - Starting CSV splitting with input_dir=., prefix=0505_freq300900, output_dir=freq_scaling/
+2025-05-05 19:36:10,025 - INFO - Found 10 CSV files: ['./0505_freq300900_share_comb2_freqscale_power_avg_stage2.csv', './0505_freq300900_share_comb2_freqscale_duration_std_stage2.csv', './0505_freq300900_share_comb2_freqscale_throughput_individual_avg.csv', './0505_freq300900_share_comb2_freqscale_energy_std_stage2.csv', './0505_freq300900_share_comb2_freqscale_energy_avg_stage2.csv', './0505_freq300900_share_comb2_freqscale_power_std_stage2.csv', './0505_freq300900_share_comb2_freqscale_throughput_sum_avg_stage2.csv', './0505_freq300900_share_comb2_freqscale_throughput_individual_std.csv', './0505_freq300900_share_comb2_freqscale_throughput_sum_std_stage2.csv', './0505_freq300900_share_comb2_freqscale_duration_avg_stage2.csv']
+2025-05-05 19:36:10,027 - INFO - Processing file: ./0505_freq300900_share_comb2_freqscale_power_avg_stage2.csv
+2025-05-05 19:36:10,027 - INFO - Found freq1 values: [900 300]
+2025-05-05 19:36:10,030 - INFO - Saved 66 rows to freq_scaling/FREQ900_0505_freq300900_share_comb2_freqscale_power_avg_stage2.csv
+2025-05-05 19:36:10,032 - INFO - Saved 41 rows to freq_scaling/FREQ300_0505_freq300900_share_comb2_freqscale_power_avg_stage2.csv
+2025-05-05 19:36:10,033 - INFO - Processing file: ./0505_freq300900_share_comb2_freqscale_duration_std_stage2.csv
+2025-05-05 19:36:10,033 - INFO - Found freq1 values: [900 300]
+2025-05-05 19:36:10,034 - INFO - Saved 66 rows to freq_scaling/FREQ900_0505_freq300900_share_comb2_freqscale_duration_std_stage2.csv
+2025-05-05 19:36:10,035 - INFO - Saved 41 rows to freq_scaling/FREQ300_0505_freq300900_share_comb2_freqscale_duration_std_stage2.csv
+2025-05-05 19:36:10,036 - INFO - Processing file: ./0505_freq300900_share_comb2_freqscale_throughput_individual_avg.csv
+2025-05-05 19:36:10,037 - INFO - Found freq1 values: [900 300]
+2025-05-05 19:36:10,038 - INFO - Saved 66 rows to freq_scaling/FREQ900_0505_freq300900_share_comb2_freqscale_throughput_individual_avg.csv
+2025-05-05 19:36:10,038 - INFO - Saved 41 rows to freq_scaling/FREQ300_0505_freq300900_share_comb2_freqscale_throughput_individual_avg.csv
+2025-05-05 19:36:10,039 - INFO - Processing file: ./0505_freq300900_share_comb2_freqscale_energy_std_stage2.csv
+2025-05-05 19:36:10,040 - INFO - Found freq1 values: [900 300]
+2025-05-05 19:36:10,041 - INFO - Saved 66 rows to freq_scaling/FREQ900_0505_freq300900_share_comb2_freqscale_energy_std_stage2.csv
+2025-05-05 19:36:10,042 - INFO - Saved 41 rows to freq_scaling/FREQ300_0505_freq300900_share_comb2_freqscale_energy_std_stage2.csv
+2025-05-05 19:36:10,043 - INFO - Processing file: ./0505_freq300900_share_comb2_freqscale_energy_avg_stage2.csv
+2025-05-05 19:36:10,043 - INFO - Found freq1 values: [900 300]
+2025-05-05 19:36:10,045 - INFO - Saved 66 rows to freq_scaling/FREQ900_0505_freq300900_share_comb2_freqscale_energy_avg_stage2.csv
+2025-05-05 19:36:10,046 - INFO - Saved 41 rows to freq_scaling/FREQ300_0505_freq300900_share_comb2_freqscale_energy_avg_stage2.csv
+2025-05-05 19:36:10,046 - INFO - Processing file: ./0505_freq300900_share_comb2_freqscale_power_std_stage2.csv
+2025-05-05 19:36:10,047 - INFO - Found freq1 values: [900 300]
+2025-05-05 19:36:10,048 - INFO - Saved 66 rows to freq_scaling/FREQ900_0505_freq300900_share_comb2_freqscale_power_std_stage2.csv
+2025-05-05 19:36:10,049 - INFO - Saved 41 rows to freq_scaling/FREQ300_0505_freq300900_share_comb2_freqscale_power_std_stage2.csv
+2025-05-05 19:36:10,050 - INFO - Processing file: ./0505_freq300900_share_comb2_freqscale_throughput_sum_avg_stage2.csv
+2025-05-05 19:36:10,050 - INFO - Found freq1 values: [900 300]
+2025-05-05 19:36:10,052 - INFO - Saved 66 rows to freq_scaling/FREQ900_0505_freq300900_share_comb2_freqscale_throughput_sum_avg_stage2.csv
+2025-05-05 19:36:10,053 - INFO - Saved 41 rows to freq_scaling/FREQ300_0505_freq300900_share_comb2_freqscale_throughput_sum_avg_stage2.csv
+2025-05-05 19:36:10,054 - INFO - Processing file: ./0505_freq300900_share_comb2_freqscale_throughput_individual_std.csv
+2025-05-05 19:36:10,054 - INFO - Found freq1 values: [900 300]
+2025-05-05 19:36:10,055 - INFO - Saved 66 rows to freq_scaling/FREQ900_0505_freq300900_share_comb2_freqscale_throughput_individual_std.csv
+2025-05-05 19:36:10,056 - INFO - Saved 41 rows to freq_scaling/FREQ300_0505_freq300900_share_comb2_freqscale_throughput_individual_std.csv
+2025-05-05 19:36:10,057 - INFO - Processing file: ./0505_freq300900_share_comb2_freqscale_throughput_sum_std_stage2.csv
+2025-05-05 19:36:10,057 - INFO - Found freq1 values: [900 300]
+2025-05-05 19:36:10,058 - INFO - Saved 66 rows to freq_scaling/FREQ900_0505_freq300900_share_comb2_freqscale_throughput_sum_std_stage2.csv
+2025-05-05 19:36:10,059 - INFO - Saved 41 rows to freq_scaling/FREQ300_0505_freq300900_share_comb2_freqscale_throughput_sum_std_stage2.csv
+2025-05-05 19:36:10,060 - INFO - Processing file: ./0505_freq300900_share_comb2_freqscale_duration_avg_stage2.csv
+2025-05-05 19:36:10,061 - INFO - Found freq1 values: [900 300]
+2025-05-05 19:36:10,062 - INFO - Saved 66 rows to freq_scaling/FREQ900_0505_freq300900_share_comb2_freqscale_duration_avg_stage2.csv
+2025-05-05 19:36:10,063 - INFO - Saved 41 rows to freq_scaling/FREQ300_0505_freq300900_share_comb2_freqscale_duration_avg_stage2.csv
+2025-05-05 19:36:10,063 - INFO - Finished processing all CSV files
+2025-05-07 13:16:06,255 - INFO - Starting CSV splitting with input_dir=., prefix=0505_freq300900, output_dir=freq_scaling/
+2025-05-07 13:16:06,256 - INFO - Found 10 CSV files: ['./0505_freq300900_share_comb2_freqscale_power_avg_stage2.csv', './0505_freq300900_share_comb2_freqscale_duration_std_stage2.csv', './0505_freq300900_share_comb2_freqscale_throughput_individual_avg.csv', './0505_freq300900_share_comb2_freqscale_energy_std_stage2.csv', './0505_freq300900_share_comb2_freqscale_energy_avg_stage2.csv', './0505_freq300900_share_comb2_freqscale_power_std_stage2.csv', './0505_freq300900_share_comb2_freqscale_throughput_sum_avg_stage2.csv', './0505_freq300900_share_comb2_freqscale_throughput_individual_std.csv', './0505_freq300900_share_comb2_freqscale_throughput_sum_std_stage2.csv', './0505_freq300900_share_comb2_freqscale_duration_avg_stage2.csv']
+2025-05-07 13:16:06,258 - INFO - Processing file: ./0505_freq300900_share_comb2_freqscale_power_avg_stage2.csv
+2025-05-07 13:16:06,258 - INFO - Found freq1 values: [900 300]
+2025-05-07 13:16:06,262 - INFO - Saved 66 rows to freq_scaling/FREQ900_0505_freq300900_share_comb2_freqscale_power_avg_stage2.csv
+2025-05-07 13:16:06,263 - INFO - Saved 41 rows to freq_scaling/FREQ300_0505_freq300900_share_comb2_freqscale_power_avg_stage2.csv
+2025-05-07 13:16:06,264 - INFO - Processing file: ./0505_freq300900_share_comb2_freqscale_duration_std_stage2.csv
+2025-05-07 13:16:06,264 - INFO - Found freq1 values: [900 300]
+2025-05-07 13:16:06,265 - INFO - Saved 66 rows to freq_scaling/FREQ900_0505_freq300900_share_comb2_freqscale_duration_std_stage2.csv
+2025-05-07 13:16:06,266 - INFO - Saved 41 rows to freq_scaling/FREQ300_0505_freq300900_share_comb2_freqscale_duration_std_stage2.csv
+2025-05-07 13:16:06,268 - INFO - Processing file: ./0505_freq300900_share_comb2_freqscale_throughput_individual_avg.csv
+2025-05-07 13:16:06,268 - INFO - Found freq1 values: [900 300]
+2025-05-07 13:16:06,269 - INFO - Saved 66 rows to freq_scaling/FREQ900_0505_freq300900_share_comb2_freqscale_throughput_individual_avg.csv
+2025-05-07 13:16:06,270 - INFO - Saved 41 rows to freq_scaling/FREQ300_0505_freq300900_share_comb2_freqscale_throughput_individual_avg.csv
+2025-05-07 13:16:06,271 - INFO - Processing file: ./0505_freq300900_share_comb2_freqscale_energy_std_stage2.csv
+2025-05-07 13:16:06,271 - INFO - Found freq1 values: [900 300]
+2025-05-07 13:16:06,272 - INFO - Saved 66 rows to freq_scaling/FREQ900_0505_freq300900_share_comb2_freqscale_energy_std_stage2.csv
+2025-05-07 13:16:06,273 - INFO - Saved 41 rows to freq_scaling/FREQ300_0505_freq300900_share_comb2_freqscale_energy_std_stage2.csv
+2025-05-07 13:16:06,274 - INFO - Processing file: ./0505_freq300900_share_comb2_freqscale_energy_avg_stage2.csv
+2025-05-07 13:16:06,274 - INFO - Found freq1 values: [900 300]
+2025-05-07 13:16:06,276 - INFO - Saved 66 rows to freq_scaling/FREQ900_0505_freq300900_share_comb2_freqscale_energy_avg_stage2.csv
+2025-05-07 13:16:06,277 - INFO - Saved 41 rows to freq_scaling/FREQ300_0505_freq300900_share_comb2_freqscale_energy_avg_stage2.csv
+2025-05-07 13:16:06,278 - INFO - Processing file: ./0505_freq300900_share_comb2_freqscale_power_std_stage2.csv
+2025-05-07 13:16:06,278 - INFO - Found freq1 values: [900 300]
+2025-05-07 13:16:06,279 - INFO - Saved 66 rows to freq_scaling/FREQ900_0505_freq300900_share_comb2_freqscale_power_std_stage2.csv
+2025-05-07 13:16:06,280 - INFO - Saved 41 rows to freq_scaling/FREQ300_0505_freq300900_share_comb2_freqscale_power_std_stage2.csv
+2025-05-07 13:16:06,281 - INFO - Processing file: ./0505_freq300900_share_comb2_freqscale_throughput_sum_avg_stage2.csv
+2025-05-07 13:16:06,281 - INFO - Found freq1 values: [900 300]
+2025-05-07 13:16:06,284 - INFO - Saved 66 rows to freq_scaling/FREQ900_0505_freq300900_share_comb2_freqscale_throughput_sum_avg_stage2.csv
+2025-05-07 13:16:06,285 - INFO - Saved 41 rows to freq_scaling/FREQ300_0505_freq300900_share_comb2_freqscale_throughput_sum_avg_stage2.csv
+2025-05-07 13:16:06,286 - INFO - Processing file: ./0505_freq300900_share_comb2_freqscale_throughput_individual_std.csv
+2025-05-07 13:16:06,286 - INFO - Found freq1 values: [900 300]
+2025-05-07 13:16:06,287 - INFO - Saved 66 rows to freq_scaling/FREQ900_0505_freq300900_share_comb2_freqscale_throughput_individual_std.csv
+2025-05-07 13:16:06,288 - INFO - Saved 41 rows to freq_scaling/FREQ300_0505_freq300900_share_comb2_freqscale_throughput_individual_std.csv
+2025-05-07 13:16:06,289 - INFO - Processing file: ./0505_freq300900_share_comb2_freqscale_throughput_sum_std_stage2.csv
+2025-05-07 13:16:06,289 - INFO - Found freq1 values: [900 300]
+2025-05-07 13:16:06,290 - INFO - Saved 66 rows to freq_scaling/FREQ900_0505_freq300900_share_comb2_freqscale_throughput_sum_std_stage2.csv
+2025-05-07 13:16:06,291 - INFO - Saved 41 rows to freq_scaling/FREQ300_0505_freq300900_share_comb2_freqscale_throughput_sum_std_stage2.csv
+2025-05-07 13:16:06,292 - INFO - Processing file: ./0505_freq300900_share_comb2_freqscale_duration_avg_stage2.csv
+2025-05-07 13:16:06,292 - INFO - Found freq1 values: [900 300]
+2025-05-07 13:16:06,294 - INFO - Saved 66 rows to freq_scaling/FREQ900_0505_freq300900_share_comb2_freqscale_duration_avg_stage2.csv
+2025-05-07 13:16:06,295 - INFO - Saved 41 rows to freq_scaling/FREQ300_0505_freq300900_share_comb2_freqscale_duration_avg_stage2.csv
+2025-05-07 13:16:06,295 - INFO - Finished processing all CSV files

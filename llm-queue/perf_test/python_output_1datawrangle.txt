@@ -1,0 +1,1841 @@
+2024-01-05 03:26:18: Starting batch#1...
+/home/bing/llm-queue/build/FlexGen-main/flexgen/apps/data_wrangle/data/datasets
+[01/05/24 03:26:20] INFO     2024-01-05 03:26:20,259     data_wrangle_run.py:500
+                             [data_wrangle_run] [INFO] {                        
+                                 "data_dir": "/home/bing                        
+                             /llm-queue/build/FlexGen-ma                        
+                             in/flexgen/apps/data_wrangl                        
+                             e/data/datasets/entity_matc                        
+                             hing/structured/Fodors-Zaga                        
+                             ts",                                               
+                                 "output_dir":                                  
+                             "outputs",                                         
+                                 "cache_name": "sqlite",                        
+                                 "cache_connection":                            
+                             "fm_data_tasks.sqlite",                            
+                                 "client_name":                                 
+                             "openai",                                          
+                                 "client_connection":                           
+                             null,                                              
+                                 "run_tag": "default",                          
+                                 "overwrite_cache":                             
+                             false,                                             
+                                 "k": 1,                                        
+                                 "sample_method":                               
+                             "manual",                                          
+                                 "seed": 1234,                                  
+                                 "class_balanced":                              
+                             false,                                             
+                                 "sep_tok": ".",                                
+                                 "nan_tok": "",                                 
+                                 "num_run": 189,                                
+                                 "num_trials": 1,                               
+                                 "num_print": 10,                               
+                                 "add_task_instruction":                        
+                             false,                                             
+                                 "task_instruction_idx":                        
+                             0,                                                 
+                                 "do_test": true,                               
+                                 "dry_run": false,                              
+                                 "stop_token": "\n",                            
+                                 "temperature": 0.0,                            
+                                 "max_tokens": 3,                               
+                                 "batch_run": true,                             
+                                 "pad_to_seq_len": 744,                         
+                                 "model":                                       
+                             "facebook/opt-6.7b",                               
+                                 "path":                                        
+                             "~/opt_weights",                                   
+                                 "run_path": "runs",                            
+                                 "offload_dir":                                 
+                             "~/flexgen_offload_dir",                           
+                                 "gpu_batch_size": 2,                           
+                                 "num_gpu_batches": 1,                          
+                                 "percent": [                                   
+                                     100,                                       
+                                     0,                                         
+                                     100,                                       
+                                     0,                                         
+                                     100,                                       
+                                     0                                          
+                                 ],                                             
+                                 "pin_weight": true,                            
+                                 "cpu_cache_compute":                           
+                             false,                                             
+                                 "compress_weight":                             
+                             false,                                             
+                                 "compress_cache": false                        
+                             }                                                  
+                    INFO     2024-01-05 03:26:20,265           data_utils.py:334
+                             [data_utils] [INFO] Processing /h                  
+                             ome/bing/llm-queue/build/FlexGen-                  
+                             main/flexgen/apps/data_wrangle/da                  
+                             ta/datasets/entity_matching/struc                  
+                             tured/Fodors-Zagats                                
+                    INFO     2024-01-05 03:26:20,418     data_wrangle_run.py:523
+                             [data_wrangle_run] [INFO]                          
+                             Using 0 instruction idx                            
+                    INFO     2024-01-05 03:26:20,419     data_wrangle_run.py:530
+                             [data_wrangle_run] [INFO]                          
+                             Train shape is 567                                 
+                    INFO     2024-01-05 03:26:20,420     data_wrangle_run.py:531
+                             [data_wrangle_run] [INFO]                          
+                             Test shape is 189                                  
+                    INFO     2024-01-05 03:26:20,421     data_wrangle_run.py:532
+                             [data_wrangle_run] [INFO]                          
+                             Running 189 examples for 1                         
+                             trials.                                            
+                    INFO     2024-01-05 03:26:20,422     data_wrangle_run.py:535
+                             [data_wrangle_run] [INFO]                          
+                             Call batch_query_test                              
+                    INFO     2024-01-05 03:26:20,714     data_wrangle_run.py:345
+                             [data_wrangle_run] [INFO]                          
+                             Init weights begin.                                
+[01/05/24 03:26:28] INFO     2024-01-05 03:26:28,743     data_wrangle_run.py:348
+                             [data_wrangle_run] [INFO]                          
+                             Init weights end. Elapsed:                         
+                             8.02 s.                                            
+                    INFO     2024-01-05 03:26:28,948     data_wrangle_run.py:400
+                             [data_wrangle_run] [INFO]                          
+                             max_prompt_seq_length: 745                         
+  0%|          | 0/94 [00:00<?, ?it/s]  1%|          | 1/94 [00:01<01:48,  1.17s/it]  2%|▏         | 2/94 [00:01<01:02,  1.47it/s]  3%|▎         | 3/94 [00:01<00:47,  1.90it/s]  4%|▍         | 4/94 [00:02<00:40,  2.20it/s]  5%|▌         | 5/94 [00:02<00:36,  2.42it/s]  6%|▋         | 6/94 [00:02<00:34,  2.58it/s]  7%|▋         | 7/94 [00:03<00:32,  2.68it/s]  9%|▊         | 8/94 [00:03<00:31,  2.76it/s] 10%|▉         | 9/94 [00:03<00:30,  2.81it/s] 11%|█         | 10/94 [00:04<00:29,  2.85it/s] 12%|█▏        | 11/94 [00:04<00:28,  2.87it/s] 13%|█▎        | 12/94 [00:04<00:28,  2.89it/s] 14%|█▍        | 13/94 [00:05<00:27,  2.91it/s] 15%|█▍        | 14/94 [00:05<00:27,  2.91it/s] 16%|█▌        | 15/94 [00:05<00:27,  2.91it/s] 17%|█▋        | 16/94 [00:06<00:26,  2.91it/s] 18%|█▊        | 17/94 [00:06<00:26,  2.91it/s] 19%|█▉        | 18/94 [00:06<00:26,  2.91it/s] 20%|██        | 19/94 [00:07<00:25,  2.92it/s] 21%|██▏       | 20/94 [00:07<00:25,  2.92it/s] 22%|██▏       | 21/94 [00:08<00:25,  2.92it/s] 23%|██▎       | 22/94 [00:08<00:24,  2.92it/s] 24%|██▍       | 23/94 [00:08<00:24,  2.91it/s] 26%|██▌       | 24/94 [00:09<00:24,  2.91it/s] 27%|██▋       | 25/94 [00:09<00:23,  2.91it/s] 28%|██▊       | 26/94 [00:09<00:23,  2.91it/s] 29%|██▊       | 27/94 [00:10<00:23,  2.91it/s] 30%|██▉       | 28/94 [00:10<00:22,  2.91it/s] 31%|███       | 29/94 [00:10<00:22,  2.90it/s] 32%|███▏      | 30/94 [00:11<00:22,  2.90it/s] 33%|███▎      | 31/94 [00:11<00:21,  2.90it/s] 34%|███▍      | 32/94 [00:11<00:21,  2.90it/s] 35%|███▌      | 33/94 [00:12<00:21,  2.90it/s] 36%|███▌      | 34/94 [00:12<00:20,  2.90it/s] 37%|███▋      | 35/94 [00:12<00:20,  2.91it/s] 38%|███▊      | 36/94 [00:13<00:19,  2.92it/s] 39%|███▉      | 37/94 [00:13<00:19,  2.93it/s] 40%|████      | 38/94 [00:13<00:19,  2.92it/s] 41%|████▏     | 39/94 [00:14<00:18,  2.93it/s] 43%|████▎     | 40/94 [00:14<00:18,  2.93it/s] 44%|████▎     | 41/94 [00:14<00:18,  2.93it/s] 45%|████▍     | 42/94 [00:15<00:17,  2.93it/s] 46%|████▌     | 43/94 [00:15<00:17,  2.93it/s] 47%|████▋     | 44/94 [00:15<00:17,  2.94it/s] 48%|████▊     | 45/94 [00:16<00:16,  2.93it/s] 49%|████▉     | 46/94 [00:16<00:16,  2.93it/s] 50%|█████     | 47/94 [00:16<00:16,  2.93it/s] 51%|█████     | 48/94 [00:17<00:15,  2.93it/s] 52%|█████▏    | 49/94 [00:17<00:15,  2.93it/s] 53%|█████▎    | 50/94 [00:17<00:15,  2.93it/s] 54%|█████▍    | 51/94 [00:18<00:14,  2.93it/s] 55%|█████▌    | 52/94 [00:18<00:14,  2.92it/s] 56%|█████▋    | 53/94 [00:18<00:14,  2.92it/s] 57%|█████▋    | 54/94 [00:19<00:13,  2.92it/s] 59%|█████▊    | 55/94 [00:19<00:13,  2.92it/s] 60%|█████▉    | 56/94 [00:19<00:12,  2.92it/s] 61%|██████    | 57/94 [00:20<00:12,  2.93it/s] 62%|██████▏   | 58/94 [00:20<00:12,  2.92it/s] 63%|██████▎   | 59/94 [00:21<00:11,  2.92it/s] 64%|██████▍   | 60/94 [00:21<00:11,  2.92it/s] 65%|██████▍   | 61/94 [00:21<00:11,  2.92it/s] 66%|██████▌   | 62/94 [00:22<00:10,  2.92it/s] 67%|██████▋   | 63/94 [00:22<00:10,  2.92it/s] 68%|██████▊   | 64/94 [00:22<00:10,  2.92it/s] 69%|██████▉   | 65/94 [00:23<00:09,  2.91it/s] 70%|███████   | 66/94 [00:23<00:09,  2.91it/s] 71%|███████▏  | 67/94 [00:23<00:09,  2.91it/s] 72%|███████▏  | 68/94 [00:24<00:08,  2.91it/s] 73%|███████▎  | 69/94 [00:24<00:08,  2.91it/s] 74%|███████▍  | 70/94 [00:24<00:08,  2.92it/s] 76%|███████▌  | 71/94 [00:25<00:07,  2.92it/s] 77%|███████▋  | 72/94 [00:25<00:07,  2.91it/s] 78%|███████▊  | 73/94 [00:25<00:07,  2.91it/s] 79%|███████▊  | 74/94 [00:26<00:06,  2.91it/s] 80%|███████▉  | 75/94 [00:26<00:06,  2.91it/s] 81%|████████  | 76/94 [00:26<00:06,  2.91it/s] 82%|████████▏ | 77/94 [00:27<00:05,  2.91it/s] 83%|████████▎ | 78/94 [00:27<00:05,  2.91it/s] 84%|████████▍ | 79/94 [00:27<00:05,  2.90it/s] 85%|████████▌ | 80/94 [00:28<00:04,  2.90it/s] 86%|████████▌ | 81/94 [00:28<00:04,  2.90it/s] 87%|████████▋ | 82/94 [00:28<00:04,  2.89it/s] 88%|████████▊ | 83/94 [00:29<00:03,  2.90it/s] 89%|████████▉ | 84/94 [00:29<00:03,  2.90it/s] 90%|█████████ | 85/94 [00:29<00:03,  2.90it/s] 91%|█████████▏| 86/94 [00:30<00:02,  2.90it/s] 93%|█████████▎| 87/94 [00:30<00:02,  2.90it/s] 94%|█████████▎| 88/94 [00:30<00:02,  2.90it/s] 95%|█████████▍| 89/94 [00:31<00:01,  2.90it/s] 96%|█████████▌| 90/94 [00:31<00:01,  2.90it/s] 97%|█████████▋| 91/94 [00:32<00:01,  2.90it/s] 98%|█████████▊| 92/94 [00:32<00:00,  2.90it/s] 99%|█████████▉| 93/94 [00:32<00:00,  2.90it/s]100%|██████████| 94/94 [00:33<00:00,  2.90it/s]100%|██████████| 94/94 [00:33<00:00,  2.84it/s]
+[01/05/24 03:27:02] INFO     2024-01-05 03:27:02,155     data_wrangle_run.py:432
+                             [data_wrangle_run] [INFO]                          
+                             Batch inference run end.                           
+                             Elapsed: 33.21 s;                                  
+                    INFO     2024-01-05 03:27:02,157     data_wrangle_run.py:433
+                             [data_wrangle_run] [INFO]                          
+                             Output throughput: 16.98                           
+                             token/s;                                           
+                    INFO     2024-01-05 03:27:02,158     data_wrangle_run.py:434
+                             [data_wrangle_run] [INFO]                          
+                             Total throughput: 4234.91                          
+                             token/s;                                           
+                    INFO     2024-01-05 03:27:02,160     data_wrangle_run.py:443
+                             [data_wrangle_run] [INFO]                          
+                             Metrics Trial 0                                    
+                             Prec: 0.112 Recall: 0.955                          
+                             Acc: 0.112 F1: 0.201                               
+                             <FlexGen> time: 33.206                             
+                             <FlexGen> output                                   
+                             throughput: 16.985                                 
+                             <FlexGen> total throughput:                        
+                             4234.909                                           
+                    INFO     2024-01-05 03:27:02,162     data_wrangle_run.py:473
+                             [data_wrangle_run] [INFO]                          
+                             Saved to outputs/Fodors-Zag                        
+                             ats/test/default/1k_0inst_0                        
+                             cb_manual_facebook/opt-6.7b                        
+                             _188run_0dry/trial_0.feathe                        
+                             r                                                  
+                    INFO     2024-01-05 03:27:02,172     data_wrangle_run.py:485
+                             [data_wrangle_run] [INFO]                          
+                             Final Metrics {                                    
+                                 "prec": [                                      
+                                     0.11229946524064172                        
+                                 ],                                             
+                                 "rec": [                                       
+                                     0.9545454545454546                         
+                                 ],                                             
+                                 "f1": [                                        
+                                     0.20095693779904306                        
+                                 ],                                             
+                                 "acc": [                                       
+                                     0.11170212765957446                        
+                                 ],                                             
+                                 "total_time": [                                
+                                     33.20590686798096                          
+                                 ],                                             
+                                 "output_throughput": [                         
+                                     16.98492988739426                          
+                                 ],                                             
+                                 "total_throughput": [                          
+                                     4234.909185256968                          
+                                 ],                                             
+                                 "prec_avg":                                    
+                             0.11229946524064172,                               
+                                 "prec_std": 0.0,                               
+                                 "rec_avg":                                     
+                             0.9545454545454546,                                
+                                 "rec_std": 0.0,                                
+                                 "f1_avg":                                      
+                             0.20095693779904306,                               
+                                 "f1_std": 0.0,                                 
+                                 "acc_avg":                                     
+                             0.11170212765957446,                               
+                                 "acc_std": 0.0,                                
+                                 "total_time_avg":                              
+                             33.20590686798096,                                 
+                                 "total_time_std": 0.0,                         
+                                 "output_throughput_avg"                        
+                             : 16.98492988739426,                               
+                                 "output_throughput_std"                        
+                             : 0.0,                                             
+                                 "total_throughput_avg":                        
+                             4234.909185256968,                                 
+                                 "total_throughput_std":                        
+                             0.0                                                
+                             }                                                  
+                    INFO     2024-01-05 03:27:02,176     data_wrangle_run.py:486
+                             [data_wrangle_run] [INFO]                          
+                             Metrics dumped to outputs/F                        
+                             odors-Zagats/test/default/1                        
+                             k_0inst_0cb_manual_facebook                        
+                             /opt-6.7b_188run_0dry/metri                        
+                             cs.json                                            
+                    INFO     2024-01-05 03:27:02,177     data_wrangle_run.py:488
+                             [data_wrangle_run] [INFO]                          
+                             Shutdown FlexGen...                                
+2024-01-05 03:27:03: Starting batch#2...
+/home/bing/llm-queue/build/FlexGen-main/flexgen/apps/data_wrangle/data/datasets
+[01/05/24 03:27:05] INFO     2024-01-05 03:27:05,263     data_wrangle_run.py:500
+                             [data_wrangle_run] [INFO] {                        
+                                 "data_dir": "/home/bing                        
+                             /llm-queue/build/FlexGen-ma                        
+                             in/flexgen/apps/data_wrangl                        
+                             e/data/datasets/entity_matc                        
+                             hing/structured/Beer",                             
+                                 "output_dir":                                  
+                             "outputs",                                         
+                                 "cache_name": "sqlite",                        
+                                 "cache_connection":                            
+                             "fm_data_tasks.sqlite",                            
+                                 "client_name":                                 
+                             "openai",                                          
+                                 "client_connection":                           
+                             null,                                              
+                                 "run_tag": "default",                          
+                                 "overwrite_cache":                             
+                             false,                                             
+                                 "k": 1,                                        
+                                 "sample_method":                               
+                             "manual",                                          
+                                 "seed": 1234,                                  
+                                 "class_balanced":                              
+                             false,                                             
+                                 "sep_tok": ".",                                
+                                 "nan_tok": "",                                 
+                                 "num_run": 91,                                 
+                                 "num_trials": 1,                               
+                                 "num_print": 10,                               
+                                 "add_task_instruction":                        
+                             false,                                             
+                                 "task_instruction_idx":                        
+                             0,                                                 
+                                 "do_test": true,                               
+                                 "dry_run": false,                              
+                                 "stop_token": "\n",                            
+                                 "temperature": 0.0,                            
+                                 "max_tokens": 3,                               
+                                 "batch_run": true,                             
+                                 "pad_to_seq_len": 592,                         
+                                 "model":                                       
+                             "facebook/opt-6.7b",                               
+                                 "path":                                        
+                             "~/opt_weights",                                   
+                                 "run_path": "runs",                            
+                                 "offload_dir":                                 
+                             "~/flexgen_offload_dir",                           
+                                 "gpu_batch_size": 2,                           
+                                 "num_gpu_batches": 1,                          
+                                 "percent": [                                   
+                                     100,                                       
+                                     0,                                         
+                                     100,                                       
+                                     0,                                         
+                                     100,                                       
+                                     0                                          
+                                 ],                                             
+                                 "pin_weight": true,                            
+                                 "cpu_cache_compute":                           
+                             false,                                             
+                                 "compress_weight":                             
+                             false,                                             
+                                 "compress_cache": false                        
+                             }                                                  
+                    INFO     2024-01-05 03:27:05,270           data_utils.py:334
+                             [data_utils] [INFO] Processing /h                  
+                             ome/bing/llm-queue/build/FlexGen-                  
+                             main/flexgen/apps/data_wrangle/da                  
+                             ta/datasets/entity_matching/struc                  
+                             tured/Beer                                         
+                    INFO     2024-01-05 03:27:05,328     data_wrangle_run.py:523
+                             [data_wrangle_run] [INFO]                          
+                             Using 0 instruction idx                            
+                    INFO     2024-01-05 03:27:05,329     data_wrangle_run.py:530
+                             [data_wrangle_run] [INFO]                          
+                             Train shape is 268                                 
+                    INFO     2024-01-05 03:27:05,330     data_wrangle_run.py:531
+                             [data_wrangle_run] [INFO]                          
+                             Test shape is 91                                   
+                    INFO     2024-01-05 03:27:05,331     data_wrangle_run.py:532
+                             [data_wrangle_run] [INFO]                          
+                             Running 91 examples for 1                          
+                             trials.                                            
+                    INFO     2024-01-05 03:27:05,332     data_wrangle_run.py:535
+                             [data_wrangle_run] [INFO]                          
+                             Call batch_query_test                              
+                    INFO     2024-01-05 03:27:05,570     data_wrangle_run.py:345
+                             [data_wrangle_run] [INFO]                          
+                             Init weights begin.                                
+[01/05/24 03:27:14] INFO     2024-01-05 03:27:14,529     data_wrangle_run.py:348
+                             [data_wrangle_run] [INFO]                          
+                             Init weights end. Elapsed:                         
+                             8.96 s.                                            
+                    INFO     2024-01-05 03:27:14,633     data_wrangle_run.py:400
+                             [data_wrangle_run] [INFO]                          
+                             max_prompt_seq_length: 593                         
+  0%|          | 0/45 [00:00<?, ?it/s]  2%|▏         | 1/45 [00:01<00:54,  1.23s/it]  4%|▍         | 2/45 [00:01<00:29,  1.47it/s]  7%|▋         | 3/45 [00:01<00:21,  1.98it/s]  9%|▉         | 4/45 [00:02<00:17,  2.37it/s] 11%|█         | 5/45 [00:02<00:15,  2.66it/s] 13%|█▎        | 6/45 [00:02<00:13,  2.87it/s] 16%|█▌        | 7/45 [00:03<00:12,  3.02it/s] 18%|█▊        | 8/45 [00:03<00:11,  3.13it/s] 20%|██        | 9/45 [00:03<00:11,  3.21it/s] 22%|██▏       | 10/45 [00:03<00:10,  3.27it/s] 24%|██▍       | 11/45 [00:04<00:10,  3.30it/s] 27%|██▋       | 12/45 [00:04<00:09,  3.33it/s] 29%|██▉       | 13/45 [00:04<00:09,  3.35it/s] 31%|███       | 14/45 [00:05<00:09,  3.36it/s] 33%|███▎      | 15/45 [00:05<00:08,  3.37it/s] 36%|███▌      | 16/45 [00:05<00:08,  3.37it/s] 38%|███▊      | 17/45 [00:05<00:08,  3.38it/s] 40%|████      | 18/45 [00:06<00:07,  3.39it/s] 42%|████▏     | 19/45 [00:06<00:07,  3.38it/s] 44%|████▍     | 20/45 [00:06<00:07,  3.38it/s] 47%|████▋     | 21/45 [00:07<00:07,  3.38it/s] 49%|████▉     | 22/45 [00:07<00:06,  3.38it/s] 51%|█████     | 23/45 [00:07<00:06,  3.37it/s] 53%|█████▎    | 24/45 [00:08<00:06,  3.38it/s] 56%|█████▌    | 25/45 [00:08<00:05,  3.39it/s] 58%|█████▊    | 26/45 [00:08<00:05,  3.38it/s] 60%|██████    | 27/45 [00:08<00:05,  3.38it/s] 62%|██████▏   | 28/45 [00:09<00:05,  3.39it/s] 64%|██████▍   | 29/45 [00:09<00:04,  3.39it/s] 67%|██████▋   | 30/45 [00:09<00:04,  3.39it/s] 69%|██████▉   | 31/45 [00:10<00:04,  3.38it/s] 71%|███████   | 32/45 [00:10<00:03,  3.39it/s] 73%|███████▎  | 33/45 [00:10<00:03,  3.39it/s] 76%|███████▌  | 34/45 [00:10<00:03,  3.39it/s] 78%|███████▊  | 35/45 [00:11<00:02,  3.38it/s] 80%|████████  | 36/45 [00:11<00:02,  3.38it/s] 82%|████████▏ | 37/45 [00:11<00:02,  3.38it/s] 84%|████████▍ | 38/45 [00:12<00:02,  3.38it/s] 87%|████████▋ | 39/45 [00:12<00:01,  3.37it/s] 89%|████████▉ | 40/45 [00:12<00:01,  3.38it/s] 91%|█████████ | 41/45 [00:13<00:01,  3.38it/s] 93%|█████████▎| 42/45 [00:13<00:00,  3.38it/s] 96%|█████████▌| 43/45 [00:13<00:00,  3.38it/s] 98%|█████████▊| 44/45 [00:13<00:00,  3.38it/s]100%|██████████| 45/45 [00:14<00:00,  3.38it/s]100%|██████████| 45/45 [00:14<00:00,  3.16it/s]
+[01/05/24 03:27:28] INFO     2024-01-05 03:27:28,927     data_wrangle_run.py:432
+                             [data_wrangle_run] [INFO]                          
+                             Batch inference run end.                           
+                             Elapsed: 14.29 s;                                  
+                    INFO     2024-01-05 03:27:28,928     data_wrangle_run.py:433
+                             [data_wrangle_run] [INFO]                          
+                             Output throughput: 18.89                           
+                             token/s;                                           
+                    INFO     2024-01-05 03:27:28,930     data_wrangle_run.py:434
+                             [data_wrangle_run] [INFO]                          
+                             Total throughput: 3753.02                          
+                             token/s;                                           
+                    INFO     2024-01-05 03:27:28,932     data_wrangle_run.py:443
+                             [data_wrangle_run] [INFO]                          
+                             Metrics Trial 0                                    
+                             Prec: 0.135 Recall: 0.923                          
+                             Acc: 0.133 F1: 0.235                               
+                             <FlexGen> time: 14.292                             
+                             <FlexGen> output                                   
+                             throughput: 18.891                                 
+                             <FlexGen> total throughput:                        
+                             3753.018                                           
+                    INFO     2024-01-05 03:27:28,933     data_wrangle_run.py:473
+                             [data_wrangle_run] [INFO]                          
+                             Saved to outputs/Beer/test/                        
+                             default/1k_0inst_0cb_manual                        
+                             _facebook/opt-6.7b_90run_0d                        
+                             ry/trial_0.feather                                 
+                    INFO     2024-01-05 03:27:28,942     data_wrangle_run.py:485
+                             [data_wrangle_run] [INFO]                          
+                             Final Metrics {                                    
+                                 "prec": [                                      
+                                     0.1348314606741573                         
+                                 ],                                             
+                                 "rec": [                                       
+                                     0.9230769230769231                         
+                                 ],                                             
+                                 "f1": [                                        
+                                     0.2352941176470588                         
+                                 ],                                             
+                                 "acc": [                                       
+                                     0.13333333333333333                        
+                                 ],                                             
+                                 "total_time": [                                
+                                     14.292498350143433                         
+                                 ],                                             
+                                 "output_throughput": [                         
+                                     18.89102894297626                          
+                                 ],                                             
+                                 "total_throughput": [                          
+                                     3753.0177500046166                         
+                                 ],                                             
+                                 "prec_avg":                                    
+                             0.1348314606741573,                                
+                                 "prec_std": 0.0,                               
+                                 "rec_avg":                                     
+                             0.9230769230769231,                                
+                                 "rec_std": 0.0,                                
+                                 "f1_avg":                                      
+                             0.2352941176470588,                                
+                                 "f1_std": 0.0,                                 
+                                 "acc_avg":                                     
+                             0.13333333333333333,                               
+                                 "acc_std": 0.0,                                
+                                 "total_time_avg":                              
+                             14.292498350143433,                                
+                                 "total_time_std": 0.0,                         
+                                 "output_throughput_avg"                        
+                             : 18.89102894297626,                               
+                                 "output_throughput_std"                        
+                             : 0.0,                                             
+                                 "total_throughput_avg":                        
+                             3753.0177500046166,                                
+                                 "total_throughput_std":                        
+                             0.0                                                
+                             }                                                  
+                    INFO     2024-01-05 03:27:28,945     data_wrangle_run.py:486
+                             [data_wrangle_run] [INFO]                          
+                             Metrics dumped to outputs/B                        
+                             eer/test/default/1k_0inst_0                        
+                             cb_manual_facebook/opt-6.7b                        
+                             _90run_0dry/metrics.json                           
+                    INFO     2024-01-05 03:27:28,947     data_wrangle_run.py:488
+                             [data_wrangle_run] [INFO]                          
+                             Shutdown FlexGen...                                
+2024-01-05 03:27:30: Starting batch#3...
+/home/bing/llm-queue/build/FlexGen-main/flexgen/apps/data_wrangle/data/datasets
+[01/05/24 03:27:32] INFO     2024-01-05 03:27:32,078     data_wrangle_run.py:500
+                             [data_wrangle_run] [INFO] {                        
+                                 "data_dir": "/home/bing                        
+                             /llm-queue/build/FlexGen-ma                        
+                             in/flexgen/apps/data_wrangl                        
+                             e/data/datasets/entity_matc                        
+                             hing/structured/iTunes-Amaz                        
+                             on",                                               
+                                 "output_dir":                                  
+                             "outputs",                                         
+                                 "cache_name": "sqlite",                        
+                                 "cache_connection":                            
+                             "fm_data_tasks.sqlite",                            
+                                 "client_name":                                 
+                             "openai",                                          
+                                 "client_connection":                           
+                             null,                                              
+                                 "run_tag": "default",                          
+                                 "overwrite_cache":                             
+                             false,                                             
+                                 "k": 1,                                        
+                                 "sample_method":                               
+                             "manual",                                          
+                                 "seed": 1234,                                  
+                                 "class_balanced":                              
+                             false,                                             
+                                 "sep_tok": ".",                                
+                                 "nan_tok": "",                                 
+                                 "num_run": 109,                                
+                                 "num_trials": 1,                               
+                                 "num_print": 10,                               
+                                 "add_task_instruction":                        
+                             false,                                             
+                                 "task_instruction_idx":                        
+                             0,                                                 
+                                 "do_test": true,                               
+                                 "dry_run": false,                              
+                                 "stop_token": "\n",                            
+                                 "temperature": 0.0,                            
+                                 "max_tokens": 3,                               
+                                 "batch_run": true,                             
+                                 "pad_to_seq_len": 529,                         
+                                 "model":                                       
+                             "facebook/opt-6.7b",                               
+                                 "path":                                        
+                             "~/opt_weights",                                   
+                                 "run_path": "runs",                            
+                                 "offload_dir":                                 
+                             "~/flexgen_offload_dir",                           
+                                 "gpu_batch_size": 2,                           
+                                 "num_gpu_batches": 1,                          
+                                 "percent": [                                   
+                                     100,                                       
+                                     0,                                         
+                                     100,                                       
+                                     0,                                         
+                                     100,                                       
+                                     0                                          
+                                 ],                                             
+                                 "pin_weight": true,                            
+                                 "cpu_cache_compute":                           
+                             false,                                             
+                                 "compress_weight":                             
+                             false,                                             
+                                 "compress_cache": false                        
+                             }                                                  
+                    INFO     2024-01-05 03:27:32,084           data_utils.py:334
+                             [data_utils] [INFO] Processing /h                  
+                             ome/bing/llm-queue/build/FlexGen-                  
+                             main/flexgen/apps/data_wrangle/da                  
+                             ta/datasets/entity_matching/struc                  
+                             tured/iTunes-Amazon                                
+                    INFO     2024-01-05 03:27:32,303     data_wrangle_run.py:523
+                             [data_wrangle_run] [INFO]                          
+                             Using 0 instruction idx                            
+                    INFO     2024-01-05 03:27:32,305     data_wrangle_run.py:530
+                             [data_wrangle_run] [INFO]                          
+                             Train shape is 321                                 
+                    INFO     2024-01-05 03:27:32,306     data_wrangle_run.py:531
+                             [data_wrangle_run] [INFO]                          
+                             Test shape is 109                                  
+                    INFO     2024-01-05 03:27:32,307     data_wrangle_run.py:532
+                             [data_wrangle_run] [INFO]                          
+                             Running 109 examples for 1                         
+                             trials.                                            
+                    INFO     2024-01-05 03:27:32,308     data_wrangle_run.py:535
+                             [data_wrangle_run] [INFO]                          
+                             Call batch_query_test                              
+                    INFO     2024-01-05 03:27:32,579     data_wrangle_run.py:345
+                             [data_wrangle_run] [INFO]                          
+                             Init weights begin.                                
+[01/05/24 03:27:41] INFO     2024-01-05 03:27:41,478     data_wrangle_run.py:348
+                             [data_wrangle_run] [INFO]                          
+                             Init weights end. Elapsed:                         
+                             8.90 s.                                            
+                    INFO     2024-01-05 03:27:41,581     data_wrangle_run.py:400
+                             [data_wrangle_run] [INFO]                          
+                             max_prompt_seq_length: 530                         
+  0%|          | 0/54 [00:00<?, ?it/s]  2%|▏         | 1/54 [00:01<00:59,  1.11s/it]  4%|▎         | 2/54 [00:01<00:32,  1.62it/s]  6%|▌         | 3/54 [00:01<00:23,  2.16it/s]  7%|▋         | 4/54 [00:01<00:19,  2.58it/s]  9%|▉         | 5/54 [00:02<00:17,  2.88it/s] 11%|█         | 6/54 [00:02<00:15,  3.11it/s] 13%|█▎        | 7/54 [00:02<00:14,  3.26it/s] 15%|█▍        | 8/54 [00:03<00:13,  3.38it/s] 17%|█▋        | 9/54 [00:03<00:13,  3.45it/s] 19%|█▊        | 10/54 [00:03<00:12,  3.52it/s] 20%|██        | 11/54 [00:03<00:12,  3.56it/s] 22%|██▏       | 12/54 [00:04<00:11,  3.59it/s] 24%|██▍       | 13/54 [00:04<00:11,  3.61it/s] 26%|██▌       | 14/54 [00:04<00:11,  3.62it/s] 28%|██▊       | 15/54 [00:04<00:10,  3.63it/s] 30%|██▉       | 16/54 [00:05<00:10,  3.63it/s] 31%|███▏      | 17/54 [00:05<00:10,  3.64it/s] 33%|███▎      | 18/54 [00:05<00:09,  3.64it/s] 35%|███▌      | 19/54 [00:06<00:09,  3.65it/s] 37%|███▋      | 20/54 [00:06<00:09,  3.64it/s] 39%|███▉      | 21/54 [00:06<00:09,  3.65it/s] 41%|████      | 22/54 [00:06<00:08,  3.64it/s] 43%|████▎     | 23/54 [00:07<00:08,  3.65it/s] 44%|████▍     | 24/54 [00:07<00:08,  3.65it/s] 46%|████▋     | 25/54 [00:07<00:07,  3.65it/s] 48%|████▊     | 26/54 [00:07<00:07,  3.65it/s] 50%|█████     | 27/54 [00:08<00:07,  3.65it/s] 52%|█████▏    | 28/54 [00:08<00:07,  3.64it/s] 54%|█████▎    | 29/54 [00:08<00:06,  3.64it/s] 56%|█████▌    | 30/54 [00:09<00:06,  3.64it/s] 57%|█████▋    | 31/54 [00:09<00:06,  3.64it/s] 59%|█████▉    | 32/54 [00:09<00:06,  3.63it/s] 61%|██████    | 33/54 [00:09<00:05,  3.62it/s] 63%|██████▎   | 34/54 [00:10<00:05,  3.63it/s] 65%|██████▍   | 35/54 [00:10<00:05,  3.62it/s] 67%|██████▋   | 36/54 [00:10<00:04,  3.63it/s] 69%|██████▊   | 37/54 [00:10<00:04,  3.63it/s] 70%|███████   | 38/54 [00:11<00:04,  3.63it/s] 72%|███████▏  | 39/54 [00:11<00:04,  3.62it/s] 74%|███████▍  | 40/54 [00:11<00:03,  3.63it/s] 76%|███████▌  | 41/54 [00:12<00:03,  3.63it/s] 78%|███████▊  | 42/54 [00:12<00:03,  3.62it/s] 80%|███████▉  | 43/54 [00:12<00:03,  3.62it/s] 81%|████████▏ | 44/54 [00:12<00:02,  3.63it/s] 83%|████████▎ | 45/54 [00:13<00:02,  3.63it/s] 85%|████████▌ | 46/54 [00:13<00:02,  3.63it/s] 87%|████████▋ | 47/54 [00:13<00:01,  3.63it/s] 89%|████████▉ | 48/54 [00:14<00:01,  3.62it/s] 91%|█████████ | 49/54 [00:14<00:01,  3.63it/s] 93%|█████████▎| 50/54 [00:14<00:01,  3.62it/s] 94%|█████████▍| 51/54 [00:14<00:00,  3.62it/s] 96%|█████████▋| 52/54 [00:15<00:00,  3.61it/s] 98%|█████████▊| 53/54 [00:15<00:00,  3.62it/s]100%|██████████| 54/54 [00:15<00:00,  3.61it/s]100%|██████████| 54/54 [00:15<00:00,  3.44it/s]
+[01/05/24 03:27:57] INFO     2024-01-05 03:27:57,339     data_wrangle_run.py:432
+                             [data_wrangle_run] [INFO]                          
+                             Batch inference run end.                           
+                             Elapsed: 15.76 s;                                  
+                    INFO     2024-01-05 03:27:57,341     data_wrangle_run.py:433
+                             [data_wrangle_run] [INFO]                          
+                             Output throughput: 20.56                           
+                             token/s;                                           
+                    INFO     2024-01-05 03:27:57,342     data_wrangle_run.py:434
+                             [data_wrangle_run] [INFO]                          
+                             Total throughput: 3653.19                          
+                             token/s;                                           
+                    INFO     2024-01-05 03:27:57,344     data_wrangle_run.py:443
+                             [data_wrangle_run] [INFO]                          
+                             Metrics Trial 0                                    
+                             Prec: 0.000 Recall: 0.000                          
+                             Acc: 0.750 F1: 0.000                               
+                             <FlexGen> time: 15.757                             
+                             <FlexGen> output                                   
+                             throughput: 20.562                                 
+                             <FlexGen> total throughput:                        
+                             3653.190                                           
+                    INFO     2024-01-05 03:27:57,346     data_wrangle_run.py:473
+                             [data_wrangle_run] [INFO]                          
+                             Saved to outputs/iTunes-Ama                        
+                             zon/test/default/1k_0inst_0                        
+                             cb_manual_facebook/opt-6.7b                        
+                             _108run_0dry/trial_0.feathe                        
+                             r                                                  
+                    INFO     2024-01-05 03:27:57,357     data_wrangle_run.py:485
+                             [data_wrangle_run] [INFO]                          
+                             Final Metrics {                                    
+                                 "prec": [                                      
+                                     0.0                                        
+                                 ],                                             
+                                 "rec": [                                       
+                                     0.0                                        
+                                 ],                                             
+                                 "f1": [                                        
+                                     0.0                                        
+                                 ],                                             
+                                 "acc": [                                       
+                                     0.75                                       
+                                 ],                                             
+                                 "total_time": [                                
+                                     15.757189512252808                         
+                                 ],                                             
+                                 "output_throughput": [                         
+                                     20.562042472615897                         
+                                 ],                                             
+                                 "total_throughput": [                          
+                                     3653.189545968091                          
+                                 ],                                             
+                                 "prec_avg": 0.0,                               
+                                 "prec_std": 0.0,                               
+                                 "rec_avg": 0.0,                                
+                                 "rec_std": 0.0,                                
+                                 "f1_avg": 0.0,                                 
+                                 "f1_std": 0.0,                                 
+                                 "acc_avg": 0.75,                               
+                                 "acc_std": 0.0,                                
+                                 "total_time_avg":                              
+                             15.757189512252808,                                
+                                 "total_time_std": 0.0,                         
+                                 "output_throughput_avg"                        
+                             : 20.562042472615897,                              
+                                 "output_throughput_std"                        
+                             : 0.0,                                             
+                                 "total_throughput_avg":                        
+                             3653.189545968091,                                 
+                                 "total_throughput_std":                        
+                             0.0                                                
+                             }                                                  
+                    INFO     2024-01-05 03:27:57,368     data_wrangle_run.py:486
+                             [data_wrangle_run] [INFO]                          
+                             Metrics dumped to outputs/i                        
+                             Tunes-Amazon/test/default/1                        
+                             k_0inst_0cb_manual_facebook                        
+                             /opt-6.7b_108run_0dry/metri                        
+                             cs.json                                            
+                    INFO     2024-01-05 03:27:57,372     data_wrangle_run.py:488
+                             [data_wrangle_run] [INFO]                          
+                             Shutdown FlexGen...                                
+2024-01-05 03:27:58: Starting batch#4...
+/home/bing/llm-queue/build/FlexGen-main/flexgen/apps/data_wrangle/data/datasets
+[01/05/24 03:28:00] INFO     2024-01-05 03:28:00,494     data_wrangle_run.py:500
+                             [data_wrangle_run] [INFO] {                        
+                                 "data_dir": "/home/bing                        
+                             /llm-queue/build/FlexGen-ma                        
+                             in/flexgen/apps/data_wrangl                        
+                             e/data/datasets/entity_matc                        
+                             hing/structured/Walmart-Ama                        
+                             zon",                                              
+                                 "output_dir":                                  
+                             "outputs",                                         
+                                 "cache_name": "sqlite",                        
+                                 "cache_connection":                            
+                             "fm_data_tasks.sqlite",                            
+                                 "client_name":                                 
+                             "openai",                                          
+                                 "client_connection":                           
+                             null,                                              
+                                 "run_tag": "default",                          
+                                 "overwrite_cache":                             
+                             false,                                             
+                                 "k": 1,                                        
+                                 "sample_method":                               
+                             "manual",                                          
+                                 "seed": 1234,                                  
+                                 "class_balanced":                              
+                             false,                                             
+                                 "sep_tok": ".",                                
+                                 "nan_tok": "",                                 
+                                 "num_run": 200,                                
+                                 "num_trials": 1,                               
+                                 "num_print": 10,                               
+                                 "add_task_instruction":                        
+                             false,                                             
+                                 "task_instruction_idx":                        
+                             0,                                                 
+                                 "do_test": true,                               
+                                 "dry_run": false,                              
+                                 "stop_token": "\n",                            
+                                 "temperature": 0.0,                            
+                                 "max_tokens": 3,                               
+                                 "batch_run": true,                             
+                                 "pad_to_seq_len": 748,                         
+                                 "model":                                       
+                             "facebook/opt-6.7b",                               
+                                 "path":                                        
+                             "~/opt_weights",                                   
+                                 "run_path": "runs",                            
+                                 "offload_dir":                                 
+                             "~/flexgen_offload_dir",                           
+                                 "gpu_batch_size": 2,                           
+                                 "num_gpu_batches": 1,                          
+                                 "percent": [                                   
+                                     100,                                       
+                                     0,                                         
+                                     100,                                       
+                                     0,                                         
+                                     100,                                       
+                                     0                                          
+                                 ],                                             
+                                 "pin_weight": true,                            
+                                 "cpu_cache_compute":                           
+                             false,                                             
+                                 "compress_weight":                             
+                             false,                                             
+                                 "compress_cache": false                        
+                             }                                                  
+                    INFO     2024-01-05 03:28:00,501           data_utils.py:334
+                             [data_utils] [INFO] Processing /h                  
+                             ome/bing/llm-queue/build/FlexGen-                  
+                             main/flexgen/apps/data_wrangle/da                  
+                             ta/datasets/entity_matching/struc                  
+                             tured/Walmart-Amazon                               
+[01/05/24 03:28:01] INFO     2024-01-05 03:28:01,134     data_wrangle_run.py:523
+                             [data_wrangle_run] [INFO]                          
+                             Using 0 instruction idx                            
+                    INFO     2024-01-05 03:28:01,135     data_wrangle_run.py:530
+                             [data_wrangle_run] [INFO]                          
+                             Train shape is 6144                                
+                    INFO     2024-01-05 03:28:01,136     data_wrangle_run.py:531
+                             [data_wrangle_run] [INFO]                          
+                             Test shape is 2049                                 
+                    INFO     2024-01-05 03:28:01,137     data_wrangle_run.py:532
+                             [data_wrangle_run] [INFO]                          
+                             Running 200 examples for 1                         
+                             trials.                                            
+                    INFO     2024-01-05 03:28:01,138     data_wrangle_run.py:535
+                             [data_wrangle_run] [INFO]                          
+                             Call batch_query_test                              
+                    INFO     2024-01-05 03:28:01,384     data_wrangle_run.py:345
+                             [data_wrangle_run] [INFO]                          
+                             Init weights begin.                                
+[01/05/24 03:28:09] INFO     2024-01-05 03:28:09,382     data_wrangle_run.py:348
+                             [data_wrangle_run] [INFO]                          
+                             Init weights end. Elapsed:                         
+                             7.99 s.                                            
+                    INFO     2024-01-05 03:28:09,627     data_wrangle_run.py:400
+                             [data_wrangle_run] [INFO]                          
+                             max_prompt_seq_length: 748                         
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:01<02:06,  1.28s/it]  2%|▏         | 2/100 [00:01<01:11,  1.38it/s]  3%|▎         | 3/100 [00:01<00:53,  1.82it/s]  4%|▍         | 4/100 [00:02<00:44,  2.15it/s]  5%|▌         | 5/100 [00:02<00:39,  2.39it/s]  6%|▌         | 6/100 [00:02<00:36,  2.56it/s]  7%|▋         | 7/100 [00:03<00:34,  2.68it/s]  8%|▊         | 8/100 [00:03<00:33,  2.76it/s]  9%|▉         | 9/100 [00:03<00:32,  2.82it/s] 10%|█         | 10/100 [00:04<00:31,  2.85it/s] 11%|█         | 11/100 [00:04<00:30,  2.89it/s] 12%|█▏        | 12/100 [00:04<00:30,  2.91it/s] 13%|█▎        | 13/100 [00:05<00:29,  2.92it/s] 14%|█▍        | 14/100 [00:05<00:29,  2.93it/s] 15%|█▌        | 15/100 [00:06<00:28,  2.94it/s] 16%|█▌        | 16/100 [00:06<00:28,  2.94it/s] 17%|█▋        | 17/100 [00:06<00:28,  2.94it/s] 18%|█▊        | 18/100 [00:07<00:27,  2.95it/s] 19%|█▉        | 19/100 [00:07<00:27,  2.95it/s] 20%|██        | 20/100 [00:07<00:27,  2.95it/s] 21%|██        | 21/100 [00:08<00:26,  2.95it/s] 22%|██▏       | 22/100 [00:08<00:26,  2.95it/s] 23%|██▎       | 23/100 [00:08<00:26,  2.95it/s] 24%|██▍       | 24/100 [00:09<00:25,  2.95it/s] 25%|██▌       | 25/100 [00:09<00:25,  2.95it/s] 26%|██▌       | 26/100 [00:09<00:25,  2.92it/s] 27%|██▋       | 27/100 [00:10<00:24,  2.92it/s] 28%|██▊       | 28/100 [00:10<00:24,  2.93it/s] 29%|██▉       | 29/100 [00:10<00:24,  2.94it/s] 30%|███       | 30/100 [00:11<00:23,  2.94it/s] 31%|███       | 31/100 [00:11<00:23,  2.94it/s] 32%|███▏      | 32/100 [00:11<00:23,  2.95it/s] 33%|███▎      | 33/100 [00:12<00:22,  2.94it/s] 34%|███▍      | 34/100 [00:12<00:22,  2.94it/s] 35%|███▌      | 35/100 [00:12<00:22,  2.94it/s] 36%|███▌      | 36/100 [00:13<00:21,  2.94it/s] 37%|███▋      | 37/100 [00:13<00:21,  2.94it/s] 38%|███▊      | 38/100 [00:13<00:21,  2.94it/s] 39%|███▉      | 39/100 [00:14<00:20,  2.94it/s] 40%|████      | 40/100 [00:14<00:20,  2.94it/s] 41%|████      | 41/100 [00:14<00:20,  2.94it/s] 42%|████▏     | 42/100 [00:15<00:19,  2.95it/s] 43%|████▎     | 43/100 [00:15<00:19,  2.94it/s] 44%|████▍     | 44/100 [00:15<00:19,  2.94it/s] 45%|████▌     | 45/100 [00:16<00:18,  2.94it/s] 46%|████▌     | 46/100 [00:16<00:18,  2.94it/s] 47%|████▋     | 47/100 [00:16<00:18,  2.94it/s] 48%|████▊     | 48/100 [00:17<00:17,  2.94it/s] 49%|████▉     | 49/100 [00:17<00:17,  2.94it/s] 50%|█████     | 50/100 [00:17<00:17,  2.94it/s] 51%|█████     | 51/100 [00:18<00:16,  2.94it/s] 52%|█████▏    | 52/100 [00:18<00:16,  2.93it/s] 53%|█████▎    | 53/100 [00:18<00:16,  2.93it/s] 54%|█████▍    | 54/100 [00:19<00:15,  2.93it/s] 55%|█████▌    | 55/100 [00:19<00:15,  2.93it/s] 56%|█████▌    | 56/100 [00:19<00:14,  2.93it/s] 57%|█████▋    | 57/100 [00:20<00:14,  2.93it/s] 58%|█████▊    | 58/100 [00:20<00:14,  2.93it/s] 59%|█████▉    | 59/100 [00:20<00:13,  2.93it/s] 60%|██████    | 60/100 [00:21<00:13,  2.93it/s] 61%|██████    | 61/100 [00:21<00:13,  2.93it/s] 62%|██████▏   | 62/100 [00:22<00:12,  2.93it/s] 63%|██████▎   | 63/100 [00:22<00:12,  2.93it/s] 64%|██████▍   | 64/100 [00:22<00:12,  2.93it/s] 65%|██████▌   | 65/100 [00:23<00:11,  2.93it/s] 66%|██████▌   | 66/100 [00:23<00:11,  2.93it/s] 67%|██████▋   | 67/100 [00:23<00:11,  2.93it/s] 68%|██████▊   | 68/100 [00:24<00:10,  2.93it/s] 69%|██████▉   | 69/100 [00:24<00:10,  2.93it/s] 70%|███████   | 70/100 [00:24<00:10,  2.85it/s] 71%|███████   | 71/100 [00:25<00:10,  2.88it/s] 72%|███████▏  | 72/100 [00:25<00:09,  2.89it/s] 73%|███████▎  | 73/100 [00:25<00:09,  2.90it/s] 74%|███████▍  | 74/100 [00:26<00:08,  2.91it/s] 75%|███████▌  | 75/100 [00:26<00:08,  2.92it/s] 76%|███████▌  | 76/100 [00:26<00:08,  2.92it/s] 77%|███████▋  | 77/100 [00:27<00:07,  2.92it/s] 78%|███████▊  | 78/100 [00:27<00:07,  2.92it/s] 79%|███████▉  | 79/100 [00:27<00:07,  2.93it/s] 80%|████████  | 80/100 [00:28<00:06,  2.93it/s] 81%|████████  | 81/100 [00:28<00:06,  2.92it/s] 82%|████████▏ | 82/100 [00:28<00:06,  2.92it/s] 83%|████████▎ | 83/100 [00:29<00:05,  2.92it/s] 84%|████████▍ | 84/100 [00:29<00:05,  2.92it/s] 85%|████████▌ | 85/100 [00:29<00:05,  2.92it/s] 86%|████████▌ | 86/100 [00:30<00:04,  2.93it/s] 87%|████████▋ | 87/100 [00:30<00:04,  2.93it/s] 88%|████████▊ | 88/100 [00:30<00:04,  2.93it/s] 89%|████████▉ | 89/100 [00:31<00:03,  2.93it/s] 90%|█████████ | 90/100 [00:31<00:03,  2.92it/s] 91%|█████████ | 91/100 [00:31<00:03,  2.92it/s] 92%|█████████▏| 92/100 [00:32<00:02,  2.92it/s] 93%|█████████▎| 93/100 [00:32<00:02,  2.92it/s] 94%|█████████▍| 94/100 [00:32<00:02,  2.92it/s] 95%|█████████▌| 95/100 [00:33<00:01,  2.92it/s] 96%|█████████▌| 96/100 [00:33<00:01,  2.92it/s] 97%|█████████▋| 97/100 [00:33<00:01,  2.92it/s] 98%|█████████▊| 98/100 [00:34<00:00,  2.92it/s] 99%|█████████▉| 99/100 [00:34<00:00,  2.92it/s]100%|██████████| 100/100 [00:35<00:00,  2.92it/s]100%|██████████| 100/100 [00:35<00:00,  2.86it/s]
+[01/05/24 03:28:44] INFO     2024-01-05 03:28:44,799     data_wrangle_run.py:432
+                             [data_wrangle_run] [INFO]                          
+                             Batch inference run end.                           
+                             Elapsed: 35.17 s;                                  
+                    INFO     2024-01-05 03:28:44,800     data_wrangle_run.py:433
+                             [data_wrangle_run] [INFO]                          
+                             Output throughput: 17.06                           
+                             token/s;                                           
+                    INFO     2024-01-05 03:28:44,801     data_wrangle_run.py:434
+                             [data_wrangle_run] [INFO]                          
+                             Total throughput: 4270.62                          
+                             token/s;                                           
+                    INFO     2024-01-05 03:28:44,803     data_wrangle_run.py:443
+                             [data_wrangle_run] [INFO]                          
+                             Metrics Trial 0                                    
+                             Prec: 0.000 Recall: 0.000                          
+                             Acc: 0.000 F1: 0.000                               
+                             <FlexGen> time: 35.171                             
+                             <FlexGen> output                                   
+                             throughput: 17.060                                 
+                             <FlexGen> total throughput:                        
+                             4270.623                                           
+                    INFO     2024-01-05 03:28:44,805     data_wrangle_run.py:473
+                             [data_wrangle_run] [INFO]                          
+                             Saved to outputs/Walmart-Am                        
+                             azon/test/default/1k_0inst_                        
+                             0cb_manual_facebook/opt-6.7                        
+                             b_200run_0dry/trial_0.feath                        
+                             er                                                 
+                    INFO     2024-01-05 03:28:44,814     data_wrangle_run.py:485
+                             [data_wrangle_run] [INFO]                          
+                             Final Metrics {                                    
+                                 "prec": [                                      
+                                     0.0                                        
+                                 ],                                             
+                                 "rec": [                                       
+                                     0.0                                        
+                                 ],                                             
+                                 "f1": [                                        
+                                     0.0                                        
+                                 ],                                             
+                                 "acc": [                                       
+                                     0.0                                        
+                                 ],                                             
+                                 "total_time": [                                
+                                     35.1705162525177                           
+                                 ],                                             
+                                 "output_throughput": [                         
+                                     17.059743897192543                         
+                                 ],                                             
+                                 "total_throughput": [                          
+                                     4270.6225555972                            
+                                 ],                                             
+                                 "prec_avg": 0.0,                               
+                                 "prec_std": 0.0,                               
+                                 "rec_avg": 0.0,                                
+                                 "rec_std": 0.0,                                
+                                 "f1_avg": 0.0,                                 
+                                 "f1_std": 0.0,                                 
+                                 "acc_avg": 0.0,                                
+                                 "acc_std": 0.0,                                
+                                 "total_time_avg":                              
+                             35.1705162525177,                                  
+                                 "total_time_std": 0.0,                         
+                                 "output_throughput_avg"                        
+                             : 17.059743897192543,                              
+                                 "output_throughput_std"                        
+                             : 0.0,                                             
+                                 "total_throughput_avg":                        
+                             4270.6225555972,                                   
+                                 "total_throughput_std":                        
+                             0.0                                                
+                             }                                                  
+                    INFO     2024-01-05 03:28:44,817     data_wrangle_run.py:486
+                             [data_wrangle_run] [INFO]                          
+                             Metrics dumped to outputs/W                        
+                             almart-Amazon/test/default/                        
+                             1k_0inst_0cb_manual_faceboo                        
+                             k/opt-6.7b_200run_0dry/metr                        
+                             ics.json                                           
+                    INFO     2024-01-05 03:28:44,818     data_wrangle_run.py:488
+                             [data_wrangle_run] [INFO]                          
+                             Shutdown FlexGen...                                
+2024-01-05 03:28:46: Starting batch#5...
+/home/bing/llm-queue/build/FlexGen-main/flexgen/apps/data_wrangle/data/datasets
+[01/05/24 03:28:47] INFO     2024-01-05 03:28:47,920     data_wrangle_run.py:500
+                             [data_wrangle_run] [INFO] {                        
+                                 "data_dir": "/home/bing                        
+                             /llm-queue/build/FlexGen-ma                        
+                             in/flexgen/apps/data_wrangl                        
+                             e/data/datasets/entity_matc                        
+                             hing/structured/Amazon-Goog                        
+                             le",                                               
+                                 "output_dir":                                  
+                             "outputs",                                         
+                                 "cache_name": "sqlite",                        
+                                 "cache_connection":                            
+                             "fm_data_tasks.sqlite",                            
+                                 "client_name":                                 
+                             "openai",                                          
+                                 "client_connection":                           
+                             null,                                              
+                                 "run_tag": "default",                          
+                                 "overwrite_cache":                             
+                             false,                                             
+                                 "k": 1,                                        
+                                 "sample_method":                               
+                             "manual",                                          
+                                 "seed": 1234,                                  
+                                 "class_balanced":                              
+                             false,                                             
+                                 "sep_tok": ".",                                
+                                 "nan_tok": "",                                 
+                                 "num_run": 200,                                
+                                 "num_trials": 1,                               
+                                 "num_print": 10,                               
+                                 "add_task_instruction":                        
+                             false,                                             
+                                 "task_instruction_idx":                        
+                             0,                                                 
+                                 "do_test": true,                               
+                                 "dry_run": false,                              
+                                 "stop_token": "\n",                            
+                                 "temperature": 0.0,                            
+                                 "max_tokens": 3,                               
+                                 "batch_run": true,                             
+                                 "pad_to_seq_len": 876,                         
+                                 "model":                                       
+                             "facebook/opt-6.7b",                               
+                                 "path":                                        
+                             "~/opt_weights",                                   
+                                 "run_path": "runs",                            
+                                 "offload_dir":                                 
+                             "~/flexgen_offload_dir",                           
+                                 "gpu_batch_size": 1,                           
+                                 "num_gpu_batches": 1,                          
+                                 "percent": [                                   
+                                     100,                                       
+                                     0,                                         
+                                     100,                                       
+                                     0,                                         
+                                     100,                                       
+                                     0                                          
+                                 ],                                             
+                                 "pin_weight": true,                            
+                                 "cpu_cache_compute":                           
+                             false,                                             
+                                 "compress_weight":                             
+                             false,                                             
+                                 "compress_cache": false                        
+                             }                                                  
+                    INFO     2024-01-05 03:28:47,926           data_utils.py:334
+                             [data_utils] [INFO] Processing /h                  
+                             ome/bing/llm-queue/build/FlexGen-                  
+                             main/flexgen/apps/data_wrangle/da                  
+                             ta/datasets/entity_matching/struc                  
+                             tured/Amazon-Google                                
+[01/05/24 03:28:48] INFO     2024-01-05 03:28:48,864     data_wrangle_run.py:523
+                             [data_wrangle_run] [INFO]                          
+                             Using 0 instruction idx                            
+                    INFO     2024-01-05 03:28:48,865     data_wrangle_run.py:530
+                             [data_wrangle_run] [INFO]                          
+                             Train shape is 6874                                
+                    INFO     2024-01-05 03:28:48,866     data_wrangle_run.py:531
+                             [data_wrangle_run] [INFO]                          
+                             Test shape is 2293                                 
+                    INFO     2024-01-05 03:28:48,867     data_wrangle_run.py:532
+                             [data_wrangle_run] [INFO]                          
+                             Running 200 examples for 1                         
+                             trials.                                            
+                    INFO     2024-01-05 03:28:48,868     data_wrangle_run.py:535
+                             [data_wrangle_run] [INFO]                          
+                             Call batch_query_test                              
+[01/05/24 03:28:49] INFO     2024-01-05 03:28:49,127     data_wrangle_run.py:345
+                             [data_wrangle_run] [INFO]                          
+                             Init weights begin.                                
+[01/05/24 03:28:57] INFO     2024-01-05 03:28:57,380     data_wrangle_run.py:348
+                             [data_wrangle_run] [INFO]                          
+                             Init weights end. Elapsed:                         
+                             8.24 s.                                            
+                    INFO     2024-01-05 03:28:57,660     data_wrangle_run.py:400
+                             [data_wrangle_run] [INFO]                          
+                             max_prompt_seq_length: 876                         
+  0%|          | 0/200 [00:00<?, ?it/s]  0%|          | 1/200 [00:01<03:47,  1.14s/it]  1%|          | 2/200 [00:01<02:00,  1.65it/s]  2%|▏         | 3/200 [00:01<01:28,  2.23it/s]  2%|▏         | 4/200 [00:01<01:11,  2.76it/s]  2%|▎         | 5/200 [00:02<01:01,  3.17it/s]  3%|▎         | 6/200 [00:02<00:55,  3.49it/s]  4%|▎         | 7/200 [00:02<00:51,  3.71it/s]  4%|▍         | 8/200 [00:02<00:49,  3.88it/s]  4%|▍         | 9/200 [00:03<00:47,  4.00it/s]  5%|▌         | 10/200 [00:03<00:46,  4.09it/s]  6%|▌         | 11/200 [00:03<00:45,  4.16it/s]  6%|▌         | 12/200 [00:03<00:44,  4.20it/s]  6%|▋         | 13/200 [00:03<00:44,  4.22it/s]  7%|▋         | 14/200 [00:04<00:43,  4.25it/s]  8%|▊         | 15/200 [00:04<00:43,  4.27it/s]  8%|▊         | 16/200 [00:04<00:42,  4.28it/s]  8%|▊         | 17/200 [00:04<00:42,  4.28it/s]  9%|▉         | 18/200 [00:05<00:42,  4.28it/s] 10%|▉         | 19/200 [00:05<00:42,  4.30it/s] 10%|█         | 20/200 [00:05<00:41,  4.31it/s] 10%|█         | 21/200 [00:05<00:41,  4.32it/s] 11%|█         | 22/200 [00:06<00:41,  4.32it/s] 12%|█▏        | 23/200 [00:06<00:41,  4.30it/s] 12%|█▏        | 24/200 [00:06<00:40,  4.31it/s] 12%|█▎        | 25/200 [00:06<00:40,  4.32it/s] 13%|█▎        | 26/200 [00:06<00:40,  4.32it/s] 14%|█▎        | 27/200 [00:07<00:40,  4.31it/s] 14%|█▍        | 28/200 [00:07<00:40,  4.30it/s] 14%|█▍        | 29/200 [00:07<00:39,  4.30it/s] 15%|█▌        | 30/200 [00:07<00:39,  4.30it/s] 16%|█▌        | 31/200 [00:08<00:39,  4.31it/s] 16%|█▌        | 32/200 [00:08<00:39,  4.30it/s] 16%|█▋        | 33/200 [00:08<00:38,  4.29it/s] 17%|█▋        | 34/200 [00:08<00:38,  4.30it/s] 18%|█▊        | 35/200 [00:09<00:38,  4.31it/s] 18%|█▊        | 36/200 [00:09<00:38,  4.30it/s] 18%|█▊        | 37/200 [00:09<00:37,  4.31it/s] 19%|█▉        | 38/200 [00:09<00:37,  4.29it/s] 20%|█▉        | 39/200 [00:09<00:37,  4.29it/s] 20%|██        | 40/200 [00:10<00:37,  4.30it/s] 20%|██        | 41/200 [00:10<00:36,  4.30it/s] 21%|██        | 42/200 [00:10<00:36,  4.29it/s] 22%|██▏       | 43/200 [00:10<00:36,  4.28it/s] 22%|██▏       | 44/200 [00:11<00:36,  4.30it/s] 22%|██▎       | 45/200 [00:11<00:36,  4.30it/s] 23%|██▎       | 46/200 [00:11<00:36,  4.24it/s] 24%|██▎       | 47/200 [00:11<00:35,  4.26it/s] 24%|██▍       | 48/200 [00:12<00:35,  4.26it/s] 24%|██▍       | 49/200 [00:12<00:35,  4.28it/s] 25%|██▌       | 50/200 [00:12<00:34,  4.29it/s] 26%|██▌       | 51/200 [00:12<00:34,  4.30it/s] 26%|██▌       | 52/200 [00:13<00:34,  4.30it/s] 26%|██▋       | 53/200 [00:13<00:34,  4.28it/s] 27%|██▋       | 54/200 [00:13<00:34,  4.29it/s] 28%|██▊       | 55/200 [00:13<00:33,  4.29it/s] 28%|██▊       | 56/200 [00:13<00:33,  4.30it/s] 28%|██▊       | 57/200 [00:14<00:33,  4.30it/s] 29%|██▉       | 58/200 [00:14<00:33,  4.29it/s] 30%|██▉       | 59/200 [00:14<00:32,  4.29it/s] 30%|███       | 60/200 [00:14<00:32,  4.30it/s] 30%|███       | 61/200 [00:15<00:32,  4.30it/s] 31%|███       | 62/200 [00:15<00:32,  4.30it/s] 32%|███▏      | 63/200 [00:15<00:31,  4.29it/s] 32%|███▏      | 64/200 [00:15<00:31,  4.30it/s] 32%|███▎      | 65/200 [00:16<00:31,  4.30it/s] 33%|███▎      | 66/200 [00:16<00:31,  4.30it/s] 34%|███▎      | 67/200 [00:16<00:30,  4.30it/s] 34%|███▍      | 68/200 [00:16<00:30,  4.30it/s] 34%|███▍      | 69/200 [00:16<00:30,  4.30it/s] 35%|███▌      | 70/200 [00:17<00:30,  4.30it/s] 36%|███▌      | 71/200 [00:17<00:29,  4.30it/s] 36%|███▌      | 72/200 [00:17<00:29,  4.30it/s] 36%|███▋      | 73/200 [00:17<00:29,  4.29it/s] 37%|███▋      | 74/200 [00:18<00:29,  4.29it/s] 38%|███▊      | 75/200 [00:18<00:29,  4.29it/s] 38%|███▊      | 76/200 [00:18<00:28,  4.29it/s] 38%|███▊      | 77/200 [00:18<00:28,  4.28it/s] 39%|███▉      | 78/200 [00:19<00:28,  4.28it/s] 40%|███▉      | 79/200 [00:19<00:28,  4.28it/s] 40%|████      | 80/200 [00:19<00:28,  4.28it/s] 40%|████      | 81/200 [00:19<00:27,  4.28it/s] 41%|████      | 82/200 [00:20<00:27,  4.28it/s] 42%|████▏     | 83/200 [00:20<00:27,  4.28it/s] 42%|████▏     | 84/200 [00:20<00:27,  4.28it/s] 42%|████▎     | 85/200 [00:20<00:26,  4.27it/s] 43%|████▎     | 86/200 [00:20<00:26,  4.27it/s] 44%|████▎     | 87/200 [00:21<00:26,  4.27it/s] 44%|████▍     | 88/200 [00:21<00:26,  4.27it/s] 44%|████▍     | 89/200 [00:21<00:26,  4.27it/s] 45%|████▌     | 90/200 [00:21<00:25,  4.27it/s] 46%|████▌     | 91/200 [00:22<00:25,  4.27it/s] 46%|████▌     | 92/200 [00:22<00:25,  4.27it/s] 46%|████▋     | 93/200 [00:22<00:25,  4.27it/s] 47%|████▋     | 94/200 [00:22<00:24,  4.28it/s] 48%|████▊     | 95/200 [00:23<00:24,  4.28it/s] 48%|████▊     | 96/200 [00:23<00:24,  4.29it/s] 48%|████▊     | 97/200 [00:23<00:24,  4.29it/s] 49%|████▉     | 98/200 [00:23<00:23,  4.27it/s] 50%|████▉     | 99/200 [00:23<00:23,  4.28it/s] 50%|█████     | 100/200 [00:24<00:23,  4.28it/s] 50%|█████     | 101/200 [00:24<00:23,  4.28it/s] 51%|█████     | 102/200 [00:24<00:22,  4.27it/s] 52%|█████▏    | 103/200 [00:24<00:22,  4.27it/s] 52%|█████▏    | 104/200 [00:25<00:22,  4.27it/s] 52%|█████▎    | 105/200 [00:25<00:22,  4.28it/s] 53%|█████▎    | 106/200 [00:25<00:21,  4.28it/s] 54%|█████▎    | 107/200 [00:25<00:21,  4.27it/s] 54%|█████▍    | 108/200 [00:26<00:21,  4.27it/s] 55%|█████▍    | 109/200 [00:26<00:21,  4.28it/s] 55%|█████▌    | 110/200 [00:26<00:21,  4.27it/s] 56%|█████▌    | 111/200 [00:26<00:20,  4.28it/s] 56%|█████▌    | 112/200 [00:27<00:20,  4.27it/s] 56%|█████▋    | 113/200 [00:27<00:20,  4.27it/s] 57%|█████▋    | 114/200 [00:27<00:20,  4.27it/s] 57%|█████▊    | 115/200 [00:27<00:19,  4.28it/s] 58%|█████▊    | 116/200 [00:27<00:19,  4.27it/s] 58%|█████▊    | 117/200 [00:28<00:19,  4.27it/s] 59%|█████▉    | 118/200 [00:28<00:19,  4.27it/s] 60%|█████▉    | 119/200 [00:28<00:18,  4.28it/s] 60%|██████    | 120/200 [00:28<00:18,  4.28it/s] 60%|██████    | 121/200 [00:29<00:18,  4.27it/s] 61%|██████    | 122/200 [00:29<00:18,  4.27it/s] 62%|██████▏   | 123/200 [00:29<00:18,  4.27it/s] 62%|██████▏   | 124/200 [00:29<00:17,  4.28it/s] 62%|██████▎   | 125/200 [00:30<00:17,  4.28it/s] 63%|██████▎   | 126/200 [00:30<00:17,  4.27it/s] 64%|██████▎   | 127/200 [00:30<00:17,  4.27it/s] 64%|██████▍   | 128/200 [00:30<00:16,  4.27it/s] 64%|██████▍   | 129/200 [00:31<00:16,  4.27it/s] 65%|██████▌   | 130/200 [00:31<00:16,  4.27it/s] 66%|██████▌   | 131/200 [00:31<00:16,  4.27it/s] 66%|██████▌   | 132/200 [00:31<00:15,  4.27it/s] 66%|██████▋   | 133/200 [00:31<00:15,  4.27it/s] 67%|██████▋   | 134/200 [00:32<00:15,  4.28it/s] 68%|██████▊   | 135/200 [00:32<00:15,  4.28it/s] 68%|██████▊   | 136/200 [00:32<00:14,  4.27it/s] 68%|██████▊   | 137/200 [00:32<00:14,  4.27it/s] 69%|██████▉   | 138/200 [00:33<00:14,  4.27it/s] 70%|██████▉   | 139/200 [00:33<00:14,  4.27it/s] 70%|███████   | 140/200 [00:33<00:14,  4.27it/s] 70%|███████   | 141/200 [00:33<00:13,  4.28it/s] 71%|███████   | 142/200 [00:34<00:13,  4.27it/s] 72%|███████▏  | 143/200 [00:34<00:13,  4.27it/s] 72%|███████▏  | 144/200 [00:34<00:13,  4.27it/s] 72%|███████▎  | 145/200 [00:34<00:12,  4.27it/s] 73%|███████▎  | 146/200 [00:34<00:12,  4.27it/s] 74%|███████▎  | 147/200 [00:35<00:12,  4.27it/s] 74%|███████▍  | 148/200 [00:35<00:12,  4.26it/s] 74%|███████▍  | 149/200 [00:35<00:11,  4.27it/s] 75%|███████▌  | 150/200 [00:35<00:11,  4.27it/s] 76%|███████▌  | 151/200 [00:36<00:11,  4.27it/s] 76%|███████▌  | 152/200 [00:36<00:11,  4.26it/s] 76%|███████▋  | 153/200 [00:36<00:11,  4.21it/s] 77%|███████▋  | 154/200 [00:36<00:10,  4.24it/s] 78%|███████▊  | 155/200 [00:37<00:10,  4.25it/s] 78%|███████▊  | 156/200 [00:37<00:10,  4.26it/s] 78%|███████▊  | 157/200 [00:37<00:10,  4.26it/s] 79%|███████▉  | 158/200 [00:37<00:09,  4.26it/s] 80%|███████▉  | 159/200 [00:38<00:09,  4.26it/s] 80%|████████  | 160/200 [00:38<00:09,  4.26it/s] 80%|████████  | 161/200 [00:38<00:09,  4.27it/s] 81%|████████  | 162/200 [00:38<00:08,  4.26it/s] 82%|████████▏ | 163/200 [00:38<00:08,  4.26it/s] 82%|████████▏ | 164/200 [00:39<00:08,  4.27it/s] 82%|████████▎ | 165/200 [00:39<00:08,  4.28it/s] 83%|████████▎ | 166/200 [00:39<00:07,  4.28it/s] 84%|████████▎ | 167/200 [00:39<00:07,  4.27it/s] 84%|████████▍ | 168/200 [00:40<00:07,  4.26it/s] 84%|████████▍ | 169/200 [00:40<00:07,  4.26it/s] 85%|████████▌ | 170/200 [00:40<00:07,  4.27it/s] 86%|████████▌ | 171/200 [00:40<00:06,  4.26it/s] 86%|████████▌ | 172/200 [00:41<00:06,  4.26it/s] 86%|████████▋ | 173/200 [00:41<00:06,  4.26it/s] 87%|████████▋ | 174/200 [00:41<00:06,  4.27it/s] 88%|████████▊ | 175/200 [00:41<00:05,  4.27it/s] 88%|████████▊ | 176/200 [00:42<00:05,  4.26it/s] 88%|████████▊ | 177/200 [00:42<00:05,  4.25it/s] 89%|████████▉ | 178/200 [00:42<00:05,  4.25it/s] 90%|████████▉ | 179/200 [00:42<00:04,  4.26it/s] 90%|█████████ | 180/200 [00:42<00:04,  4.26it/s] 90%|█████████ | 181/200 [00:43<00:04,  4.27it/s] 91%|█████████ | 182/200 [00:43<00:04,  4.26it/s] 92%|█████████▏| 183/200 [00:43<00:03,  4.25it/s] 92%|█████████▏| 184/200 [00:43<00:03,  4.26it/s] 92%|█████████▎| 185/200 [00:44<00:03,  4.26it/s] 93%|█████████▎| 186/200 [00:44<00:03,  4.26it/s] 94%|█████████▎| 187/200 [00:44<00:03,  4.25it/s] 94%|█████████▍| 188/200 [00:44<00:02,  4.25it/s] 94%|█████████▍| 189/200 [00:45<00:02,  4.26it/s] 95%|█████████▌| 190/200 [00:45<00:02,  4.26it/s] 96%|█████████▌| 191/200 [00:45<00:02,  4.25it/s] 96%|█████████▌| 192/200 [00:45<00:01,  4.25it/s] 96%|█████████▋| 193/200 [00:46<00:01,  4.24it/s] 97%|█████████▋| 194/200 [00:46<00:01,  4.26it/s] 98%|█████████▊| 195/200 [00:46<00:01,  4.26it/s] 98%|█████████▊| 196/200 [00:46<00:00,  4.26it/s] 98%|█████████▊| 197/200 [00:46<00:00,  4.26it/s] 99%|█████████▉| 198/200 [00:47<00:00,  4.26it/s]100%|█████████▉| 199/200 [00:47<00:00,  4.26it/s]100%|██████████| 200/200 [00:47<00:00,  4.25it/s]100%|██████████| 200/200 [00:47<00:00,  4.19it/s]
+[01/05/24 03:29:45] INFO     2024-01-05 03:29:45,492     data_wrangle_run.py:432
+                             [data_wrangle_run] [INFO]                          
+                             Batch inference run end.                           
+                             Elapsed: 47.83 s;                                  
+                    INFO     2024-01-05 03:29:45,494     data_wrangle_run.py:433
+                             [data_wrangle_run] [INFO]                          
+                             Output throughput: 12.54                           
+                             token/s;                                           
+                    INFO     2024-01-05 03:29:45,495     data_wrangle_run.py:434
+                             [data_wrangle_run] [INFO]                          
+                             Total throughput: 3675.44                          
+                             token/s;                                           
+                    INFO     2024-01-05 03:29:45,497     data_wrangle_run.py:443
+                             [data_wrangle_run] [INFO]                          
+                             Metrics Trial 0                                    
+                             Prec: 0.067 Recall: 0.111                          
+                             Acc: 0.890 F1: 0.015                               
+                             <FlexGen> time: 47.831                             
+                             <FlexGen> output                                   
+                             throughput: 12.544                                 
+                             <FlexGen> total throughput:                        
+                             3675.441                                           
+                    INFO     2024-01-05 03:29:45,499     data_wrangle_run.py:473
+                             [data_wrangle_run] [INFO]                          
+                             Saved to outputs/Amazon-Goo                        
+                             gle/test/default/1k_0inst_0                        
+                             cb_manual_facebook/opt-6.7b                        
+                             _200run_0dry/trial_0.feathe                        
+                             r                                                  
+                    INFO     2024-01-05 03:29:45,509     data_wrangle_run.py:485
+                             [data_wrangle_run] [INFO]                          
+                             Final Metrics {                                    
+                                 "prec": [                                      
+                                     0.06666666666666667                        
+                                 ],                                             
+                                 "rec": [                                       
+                                     0.1111111111111111                         
+                                 ],                                             
+                                 "f1": [                                        
+                                     0.01481481481481481                        
+                             4                                                  
+                                 ],                                             
+                                 "acc": [                                       
+                                     0.89                                       
+                                 ],                                             
+                                 "total_time": [                                
+                                     47.83099007606506                          
+                                 ],                                             
+                                 "output_throughput": [                         
+                                     12.54416852015455                          
+                                 ],                                             
+                                 "total_throughput": [                          
+                                     3675.441376405283                          
+                                 ],                                             
+                                 "prec_avg":                                    
+                             0.06666666666666667,                               
+                                 "prec_std": 0.0,                               
+                                 "rec_avg":                                     
+                             0.1111111111111111,                                
+                                 "rec_std": 0.0,                                
+                                 "f1_avg":                                      
+                             0.014814814814814814,                              
+                                 "f1_std": 0.0,                                 
+                                 "acc_avg": 0.89,                               
+                                 "acc_std": 0.0,                                
+                                 "total_time_avg":                              
+                             47.83099007606506,                                 
+                                 "total_time_std": 0.0,                         
+                                 "output_throughput_avg"                        
+                             : 12.54416852015455,                               
+                                 "output_throughput_std"                        
+                             : 0.0,                                             
+                                 "total_throughput_avg":                        
+                             3675.441376405283,                                 
+                                 "total_throughput_std":                        
+                             0.0                                                
+                             }                                                  
+                    INFO     2024-01-05 03:29:45,512     data_wrangle_run.py:486
+                             [data_wrangle_run] [INFO]                          
+                             Metrics dumped to outputs/A                        
+                             mazon-Google/test/default/1                        
+                             k_0inst_0cb_manual_facebook                        
+                             /opt-6.7b_200run_0dry/metri                        
+                             cs.json                                            
+                    INFO     2024-01-05 03:29:45,513     data_wrangle_run.py:488
+                             [data_wrangle_run] [INFO]                          
+                             Shutdown FlexGen...                                
+2024-01-05 03:29:46: Starting batch#6...
+/home/bing/llm-queue/build/FlexGen-main/flexgen/apps/data_wrangle/data/datasets
+[01/05/24 03:29:48] INFO     2024-01-05 03:29:48,588     data_wrangle_run.py:500
+                             [data_wrangle_run] [INFO] {                        
+                                 "data_dir": "/home/bing                        
+                             /llm-queue/build/FlexGen-ma                        
+                             in/flexgen/apps/data_wrangl                        
+                             e/data/datasets/entity_matc                        
+                             hing/structured/DBLP-ACM",                         
+                                 "output_dir":                                  
+                             "outputs",                                         
+                                 "cache_name": "sqlite",                        
+                                 "cache_connection":                            
+                             "fm_data_tasks.sqlite",                            
+                                 "client_name":                                 
+                             "openai",                                          
+                                 "client_connection":                           
+                             null,                                              
+                                 "run_tag": "default",                          
+                                 "overwrite_cache":                             
+                             false,                                             
+                                 "k": 1,                                        
+                                 "sample_method":                               
+                             "manual",                                          
+                                 "seed": 1234,                                  
+                                 "class_balanced":                              
+                             false,                                             
+                                 "sep_tok": ".",                                
+                                 "nan_tok": "",                                 
+                                 "num_run": 200,                                
+                                 "num_trials": 1,                               
+                                 "num_print": 10,                               
+                                 "add_task_instruction":                        
+                             false,                                             
+                                 "task_instruction_idx":                        
+                             0,                                                 
+                                 "do_test": true,                               
+                                 "dry_run": false,                              
+                                 "stop_token": "\n",                            
+                                 "temperature": 0.0,                            
+                                 "max_tokens": 3,                               
+                                 "batch_run": true,                             
+                                 "pad_to_seq_len": 1274,                        
+                                 "model":                                       
+                             "facebook/opt-6.7b",                               
+                                 "path":                                        
+                             "~/opt_weights",                                   
+                                 "run_path": "runs",                            
+                                 "offload_dir":                                 
+                             "~/flexgen_offload_dir",                           
+                                 "gpu_batch_size": 1,                           
+                                 "num_gpu_batches": 1,                          
+                                 "percent": [                                   
+                                     100,                                       
+                                     0,                                         
+                                     100,                                       
+                                     0,                                         
+                                     100,                                       
+                                     0                                          
+                                 ],                                             
+                                 "pin_weight": true,                            
+                                 "cpu_cache_compute":                           
+                             false,                                             
+                                 "compress_weight":                             
+                             false,                                             
+                                 "compress_cache": false                        
+                             }                                                  
+                    INFO     2024-01-05 03:29:48,594           data_utils.py:334
+                             [data_utils] [INFO] Processing /h                  
+                             ome/bing/llm-queue/build/FlexGen-                  
+                             main/flexgen/apps/data_wrangle/da                  
+                             ta/datasets/entity_matching/struc                  
+                             tured/DBLP-ACM                                     
+[01/05/24 03:29:49] INFO     2024-01-05 03:29:49,907     data_wrangle_run.py:523
+                             [data_wrangle_run] [INFO]                          
+                             Using 0 instruction idx                            
+                    INFO     2024-01-05 03:29:49,909     data_wrangle_run.py:530
+                             [data_wrangle_run] [INFO]                          
+                             Train shape is 7417                                
+                    INFO     2024-01-05 03:29:49,910     data_wrangle_run.py:531
+                             [data_wrangle_run] [INFO]                          
+                             Test shape is 2473                                 
+                    INFO     2024-01-05 03:29:49,910     data_wrangle_run.py:532
+                             [data_wrangle_run] [INFO]                          
+                             Running 200 examples for 1                         
+                             trials.                                            
+                    INFO     2024-01-05 03:29:49,911     data_wrangle_run.py:535
+                             [data_wrangle_run] [INFO]                          
+                             Call batch_query_test                              
+[01/05/24 03:29:50] INFO     2024-01-05 03:29:50,160     data_wrangle_run.py:345
+                             [data_wrangle_run] [INFO]                          
+                             Init weights begin.                                
+[01/05/24 03:29:58] INFO     2024-01-05 03:29:58,444     data_wrangle_run.py:348
+                             [data_wrangle_run] [INFO]                          
+                             Init weights end. Elapsed:                         
+                             8.28 s.                                            
+                    INFO     2024-01-05 03:29:58,821     data_wrangle_run.py:400
+                             [data_wrangle_run] [INFO]                          
+                             max_prompt_seq_length: 1274                        
+  0%|          | 0/200 [00:00<?, ?it/s]  0%|          | 1/200 [00:00<03:17,  1.01it/s]  1%|          | 2/200 [00:01<01:56,  1.70it/s]  2%|▏         | 3/200 [00:01<01:30,  2.17it/s]  2%|▏         | 4/200 [00:01<01:18,  2.48it/s]  2%|▎         | 5/200 [00:02<01:12,  2.70it/s]  3%|▎         | 6/200 [00:02<01:07,  2.85it/s]  4%|▎         | 7/200 [00:02<01:05,  2.96it/s]  4%|▍         | 8/200 [00:03<01:03,  3.03it/s]  4%|▍         | 9/200 [00:03<01:02,  3.08it/s]  5%|▌         | 10/200 [00:03<01:00,  3.13it/s]  6%|▌         | 11/200 [00:04<00:59,  3.16it/s]  6%|▌         | 12/200 [00:04<00:59,  3.17it/s]  6%|▋         | 13/200 [00:04<00:58,  3.18it/s]  7%|▋         | 14/200 [00:05<00:58,  3.19it/s]  8%|▊         | 15/200 [00:05<00:57,  3.20it/s]  8%|▊         | 16/200 [00:05<00:57,  3.19it/s]  8%|▊         | 17/200 [00:05<00:57,  3.20it/s]  9%|▉         | 18/200 [00:06<00:56,  3.21it/s] 10%|▉         | 19/200 [00:06<00:56,  3.21it/s] 10%|█         | 20/200 [00:06<00:56,  3.20it/s] 10%|█         | 21/200 [00:07<00:55,  3.20it/s] 11%|█         | 22/200 [00:07<00:55,  3.21it/s] 12%|█▏        | 23/200 [00:07<00:55,  3.20it/s] 12%|█▏        | 24/200 [00:08<00:55,  3.20it/s] 12%|█▎        | 25/200 [00:08<00:54,  3.20it/s] 13%|█▎        | 26/200 [00:08<00:54,  3.20it/s] 14%|█▎        | 27/200 [00:09<00:54,  3.20it/s] 14%|█▍        | 28/200 [00:09<00:53,  3.20it/s] 14%|█▍        | 29/200 [00:09<00:53,  3.20it/s] 15%|█▌        | 30/200 [00:10<00:53,  3.20it/s] 16%|█▌        | 31/200 [00:10<00:52,  3.19it/s] 16%|█▌        | 32/200 [00:10<00:52,  3.20it/s] 16%|█▋        | 33/200 [00:10<00:52,  3.20it/s] 17%|█▋        | 34/200 [00:11<00:51,  3.20it/s] 18%|█▊        | 35/200 [00:11<00:51,  3.20it/s] 18%|█▊        | 36/200 [00:11<00:51,  3.20it/s] 18%|█▊        | 37/200 [00:12<00:50,  3.21it/s] 19%|█▉        | 38/200 [00:12<00:50,  3.20it/s] 20%|█▉        | 39/200 [00:12<00:50,  3.19it/s] 20%|██        | 40/200 [00:13<00:50,  3.19it/s] 20%|██        | 41/200 [00:13<00:49,  3.19it/s] 21%|██        | 42/200 [00:13<00:49,  3.19it/s] 22%|██▏       | 43/200 [00:14<00:49,  3.19it/s] 22%|██▏       | 44/200 [00:14<00:48,  3.19it/s] 22%|██▎       | 45/200 [00:14<00:48,  3.19it/s] 23%|██▎       | 46/200 [00:15<00:48,  3.20it/s] 24%|██▎       | 47/200 [00:15<00:47,  3.20it/s] 24%|██▍       | 48/200 [00:15<00:47,  3.20it/s] 24%|██▍       | 49/200 [00:15<00:47,  3.19it/s] 25%|██▌       | 50/200 [00:16<00:46,  3.19it/s] 26%|██▌       | 51/200 [00:16<00:46,  3.19it/s] 26%|██▌       | 52/200 [00:16<00:46,  3.19it/s] 26%|██▋       | 53/200 [00:17<00:46,  3.19it/s] 27%|██▋       | 54/200 [00:17<00:45,  3.18it/s] 28%|██▊       | 55/200 [00:17<00:45,  3.18it/s] 28%|██▊       | 56/200 [00:18<00:45,  3.19it/s] 28%|██▊       | 57/200 [00:18<00:44,  3.18it/s] 29%|██▉       | 58/200 [00:18<00:44,  3.18it/s] 30%|██▉       | 59/200 [00:19<00:44,  3.18it/s] 30%|███       | 60/200 [00:19<00:44,  3.18it/s] 30%|███       | 61/200 [00:19<00:43,  3.19it/s] 31%|███       | 62/200 [00:20<00:43,  3.19it/s] 32%|███▏      | 63/200 [00:20<00:42,  3.19it/s] 32%|███▏      | 64/200 [00:20<00:42,  3.18it/s] 32%|███▎      | 65/200 [00:21<00:42,  3.18it/s] 33%|███▎      | 66/200 [00:21<00:42,  3.18it/s] 34%|███▎      | 67/200 [00:21<00:41,  3.18it/s] 34%|███▍      | 68/200 [00:21<00:41,  3.17it/s] 34%|███▍      | 69/200 [00:22<00:41,  3.18it/s] 35%|███▌      | 70/200 [00:22<00:40,  3.19it/s] 36%|███▌      | 71/200 [00:22<00:40,  3.20it/s] 36%|███▌      | 72/200 [00:23<00:40,  3.19it/s] 36%|███▋      | 73/200 [00:23<00:39,  3.18it/s] 37%|███▋      | 74/200 [00:23<00:39,  3.19it/s] 38%|███▊      | 75/200 [00:24<00:39,  3.18it/s] 38%|███▊      | 76/200 [00:24<00:39,  3.18it/s] 38%|███▊      | 77/200 [00:24<00:38,  3.18it/s] 39%|███▉      | 78/200 [00:25<00:38,  3.18it/s] 40%|███▉      | 79/200 [00:25<00:38,  3.18it/s] 40%|████      | 80/200 [00:25<00:37,  3.18it/s] 40%|████      | 81/200 [00:26<00:37,  3.18it/s] 41%|████      | 82/200 [00:26<00:37,  3.18it/s] 42%|████▏     | 83/200 [00:26<00:36,  3.18it/s] 42%|████▏     | 84/200 [00:26<00:36,  3.17it/s] 42%|████▎     | 85/200 [00:27<00:36,  3.17it/s] 43%|████▎     | 86/200 [00:27<00:35,  3.17it/s] 44%|████▎     | 87/200 [00:27<00:35,  3.18it/s] 44%|████▍     | 88/200 [00:28<00:35,  3.18it/s] 44%|████▍     | 89/200 [00:28<00:34,  3.18it/s] 45%|████▌     | 90/200 [00:28<00:34,  3.17it/s] 46%|████▌     | 91/200 [00:29<00:34,  3.17it/s] 46%|████▌     | 92/200 [00:29<00:33,  3.18it/s] 46%|████▋     | 93/200 [00:29<00:33,  3.18it/s] 47%|████▋     | 94/200 [00:30<00:33,  3.18it/s] 48%|████▊     | 95/200 [00:30<00:33,  3.18it/s] 48%|████▊     | 96/200 [00:30<00:32,  3.18it/s] 48%|████▊     | 97/200 [00:31<00:32,  3.18it/s] 49%|████▉     | 98/200 [00:31<00:32,  3.18it/s] 50%|████▉     | 99/200 [00:31<00:31,  3.18it/s] 50%|█████     | 100/200 [00:32<00:31,  3.18it/s] 50%|█████     | 101/200 [00:32<00:31,  3.19it/s] 51%|█████     | 102/200 [00:32<00:30,  3.19it/s] 52%|█████▏    | 103/200 [00:32<00:30,  3.18it/s] 52%|█████▏    | 104/200 [00:33<00:30,  3.18it/s] 52%|█████▎    | 105/200 [00:33<00:29,  3.18it/s] 53%|█████▎    | 106/200 [00:33<00:29,  3.18it/s] 54%|█████▎    | 107/200 [00:34<00:29,  3.18it/s] 54%|█████▍    | 108/200 [00:34<00:28,  3.18it/s] 55%|█████▍    | 109/200 [00:34<00:28,  3.18it/s] 55%|█████▌    | 110/200 [00:35<00:28,  3.18it/s] 56%|█████▌    | 111/200 [00:35<00:28,  3.18it/s] 56%|█████▌    | 112/200 [00:35<00:27,  3.17it/s] 56%|█████▋    | 113/200 [00:36<00:27,  3.17it/s] 57%|█████▋    | 114/200 [00:36<00:27,  3.18it/s] 57%|█████▊    | 115/200 [00:36<00:26,  3.18it/s] 58%|█████▊    | 116/200 [00:37<00:26,  3.17it/s] 58%|█████▊    | 117/200 [00:37<00:26,  3.17it/s] 59%|█████▉    | 118/200 [00:37<00:25,  3.18it/s] 60%|█████▉    | 119/200 [00:37<00:25,  3.18it/s] 60%|██████    | 120/200 [00:38<00:25,  3.18it/s] 60%|██████    | 121/200 [00:38<00:24,  3.18it/s] 61%|██████    | 122/200 [00:38<00:24,  3.18it/s] 62%|██████▏   | 123/200 [00:39<00:24,  3.18it/s] 62%|██████▏   | 124/200 [00:39<00:23,  3.18it/s] 62%|██████▎   | 125/200 [00:39<00:23,  3.18it/s] 63%|██████▎   | 126/200 [00:40<00:23,  3.18it/s] 64%|██████▎   | 127/200 [00:40<00:22,  3.18it/s] 64%|██████▍   | 128/200 [00:40<00:22,  3.17it/s] 64%|██████▍   | 129/200 [00:41<00:22,  3.18it/s] 65%|██████▌   | 130/200 [00:41<00:22,  3.18it/s] 66%|██████▌   | 131/200 [00:41<00:21,  3.17it/s] 66%|██████▌   | 132/200 [00:42<00:21,  3.18it/s] 66%|██████▋   | 133/200 [00:42<00:21,  3.18it/s] 67%|██████▋   | 134/200 [00:42<00:20,  3.17it/s] 68%|██████▊   | 135/200 [00:43<00:20,  3.18it/s] 68%|██████▊   | 136/200 [00:43<00:20,  3.17it/s] 68%|██████▊   | 137/200 [00:43<00:19,  3.17it/s] 69%|██████▉   | 138/200 [00:43<00:19,  3.17it/s] 70%|██████▉   | 139/200 [00:44<00:19,  3.17it/s] 70%|███████   | 140/200 [00:44<00:18,  3.17it/s] 70%|███████   | 141/200 [00:44<00:18,  3.17it/s] 71%|███████   | 142/200 [00:45<00:18,  3.17it/s] 72%|███████▏  | 143/200 [00:45<00:17,  3.17it/s] 72%|███████▏  | 144/200 [00:45<00:17,  3.17it/s] 72%|███████▎  | 145/200 [00:46<00:17,  3.17it/s] 73%|███████▎  | 146/200 [00:46<00:17,  3.17it/s] 74%|███████▎  | 147/200 [00:46<00:16,  3.17it/s] 74%|███████▍  | 148/200 [00:47<00:16,  3.17it/s] 74%|███████▍  | 149/200 [00:47<00:16,  3.17it/s] 75%|███████▌  | 150/200 [00:47<00:15,  3.16it/s] 76%|███████▌  | 151/200 [00:48<00:15,  3.17it/s] 76%|███████▌  | 152/200 [00:48<00:15,  3.17it/s] 76%|███████▋  | 153/200 [00:48<00:14,  3.16it/s] 77%|███████▋  | 154/200 [00:49<00:14,  3.17it/s] 78%|███████▊  | 155/200 [00:49<00:14,  3.17it/s] 78%|███████▊  | 156/200 [00:49<00:13,  3.18it/s] 78%|███████▊  | 157/200 [00:49<00:13,  3.17it/s] 79%|███████▉  | 158/200 [00:50<00:13,  3.17it/s] 80%|███████▉  | 159/200 [00:50<00:12,  3.17it/s] 80%|████████  | 160/200 [00:50<00:12,  3.17it/s] 80%|████████  | 161/200 [00:51<00:12,  3.17it/s] 81%|████████  | 162/200 [00:51<00:11,  3.18it/s] 82%|████████▏ | 163/200 [00:51<00:11,  3.18it/s] 82%|████████▏ | 164/200 [00:52<00:11,  3.17it/s] 82%|████████▎ | 165/200 [00:52<00:11,  3.18it/s] 83%|████████▎ | 166/200 [00:52<00:10,  3.17it/s] 84%|████████▎ | 167/200 [00:53<00:10,  3.18it/s] 84%|████████▍ | 168/200 [00:53<00:10,  3.17it/s] 84%|████████▍ | 169/200 [00:53<00:09,  3.18it/s] 85%|████████▌ | 170/200 [00:54<00:09,  3.18it/s] 86%|████████▌ | 171/200 [00:54<00:09,  3.18it/s] 86%|████████▌ | 172/200 [00:54<00:08,  3.17it/s] 86%|████████▋ | 173/200 [00:55<00:08,  3.17it/s] 87%|████████▋ | 174/200 [00:55<00:08,  3.17it/s] 88%|████████▊ | 175/200 [00:55<00:07,  3.17it/s] 88%|████████▊ | 176/200 [00:55<00:07,  3.17it/s] 88%|████████▊ | 177/200 [00:56<00:07,  3.17it/s] 89%|████████▉ | 178/200 [00:56<00:06,  3.17it/s] 90%|████████▉ | 179/200 [00:56<00:06,  3.16it/s] 90%|█████████ | 180/200 [00:57<00:06,  3.16it/s] 90%|█████████ | 181/200 [00:57<00:06,  3.16it/s] 91%|█████████ | 182/200 [00:57<00:05,  3.16it/s] 92%|█████████▏| 183/200 [00:58<00:05,  3.16it/s] 92%|█████████▏| 184/200 [00:58<00:05,  3.16it/s] 92%|█████████▎| 185/200 [00:58<00:04,  3.16it/s] 93%|█████████▎| 186/200 [00:59<00:04,  3.16it/s] 94%|█████████▎| 187/200 [00:59<00:04,  3.16it/s] 94%|█████████▍| 188/200 [00:59<00:03,  3.17it/s] 94%|█████████▍| 189/200 [01:00<00:03,  3.17it/s] 95%|█████████▌| 190/200 [01:00<00:03,  3.16it/s] 96%|█████████▌| 191/200 [01:00<00:02,  3.17it/s] 96%|█████████▌| 192/200 [01:01<00:02,  3.17it/s] 96%|█████████▋| 193/200 [01:01<00:02,  3.17it/s] 97%|█████████▋| 194/200 [01:01<00:01,  3.16it/s] 98%|█████████▊| 195/200 [01:01<00:01,  3.16it/s] 98%|█████████▊| 196/200 [01:02<00:01,  3.16it/s] 98%|█████████▊| 197/200 [01:02<00:00,  3.15it/s] 99%|█████████▉| 198/200 [01:02<00:00,  3.15it/s]100%|█████████▉| 199/200 [01:03<00:00,  3.15it/s]100%|██████████| 200/200 [01:03<00:00,  3.15it/s]100%|██████████| 200/200 [01:03<00:00,  3.15it/s]
+[01/05/24 03:31:02] INFO     2024-01-05 03:31:02,603     data_wrangle_run.py:432
+                             [data_wrangle_run] [INFO]                          
+                             Batch inference run end.                           
+                             Elapsed: 63.78 s;                                  
+                    INFO     2024-01-05 03:31:02,605     data_wrangle_run.py:433
+                             [data_wrangle_run] [INFO]                          
+                             Output throughput: 9.41                            
+                             token/s;                                           
+                    INFO     2024-01-05 03:31:02,606     data_wrangle_run.py:434
+                             [data_wrangle_run] [INFO]                          
+                             Total throughput: 4004.39                          
+                             token/s;                                           
+                    INFO     2024-01-05 03:31:02,608     data_wrangle_run.py:443
+                             [data_wrangle_run] [INFO]                          
+                             Metrics Trial 0                                    
+                             Prec: 0.094 Recall: 0.200                          
+                             Acc: 0.795 F1: 0.038                               
+                             <FlexGen> time: 63.780                             
+                             <FlexGen> output                                   
+                             throughput: 9.407                                  
+                             <FlexGen> total throughput:                        
+                             4004.387                                           
+                    INFO     2024-01-05 03:31:02,610     data_wrangle_run.py:473
+                             [data_wrangle_run] [INFO]                          
+                             Saved to outputs/DBLP-ACM/t                        
+                             est/default/1k_0inst_0cb_ma                        
+                             nual_facebook/opt-6.7b_200r                        
+                             un_0dry/trial_0.feather                            
+                    INFO     2024-01-05 03:31:02,622     data_wrangle_run.py:485
+                             [data_wrangle_run] [INFO]                          
+                             Final Metrics {                                    
+                                 "prec": [                                      
+                                     0.09375                                    
+                                 ],                                             
+                                 "rec": [                                       
+                                     0.2                                        
+                                 ],                                             
+                                 "f1": [                                        
+                                     0.03750000000000000                        
+                             6                                                  
+                                 ],                                             
+                                 "acc": [                                       
+                                     0.795                                      
+                                 ],                                             
+                                 "total_time": [                                
+                                     63.78004717826843                          
+                                 ],                                             
+                                 "output_throughput": [                         
+                                     9.407330764791846                          
+                                 ],                                             
+                                 "total_throughput": [                          
+                                     4004.387128879729                          
+                                 ],                                             
+                                 "prec_avg": 0.09375,                           
+                                 "prec_std": 0.0,                               
+                                 "rec_avg": 0.2,                                
+                                 "rec_std": 0.0,                                
+                                 "f1_avg":                                      
+                             0.037500000000000006,                              
+                                 "f1_std": 0.0,                                 
+                                 "acc_avg": 0.795,                              
+                                 "acc_std": 0.0,                                
+                                 "total_time_avg":                              
+                             63.78004717826843,                                 
+                                 "total_time_std": 0.0,                         
+                                 "output_throughput_avg"                        
+                             : 9.407330764791846,                               
+                                 "output_throughput_std"                        
+                             : 0.0,                                             
+                                 "total_throughput_avg":                        
+                             4004.387128879729,                                 
+                                 "total_throughput_std":                        
+                             0.0                                                
+                             }                                                  
+                    INFO     2024-01-05 03:31:02,633     data_wrangle_run.py:486
+                             [data_wrangle_run] [INFO]                          
+                             Metrics dumped to outputs/D                        
+                             BLP-ACM/test/default/1k_0in                        
+                             st_0cb_manual_facebook/opt-                        
+                             6.7b_200run_0dry/metrics.js                        
+                             on                                                 
+                    INFO     2024-01-05 03:31:02,636     data_wrangle_run.py:488
+                             [data_wrangle_run] [INFO]                          
+                             Shutdown FlexGen...                                
+2024-01-05 03:31:04: Starting batch#7...
+/home/bing/llm-queue/build/FlexGen-main/flexgen/apps/data_wrangle/data/datasets
+[01/05/24 03:31:05] INFO     2024-01-05 03:31:05,730     data_wrangle_run.py:500
+                             [data_wrangle_run] [INFO] {                        
+                                 "data_dir": "/home/bing                        
+                             /llm-queue/build/FlexGen-ma                        
+                             in/flexgen/apps/data_wrangl                        
+                             e/data/datasets/entity_matc                        
+                             hing/structured/DBLP-Google                        
+                             Scholar",                                          
+                                 "output_dir":                                  
+                             "outputs",                                         
+                                 "cache_name": "sqlite",                        
+                                 "cache_connection":                            
+                             "fm_data_tasks.sqlite",                            
+                                 "client_name":                                 
+                             "openai",                                          
+                                 "client_connection":                           
+                             null,                                              
+                                 "run_tag": "default",                          
+                                 "overwrite_cache":                             
+                             false,                                             
+                                 "k": 1,                                        
+                                 "sample_method":                               
+                             "manual",                                          
+                                 "seed": 1234,                                  
+                                 "class_balanced":                              
+                             false,                                             
+                                 "sep_tok": ".",                                
+                                 "nan_tok": "",                                 
+                                 "num_run": 200,                                
+                                 "num_trials": 1,                               
+                                 "num_print": 10,                               
+                                 "add_task_instruction":                        
+                             false,                                             
+                                 "task_instruction_idx":                        
+                             0,                                                 
+                                 "do_test": true,                               
+                                 "dry_run": false,                              
+                                 "stop_token": "\n",                            
+                                 "temperature": 0.0,                            
+                                 "max_tokens": 3,                               
+                                 "batch_run": true,                             
+                                 "pad_to_seq_len": 1209,                        
+                                 "model":                                       
+                             "facebook/opt-6.7b",                               
+                                 "path":                                        
+                             "~/opt_weights",                                   
+                                 "run_path": "runs",                            
+                                 "offload_dir":                                 
+                             "~/flexgen_offload_dir",                           
+                                 "gpu_batch_size": 1,                           
+                                 "num_gpu_batches": 1,                          
+                                 "percent": [                                   
+                                     100,                                       
+                                     0,                                         
+                                     100,                                       
+                                     0,                                         
+                                     100,                                       
+                                     0                                          
+                                 ],                                             
+                                 "pin_weight": true,                            
+                                 "cpu_cache_compute":                           
+                             false,                                             
+                                 "compress_weight":                             
+                             false,                                             
+                                 "compress_cache": false                        
+                             }                                                  
+                    INFO     2024-01-05 03:31:05,736           data_utils.py:334
+                             [data_utils] [INFO] Processing /h                  
+                             ome/bing/llm-queue/build/FlexGen-                  
+                             main/flexgen/apps/data_wrangle/da                  
+                             ta/datasets/entity_matching/struc                  
+                             tured/DBLP-GoogleScholar                           
+[01/05/24 03:31:08] INFO     2024-01-05 03:31:08,697     data_wrangle_run.py:523
+                             [data_wrangle_run] [INFO]                          
+                             Using 0 instruction idx                            
+                    INFO     2024-01-05 03:31:08,698     data_wrangle_run.py:530
+                             [data_wrangle_run] [INFO]                          
+                             Train shape is 17223                               
+                    INFO     2024-01-05 03:31:08,699     data_wrangle_run.py:531
+                             [data_wrangle_run] [INFO]                          
+                             Test shape is 5742                                 
+                    INFO     2024-01-05 03:31:08,700     data_wrangle_run.py:532
+                             [data_wrangle_run] [INFO]                          
+                             Running 200 examples for 1                         
+                             trials.                                            
+                    INFO     2024-01-05 03:31:08,701     data_wrangle_run.py:535
+                             [data_wrangle_run] [INFO]                          
+                             Call batch_query_test                              
+                    INFO     2024-01-05 03:31:08,995     data_wrangle_run.py:345
+                             [data_wrangle_run] [INFO]                          
+                             Init weights begin.                                
+[01/05/24 03:31:17] INFO     2024-01-05 03:31:17,451     data_wrangle_run.py:348
+                             [data_wrangle_run] [INFO]                          
+                             Init weights end. Elapsed:                         
+                             8.45 s.                                            
+                    INFO     2024-01-05 03:31:17,907     data_wrangle_run.py:400
+                             [data_wrangle_run] [INFO]                          
+                             max_prompt_seq_length: 1209                        
+  0%|          | 0/200 [00:00<?, ?it/s]  0%|          | 1/200 [00:01<04:03,  1.22s/it]  1%|          | 2/200 [00:01<02:15,  1.46it/s]  2%|▏         | 3/200 [00:01<01:41,  1.93it/s]  2%|▏         | 4/200 [00:02<01:25,  2.28it/s]  2%|▎         | 5/200 [00:02<01:16,  2.54it/s]  3%|▎         | 6/200 [00:02<01:11,  2.72it/s]  4%|▎         | 7/200 [00:03<01:07,  2.86it/s]  4%|▍         | 8/200 [00:03<01:05,  2.95it/s]  4%|▍         | 9/200 [00:03<01:03,  3.01it/s]  5%|▌         | 10/200 [00:04<01:02,  3.06it/s]  6%|▌         | 11/200 [00:04<01:01,  3.09it/s]  6%|▌         | 12/200 [00:04<01:00,  3.11it/s]  6%|▋         | 13/200 [00:05<00:59,  3.12it/s]  7%|▋         | 14/200 [00:05<00:59,  3.14it/s]  8%|▊         | 15/200 [00:05<00:58,  3.15it/s]  8%|▊         | 16/200 [00:05<00:58,  3.15it/s]  8%|▊         | 17/200 [00:06<00:57,  3.16it/s]  9%|▉         | 18/200 [00:06<00:57,  3.16it/s] 10%|▉         | 19/200 [00:06<00:57,  3.16it/s] 10%|█         | 20/200 [00:07<00:57,  3.16it/s] 10%|█         | 21/200 [00:07<00:56,  3.16it/s] 11%|█         | 22/200 [00:07<00:56,  3.16it/s] 12%|█▏        | 23/200 [00:08<00:56,  3.16it/s] 12%|█▏        | 24/200 [00:08<00:55,  3.16it/s] 12%|█▎        | 25/200 [00:08<00:55,  3.16it/s] 13%|█▎        | 26/200 [00:09<00:54,  3.17it/s] 14%|█▎        | 27/200 [00:09<00:54,  3.16it/s] 14%|█▍        | 28/200 [00:09<00:54,  3.16it/s] 14%|█▍        | 29/200 [00:10<00:54,  3.16it/s] 15%|█▌        | 30/200 [00:10<00:53,  3.16it/s] 16%|█▌        | 31/200 [00:10<00:53,  3.16it/s] 16%|█▌        | 32/200 [00:11<00:53,  3.15it/s] 16%|█▋        | 33/200 [00:11<00:52,  3.15it/s] 17%|█▋        | 34/200 [00:11<00:52,  3.15it/s] 18%|█▊        | 35/200 [00:11<00:52,  3.16it/s] 18%|█▊        | 36/200 [00:12<00:51,  3.16it/s] 18%|█▊        | 37/200 [00:12<00:51,  3.16it/s] 19%|█▉        | 38/200 [00:12<00:51,  3.15it/s] 20%|█▉        | 39/200 [00:13<00:50,  3.16it/s] 20%|██        | 40/200 [00:13<00:50,  3.17it/s] 20%|██        | 41/200 [00:13<00:50,  3.16it/s] 21%|██        | 42/200 [00:14<00:50,  3.15it/s] 22%|██▏       | 43/200 [00:14<00:49,  3.16it/s] 22%|██▏       | 44/200 [00:14<00:49,  3.16it/s] 22%|██▎       | 45/200 [00:15<00:49,  3.15it/s] 23%|██▎       | 46/200 [00:15<00:48,  3.15it/s] 24%|██▎       | 47/200 [00:15<00:48,  3.15it/s] 24%|██▍       | 48/200 [00:16<00:48,  3.15it/s] 24%|██▍       | 49/200 [00:16<00:47,  3.15it/s] 25%|██▌       | 50/200 [00:16<00:47,  3.15it/s] 26%|██▌       | 51/200 [00:17<00:47,  3.15it/s] 26%|██▌       | 52/200 [00:17<00:46,  3.15it/s] 26%|██▋       | 53/200 [00:17<00:46,  3.15it/s] 27%|██▋       | 54/200 [00:17<00:46,  3.16it/s] 28%|██▊       | 55/200 [00:18<00:45,  3.16it/s] 28%|██▊       | 56/200 [00:18<00:45,  3.15it/s] 28%|██▊       | 57/200 [00:18<00:45,  3.15it/s] 29%|██▉       | 58/200 [00:19<00:45,  3.15it/s] 30%|██▉       | 59/200 [00:19<00:44,  3.16it/s] 30%|███       | 60/200 [00:19<00:44,  3.15it/s] 30%|███       | 61/200 [00:20<00:44,  3.15it/s] 31%|███       | 62/200 [00:20<00:43,  3.15it/s] 32%|███▏      | 63/200 [00:20<00:43,  3.15it/s] 32%|███▏      | 64/200 [00:21<00:43,  3.14it/s] 32%|███▎      | 65/200 [00:21<00:42,  3.14it/s] 33%|███▎      | 66/200 [00:21<00:42,  3.15it/s] 34%|███▎      | 67/200 [00:22<00:42,  3.15it/s] 34%|███▍      | 68/200 [00:22<00:41,  3.15it/s] 34%|███▍      | 69/200 [00:22<00:41,  3.15it/s] 35%|███▌      | 70/200 [00:23<00:41,  3.16it/s] 36%|███▌      | 71/200 [00:23<00:40,  3.15it/s] 36%|███▌      | 72/200 [00:23<00:40,  3.15it/s] 36%|███▋      | 73/200 [00:24<00:40,  3.16it/s] 37%|███▋      | 74/200 [00:24<00:39,  3.15it/s] 38%|███▊      | 75/200 [00:24<00:39,  3.14it/s] 38%|███▊      | 76/200 [00:24<00:39,  3.15it/s] 38%|███▊      | 77/200 [00:25<00:38,  3.15it/s] 39%|███▉      | 78/200 [00:25<00:38,  3.15it/s] 40%|███▉      | 79/200 [00:25<00:38,  3.14it/s] 40%|████      | 80/200 [00:26<00:38,  3.15it/s] 40%|████      | 81/200 [00:26<00:37,  3.15it/s] 41%|████      | 82/200 [00:26<00:37,  3.15it/s] 42%|████▏     | 83/200 [00:27<00:37,  3.15it/s] 42%|████▏     | 84/200 [00:27<00:36,  3.15it/s] 42%|████▎     | 85/200 [00:27<00:36,  3.14it/s] 43%|████▎     | 86/200 [00:28<00:36,  3.15it/s] 44%|████▎     | 87/200 [00:28<00:35,  3.15it/s] 44%|████▍     | 88/200 [00:28<00:35,  3.15it/s] 44%|████▍     | 89/200 [00:29<00:35,  3.15it/s] 45%|████▌     | 90/200 [00:29<00:35,  3.14it/s] 46%|████▌     | 91/200 [00:29<00:34,  3.14it/s] 46%|████▌     | 92/200 [00:30<00:34,  3.14it/s] 46%|████▋     | 93/200 [00:30<00:34,  3.14it/s] 47%|████▋     | 94/200 [00:30<00:33,  3.15it/s] 48%|████▊     | 95/200 [00:31<00:33,  3.15it/s] 48%|████▊     | 96/200 [00:31<00:33,  3.14it/s] 48%|████▊     | 97/200 [00:31<00:32,  3.14it/s] 49%|████▉     | 98/200 [00:31<00:32,  3.15it/s] 50%|████▉     | 99/200 [00:32<00:32,  3.15it/s] 50%|█████     | 100/200 [00:32<00:31,  3.14it/s] 50%|█████     | 101/200 [00:32<00:31,  3.14it/s] 51%|█████     | 102/200 [00:33<00:31,  3.14it/s] 52%|█████▏    | 103/200 [00:33<00:30,  3.14it/s] 52%|█████▏    | 104/200 [00:33<00:30,  3.14it/s] 52%|█████▎    | 105/200 [00:34<00:30,  3.14it/s] 53%|█████▎    | 106/200 [00:34<00:29,  3.15it/s] 54%|█████▎    | 107/200 [00:34<00:29,  3.14it/s] 54%|█████▍    | 108/200 [00:35<00:29,  3.14it/s] 55%|█████▍    | 109/200 [00:35<00:28,  3.15it/s] 55%|█████▌    | 110/200 [00:35<00:28,  3.14it/s] 56%|█████▌    | 111/200 [00:36<00:28,  3.14it/s] 56%|█████▌    | 112/200 [00:36<00:28,  3.14it/s] 56%|█████▋    | 113/200 [00:36<00:27,  3.14it/s] 57%|█████▋    | 114/200 [00:37<00:27,  3.14it/s] 57%|█████▊    | 115/200 [00:37<00:27,  3.13it/s] 58%|█████▊    | 116/200 [00:37<00:26,  3.13it/s] 58%|█████▊    | 117/200 [00:38<00:26,  3.14it/s] 59%|█████▉    | 118/200 [00:38<00:26,  3.14it/s] 60%|█████▉    | 119/200 [00:38<00:25,  3.15it/s] 60%|██████    | 120/200 [00:38<00:25,  3.14it/s] 60%|██████    | 121/200 [00:39<00:25,  3.14it/s] 61%|██████    | 122/200 [00:39<00:24,  3.14it/s] 62%|██████▏   | 123/200 [00:39<00:24,  3.13it/s] 62%|██████▏   | 124/200 [00:40<00:24,  3.14it/s] 62%|██████▎   | 125/200 [00:40<00:23,  3.14it/s] 63%|██████▎   | 126/200 [00:40<00:23,  3.13it/s] 64%|██████▎   | 127/200 [00:41<00:23,  3.13it/s] 64%|██████▍   | 128/200 [00:41<00:23,  3.13it/s] 64%|██████▍   | 129/200 [00:41<00:22,  3.13it/s] 65%|██████▌   | 130/200 [00:42<00:22,  3.13it/s] 66%|██████▌   | 131/200 [00:42<00:22,  3.13it/s] 66%|██████▌   | 132/200 [00:42<00:21,  3.13it/s] 66%|██████▋   | 133/200 [00:43<00:21,  3.13it/s] 67%|██████▋   | 134/200 [00:43<00:21,  3.13it/s] 68%|██████▊   | 135/200 [00:43<00:20,  3.13it/s] 68%|██████▊   | 136/200 [00:44<00:20,  3.13it/s] 68%|██████▊   | 137/200 [00:44<00:20,  3.13it/s] 69%|██████▉   | 138/200 [00:44<00:19,  3.13it/s] 70%|██████▉   | 139/200 [00:45<00:19,  3.13it/s] 70%|███████   | 140/200 [00:45<00:19,  3.13it/s] 70%|███████   | 141/200 [00:45<00:18,  3.13it/s] 71%|███████   | 142/200 [00:46<00:18,  3.13it/s] 72%|███████▏  | 143/200 [00:46<00:18,  3.13it/s] 72%|███████▏  | 144/200 [00:46<00:17,  3.13it/s] 72%|███████▎  | 145/200 [00:46<00:17,  3.13it/s] 73%|███████▎  | 146/200 [00:47<00:17,  3.13it/s] 74%|███████▎  | 147/200 [00:47<00:16,  3.13it/s] 74%|███████▍  | 148/200 [00:47<00:16,  3.13it/s] 74%|███████▍  | 149/200 [00:48<00:16,  3.12it/s] 75%|███████▌  | 150/200 [00:48<00:15,  3.13it/s] 76%|███████▌  | 151/200 [00:48<00:15,  3.12it/s] 76%|███████▌  | 152/200 [00:49<00:15,  3.12it/s] 76%|███████▋  | 153/200 [00:49<00:15,  3.13it/s] 77%|███████▋  | 154/200 [00:49<00:14,  3.13it/s] 78%|███████▊  | 155/200 [00:50<00:14,  3.12it/s] 78%|███████▊  | 156/200 [00:50<00:14,  3.13it/s] 78%|███████▊  | 157/200 [00:50<00:13,  3.13it/s] 79%|███████▉  | 158/200 [00:51<00:13,  3.12it/s] 80%|███████▉  | 159/200 [00:51<00:13,  3.12it/s] 80%|████████  | 160/200 [00:51<00:12,  3.12it/s] 80%|████████  | 161/200 [00:52<00:12,  3.12it/s] 81%|████████  | 162/200 [00:52<00:12,  3.12it/s] 82%|████████▏ | 163/200 [00:52<00:11,  3.12it/s] 82%|████████▏ | 164/200 [00:53<00:11,  3.12it/s] 82%|████████▎ | 165/200 [00:53<00:11,  3.13it/s] 83%|████████▎ | 166/200 [00:53<00:10,  3.12it/s] 84%|████████▎ | 167/200 [00:54<00:10,  3.12it/s] 84%|████████▍ | 168/200 [00:54<00:10,  3.12it/s] 84%|████████▍ | 169/200 [00:54<00:09,  3.12it/s] 85%|████████▌ | 170/200 [00:54<00:09,  3.12it/s] 86%|████████▌ | 171/200 [00:55<00:09,  3.12it/s] 86%|████████▌ | 172/200 [00:55<00:08,  3.12it/s] 86%|████████▋ | 173/200 [00:55<00:08,  3.12it/s] 87%|████████▋ | 174/200 [00:56<00:08,  3.12it/s] 88%|████████▊ | 175/200 [00:56<00:08,  3.12it/s] 88%|████████▊ | 176/200 [00:56<00:07,  3.12it/s] 88%|████████▊ | 177/200 [00:57<00:07,  3.12it/s] 89%|████████▉ | 178/200 [00:57<00:07,  3.11it/s] 90%|████████▉ | 179/200 [00:57<00:06,  3.12it/s] 90%|█████████ | 180/200 [00:58<00:06,  3.12it/s] 90%|█████████ | 181/200 [00:58<00:06,  3.12it/s] 91%|█████████ | 182/200 [00:58<00:05,  3.12it/s] 92%|█████████▏| 183/200 [00:59<00:05,  3.12it/s] 92%|█████████▏| 184/200 [00:59<00:05,  3.12it/s] 92%|█████████▎| 185/200 [00:59<00:04,  3.12it/s] 93%|█████████▎| 186/200 [01:00<00:04,  3.12it/s] 94%|█████████▎| 187/200 [01:00<00:04,  3.12it/s] 94%|█████████▍| 188/200 [01:00<00:03,  3.12it/s] 94%|█████████▍| 189/200 [01:01<00:03,  3.12it/s] 95%|█████████▌| 190/200 [01:01<00:03,  3.12it/s] 96%|█████████▌| 191/200 [01:01<00:02,  3.12it/s] 96%|█████████▌| 192/200 [01:02<00:02,  3.12it/s] 96%|█████████▋| 193/200 [01:02<00:02,  3.13it/s] 97%|█████████▋| 194/200 [01:02<00:01,  3.13it/s] 98%|█████████▊| 195/200 [01:02<00:01,  3.12it/s] 98%|█████████▊| 196/200 [01:03<00:01,  3.12it/s] 98%|█████████▊| 197/200 [01:03<00:00,  3.12it/s] 99%|█████████▉| 198/200 [01:03<00:00,  3.12it/s]100%|█████████▉| 199/200 [01:04<00:00,  3.12it/s]100%|██████████| 200/200 [01:04<00:00,  3.12it/s]100%|██████████| 200/200 [01:04<00:00,  3.10it/s]
+[01/05/24 03:32:22] INFO     2024-01-05 03:32:22,725     data_wrangle_run.py:432
+                             [data_wrangle_run] [INFO]                          
+                             Batch inference run end.                           
+                             Elapsed: 64.82 s;                                  
+                    INFO     2024-01-05 03:32:22,727     data_wrangle_run.py:433
+                             [data_wrangle_run] [INFO]                          
+                             Output throughput: 9.26                            
+                             token/s;                                           
+                    INFO     2024-01-05 03:32:22,728     data_wrangle_run.py:434
+                             [data_wrangle_run] [INFO]                          
+                             Total throughput: 3739.75                          
+                             token/s;                                           
+                    INFO     2024-01-05 03:32:22,730     data_wrangle_run.py:443
+                             [data_wrangle_run] [INFO]                          
+                             Metrics Trial 0                                    
+                             Prec: 0.000 Recall: 0.000                          
+                             Acc: 0.940 F1: 0.000                               
+                             <FlexGen> time: 64.817                             
+                             <FlexGen> output                                   
+                             throughput: 9.257                                  
+                             <FlexGen> total throughput:                        
+                             3739.753                                           
+                    INFO     2024-01-05 03:32:22,732     data_wrangle_run.py:473
+                             [data_wrangle_run] [INFO]                          
+                             Saved to outputs/DBLP-Googl                        
+                             eScholar/test/default/1k_0i                        
+                             nst_0cb_manual_facebook/opt                        
+                             -6.7b_200run_0dry/trial_0.f                        
+                             eather                                             
+                    INFO     2024-01-05 03:32:22,743     data_wrangle_run.py:485
+                             [data_wrangle_run] [INFO]                          
+                             Final Metrics {                                    
+                                 "prec": [                                      
+                                     0.0                                        
+                                 ],                                             
+                                 "rec": [                                       
+                                     0.0                                        
+                                 ],                                             
+                                 "f1": [                                        
+                                     0.0                                        
+                                 ],                                             
+                                 "acc": [                                       
+                                     0.94                                       
+                                 ],                                             
+                                 "total_time": [                                
+                                     64.81711602210999                          
+                                 ],                                             
+                                 "output_throughput": [                         
+                                     9.256814200053762                          
+                                 ],                                             
+                                 "total_throughput": [                          
+                                     3739.75293682172                           
+                                 ],                                             
+                                 "prec_avg": 0.0,                               
+                                 "prec_std": 0.0,                               
+                                 "rec_avg": 0.0,                                
+                                 "rec_std": 0.0,                                
+                                 "f1_avg": 0.0,                                 
+                                 "f1_std": 0.0,                                 
+                                 "acc_avg": 0.94,                               
+                                 "acc_std": 0.0,                                
+                                 "total_time_avg":                              
+                             64.81711602210999,                                 
+                                 "total_time_std": 0.0,                         
+                                 "output_throughput_avg"                        
+                             : 9.256814200053762,                               
+                                 "output_throughput_std"                        
+                             : 0.0,                                             
+                                 "total_throughput_avg":                        
+                             3739.75293682172,                                  
+                                 "total_throughput_std":                        
+                             0.0                                                
+                             }                                                  
+                    INFO     2024-01-05 03:32:22,746     data_wrangle_run.py:486
+                             [data_wrangle_run] [INFO]                          
+                             Metrics dumped to outputs/D                        
+                             BLP-GoogleScholar/test/defa                        
+                             ult/1k_0inst_0cb_manual_fac                        
+                             ebook/opt-6.7b_200run_0dry/                        
+                             metrics.json                                       
+                    INFO     2024-01-05 03:32:22,747     data_wrangle_run.py:488
+                             [data_wrangle_run] [INFO]                          
+                             Shutdown FlexGen...                                
+2024-01-05 03:32:24: Starting batch#8...
+/home/bing/llm-queue/build/FlexGen-main/flexgen/apps/data_wrangle/data/datasets
+[01/05/24 03:32:25] INFO     2024-01-05 03:32:25,887     data_wrangle_run.py:500
+                             [data_wrangle_run] [INFO] {                        
+                                 "data_dir": "/home/bing                        
+                             /llm-queue/build/FlexGen-ma                        
+                             in/flexgen/apps/data_wrangl                        
+                             e/data/datasets/data_imputa                        
+                             tion/Restaurant",                                  
+                                 "output_dir":                                  
+                             "outputs",                                         
+                                 "cache_name": "sqlite",                        
+                                 "cache_connection":                            
+                             "fm_data_tasks.sqlite",                            
+                                 "client_name":                                 
+                             "openai",                                          
+                                 "client_connection":                           
+                             null,                                              
+                                 "run_tag": "default",                          
+                                 "overwrite_cache":                             
+                             false,                                             
+                                 "k": 1,                                        
+                                 "sample_method":                               
+                             "manual",                                          
+                                 "seed": 1234,                                  
+                                 "class_balanced":                              
+                             false,                                             
+                                 "sep_tok": ".",                                
+                                 "nan_tok": "nan",                              
+                                 "num_run": 86,                                 
+                                 "num_trials": 1,                               
+                                 "num_print": 10,                               
+                                 "add_task_instruction":                        
+                             false,                                             
+                                 "task_instruction_idx":                        
+                             0,                                                 
+                                 "do_test": true,                               
+                                 "dry_run": false,                              
+                                 "stop_token": "\n",                            
+                                 "temperature": 0.0,                            
+                                 "max_tokens": 5,                               
+                                 "batch_run": true,                             
+                                 "pad_to_seq_len": 123,                         
+                                 "model":                                       
+                             "facebook/opt-6.7b",                               
+                                 "path":                                        
+                             "~/opt_weights",                                   
+                                 "run_path": "runs",                            
+                                 "offload_dir":                                 
+                             "~/flexgen_offload_dir",                           
+                                 "gpu_batch_size": 8,                           
+                                 "num_gpu_batches": 1,                          
+                                 "percent": [                                   
+                                     100,                                       
+                                     0,                                         
+                                     100,                                       
+                                     0,                                         
+                                     100,                                       
+                                     0                                          
+                                 ],                                             
+                                 "pin_weight": true,                            
+                                 "cpu_cache_compute":                           
+                             false,                                             
+                                 "compress_weight":                             
+                             false,                                             
+                                 "compress_cache": false                        
+                             }                                                  
+                    INFO     2024-01-05 03:32:25,893           data_utils.py:334
+                             [data_utils] [INFO] Processing /h                  
+                             ome/bing/llm-queue/build/FlexGen-                  
+                             main/flexgen/apps/data_wrangle/da                  
+                             ta/datasets/data_imputation/Resta                  
+                             urant                                              
+                    INFO     2024-01-05 03:32:25,940     data_wrangle_run.py:523
+                             [data_wrangle_run] [INFO]                          
+                             Using 0 instruction idx                            
+                    INFO     2024-01-05 03:32:25,941     data_wrangle_run.py:530
+                             [data_wrangle_run] [INFO]                          
+                             Train shape is 622                                 
+                    INFO     2024-01-05 03:32:25,942     data_wrangle_run.py:531
+                             [data_wrangle_run] [INFO]                          
+                             Test shape is 86                                   
+                    INFO     2024-01-05 03:32:25,943     data_wrangle_run.py:532
+                             [data_wrangle_run] [INFO]                          
+                             Running 86 examples for 1                          
+                             trials.                                            
+                    INFO     2024-01-05 03:32:25,944     data_wrangle_run.py:535
+                             [data_wrangle_run] [INFO]                          
+                             Call batch_query_test                              
+[01/05/24 03:32:26] INFO     2024-01-05 03:32:26,210     data_wrangle_run.py:345
+                             [data_wrangle_run] [INFO]                          
+                             Init weights begin.                                
+[01/05/24 03:32:34] INFO     2024-01-05 03:32:34,521     data_wrangle_run.py:348
+                             [data_wrangle_run] [INFO]                          
+                             Init weights end. Elapsed:                         
+                             8.31 s.                                            
+                    INFO     2024-01-05 03:32:34,566     data_wrangle_run.py:400
+                             [data_wrangle_run] [INFO]                          
+                             max_prompt_seq_length: 124                         
+  0%|          | 0/10 [00:00<?, ?it/s] 10%|█         | 1/10 [00:01<00:10,  1.21s/it] 20%|██        | 2/10 [00:01<00:05,  1.48it/s] 30%|███       | 3/10 [00:01<00:03,  2.01it/s] 40%|████      | 4/10 [00:02<00:02,  2.41it/s] 50%|█████     | 5/10 [00:02<00:01,  2.71it/s] 60%|██████    | 6/10 [00:02<00:01,  2.91it/s] 70%|███████   | 7/10 [00:02<00:00,  3.07it/s] 80%|████████  | 8/10 [00:03<00:00,  3.18it/s] 90%|█████████ | 9/10 [00:03<00:00,  3.26it/s]100%|██████████| 10/10 [00:03<00:00,  3.30it/s]100%|██████████| 10/10 [00:03<00:00,  2.61it/s]
+[01/05/24 03:32:38] INFO     2024-01-05 03:32:38,414     data_wrangle_run.py:432
+                             [data_wrangle_run] [INFO]                          
+                             Batch inference run end.                           
+                             Elapsed: 3.85 s;                                   
+                    INFO     2024-01-05 03:32:38,415     data_wrangle_run.py:433
+                             [data_wrangle_run] [INFO]                          
+                             Output throughput: 104.01                          
+                             token/s;                                           
+                    INFO     2024-01-05 03:32:38,416     data_wrangle_run.py:434
+                             [data_wrangle_run] [INFO]                          
+                             Total throughput: 2683.45                          
+                             token/s;                                           
+                    INFO     2024-01-05 03:32:38,419     data_wrangle_run.py:443
+                             [data_wrangle_run] [INFO]                          
+                             Metrics Trial 0                                    
+                             Prec: 0.000 Recall: 0.000                          
+                             Acc: 0.475 F1: 0.000                               
+                             <FlexGen> time: 3.846                              
+                             <FlexGen> output                                   
+                             throughput: 104.010                                
+                             <FlexGen> total throughput:                        
+                             2683.449                                           
+                    INFO     2024-01-05 03:32:38,420     data_wrangle_run.py:473
+                             [data_wrangle_run] [INFO]                          
+                             Saved to outputs/Restaurant                        
+                             /test/default/1k_0inst_0cb_                        
+                             manual_facebook/opt-6.7b_80                        
+                             run_0dry/trial_0.feather                           
+                    INFO     2024-01-05 03:32:38,428     data_wrangle_run.py:485
+                             [data_wrangle_run] [INFO]                          
+                             Final Metrics {                                    
+                                 "prec": [                                      
+                                     0.0                                        
+                                 ],                                             
+                                 "rec": [                                       
+                                     0.0                                        
+                                 ],                                             
+                                 "f1": [                                        
+                                     0.0                                        
+                                 ],                                             
+                                 "acc": [                                       
+                                     0.475                                      
+                                 ],                                             
+                                 "total_time": [                                
+                                     3.845796585083008                          
+                                 ],                                             
+                                 "output_throughput": [                         
+                                     104.00966123676726                         
+                                 ],                                             
+                                 "total_throughput": [                          
+                                     2683.449259908595                          
+                                 ],                                             
+                                 "prec_avg": 0.0,                               
+                                 "prec_std": 0.0,                               
+                                 "rec_avg": 0.0,                                
+                                 "rec_std": 0.0,                                
+                                 "f1_avg": 0.0,                                 
+                                 "f1_std": 0.0,                                 
+                                 "acc_avg": 0.475,                              
+                                 "acc_std": 0.0,                                
+                                 "total_time_avg":                              
+                             3.845796585083008,                                 
+                                 "total_time_std": 0.0,                         
+                                 "output_throughput_avg"                        
+                             : 104.00966123676726,                              
+                                 "output_throughput_std"                        
+                             : 0.0,                                             
+                                 "total_throughput_avg":                        
+                             2683.449259908595,                                 
+                                 "total_throughput_std":                        
+                             0.0                                                
+                             }                                                  
+                    INFO     2024-01-05 03:32:38,432     data_wrangle_run.py:486
+                             [data_wrangle_run] [INFO]                          
+                             Metrics dumped to outputs/R                        
+                             estaurant/test/default/1k_0                        
+                             inst_0cb_manual_facebook/op                        
+                             t-6.7b_80run_0dry/metrics.j                        
+                             son                                                
+                    INFO     2024-01-05 03:32:38,433     data_wrangle_run.py:488
+                             [data_wrangle_run] [INFO]                          
+                             Shutdown FlexGen...                                
+2024-01-05 03:32:39: Starting batch#9...
+/home/bing/llm-queue/build/FlexGen-main/flexgen/apps/data_wrangle/data/datasets
+[01/05/24 03:32:41] INFO     2024-01-05 03:32:41,598     data_wrangle_run.py:500
+                             [data_wrangle_run] [INFO] {                        
+                                 "data_dir": "/home/bing                        
+                             /llm-queue/build/FlexGen-ma                        
+                             in/flexgen/apps/data_wrangl                        
+                             e/data/datasets/data_imputa                        
+                             tion/Buy",                                         
+                                 "output_dir":                                  
+                             "outputs",                                         
+                                 "cache_name": "sqlite",                        
+                                 "cache_connection":                            
+                             "fm_data_tasks.sqlite",                            
+                                 "client_name":                                 
+                             "openai",                                          
+                                 "client_connection":                           
+                             null,                                              
+                                 "run_tag": "default",                          
+                                 "overwrite_cache":                             
+                             false,                                             
+                                 "k": 1,                                        
+                                 "sample_method":                               
+                             "manual",                                          
+                                 "seed": 1234,                                  
+                                 "class_balanced":                              
+                             false,                                             
+                                 "sep_tok": ".",                                
+                                 "nan_tok": "nan",                              
+                                 "num_run": 65,                                 
+                                 "num_trials": 1,                               
+                                 "num_print": 10,                               
+                                 "add_task_instruction":                        
+                             false,                                             
+                                 "task_instruction_idx":                        
+                             0,                                                 
+                                 "do_test": true,                               
+                                 "dry_run": false,                              
+                                 "stop_token": "\n",                            
+                                 "temperature": 0.0,                            
+                                 "max_tokens": 10,                              
+                                 "batch_run": true,                             
+                                 "pad_to_seq_len": 488,                         
+                                 "model":                                       
+                             "facebook/opt-6.7b",                               
+                                 "path":                                        
+                             "~/opt_weights",                                   
+                                 "run_path": "runs",                            
+                                 "offload_dir":                                 
+                             "~/flexgen_offload_dir",                           
+                                 "gpu_batch_size": 2,                           
+                                 "num_gpu_batches": 1,                          
+                                 "percent": [                                   
+                                     100,                                       
+                                     0,                                         
+                                     100,                                       
+                                     0,                                         
+                                     100,                                       
+                                     0                                          
+                                 ],                                             
+                                 "pin_weight": true,                            
+                                 "cpu_cache_compute":                           
+                             false,                                             
+                                 "compress_weight":                             
+                             false,                                             
+                                 "compress_cache": false                        
+                             }                                                  
+                    INFO     2024-01-05 03:32:41,603           data_utils.py:334
+                             [data_utils] [INFO] Processing /h                  
+                             ome/bing/llm-queue/build/FlexGen-                  
+                             main/flexgen/apps/data_wrangle/da                  
+                             ta/datasets/data_imputation/Buy                    
+                    INFO     2024-01-05 03:32:41,628     data_wrangle_run.py:523
+                             [data_wrangle_run] [INFO]                          
+                             Using 0 instruction idx                            
+                    INFO     2024-01-05 03:32:41,629     data_wrangle_run.py:530
+                             [data_wrangle_run] [INFO]                          
+                             Train shape is 469                                 
+                    INFO     2024-01-05 03:32:41,630     data_wrangle_run.py:531
+                             [data_wrangle_run] [INFO]                          
+                             Test shape is 65                                   
+                    INFO     2024-01-05 03:32:41,631     data_wrangle_run.py:532
+                             [data_wrangle_run] [INFO]                          
+                             Running 65 examples for 1                          
+                             trials.                                            
+                    INFO     2024-01-05 03:32:41,632     data_wrangle_run.py:535
+                             [data_wrangle_run] [INFO]                          
+                             Call batch_query_test                              
+                    INFO     2024-01-05 03:32:41,851     data_wrangle_run.py:345
+                             [data_wrangle_run] [INFO]                          
+                             Init weights begin.                                
+[01/05/24 03:32:51] INFO     2024-01-05 03:32:51,094     data_wrangle_run.py:348
+                             [data_wrangle_run] [INFO]                          
+                             Init weights end. Elapsed:                         
+                             9.24 s.                                            
+                    INFO     2024-01-05 03:32:51,143     data_wrangle_run.py:400
+                             [data_wrangle_run] [INFO]                          
+                             max_prompt_seq_length: 489                         
+  0%|          | 0/32 [00:00<?, ?it/s]  3%|▎         | 1/32 [00:01<00:43,  1.40s/it]  6%|▋         | 2/32 [00:01<00:25,  1.19it/s]  9%|▉         | 3/32 [00:02<00:19,  1.52it/s] 12%|█▎        | 4/32 [00:02<00:15,  1.75it/s] 16%|█▌        | 5/32 [00:03<00:14,  1.91it/s] 19%|█▉        | 6/32 [00:03<00:12,  2.02it/s] 22%|██▏       | 7/32 [00:04<00:12,  2.08it/s] 25%|██▌       | 8/32 [00:04<00:11,  2.14it/s] 28%|██▊       | 9/32 [00:04<00:10,  2.17it/s] 31%|███▏      | 10/32 [00:05<00:10,  2.20it/s] 34%|███▍      | 11/32 [00:05<00:09,  2.22it/s] 38%|███▊      | 12/32 [00:06<00:08,  2.23it/s] 41%|████      | 13/32 [00:06<00:08,  2.23it/s] 44%|████▍     | 14/32 [00:07<00:08,  2.24it/s] 47%|████▋     | 15/32 [00:07<00:07,  2.24it/s] 50%|█████     | 16/32 [00:08<00:07,  2.24it/s] 53%|█████▎    | 17/32 [00:08<00:06,  2.24it/s] 56%|█████▋    | 18/32 [00:08<00:06,  2.24it/s] 59%|█████▉    | 19/32 [00:09<00:05,  2.24it/s] 62%|██████▎   | 20/32 [00:09<00:05,  2.24it/s] 66%|██████▌   | 21/32 [00:10<00:04,  2.24it/s] 69%|██████▉   | 22/32 [00:10<00:04,  2.24it/s] 72%|███████▏  | 23/32 [00:11<00:04,  2.23it/s] 75%|███████▌  | 24/32 [00:11<00:03,  2.24it/s] 78%|███████▊  | 25/32 [00:12<00:03,  2.25it/s] 81%|████████▏ | 26/32 [00:12<00:02,  2.25it/s] 84%|████████▍ | 27/32 [00:12<00:02,  2.25it/s] 88%|████████▊ | 28/32 [00:13<00:01,  2.24it/s] 91%|█████████ | 29/32 [00:13<00:01,  2.25it/s] 94%|█████████▍| 30/32 [00:14<00:00,  2.26it/s] 97%|█████████▋| 31/32 [00:14<00:00,  2.25it/s]100%|██████████| 32/32 [00:15<00:00,  2.26it/s]100%|██████████| 32/32 [00:15<00:00,  2.11it/s]
+[01/05/24 03:33:06] INFO     2024-01-05 03:33:06,357     data_wrangle_run.py:432
+                             [data_wrangle_run] [INFO]                          
+                             Batch inference run end.                           
+                             Elapsed: 15.21 s;                                  
+                    INFO     2024-01-05 03:33:06,359     data_wrangle_run.py:433
+                             [data_wrangle_run] [INFO]                          
+                             Output throughput: 42.07                           
+                             token/s;                                           
+                    INFO     2024-01-05 03:33:06,360     data_wrangle_run.py:434
+                             [data_wrangle_run] [INFO]                          
+                             Total throughput: 2099.26                          
+                             token/s;                                           
+                    INFO     2024-01-05 03:33:06,362     data_wrangle_run.py:443
+                             [data_wrangle_run] [INFO]                          
+                             Metrics Trial 0                                    
+                             Prec: 0.000 Recall: 0.000                          
+                             Acc: 0.016 F1: 0.000                               
+                             <FlexGen> time: 15.213                             
+                             <FlexGen> output                                   
+                             throughput: 42.069                                 
+                             <FlexGen> total throughput:                        
+                             2099.258                                           
+                    INFO     2024-01-05 03:33:06,364     data_wrangle_run.py:473
+                             [data_wrangle_run] [INFO]                          
+                             Saved to outputs/Buy/test/d                        
+                             efault/1k_0inst_0cb_manual_                        
+                             facebook/opt-6.7b_64run_0dr                        
+                             y/trial_0.feather                                  
+                    INFO     2024-01-05 03:33:06,371     data_wrangle_run.py:485
+                             [data_wrangle_run] [INFO]                          
+                             Final Metrics {                                    
+                                 "prec": [                                      
+                                     0.0                                        
+                                 ],                                             
+                                 "rec": [                                       
+                                     0.0                                        
+                                 ],                                             
+                                 "f1": [                                        
+                                     0.0                                        
+                                 ],                                             
+                                 "acc": [                                       
+                                     0.015625                                   
+                                 ],                                             
+                                 "total_time": [                                
+                                     15.212994575500488                         
+                                 ],                                             
+                                 "output_throughput": [                         
+                                     42.06929785084373                          
+                                 ],                                             
+                                 "total_throughput": [                          
+                                     2099.257962757102                          
+                                 ],                                             
+                                 "prec_avg": 0.0,                               
+                                 "prec_std": 0.0,                               
+                                 "rec_avg": 0.0,                                
+                                 "rec_std": 0.0,                                
+                                 "f1_avg": 0.0,                                 
+                                 "f1_std": 0.0,                                 
+                                 "acc_avg": 0.015625,                           
+                                 "acc_std": 0.0,                                
+                                 "total_time_avg":                              
+                             15.212994575500488,                                
+                                 "total_time_std": 0.0,                         
+                                 "output_throughput_avg"                        
+                             : 42.06929785084373,                               
+                                 "output_throughput_std"                        
+                             : 0.0,                                             
+                                 "total_throughput_avg":                        
+                             2099.257962757102,                                 
+                                 "total_throughput_std":                        
+                             0.0                                                
+                             }                                                  
+                    INFO     2024-01-05 03:33:06,374     data_wrangle_run.py:486
+                             [data_wrangle_run] [INFO]                          
+                             Metrics dumped to outputs/B                        
+                             uy/test/default/1k_0inst_0c                        
+                             b_manual_facebook/opt-6.7b_                        
+                             64run_0dry/metrics.json                            
+                    INFO     2024-01-05 03:33:06,375     data_wrangle_run.py:488
+                             [data_wrangle_run] [INFO]                          
+                             Shutdown FlexGen...                                
+2024-01-05 03:33:07: Starting batch#10...
+/home/bing/llm-queue/build/FlexGen-main/flexgen/apps/data_wrangle/data/datasets
+[01/05/24 03:33:09] INFO     2024-01-05 03:33:09,491     data_wrangle_run.py:500
+                             [data_wrangle_run] [INFO] {                        
+                                 "data_dir": "/home/bing                        
+                             /llm-queue/build/FlexGen-ma                        
+                             in/flexgen/apps/data_wrangl                        
+                             e/data/datasets/error_detec                        
+                             tion/Hospital",                                    
+                                 "output_dir":                                  
+                             "outputs",                                         
+                                 "cache_name": "sqlite",                        
+                                 "cache_connection":                            
+                             "fm_data_tasks.sqlite",                            
+                                 "client_name":                                 
+                             "openai",                                          
+                                 "client_connection":                           
+                             null,                                              
+                                 "run_tag": "default",                          
+                                 "overwrite_cache":                             
+                             false,                                             
+                                 "k": 1,                                        
+                                 "sample_method":                               
+                             "manual",                                          
+                                 "seed": 1234,                                  
+                                 "class_balanced":                              
+                             false,                                             
+                                 "sep_tok": ".",                                
+                                 "nan_tok": "nan",                              
+                                 "num_run": 200,                                
+                                 "num_trials": 1,                               
+                                 "num_print": 10,                               
+                                 "add_task_instruction":                        
+                             false,                                             
+                                 "task_instruction_idx":                        
+                             0,                                                 
+                                 "do_test": true,                               
+                                 "dry_run": false,                              
+                                 "stop_token": "\n",                            
+                                 "temperature": 0.0,                            
+                                 "max_tokens": 3,                               
+                                 "batch_run": true,                             
+                                 "pad_to_seq_len": 200,                         
+                                 "model":                                       
+                             "facebook/opt-6.7b",                               
+                                 "path":                                        
+                             "~/opt_weights",                                   
+                                 "run_path": "runs",                            
+                                 "offload_dir":                                 
+                             "~/flexgen_offload_dir",                           
+                                 "gpu_batch_size": 5,                           
+                                 "num_gpu_batches": 1,                          
+                                 "percent": [                                   
+                                     100,                                       
+                                     0,                                         
+                                     100,                                       
+                                     0,                                         
+                                     100,                                       
+                                     0                                          
+                                 ],                                             
+                                 "pin_weight": true,                            
+                                 "cpu_cache_compute":                           
+                             false,                                             
+                                 "compress_weight":                             
+                             false,                                             
+                                 "compress_cache": false                        
+                             }                                                  
+                    INFO     2024-01-05 03:33:09,497           data_utils.py:334
+                             [data_utils] [INFO] Processing /h                  
+                             ome/bing/llm-queue/build/FlexGen-                  
+                             main/flexgen/apps/data_wrangle/da                  
+                             ta/datasets/error_detection/Hospi                  
+                             tal                                                
+[01/05/24 03:33:10] INFO     2024-01-05 03:33:10,003     data_wrangle_run.py:523
+                             [data_wrangle_run] [INFO]                          
+                             Using 0 instruction idx                            
+                    INFO     2024-01-05 03:33:10,004     data_wrangle_run.py:530
+                             [data_wrangle_run] [INFO]                          
+                             Train shape is 1710                                
+                    INFO     2024-01-05 03:33:10,005     data_wrangle_run.py:531
+                             [data_wrangle_run] [INFO]                          
+                             Test shape is 17101                                
+                    INFO     2024-01-05 03:33:10,006     data_wrangle_run.py:532
+                             [data_wrangle_run] [INFO]                          
+                             Running 200 examples for 1                         
+                             trials.                                            
+                    INFO     2024-01-05 03:33:10,007     data_wrangle_run.py:535
+                             [data_wrangle_run] [INFO]                          
+                             Call batch_query_test                              
+                    INFO     2024-01-05 03:33:10,321     data_wrangle_run.py:345
+                             [data_wrangle_run] [INFO]                          
+                             Init weights begin.                                
+[01/05/24 03:33:18] INFO     2024-01-05 03:33:18,221     data_wrangle_run.py:348
+                             [data_wrangle_run] [INFO]                          
+                             Init weights end. Elapsed:                         
+                             7.90 s.                                            
+                    INFO     2024-01-05 03:33:18,677     data_wrangle_run.py:400
+                             [data_wrangle_run] [INFO]                          
+                             max_prompt_seq_length: 200                         
+  0%|          | 0/40 [00:00<?, ?it/s]  2%|▎         | 1/40 [00:00<00:36,  1.07it/s]  5%|▌         | 2/40 [00:01<00:19,  1.93it/s]  8%|▊         | 3/40 [00:01<00:14,  2.59it/s] 10%|█         | 4/40 [00:01<00:11,  3.08it/s] 12%|█▎        | 5/40 [00:01<00:10,  3.46it/s] 15%|█▌        | 6/40 [00:02<00:09,  3.72it/s] 18%|█▊        | 7/40 [00:02<00:08,  3.91it/s] 20%|██        | 8/40 [00:02<00:07,  4.05it/s] 22%|██▎       | 9/40 [00:02<00:07,  4.15it/s] 25%|██▌       | 10/40 [00:02<00:07,  4.22it/s] 28%|██▊       | 11/40 [00:03<00:06,  4.25it/s] 30%|███       | 12/40 [00:03<00:06,  4.28it/s] 32%|███▎      | 13/40 [00:03<00:06,  4.32it/s] 35%|███▌      | 14/40 [00:03<00:05,  4.34it/s] 38%|███▊      | 15/40 [00:04<00:05,  4.34it/s] 40%|████      | 16/40 [00:04<00:05,  4.34it/s] 42%|████▎     | 17/40 [00:04<00:05,  4.34it/s] 45%|████▌     | 18/40 [00:04<00:05,  4.35it/s] 48%|████▊     | 19/40 [00:05<00:04,  4.36it/s] 50%|█████     | 20/40 [00:05<00:04,  4.37it/s] 52%|█████▎    | 21/40 [00:05<00:04,  4.34it/s] 55%|█████▌    | 22/40 [00:05<00:04,  4.34it/s] 57%|█████▊    | 23/40 [00:05<00:03,  4.36it/s] 60%|██████    | 24/40 [00:06<00:03,  4.36it/s] 62%|██████▎   | 25/40 [00:06<00:03,  4.36it/s] 65%|██████▌   | 26/40 [00:06<00:03,  4.35it/s] 68%|██████▊   | 27/40 [00:06<00:02,  4.34it/s] 70%|███████   | 28/40 [00:07<00:02,  4.34it/s] 72%|███████▎  | 29/40 [00:07<00:02,  4.35it/s] 75%|███████▌  | 30/40 [00:07<00:02,  4.35it/s] 78%|███████▊  | 31/40 [00:07<00:02,  4.35it/s] 80%|████████  | 32/40 [00:08<00:01,  4.33it/s] 82%|████████▎ | 33/40 [00:08<00:01,  4.34it/s] 85%|████████▌ | 34/40 [00:08<00:01,  4.35it/s] 88%|████████▊ | 35/40 [00:08<00:01,  4.36it/s] 90%|█████████ | 36/40 [00:08<00:00,  4.35it/s] 92%|█████████▎| 37/40 [00:09<00:00,  4.34it/s] 95%|█████████▌| 38/40 [00:09<00:00,  4.35it/s] 98%|█████████▊| 39/40 [00:09<00:00,  4.35it/s]100%|██████████| 40/40 [00:09<00:00,  4.36it/s]100%|██████████| 40/40 [00:09<00:00,  4.05it/s]
+[01/05/24 03:33:28] INFO     2024-01-05 03:33:28,592     data_wrangle_run.py:432
+                             [data_wrangle_run] [INFO]                          
+                             Batch inference run end.                           
+                             Elapsed: 9.91 s;                                   
+                    INFO     2024-01-05 03:33:28,594     data_wrangle_run.py:433
+                             [data_wrangle_run] [INFO]                          
+                             Output throughput: 60.52                           
+                             token/s;                                           
+                    INFO     2024-01-05 03:33:28,595     data_wrangle_run.py:434
+                             [data_wrangle_run] [INFO]                          
+                             Total throughput: 4095.41                          
+                             token/s;                                           
+                    INFO     2024-01-05 03:33:28,597     data_wrangle_run.py:443
+                             [data_wrangle_run] [INFO]                          
+                             Metrics Trial 0                                    
+                             Prec: 0.000 Recall: 0.000                          
+                             Acc: 0.860 F1: 0.000                               
+                             <FlexGen> time: 9.914                              
+                             <FlexGen> output                                   
+                             throughput: 60.523                                 
+                             <FlexGen> total throughput:                        
+                             4095.405                                           
+                    INFO     2024-01-05 03:33:28,599     data_wrangle_run.py:473
+                             [data_wrangle_run] [INFO]                          
+                             Saved to outputs/Hospital/t                        
+                             est/default/1k_0inst_0cb_ma                        
+                             nual_facebook/opt-6.7b_200r                        
+                             un_0dry/trial_0.feather                            
+                    INFO     2024-01-05 03:33:28,609     data_wrangle_run.py:485
+                             [data_wrangle_run] [INFO]                          
+                             Final Metrics {                                    
+                                 "prec": [                                      
+                                     0.0                                        
+                                 ],                                             
+                                 "rec": [                                       
+                                     0.0                                        
+                                 ],                                             
+                                 "f1": [                                        
+                                     0.0                                        
+                                 ],                                             
+                                 "acc": [                                       
+                                     0.86                                       
+                                 ],                                             
+                                 "total_time": [                                
+                                     9.913548469543457                          
+                                 ],                                             
+                                 "output_throughput": [                         
+                                     60.52323260872012                          
+                                 ],                                             
+                                 "total_throughput": [                          
+                                     4095.405406523395                          
+                                 ],                                             
+                                 "prec_avg": 0.0,                               
+                                 "prec_std": 0.0,                               
+                                 "rec_avg": 0.0,                                
+                                 "rec_std": 0.0,                                
+                                 "f1_avg": 0.0,                                 
+                                 "f1_std": 0.0,                                 
+                                 "acc_avg": 0.86,                               
+                                 "acc_std": 0.0,                                
+                                 "total_time_avg":                              
+                             9.913548469543457,                                 
+                                 "total_time_std": 0.0,                         
+                                 "output_throughput_avg"                        
+                             : 60.52323260872012,                               
+                                 "output_throughput_std"                        
+                             : 0.0,                                             
+                                 "total_throughput_avg":                        
+                             4095.405406523395,                                 
+                                 "total_throughput_std":                        
+                             0.0                                                
+                             }                                                  
+                    INFO     2024-01-05 03:33:28,614     data_wrangle_run.py:486
+                             [data_wrangle_run] [INFO]                          
+                             Metrics dumped to outputs/H                        
+                             ospital/test/default/1k_0in                        
+                             st_0cb_manual_facebook/opt-                        
+                             6.7b_200run_0dry/metrics.js                        
+                             on                                                 
+                    INFO     2024-01-05 03:33:28,615     data_wrangle_run.py:488
+                             [data_wrangle_run] [INFO]                          
+                             Shutdown FlexGen...                                

@@ -1,0 +1,10 @@
+workload1,workload2,w1_Threadpercent,w2_Threadpercent,pred_throughput_sum_val,pred_power_val,selected_model_freq,Thread_combination,weight_Throughput_sum_oracle_actual,Power_oracle_actual,Duration_oracle_actual,Energy_oracle_actual
+albert-base-v2_batch2-train,bert-base-cased_batch2-train,10,90,4.974150000000009,62.37130998903967,freq300,"(w1_10, w2_90)",12.242,94.28657142857143,298.619,28174.79105
+albert-base-v2_batch2-train,bert-base-cased_batch2-train,20,80,5.011680000000002,62.64554534004533,freq300,"(w1_20, w2_80)",12.143,94.9201680672269,298.67,28370.41872
+albert-base-v2_batch2-train,bert-base-cased_batch2-train,30,70,5.122710000000001,63.93618786234883,freq300,"(w1_30, w2_70)",11.943,95.95942857142856,298.657,28678.6741
+albert-base-v2_batch2-train,bert-base-cased_batch2-train,40,60,5.214050000000003,63.65427090988911,freq300,"(w1_40, w2_60)",11.866,94.8178391959799,299.597,28425.45287
+albert-base-v2_batch2-train,bert-base-cased_batch2-train,50,50,5.220570000000001,62.93781935427955,freq300,"(w1_50, w2_50)",12.611999999999998,96.0008542713568,299.657,28787.14669
+albert-base-v2_batch2-train,bert-base-cased_batch2-train,60,40,5.309380000000001,63.78868167246209,freq300,"(w1_60, w2_40)",12.331,95.95184254606365,299.707,28778.63722
+albert-base-v2_batch2-train,bert-base-cased_batch2-train,70,30,5.292060000000001,64.02819306175552,freq300,"(w1_70, w2_30)",12.27,96.71359663865546,298.64,28902.76231
+albert-base-v2_batch2-train,bert-base-cased_batch2-train,80,20,5.2528900000000025,63.15262044826074,freq300,"(w1_80, w2_20)",13.381,98.47193277310924,298.652,29430.2909
+albert-base-v2_batch2-train,bert-base-cased_batch2-train,90,10,5.199950000000001,62.942751531969286,freq300,"(w1_90, w2_10)",13.379,97.10396638655462,298.632,29018.87014

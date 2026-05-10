@@ -1,0 +1,13 @@
+workload1,workload2,w1_Threadpercent,w2_Threadpercent,pred_throughput_sum_val,pred_power_val,selected_model_freq,Thread_combination,weight_Throughput_sum_oracle_actual,Power_oracle_actual,Duration_oracle_actual,Energy_oracle_actual
+sortingNetworks_batch2-cuda_samples,whisper-large-v2_batch2-inf,10,90,4.319779999999997,62.07193850439632,freq300,"(w1_10, w2_90)",11.905,94.03172664952872,1172.525,110272.4494
+sortingNetworks_batch2-cuda_samples,whisper-large-v2_batch2-inf,20,80,7.707319999999995,62.42536551112195,freq300,"(w1_20, w2_80)",22.508000000000003,96.8625775862069,582.624,56455.38429
+sortingNetworks_batch2-cuda_samples,whisper-large-v2_batch2-inf,30,70,10.702420000000002,61.42369384012491,freq300,"(w1_30, w2_70)",31.978,95.01043859649124,400.48,38069.337470000006
+sortingNetworks_batch2-cuda_samples,whisper-large-v2_batch2-inf,40,60,13.75064,62.70132749659604,freq300,"(w1_40, w2_60)",40.213,96.21611464968151,315.163,30343.54266
+sortingNetworks_batch2-cuda_samples,whisper-large-v2_batch2-inf,50,50,16.800175000000014,61.81010970174456,freq300,"(w1_50, w2_50)",51.913,97.7322633744856,243.642,23832.78086
+sortingNetworks_batch2-cuda_samples,whisper-large-v2_batch2-inf,60,40,20.09921000000001,60.61393287368319,freq300,"(w1_60, w2_40)",60.197,96.91373205741628,209.567,20330.63687
+sortingNetworks_batch2-cuda_samples,whisper-large-v2_batch2-inf,70,30,23.03166000000001,60.17731922285878,freq300,"(w1_70, w2_30)",66.00800000000001,94.4308179419525,189.921,17953.869290000002
+sortingNetworks_batch2-cuda_samples,whisper-large-v2_batch2-inf,80,20,25.24357,59.53476902086688,freq300,"(w1_80, w2_20)",74.999,94.62853731343284,167.76,15894.67089
+sortingNetworks_batch2-cuda_samples,whisper-large-v2_batch2-inf,90,10,26.50172,57.77234242018709,freq300,"(w1_90, w2_10)",90.02600000000001,97.62307971014492,138.083,13500.91559
+sortingNetworks_batch2-cuda_samples,whisper-large-v2_batch2-inf,70,30,73.33044999999997,107.799497765863,freq900,"(w1_70, w2_30)",66.00800000000001,94.4308179419525,189.921,17953.869290000002
+sortingNetworks_batch2-cuda_samples,whisper-large-v2_batch2-inf,80,20,76.51943000000001,103.44060942298653,freq900,"(w1_80, w2_20)",74.999,94.62853731343284,167.76,15894.67089
+sortingNetworks_batch2-cuda_samples,whisper-large-v2_batch2-inf,90,10,80.29935000000005,99.09103613689008,freq900,"(w1_90, w2_10)",90.02600000000001,97.62307971014492,138.083,13500.91559

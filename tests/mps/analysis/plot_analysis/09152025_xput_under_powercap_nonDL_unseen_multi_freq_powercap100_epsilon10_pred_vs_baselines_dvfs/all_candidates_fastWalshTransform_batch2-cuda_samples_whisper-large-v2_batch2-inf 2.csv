@@ -1,0 +1,11 @@
+workload1,workload2,w1_Threadpercent,w2_Threadpercent,pred_throughput_sum_val,pred_power_val,selected_model_freq,Thread_combination,weight_Throughput_sum_oracle_actual,Power_oracle_actual,Duration_oracle_actual,Energy_oracle_actual
+fastWalshTransform_batch2-cuda_samples,whisper-large-v2_batch2-inf,10,90,3.861349999999997,62.30884457512001,freq300,"(w1_10, w2_90)",9.714,93.87224259440627,1032.186,96911.549575
+fastWalshTransform_batch2-cuda_samples,whisper-large-v2_batch2-inf,20,80,6.9445,62.27844623332132,freq300,"(w1_20, w2_80)",17.897000000000002,94.85248062015503,517.847,49137.71263
+fastWalshTransform_batch2-cuda_samples,whisper-large-v2_batch2-inf,30,70,9.99105,61.10054530528736,freq300,"(w1_30, w2_70)",26.335,95.06902046783628,343.213,32648.27499
+fastWalshTransform_batch2-cuda_samples,whisper-large-v2_batch2-inf,40,60,13.770500000000002,62.56645770499028,freq300,"(w1_40, w2_60)",34.962999999999994,98.92584736911584,254.5,25196.34389
+fastWalshTransform_batch2-cuda_samples,whisper-large-v2_batch2-inf,50,50,16.23189,61.71597060613956,freq300,"(w1_50, w2_50)",42.772,97.58502415458936,207.457,20265.673830000003
+fastWalshTransform_batch2-cuda_samples,whisper-large-v2_batch2-inf,60,40,18.86602000000002,61.36187896266004,freq300,"(w1_60, w2_40)",47.362,94.19416666666666,186.394,17577.002360000002
+fastWalshTransform_batch2-cuda_samples,whisper-large-v2_batch2-inf,70,30,20.092520000000007,60.42828562728496,freq300,"(w1_70, w2_30)",53.035,93.53045317220544,165.822,15528.21517
+fastWalshTransform_batch2-cuda_samples,whisper-large-v2_batch2-inf,80,20,21.935329999999997,59.983343283366,freq300,"(w1_80, w2_20)",65.158,97.9860516605166,135.535,13302.10858
+fastWalshTransform_batch2-cuda_samples,whisper-large-v2_batch2-inf,90,10,24.724879999999985,59.55025772952444,freq300,"(w1_90, w2_10)",70.40299999999999,97.09955645161293,123.974,12058.222410000002
+fastWalshTransform_batch2-cuda_samples,whisper-large-v2_batch2-inf,90,10,86.97528,106.08419842904192,freq900,"(w1_90, w2_10)",70.40299999999999,97.09955645161293,123.974,12058.222410000002

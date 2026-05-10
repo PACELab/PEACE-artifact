@@ -1,0 +1,16 @@
+Compute (SM) Throughput,DRAM Throughput,Memory Throughput,Waves Per SM,Operation,Time (%),Instances,Avg (ns)
+7.39,91.84,91.84,17.07,"void <unnamed>::softmax_warp_backward<float, float, float, (int)9, (bool)0, (bool)0>(T2 *, const T1 *, const T1 *, int, int, int, const bool *)",1.3,12,367264.2
+23.07,77.24,77.24,1.6,"void at::native::<unnamed>::fused_dropout_kernel_vec<float, float, unsigned int, (int)1, (int)4, bool>(at::cuda::detail::TensorInfo<T1, T3>, at::cuda::detail::TensorInfo<T1, T3>, at::cuda::detail::TensorInfo<T6, T3>, T3, T2, at::PhiloxCudaState)",1.4,38,123310.4
+39.62,73.78,73.78,9.6,"void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 7)]::operator ()() const::[lambda(float) (instance 1)]>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",1.3,97,45045.1
+3.91,90.67,90.67,38.4,"void at::native::vectorized_elementwise_kernel<(int)4, at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float>>, at::detail::Array<char *, (int)2>>(int, T2, T3)",1.7,24,247229.2
+3.04,92.12,92.12,38.4,"void at::native::vectorized_elementwise_kernel<(int)4, at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float>>, at::detail::Array<char *, (int)3>>(int, T2, T3)",1.3,12,366189.8
+0.21,1.33,2.31,0.01,"void at::native::vectorized_elementwise_kernel<(int)4, void at::native::<unnamed>::masked_scale_kernel<bool, float, float>(at::Tensor &, const at::Tensor &, const at::Tensor &, T3)::[lambda(float, bool) (instance 1)], at::detail::Array<char *, (int)3>>(int, T2, T3)",1.2,38,109216.1
+88.13,14.53,29.13,4.5,volta_sgemm_128x128_nt,5.6,12,1612941.8
+91.09,8.03,38.68,4.8,volta_sgemm_128x128_tn,11.4,24,1636022.8
+82.88,6.95,60.26,2.4,volta_sgemm_128x32_nn,6.1,48,437985.8
+85.06,7.06,77.94,2.4,volta_sgemm_128x32_tn,6.4,48,457005.1
+94.12,14.74,38.53,4.8,volta_sgemm_128x64_nn,10.8,24,1552484.7
+73.81,47.27,64.59,2.4,volta_sgemm_32x128_nn,1.2,12,339144.6
+66.4,52.25,61.19,2.4,volta_sgemm_32x128_tn,1.2,12,358714.7
+91.4,24.17,52.5,7.2,volta_sgemm_64x32_sliced1x4_nt,11.5,60,661976.6
+74.02,46.18,46.18,1.2,volta_sgemm_64x64_nt,1.1,12,329576.6

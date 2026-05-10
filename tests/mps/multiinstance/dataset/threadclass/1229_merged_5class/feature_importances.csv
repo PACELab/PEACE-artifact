@@ -1,0 +1,14 @@
+,0
+_sm%,0.11929137753314768
+_mem%,0.11662160104669611
+weighted_Exclusive_throughput_50_50,0.09147929888009732
+weighted_Exclusive_throughput_60_40,0.09086457469129978
+weighted_Exclusive_throughput_80_20,0.0813856649419737
+_power,0.0694377575958208
+weighted_Exclusive_throughput_20_80,0.06922294807814502
+weighted_Exclusive_throughput_40_60,0.06829336501603352
+weighted_Exclusive_throughput_90_10,0.0627595552395586
+weighted_Exclusive_throughput_10_90,0.059211423984668554
+weighted_Exclusive_throughput_30_70,0.05848658303559248
+_memcap,0.0564912625303586
+weighted_Exclusive_throughput_70_30,0.0564545874266078

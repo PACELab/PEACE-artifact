@@ -1,0 +1,24 @@
+workload1,workload2,w1_Threadpercent,w2_Threadpercent,pred_throughput_sum_val,pred_power_val,selected_model_freq,Thread_combination,weight_Throughput_sum_oracle_actual,Power_oracle_actual,Duration_oracle_actual,Energy_oracle_actual
+bert-base-cased_batch2-train,reductionMultiBlockCG_batch2-cuda_samples,10,90,157.60986999999997,58.248597421765766,freq300,"(w1_10, w2_90)",578.199,162.84777777777776,112.488,18367.37397
+bert-base-cased_batch2-train,reductionMultiBlockCG_batch2-cuda_samples,20,80,139.22338999999994,58.698456941909846,freq300,"(w1_20, w2_80)",510.86,178.50428015564205,128.575,23009.2923
+bert-base-cased_batch2-train,reductionMultiBlockCG_batch2-cuda_samples,30,70,126.16078999999986,59.740432688967445,freq300,"(w1_30, w2_70)",463.28,188.18308771929824,142.639,26899.75431
+bert-base-cased_batch2-train,reductionMultiBlockCG_batch2-cuda_samples,40,60,108.67847999999992,60.14526050718323,freq300,"(w1_40, w2_60)",412.53,184.59255451713392,160.706,29721.09357
+bert-base-cased_batch2-train,reductionMultiBlockCG_batch2-cuda_samples,50,50,92.67723000000004,60.30574659514555,freq300,"(w1_50, w2_50)",360.787,184.79935309973044,185.814,34396.46924
+bert-base-cased_batch2-train,reductionMultiBlockCG_batch2-cuda_samples,60,40,80.77951500000002,61.33625355769192,freq300,"(w1_60, w2_40)",294.891,183.67193899782137,230.076,42316.02324
+bert-base-cased_batch2-train,reductionMultiBlockCG_batch2-cuda_samples,70,30,57.35225999999992,61.24263029260792,freq300,"(w1_70, w2_30)",230.985,183.00819095477388,299.429,54854.08317
+bert-base-cased_batch2-train,reductionMultiBlockCG_batch2-cuda_samples,80,20,41.62182000000006,61.61326303957581,freq300,"(w1_80, w2_20)",168.037,180.0332514619883,429.131,77315.03315
+bert-base-cased_batch2-train,reductionMultiBlockCG_batch2-cuda_samples,90,10,23.8245,61.62025633797127,freq300,"(w1_90, w2_10)",98.666,186.1979841172877,822.025,153121.34973999998
+bert-base-cased_batch2-train,reductionMultiBlockCG_batch2-cuda_samples,10,90,531.8794400000002,98.72115148664572,freq900,"(w1_10, w2_90)",578.199,162.84777777777776,112.488,18367.37397
+bert-base-cased_batch2-train,reductionMultiBlockCG_batch2-cuda_samples,20,80,481.2104900000006,101.71689143483052,freq900,"(w1_20, w2_80)",510.86,178.50428015564205,128.575,23009.2923
+bert-base-cased_batch2-train,reductionMultiBlockCG_batch2-cuda_samples,30,70,437.0466799999997,108.13789095662106,freq900,"(w1_30, w2_70)",463.28,188.18308771929824,142.639,26899.75431
+bert-base-cased_batch2-train,reductionMultiBlockCG_batch2-cuda_samples,40,60,393.3830799999999,110.57444148320026,freq900,"(w1_40, w2_60)",412.53,184.59255451713392,160.706,29721.09357
+bert-base-cased_batch2-train,reductionMultiBlockCG_batch2-cuda_samples,50,50,345.02089000000024,112.90916996112388,freq900,"(w1_50, w2_50)",360.787,184.79935309973044,185.814,34396.46924
+bert-base-cased_batch2-train,reductionMultiBlockCG_batch2-cuda_samples,60,40,283.09317000000016,117.1797795404871,freq900,"(w1_60, w2_40)",294.891,183.67193899782137,230.076,42316.02324
+bert-base-cased_batch2-train,reductionMultiBlockCG_batch2-cuda_samples,70,30,236.1739199999998,117.5597405152016,freq900,"(w1_70, w2_30)",230.985,183.00819095477388,299.429,54854.08317
+bert-base-cased_batch2-train,reductionMultiBlockCG_batch2-cuda_samples,80,20,158.6931999999997,120.28329658691072,freq900,"(w1_80, w2_20)",168.037,180.0332514619883,429.131,77315.03315
+bert-base-cased_batch2-train,reductionMultiBlockCG_batch2-cuda_samples,90,10,91.60154000000004,120.29727553266568,freq900,"(w1_90, w2_10)",98.666,186.1979841172877,822.025,153121.34973999998
+bert-base-cased_batch2-train,reductionMultiBlockCG_batch2-cuda_samples,10,90,601.5424899999998,162.7374159276122,freq1530,"(w1_10, w2_90)",578.199,162.84777777777776,112.488,18367.37397
+bert-base-cased_batch2-train,reductionMultiBlockCG_batch2-cuda_samples,20,80,523.5131600000001,176.88325063224684,freq1530,"(w1_20, w2_80)",510.86,178.50428015564205,128.575,23009.2923
+bert-base-cased_batch2-train,reductionMultiBlockCG_batch2-cuda_samples,30,70,475.5684400000006,195.01227716029425,freq1530,"(w1_30, w2_70)",463.28,188.18308771929824,142.639,26899.75431
+bert-base-cased_batch2-train,reductionMultiBlockCG_batch2-cuda_samples,40,60,427.70933,204.6965168387616,freq1530,"(w1_40, w2_60)",412.53,184.59255451713392,160.706,29721.09357
+bert-base-cased_batch2-train,reductionMultiBlockCG_batch2-cuda_samples,50,50,375.77077000000014,214.5589877678384,freq1530,"(w1_50, w2_50)",360.787,184.79935309973044,185.814,34396.46924

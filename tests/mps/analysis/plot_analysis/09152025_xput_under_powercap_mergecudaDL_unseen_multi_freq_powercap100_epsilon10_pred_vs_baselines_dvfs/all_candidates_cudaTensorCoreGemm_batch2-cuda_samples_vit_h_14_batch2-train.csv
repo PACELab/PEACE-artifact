@@ -1,0 +1,12 @@
+workload1,workload2,w1_Threadpercent,w2_Threadpercent,pred_throughput_sum_val,pred_power_val,selected_model_freq,Thread_combination,weight_Throughput_sum_oracle_actual,Power_oracle_actual,Duration_oracle_actual,Energy_oracle_actual
+cudaTensorCoreGemm_batch2-cuda_samples,vit_h_14_batch2-train,10,90,6.6155300000000095,61.26427665497587,freq300,"(w1_10, w2_90)",11.01,94.83412343540896,6384.273,605466.03202
+cudaTensorCoreGemm_batch2-cuda_samples,vit_h_14_batch2-train,20,80,11.236199999999998,61.8391483385324,freq300,"(w1_20, w2_80)",18.717,93.91832647245091,3171.889,297917.86186
+cudaTensorCoreGemm_batch2-cuda_samples,vit_h_14_batch2-train,30,70,15.75761,61.55908745765952,freq300,"(w1_30, w2_70)",29.071,94.9195626975764,1907.525,181083.65453
+cudaTensorCoreGemm_batch2-cuda_samples,vit_h_14_batch2-train,40,60,20.14918999999999,61.63932248963781,freq300,"(w1_40, w2_60)",41.239,96.33753196949829,1299.9085,125251.113415
+cudaTensorCoreGemm_batch2-cuda_samples,vit_h_14_batch2-train,50,50,25.21985,60.5088027849097,freq300,"(w1_50, w2_50)",57.398,98.07750686436025,913.76,89639.87244
+cudaTensorCoreGemm_batch2-cuda_samples,vit_h_14_batch2-train,60,40,28.31389999999999,59.489696850955895,freq300,"(w1_60, w2_40)",72.018,95.46940069686408,720.314,68788.28203
+cudaTensorCoreGemm_batch2-cuda_samples,vit_h_14_batch2-train,70,30,32.82918000000001,58.862654372452525,freq300,"(w1_70, w2_30)",88.497,95.47948006932408,579.058,55307.8334
+cudaTensorCoreGemm_batch2-cuda_samples,vit_h_14_batch2-train,80,20,38.27101000000001,58.27708765084028,freq300,"(w1_80, w2_20)",111.77,95.31213421342132,455.731,43455.91326
+cudaTensorCoreGemm_batch2-cuda_samples,vit_h_14_batch2-train,90,10,41.85573,57.71912072655241,freq300,"(w1_90, w2_10)",129.995,96.82913770913774,389.734,37758.24315
+cudaTensorCoreGemm_batch2-cuda_samples,vit_h_14_batch2-train,80,20,104.134245,105.02752029284537,freq900,"(w1_80, w2_20)",111.77,95.31213421342132,455.731,43455.91326
+cudaTensorCoreGemm_batch2-cuda_samples,vit_h_14_batch2-train,90,10,114.78547000000006,100.97993484618767,freq900,"(w1_90, w2_10)",129.995,96.82913770913774,389.734,37758.24315

@@ -1,0 +1,14 @@
+workload1,workload2,freq1,freq2,"(w1_100, w2_100)"
+bert-base-cased_batch2-train,resnet-50_batch2-inf,1530,1530,34663.54069000001
+mobilenet_v2_1.0_224_batch2-inf,resnet-50_batch2-inf,1530,1530,10965.40123
+mobilenet_batch2-train,resnet-50_batch2-inf,1530,1530,
+resnet-50_batch2-train,whisper-large-v2_batch2-inf,1530,1530,56745.47406
+resnet-50_batch2-train,resnet-50_batch2-train,1530,1530,16319.055569999999
+bert-base-cased_batch2-inf,resnet-50_batch2-inf,1530,1530,28217.24615
+albert-base-v2_batch2-train,resnet-50_batch2-inf,1530,1530,37150.379629999996
+resnet-50_batch2-inf,vit_h_14_batch2-train,1530,1530,38433.89553
+resnet-50_batch2-inf,whisper-large-v2_batch2-inf,1530,1530,49896.44638
+resnet-50_batch2-inf,resnet-50_batch2-train,1530,1530,11585.7037
+resnet-50_batch2-inf,wav2vec2-base-960h_batch2-inf,1530,1530,38135.103390000004
+resnet-50_batch2-inf,resnet-50_batch2-inf,1530,1530,
+resnet-50_batch2-inf,vit-base-patch16-224_batch2-inf,1530,1530,16731.382100000003

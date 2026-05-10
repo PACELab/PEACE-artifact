@@ -1,0 +1,11 @@
+Achieved Active Warps Per SM,Block Size,Compute (SM) Throughput,DRAM Throughput,Grid Size,Memory Throughput,Registers Per Thread,SM Busy,Static Shared Memory Per Block,Waves Per SM,Operation,Time (%),Instances,Avg (ns)
+57.75,512.0,34.86,66.46,1024.0,66.46,25.0,37.69,768.0,3.2,"void at::native::<unnamed>::RowwiseMomentsCUDAKernel<float>(long, T1, const T1 *, T1 *, T1 *)",0.6,3,239368.0
+36.12,128.0,39.73,25.27,1002.0,30.38,40.0,52.96,0.0,1.04,"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",0.7,78,10981.2
+31.8,1024.0,1.27,10.61,8.0,10.61,18.0,12.82,0.0,0.05,"void at::native::<unnamed>::weight_norm_fwd_last_dim_kernel<float, float>(T1 *, T2 *, const T1 *, const T1 *, int, int)",1.3,3,546202.0
+40.76,128.0,3.34,67.2,1503.0,67.2,22.0,4.31,0.0,1.17,"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",0.6,72,10191.0
+14.1,512.0,18.43,43.97,50.0,43.97,40.0,40.9,0.0,0.21,"void cudnn::cnn::im2col4d_kernel<float, long>(cudnn::cnn::im2col4d_params, cudnnConvolutionStruct, cudnnTensorStruct, const T1 *, T1 *)",10.4,48,266903.2
+2.0,64.0,17.29,7.25,64.0,18.32,77.0,21.75,2.3,0.07,"void explicit_convolve_sgemm<float, int, (int)128, (int)5, (int)5, (int)3, (int)3, (int)3, (int)0, (bool)0>(int, int, int, const T1 *, int, const T1 *, int, T1 *, kernel_conv_params, unsigned long long, int, unsigned long long, int, float, float, int, bool, const T1 *, const T1 *)",17.6,48,453474.0
+13.56,256.0,66.72,8.23,128.0,53.82,91.0,84.63,12.8,0.8,"void precomputed_convolve_sgemm<float, (int)512, (int)6, (int)7, (int)4, (int)3, (int)5, (int)1, (bool)0>(int, int, int, const T1 *, int, T1 *, const T1 *, kernel_conv_params, unsigned long long, int, float, float, int, bool, const T1 *, const T1 *, int *)",0.5,3,215678.0
+29.45,256.0,75.04,10.46,1152.0,76.07,57.0,77.75,16.38,3.6,volta_sgemm_128x32_tn,13.4,147,112158.2
+15.21,128.0,88.66,19.27,1152.0,47.88,122.0,92.16,12.8,3.6,volta_sgemm_128x64_tn,10.5,36,359176.8
+29.94,256.0,79.56,11.16,960.0,76.08,57.0,86.94,16.38,3.0,volta_sgemm_32x128_tn,14.3,72,245167.4

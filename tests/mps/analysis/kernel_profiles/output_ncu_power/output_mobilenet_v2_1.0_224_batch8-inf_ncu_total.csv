@@ -1,0 +1,2 @@
+Threads,Compute (SM) Throughput,DRAM Throughput,Memory Throughput,Registers,Static Shared Memory,Type
+668167.1245915663,27.97821676371938,39.97836520314828,45.23913551044503,15492688.213878036,1260.9198439729978,mobilenet_v2_1.0_224_batch8-inf

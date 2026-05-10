@@ -1,0 +1,16 @@
+workload1,workload2,w1_Threadpercent,w2_Threadpercent,pred_throughput_sum_val,pred_power_val,selected_model_freq,Thread_combination,weight_Throughput_sum_oracle_actual,Power_oracle_actual,Duration_oracle_actual,Energy_oracle_actual
+bert-base-cased_batch2-train,cudaTensorCoreGemm_batch2-cuda_samples,10,90,42.51466000000001,52.50835107514221,freq300,"(w1_10, w2_90)",130.428,94.20713740458017,394.237,37158.54724
+bert-base-cased_batch2-train,cudaTensorCoreGemm_batch2-cuda_samples,20,80,39.845679999999945,53.98350063737892,freq300,"(w1_20, w2_80)",114.905,95.09196271929824,457.537,43527.2307
+bert-base-cased_batch2-train,cudaTensorCoreGemm_batch2-cuda_samples,30,70,34.041569999999986,55.36730925403131,freq300,"(w1_30, w2_70)",91.694,95.21459642321088,589.6255,56157.59334
+bert-base-cased_batch2-train,cudaTensorCoreGemm_batch2-cuda_samples,40,60,30.10539499999997,56.81883721419057,freq300,"(w1_40, w2_60)",76.119,96.94562243502052,734.046,71183.11595
+bert-base-cased_batch2-train,cudaTensorCoreGemm_batch2-cuda_samples,50,50,25.918360000000025,57.35712139571128,freq300,"(w1_50, w2_50)",61.394,95.4988842105263,954.395,91163.14126
+bert-base-cased_batch2-train,cudaTensorCoreGemm_batch2-cuda_samples,60,40,21.80857999999999,58.71092292031712,freq300,"(w1_60, w2_40)",48.359,95.80471067961165,1293.755,123967.85177
+bert-base-cased_batch2-train,cudaTensorCoreGemm_batch2-cuda_samples,70,30,17.78812,59.711461973808674,freq300,"(w1_70, w2_30)",37.217,95.83408707482994,1845.714,176900.74985
+bert-base-cased_batch2-train,cudaTensorCoreGemm_batch2-cuda_samples,80,20,13.360199999999995,60.1455877101286,freq300,"(w1_80, w2_20)",27.556,93.92261985719142,2956.252,277676.60653999995
+bert-base-cased_batch2-train,cudaTensorCoreGemm_batch2-cuda_samples,90,10,9.22635000000001,60.99790914866429,freq300,"(w1_90, w2_10)",20.063,94.67183680379212,5938.263,562209.97294
+bert-base-cased_batch2-train,cudaTensorCoreGemm_batch2-cuda_samples,10,90,114.25377000000007,80.46570453781862,freq900,"(w1_10, w2_90)",130.428,94.20713740458017,394.237,37158.54724
+bert-base-cased_batch2-train,cudaTensorCoreGemm_batch2-cuda_samples,20,80,107.53641000000005,87.71021908966937,freq900,"(w1_20, w2_80)",114.905,95.09196271929824,457.537,43527.2307
+bert-base-cased_batch2-train,cudaTensorCoreGemm_batch2-cuda_samples,30,70,93.4718249999999,95.11488469989094,freq900,"(w1_30, w2_70)",91.694,95.21459642321088,589.6255,56157.59334
+bert-base-cased_batch2-train,cudaTensorCoreGemm_batch2-cuda_samples,40,60,82.13028999999992,99.67811488279574,freq900,"(w1_40, w2_60)",76.119,96.94562243502052,734.046,71183.11595
+bert-base-cased_batch2-train,cudaTensorCoreGemm_batch2-cuda_samples,50,50,71.85057,103.50174429908093,freq900,"(w1_50, w2_50)",61.394,95.4988842105263,954.395,91163.14126
+bert-base-cased_batch2-train,cudaTensorCoreGemm_batch2-cuda_samples,60,40,61.33617500000001,109.39818119746316,freq900,"(w1_60, w2_40)",48.359,95.80471067961165,1293.755,123967.85177

@@ -1,0 +1,15 @@
+workload1,workload2,w1_Threadpercent,w2_Threadpercent,pred_throughput_sum_val,pred_power_val,selected_model_freq,Thread_combination,weight_Throughput_sum_oracle_actual,Power_oracle_actual,Duration_oracle_actual,Energy_oracle_actual
+reductionMultiBlockCG_batch2-cuda_samples,whisper-large-v2_batch2-inf,10,90,21.143720000000016,61.99701150930208,freq300,"(w1_10, w2_90)",32.254,94.5511389632514,2064.477,195221.48737
+reductionMultiBlockCG_batch2-cuda_samples,whisper-large-v2_batch2-inf,20,80,41.22227,61.77959388109333,freq300,"(w1_20, w2_80)",63.407,92.89559722526032,1026.028,95325.003485
+reductionMultiBlockCG_batch2-cuda_samples,whisper-large-v2_batch2-inf,30,70,59.90601,60.60887197164744,freq300,"(w1_30, w2_70)",120.235,97.11211610486892,536.364,52108.006810000006
+reductionMultiBlockCG_batch2-cuda_samples,whisper-large-v2_batch2-inf,40,60,79.70302999999998,61.78184602398185,freq300,"(w1_40, w2_60)",159.497,96.00539130434782,403.643,38771.86257
+reductionMultiBlockCG_batch2-cuda_samples,whisper-large-v2_batch2-inf,50,50,93.97188,61.23536522103732,freq300,"(w1_50, w2_50)",198.934,94.85972093023256,323.478,30704.56157
+reductionMultiBlockCG_batch2-cuda_samples,whisper-large-v2_batch2-inf,60,40,112.15088000000004,59.80199168047421,freq300,"(w1_60, w2_40)",260.59700000000004,95.64057026476576,246.262,23571.38257
+reductionMultiBlockCG_batch2-cuda_samples,whisper-large-v2_batch2-inf,70,30,129.66992499999995,59.021865950834034,freq300,"(w1_70, w2_30)",332.312,95.5169170984456,193.447,18497.02369
+reductionMultiBlockCG_batch2-cuda_samples,whisper-large-v2_batch2-inf,80,20,139.32973000000004,58.20026246665804,freq300,"(w1_80, w2_20)",411.107,96.37549839228296,155.782,15033.28162
+reductionMultiBlockCG_batch2-cuda_samples,whisper-large-v2_batch2-inf,90,10,151.25863500000017,57.30123627368435,freq300,"(w1_90, w2_10)",513.764,97.4855158730159,126.096,12313.81106
+reductionMultiBlockCG_batch2-cuda_samples,whisper-large-v2_batch2-inf,50,50,364.1076999999998,109.40557872324618,freq900,"(w1_50, w2_50)",198.934,94.85972093023256,323.478,30704.56157
+reductionMultiBlockCG_batch2-cuda_samples,whisper-large-v2_batch2-inf,60,40,414.8909299999997,102.44602101687272,freq900,"(w1_60, w2_40)",260.59700000000004,95.64057026476576,246.262,23571.38257
+reductionMultiBlockCG_batch2-cuda_samples,whisper-large-v2_batch2-inf,70,30,448.84703,97.75805441294968,freq900,"(w1_70, w2_30)",332.312,95.5169170984456,193.447,18497.02369
+reductionMultiBlockCG_batch2-cuda_samples,whisper-large-v2_batch2-inf,80,20,479.8150300000002,92.83773155107625,freq900,"(w1_80, w2_20)",411.107,96.37549839228296,155.782,15033.28162
+reductionMultiBlockCG_batch2-cuda_samples,whisper-large-v2_batch2-inf,90,10,486.8682000000002,90.45047495920454,freq900,"(w1_90, w2_10)",513.764,97.4855158730159,126.096,12313.81106

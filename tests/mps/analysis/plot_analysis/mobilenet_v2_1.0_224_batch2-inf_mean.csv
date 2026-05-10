@@ -1,0 +1,17 @@
+,0
+best_w1_threadpercent,64.66666666666667
+best_w2_threadpercent,62.0
+pred_w1_threadpercent,49.333333333333336
+pred_w2_threadpercent,57.333333333333336
+best_EDP_oracle_value,108.94093953584525
+best_EDP_oracle_throughput,184.5105333333333
+best_EDP_oracle_power,104.63390729620038
+pred_EDP_exec_value,110.25149102975428
+pred_EDP_exec_throughput,182.07893333333334
+pred_EDP_exec_power,104.09161416118745
+powercap_limit,
+EDP_no_partition_baseline_value,194.4821184876883
+EDP_fair_partition_baseline_value,153.81423425285539
+pred_EDP_ratio_oracle,1.0167944431022142
+pred_EDP_ratio_nopartition,0.8061584992628423
+pred_EDP_ratio_fairpartition,0.7877503504135697

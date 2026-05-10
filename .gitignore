@@ -1,0 +1,82 @@
+#ignore any subdir called data
+**/data/**
+**/__pycache__/**
+**/tests/mps/*/
+**/workloads/*/log/
+**/workloads/*/*.csv
+tests/mps/eval_baselines/**/fig
+tests/quantized/ccv100_logs
+tests/ccv100_logs
+tests/quantized/existed_model/saved_model
+tests/quantized/**/*.ts
+tests/quantized/trt_model_int8.ts
+*/*.bk
+output/
+#inclide output dataset
+!output/dataset
+!tests/mps/analysis
+!tests/mps/IAT
+!tests/mps/db
+!tests/mps/cudf
+!tests/mps/multiinstance
+!tests/mps/freq_scaling
+!/tests/mps/eval_baselines
+#excluse all files that has no .txt extension in tests/mps/multiinstance
+# But include all .txt files in all subdirectories
+tests/mps/multiinstance/output/** 
+!/tests/mps/multiinstance/output/**/*.txt
+!/tests/mps/multiinstance/output/**/*.png
+/tests/mps/multiinstance/output/**/*.pkl
+# Ensure parent directories are not ignored so that the .txt and .png files can be included
+!/tests/mps/multiinstance/output/
+!/tests/mps/multiinstance/output/**/
+
+#!tests/mps/multiinstance/*/
+tests/mps/multiinstance/dataset/*
+!tests/mps/multiinstance/dataset/*.csv
+!tests/mps/multiinstance/dataset/threadclass
+!tests/mps/multiinstance/dataset/03112025_DL0207_0307_nonDL0311_nodvfs
+#!/tests/mps/multiinstance/dataset/*.csv
+
+#exclude freq scale  dataset seen/unseen partition
+tests/mps/freq_scaling/dataset/*/unseen_partition/
+tests/mps/freq_scaling/dataset/*/seen_partition/
+
+tests/mps/analysis/kernel_profiles/source/ncu/
+tests/mps/analysis/kernel_profiles/nsys_ncu_profiles
+tests/mps/baseline_nollm.sh
+tests/mps/share_BE_nonllm.sh
+tests/mps/analysis/training/trained_models/
+tests/mps/analysis/training/results/
+tests/mps/analysis/kernel_profiles/tmp/
+**/seen_partition
+**/unseen_partition
+
+#figures
+tests/mps/analysis/plot_analysis/freq_plots/**/*.png
+**/*.run
+**/*.nsys-rep
+**/*.ncu-rep
+**/*.sqlite
+**/*.joblib
+tests/mps/analysis/plot_analysis/freq_power_analysis/1130_quantized
+env/
+**/test
+**/*.icloud
+**/*.DS_Store
+*.driveupload
+*.drivedownload
+
+
+**/*.ipynb
+# ignore plot_analysis
+tests/mps/analysis/plot_analysis/power_time/*
+
+#mudi 
+!tests/mps/eval_baselines/**/*.csv
+!tests/mps/eval_baselines/muxflow/*
+
+#ignore all model pkl and zip
+tests/mps/freq_scaling/**/*.pkl
+tests/mps/freq_scaling/**/*.zip
+

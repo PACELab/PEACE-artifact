@@ -1,0 +1,10 @@
+workload1,workload2,w1_Threadpercent,w2_Threadpercent,pred_throughput_sum_val,pred_power_val,selected_model_freq,Thread_combination,weight_Throughput_sum_oracle_actual,Power_oracle_actual,Duration_oracle_actual,Energy_oracle_actual
+whisper-large-v2_batch2-inf,whisper-large-v2_batch2-inf,10,90,2.242994999999998,62.17962376027022,freq300,"(w1_10, w2_90)",1.488,94.74525963149078,299.64,28407.98026
+whisper-large-v2_batch2-inf,whisper-large-v2_batch2-inf,20,80,2.3397049999999977,63.66601366704298,freq300,"(w1_20, w2_80)",1.5,95.65112227805696,299.702,28692.68447
+whisper-large-v2_batch2-inf,whisper-large-v2_batch2-inf,30,70,1.9149450000000008,61.60192035385026,freq300,"(w1_30, w2_70)",1.4209999999999998,95.46653781512605,298.648,28531.55115
+whisper-large-v2_batch2-inf,whisper-large-v2_batch2-inf,40,60,2.2688749999999978,64.95921259834876,freq300,"(w1_40, w2_60)",1.455,96.38796979865772,299.003,28840.13168
+whisper-large-v2_batch2-inf,whisper-large-v2_batch2-inf,50,50,2.277174999999998,65.69780897991772,freq300,"(w1_50, w2_50)",1.322,94.45242016806723,298.628,28224.93256
+whisper-large-v2_batch2-inf,whisper-large-v2_batch2-inf,60,40,2.2688749999999978,64.95921259834876,freq300,"(w1_60, w2_40)",1.392,95.11360738255031,298.931,28451.931
+whisper-large-v2_batch2-inf,whisper-large-v2_batch2-inf,70,30,1.9149450000000008,61.60192035385026,freq300,"(w1_70, w2_30)",1.442,95.01028571428571,298.61,28391.26375
+whisper-large-v2_batch2-inf,whisper-large-v2_batch2-inf,80,20,2.3397049999999977,63.66601366704298,freq300,"(w1_80, w2_20)",1.461,94.64324369747898,298.64,28283.84061
+whisper-large-v2_batch2-inf,whisper-large-v2_batch2-inf,90,10,2.242994999999998,62.17962376027022,freq300,"(w1_90, w2_10)",1.483,93.75364548494984,299.88,28133.9372

@@ -1,0 +1,1152 @@
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class62
+value: 999999937
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: run-5-job-1-imgclassification-train-cuda-epoch5
+spec:
+  priorityClassName: class62  # Set your PriorityClass name here
+  containers:
+  - name: c-run-5-job-1-imgclassification-train-cuda-epoch5
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/imgclassification-train.py", "--n_epoch", "5"]
+    env:
+    - name: GPU_MEMORY
+      value: "1729"
+    - name: GPU_COMPTIME
+      value: "62"
+    - name: CPU_COMPTIME
+      value: "744"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 1729
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class192
+value: 999999807
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: run-5-job-2-imgclassification-train-cuda-epoch15
+spec:
+  priorityClassName: class192  # Set your PriorityClass name here
+  containers:
+  - name: c-run-5-job-2-imgclassification-train-cuda-epoch15
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/imgclassification-train.py", "--n_epoch", "15"]
+    env:
+    - name: GPU_MEMORY
+      value: "1729"
+    - name: GPU_COMPTIME
+      value: "192"
+    - name: CPU_COMPTIME
+      value: "2304"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 1729
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class329
+value: 999999670
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: run-5-job-3-imgclassification-train-cuda-epoch25
+spec:
+  priorityClassName: class329  # Set your PriorityClass name here
+  containers:
+  - name: c-run-5-job-3-imgclassification-train-cuda-epoch25
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/imgclassification-train.py", "--n_epoch", "25"]
+    env:
+    - name: GPU_MEMORY
+      value: "1729"
+    - name: GPU_COMPTIME
+      value: "329"
+    - name: CPU_COMPTIME
+      value: "3948"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 1729
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class446
+value: 999999553
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: run-5-job-4-imgclassification-train-cuda-epoch35
+spec:
+  priorityClassName: class446  # Set your PriorityClass name here
+  containers:
+  - name: c-run-5-job-4-imgclassification-train-cuda-epoch35
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/imgclassification-train.py", "--n_epoch", "35"]
+    env:
+    - name: GPU_MEMORY
+      value: "1729"
+    - name: GPU_COMPTIME
+      value: "446"
+    - name: CPU_COMPTIME
+      value: "5352"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 1729
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class578
+value: 999999421
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: run-5-job-5-imgclassification-train-cuda-epoch45
+spec:
+  priorityClassName: class578  # Set your PriorityClass name here
+  containers:
+  - name: c-run-5-job-5-imgclassification-train-cuda-epoch45
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/imgclassification-train.py", "--n_epoch", "45"]
+    env:
+    - name: GPU_MEMORY
+      value: "1729"
+    - name: GPU_COMPTIME
+      value: "578"
+    - name: CPU_COMPTIME
+      value: "6936"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 1729
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class697
+value: 999999302
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: run-5-job-6-imgclassification-train-cuda-epoch55
+spec:
+  priorityClassName: class697  # Set your PriorityClass name here
+  containers:
+  - name: c-run-5-job-6-imgclassification-train-cuda-epoch55
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/imgclassification-train.py", "--n_epoch", "55"]
+    env:
+    - name: GPU_MEMORY
+      value: "1729"
+    - name: GPU_COMPTIME
+      value: "697"
+    - name: CPU_COMPTIME
+      value: "8364"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 1729
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class829
+value: 999999170
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: run-5-job-7-imgclassification-train-cuda-epoch65
+spec:
+  priorityClassName: class829  # Set your PriorityClass name here
+  containers:
+  - name: c-run-5-job-7-imgclassification-train-cuda-epoch65
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/imgclassification-train.py", "--n_epoch", "65"]
+    env:
+    - name: GPU_MEMORY
+      value: "1729"
+    - name: GPU_COMPTIME
+      value: "829"
+    - name: CPU_COMPTIME
+      value: "9948"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 1729
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class958
+value: 999999041
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: run-5-job-8-imgclassification-train-cuda-epoch75
+spec:
+  priorityClassName: class958  # Set your PriorityClass name here
+  containers:
+  - name: c-run-5-job-8-imgclassification-train-cuda-epoch75
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/imgclassification-train.py", "--n_epoch", "75"]
+    env:
+    - name: GPU_MEMORY
+      value: "1729"
+    - name: GPU_COMPTIME
+      value: "958"
+    - name: CPU_COMPTIME
+      value: "11496"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 1729
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class1100
+value: 999998899
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: run-5-job-9-imgclassification-train-cuda-epoch85
+spec:
+  priorityClassName: class1100  # Set your PriorityClass name here
+  containers:
+  - name: c-run-5-job-9-imgclassification-train-cuda-epoch85
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/imgclassification-train.py", "--n_epoch", "85"]
+    env:
+    - name: GPU_MEMORY
+      value: "1729"
+    - name: GPU_COMPTIME
+      value: "1100"
+    - name: CPU_COMPTIME
+      value: "13200"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 1729
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class1234
+value: 999998765
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: run-5-job-10-imgclassification-train-cuda-epoch95
+spec:
+  priorityClassName: class1234  # Set your PriorityClass name here
+  containers:
+  - name: c-run-5-job-10-imgclassification-train-cuda-epoch95
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/imgclassification-train.py", "--n_epoch", "95"]
+    env:
+    - name: GPU_MEMORY
+      value: "1729"
+    - name: GPU_COMPTIME
+      value: "1234"
+    - name: CPU_COMPTIME
+      value: "14808"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 1729
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class1352
+value: 999998647
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: run-5-job-11-imgclassification-train-cuda-epoch105
+spec:
+  priorityClassName: class1352  # Set your PriorityClass name here
+  containers:
+  - name: c-run-5-job-11-imgclassification-train-cuda-epoch105
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/imgclassification-train.py", "--n_epoch", "105"]
+    env:
+    - name: GPU_MEMORY
+      value: "1729"
+    - name: GPU_COMPTIME
+      value: "1352"
+    - name: CPU_COMPTIME
+      value: "16224"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 1729
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class1486
+value: 999998513
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: run-5-job-12-imgclassification-train-cuda-epoch115
+spec:
+  priorityClassName: class1486  # Set your PriorityClass name here
+  containers:
+  - name: c-run-5-job-12-imgclassification-train-cuda-epoch115
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/imgclassification-train.py", "--n_epoch", "115"]
+    env:
+    - name: GPU_MEMORY
+      value: "1729"
+    - name: GPU_COMPTIME
+      value: "1486"
+    - name: CPU_COMPTIME
+      value: "17832"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 1729
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class1587
+value: 999998412
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: run-5-job-13-imgclassification-train-cuda-epoch125
+spec:
+  priorityClassName: class1587  # Set your PriorityClass name here
+  containers:
+  - name: c-run-5-job-13-imgclassification-train-cuda-epoch125
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/imgclassification-train.py", "--n_epoch", "125"]
+    env:
+    - name: GPU_MEMORY
+      value: "1729"
+    - name: GPU_COMPTIME
+      value: "1587"
+    - name: CPU_COMPTIME
+      value: "19044"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 1729
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class1754
+value: 999998245
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: run-5-job-14-imgclassification-train-cuda-epoch135
+spec:
+  priorityClassName: class1754  # Set your PriorityClass name here
+  containers:
+  - name: c-run-5-job-14-imgclassification-train-cuda-epoch135
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/imgclassification-train.py", "--n_epoch", "135"]
+    env:
+    - name: GPU_MEMORY
+      value: "1729"
+    - name: GPU_COMPTIME
+      value: "1754"
+    - name: CPU_COMPTIME
+      value: "21048"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 1729
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class1808
+value: 999998191
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: run-5-job-15-imgclassification-train-cuda-epoch145
+spec:
+  priorityClassName: class1808  # Set your PriorityClass name here
+  containers:
+  - name: c-run-5-job-15-imgclassification-train-cuda-epoch145
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/imgclassification-train.py", "--n_epoch", "145"]
+    env:
+    - name: GPU_MEMORY
+      value: "1729"
+    - name: GPU_COMPTIME
+      value: "1808"
+    - name: CPU_COMPTIME
+      value: "21696"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 1729
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class1935
+value: 999998064
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: run-5-job-16-imgclassification-train-cuda-epoch155
+spec:
+  priorityClassName: class1935  # Set your PriorityClass name here
+  containers:
+  - name: c-run-5-job-16-imgclassification-train-cuda-epoch155
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/imgclassification-train.py", "--n_epoch", "155"]
+    env:
+    - name: GPU_MEMORY
+      value: "1729"
+    - name: GPU_COMPTIME
+      value: "1935"
+    - name: CPU_COMPTIME
+      value: "23220"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 1729
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class2084
+value: 999997915
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: run-5-job-17-imgclassification-train-cuda-epoch165
+spec:
+  priorityClassName: class2084  # Set your PriorityClass name here
+  containers:
+  - name: c-run-5-job-17-imgclassification-train-cuda-epoch165
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/imgclassification-train.py", "--n_epoch", "165"]
+    env:
+    - name: GPU_MEMORY
+      value: "1729"
+    - name: GPU_COMPTIME
+      value: "2084"
+    - name: CPU_COMPTIME
+      value: "25008"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 1729
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class6
+value: 999999993
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: run-5-job-18-imgclassification-train-cuda-epoch5
+spec:
+  priorityClassName: class6  # Set your PriorityClass name here
+  containers:
+  - name: c-run-5-job-18-imgclassification-train-cuda-epoch5
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/imgclassification-train.py", "--n_epoch", "5"]
+    env:
+    - name: GPU_MEMORY
+      value: "1729"
+    - name: GPU_COMPTIME
+      value: "6"
+    - name: CPU_COMPTIME
+      value: "744"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 1729
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class7
+value: 999999992
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: run-5-job-19-imgclassification-train-cuda-epoch5
+spec:
+  priorityClassName: class7  # Set your PriorityClass name here
+  containers:
+  - name: c-run-5-job-19-imgclassification-train-cuda-epoch5
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/imgclassification-train.py", "--n_epoch", "5"]
+    env:
+    - name: GPU_MEMORY
+      value: "1729"
+    - name: GPU_COMPTIME
+      value: "7"
+    - name: CPU_COMPTIME
+      value: "744"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 1729
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class10
+value: 999999989
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: run-5-job-20-imgclassification-train-cuda-epoch5
+spec:
+  priorityClassName: class10  # Set your PriorityClass name here
+  containers:
+  - name: c-run-5-job-20-imgclassification-train-cuda-epoch5
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/imgclassification-train.py", "--n_epoch", "5"]
+    env:
+    - name: GPU_MEMORY
+      value: "1729"
+    - name: GPU_COMPTIME
+      value: "10"
+    - name: CPU_COMPTIME
+      value: "744"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 1729
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class9
+value: 999999990
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: run-5-job-21-imgclassification-train-cuda-epoch5
+spec:
+  priorityClassName: class9  # Set your PriorityClass name here
+  containers:
+  - name: c-run-5-job-21-imgclassification-train-cuda-epoch5
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/imgclassification-train.py", "--n_epoch", "5"]
+    env:
+    - name: GPU_MEMORY
+      value: "1729"
+    - name: GPU_COMPTIME
+      value: "9"
+    - name: CPU_COMPTIME
+      value: "744"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 1729
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class20
+value: 999999979
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: run-5-job-22-imgclassification-train-cuda-epoch5
+spec:
+  priorityClassName: class20  # Set your PriorityClass name here
+  containers:
+  - name: c-run-5-job-22-imgclassification-train-cuda-epoch5
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/imgclassification-train.py", "--n_epoch", "5"]
+    env:
+    - name: GPU_MEMORY
+      value: "1729"
+    - name: GPU_COMPTIME
+      value: "20"
+    - name: CPU_COMPTIME
+      value: "744"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 1729
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class19
+value: 999999980
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: run-5-job-23-imgclassification-train-cuda-epoch5
+spec:
+  priorityClassName: class19  # Set your PriorityClass name here
+  containers:
+  - name: c-run-5-job-23-imgclassification-train-cuda-epoch5
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/imgclassification-train.py", "--n_epoch", "5"]
+    env:
+    - name: GPU_MEMORY
+      value: "1729"
+    - name: GPU_COMPTIME
+      value: "19"
+    - name: CPU_COMPTIME
+      value: "744"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 1729
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class18
+value: 999999981
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: run-5-job-24-imgclassification-train-cuda-epoch5
+spec:
+  priorityClassName: class18  # Set your PriorityClass name here
+  containers:
+  - name: c-run-5-job-24-imgclassification-train-cuda-epoch5
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/imgclassification-train.py", "--n_epoch", "5"]
+    env:
+    - name: GPU_MEMORY
+      value: "1729"
+    - name: GPU_COMPTIME
+      value: "18"
+    - name: CPU_COMPTIME
+      value: "744"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 1729
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class17
+value: 999999982
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: run-5-job-25-imgclassification-train-cuda-epoch5
+spec:
+  priorityClassName: class17  # Set your PriorityClass name here
+  containers:
+  - name: c-run-5-job-25-imgclassification-train-cuda-epoch5
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/imgclassification-train.py", "--n_epoch", "5"]
+    env:
+    - name: GPU_MEMORY
+      value: "1729"
+    - name: GPU_COMPTIME
+      value: "17"
+    - name: CPU_COMPTIME
+      value: "744"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 1729
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class16
+value: 999999983
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: run-5-job-26-imgclassification-train-cuda-epoch5
+spec:
+  priorityClassName: class16  # Set your PriorityClass name here
+  containers:
+  - name: c-run-5-job-26-imgclassification-train-cuda-epoch5
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/imgclassification-train.py", "--n_epoch", "5"]
+    env:
+    - name: GPU_MEMORY
+      value: "1729"
+    - name: GPU_COMPTIME
+      value: "16"
+    - name: CPU_COMPTIME
+      value: "744"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 1729
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class15
+value: 999999984
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: run-5-job-27-imgclassification-train-cuda-epoch5
+spec:
+  priorityClassName: class15  # Set your PriorityClass name here
+  containers:
+  - name: c-run-5-job-27-imgclassification-train-cuda-epoch5
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/imgclassification-train.py", "--n_epoch", "5"]
+    env:
+    - name: GPU_MEMORY
+      value: "1729"
+    - name: GPU_COMPTIME
+      value: "15"
+    - name: CPU_COMPTIME
+      value: "744"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 1729
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class14
+value: 999999985
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: run-5-job-28-imgclassification-train-cuda-epoch5
+spec:
+  priorityClassName: class14  # Set your PriorityClass name here
+  containers:
+  - name: c-run-5-job-28-imgclassification-train-cuda-epoch5
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/imgclassification-train.py", "--n_epoch", "5"]
+    env:
+    - name: GPU_MEMORY
+      value: "1729"
+    - name: GPU_COMPTIME
+      value: "14"
+    - name: CPU_COMPTIME
+      value: "744"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 1729
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class13
+value: 999999986
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: run-5-job-29-imgclassification-train-cuda-epoch5
+spec:
+  priorityClassName: class13  # Set your PriorityClass name here
+  containers:
+  - name: c-run-5-job-29-imgclassification-train-cuda-epoch5
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/imgclassification-train.py", "--n_epoch", "5"]
+    env:
+    - name: GPU_MEMORY
+      value: "1729"
+    - name: GPU_COMPTIME
+      value: "13"
+    - name: CPU_COMPTIME
+      value: "744"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 1729
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class12
+value: 999999987
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: run-5-job-30-imgclassification-train-cuda-epoch5
+spec:
+  priorityClassName: class12  # Set your PriorityClass name here
+  containers:
+  - name: c-run-5-job-30-imgclassification-train-cuda-epoch5
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/imgclassification-train.py", "--n_epoch", "5"]
+    env:
+    - name: GPU_MEMORY
+      value: "1729"
+    - name: GPU_COMPTIME
+      value: "12"
+    - name: CPU_COMPTIME
+      value: "744"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 1729
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class11
+value: 999999988
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: run-5-job-31-imgclassification-train-cuda-epoch5
+spec:
+  priorityClassName: class11  # Set your PriorityClass name here
+  containers:
+  - name: c-run-5-job-31-imgclassification-train-cuda-epoch5
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/imgclassification-train.py", "--n_epoch", "5"]
+    env:
+    - name: GPU_MEMORY
+      value: "1729"
+    - name: GPU_COMPTIME
+      value: "11"
+    - name: CPU_COMPTIME
+      value: "744"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 1729
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class10
+value: 999999989
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: run-5-job-32-imgclassification-train-cuda-epoch5
+spec:
+  priorityClassName: class10  # Set your PriorityClass name here
+  containers:
+  - name: c-run-5-job-32-imgclassification-train-cuda-epoch5
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/imgclassification-train.py", "--n_epoch", "5"]
+    env:
+    - name: GPU_MEMORY
+      value: "1729"
+    - name: GPU_COMPTIME
+      value: "10"
+    - name: CPU_COMPTIME
+      value: "744"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 1729
+  restartPolicy: Never
+

@@ -1,0 +1,13 @@
+workload1,workload2,w1_Threadpercent,w2_Threadpercent,pred_throughput_sum_val,pred_power_val,selected_model_freq,Thread_combination,weight_Throughput_sum_oracle_actual,Power_oracle_actual,Duration_oracle_actual,Energy_oracle_actual
+bert-base-cased_batch2-inf,reductionMultiBlockCG_batch2-cuda_samples,10,90,159.46358000000006,58.38021351593719,freq300,"(w1_10, w2_90)",508.342,97.93388235294118,127.604,12517.45951
+bert-base-cased_batch2-inf,reductionMultiBlockCG_batch2-cuda_samples,20,80,142.6414,58.88811349959743,freq300,"(w1_20, w2_80)",408.015,96.25405572755416,161.756,15589.785059999998
+bert-base-cased_batch2-inf,reductionMultiBlockCG_batch2-cuda_samples,30,70,130.648405,60.44721451990611,freq300,"(w1_30, w2_70)",326.839,96.31009732360096,206.008,19860.24517
+bert-base-cased_batch2-inf,reductionMultiBlockCG_batch2-cuda_samples,40,60,116.40926999999988,60.64109423720909,freq300,"(w1_40, w2_60)",290.173,95.88094479830148,236.137,22660.809205
+bert-base-cased_batch2-inf,reductionMultiBlockCG_batch2-cuda_samples,50,50,100.43171000000012,61.18397933842536,freq300,"(w1_50, w2_50)",226.275,98.69076311605724,315.588,31166.5299
+bert-base-cased_batch2-inf,reductionMultiBlockCG_batch2-cuda_samples,60,40,85.54036,61.798314778336135,freq300,"(w1_60, w2_40)",171.066,97.10969457013574,443.853,43122.92052000001
+bert-base-cased_batch2-inf,reductionMultiBlockCG_batch2-cuda_samples,70,30,71.16296999999994,62.0345597405334,freq300,"(w1_70, w2_30)",134.775,98.94329517579722,614.305,60802.551640000005
+bert-base-cased_batch2-inf,reductionMultiBlockCG_batch2-cuda_samples,80,20,52.46556999999997,62.46882491533457,freq300,"(w1_80, w2_20)",94.049,96.52391283524904,1049.225,101295.07889
+bert-base-cased_batch2-inf,reductionMultiBlockCG_batch2-cuda_samples,90,10,34.50278000000003,62.470002507310966,freq300,"(w1_90, w2_10)",64.78800000000001,94.3268104604381,2248.908,212153.55088
+bert-base-cased_batch2-inf,reductionMultiBlockCG_batch2-cuda_samples,10,90,544.6658699999998,98.99690814478566,freq900,"(w1_10, w2_90)",508.342,97.93388235294118,127.604,12517.45951
+bert-base-cased_batch2-inf,reductionMultiBlockCG_batch2-cuda_samples,20,80,500.28959000000026,103.2918407125402,freq900,"(w1_20, w2_80)",408.015,96.25405572755416,161.756,15589.785059999998
+bert-base-cased_batch2-inf,reductionMultiBlockCG_batch2-cuda_samples,30,70,459.5888599999998,109.65789335755724,freq900,"(w1_30, w2_70)",326.839,96.31009732360096,206.008,19860.24517

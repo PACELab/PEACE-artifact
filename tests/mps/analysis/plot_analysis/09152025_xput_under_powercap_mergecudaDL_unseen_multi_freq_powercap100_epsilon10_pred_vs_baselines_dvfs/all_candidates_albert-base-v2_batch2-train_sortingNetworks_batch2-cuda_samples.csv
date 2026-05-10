@@ -1,0 +1,14 @@
+workload1,workload2,w1_Threadpercent,w2_Threadpercent,pred_throughput_sum_val,pred_power_val,selected_model_freq,Thread_combination,weight_Throughput_sum_oracle_actual,Power_oracle_actual,Duration_oracle_actual,Energy_oracle_actual
+albert-base-v2_batch2-train,sortingNetworks_batch2-cuda_samples,10,90,28.077189999999973,56.92178780300215,freq300,"(w1_10, w2_90)",91.074,97.24471428571428,140.006,13635.18653
+albert-base-v2_batch2-train,sortingNetworks_batch2-cuda_samples,20,80,26.355209999999964,58.0379347936977,freq300,"(w1_20, w2_80)",76.328,94.5598245614035,171.284,16215.31121
+albert-base-v2_batch2-train,sortingNetworks_batch2-cuda_samples,30,70,24.28556,59.33601971987374,freq300,"(w1_30, w2_70)",67.268,93.87113804635698,197.444,18549.76343
+albert-base-v2_batch2-train,sortingNetworks_batch2-cuda_samples,40,60,21.643840000000008,59.81199954089314,freq300,"(w1_40, w2_60)",61.082,95.33549107142858,224.695,21441.01404
+albert-base-v2_batch2-train,sortingNetworks_batch2-cuda_samples,50,50,19.42997000000001,60.81371149256037,freq300,"(w1_50, w2_50)",56.715,98.59394422310756,251.809,24847.94129
+albert-base-v2_batch2-train,sortingNetworks_batch2-cuda_samples,60,40,16.867659999999994,61.04070908894113,freq300,"(w1_60, w2_40)",46.369,96.28038461538462,326.191,31426.285840000004
+albert-base-v2_batch2-train,sortingNetworks_batch2-cuda_samples,70,30,14.234840000000007,61.68386739651305,freq300,"(w1_70, w2_30)",39.779,98.23769325153374,409.146,40214.1102
+albert-base-v2_batch2-train,sortingNetworks_batch2-cuda_samples,80,20,11.38093,62.02201028997223,freq300,"(w1_80, w2_20)",30.049,94.71019308125504,624.296,59146.10276
+albert-base-v2_batch2-train,sortingNetworks_batch2-cuda_samples,90,10,8.468720000000003,61.98659796124576,freq300,"(w1_90, w2_10)",22.097,94.97036001694195,1186.291,112682.0863
+albert-base-v2_batch2-train,sortingNetworks_batch2-cuda_samples,10,90,89.17753999999996,94.57159887964366,freq900,"(w1_10, w2_90)",91.074,97.24471428571428,140.006,13635.18653
+albert-base-v2_batch2-train,sortingNetworks_batch2-cuda_samples,20,80,85.88204999999996,99.06480324070328,freq900,"(w1_20, w2_80)",76.328,94.5598245614035,171.284,16215.31121
+albert-base-v2_batch2-train,sortingNetworks_batch2-cuda_samples,30,70,82.11643000000011,104.38359023465289,freq900,"(w1_30, w2_70)",67.268,93.87113804635698,197.444,18549.76343
+albert-base-v2_batch2-train,sortingNetworks_batch2-cuda_samples,40,60,77.25882999999993,109.66965594606876,freq900,"(w1_40, w2_60)",61.082,95.33549107142858,224.695,21441.01404

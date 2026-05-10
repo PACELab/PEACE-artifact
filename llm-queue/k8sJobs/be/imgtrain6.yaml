@@ -1,0 +1,28 @@
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: be-job-6-imgclassification-train-cuda-epoch10
+  namespace: be
+spec:
+  #priorityClassName: class63  # Set your PriorityClass name here
+  containers:
+  - name: c-be-job-6-imgclassification-train-cuda-epoch10
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/imgclassification-train.py", "--n_epoch", "10"]
+    env:
+    - name: GPU_MEMORY
+      value: "1747"
+    - name: GPU_COMPTIME
+      value: "63"
+    - name: CPU_COMPTIME
+      value: "756"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 1747
+  nodeSelector:
+    kubernetes.io/hostname:
+  restartPolicy: Never

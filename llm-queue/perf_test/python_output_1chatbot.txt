@@ -1,0 +1,905 @@
+[completion.py] 2024-01-04 23:21:13: Initialize...
+2024-01-04 23:21:13: Generate...
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: The Amazon River, which is approximately 9,200 miles long.
+Question: What is the name of the first building to be erected in the United States?
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+*
+* For searches and help try:
+* http://www.stata.com/help.cgi?search
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: Amazon River
+Question: What is the last name of the guy who plays Spiderman?
+Answer: Tobey Maguire
+Question: Who was the
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+Text: "I want you to book a flight from Los Angeles to San Francisco."
+Airport codes: LAX,
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: Amazon River
+Question: How many planets in the solar system?
+Answer: Seven
+Question: What is the best way to make a phone call while driving
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+
+this code is a common rate, so there is no way to know if it was an accident or a mistake. It
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: The Amazon River
+Question: What is the largest river in the world?
+Answer: The Nile River
+Question: What is the largest river in the US
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+Text: "I want you to book a flight from Charlotte to Atlanta."
+Airport codes: CLT, ATL.
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: The Amazon River.
+Question: How old is the Statue of Liberty?
+Answer: 478 feet
+Question: Who is the first head coach in the
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX-LAS.
+Text: "I want you to book a flight from San Francisco to Orlando."
+Airport codes: SFO-M
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: Amazon River
+Question: In the famous poem, ‘Lament of Indriyas’, who is the author of this?
+Answer:
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+Text: "I want you to book a flight from Houston to San Francisco."
+Airport codes: HOU, SFO
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: Amazon River
+Question: Who was the first female astronaut to visit space?
+Answer: Sally Ride
+Question: Where was the first World War II Conference held
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+Text: "I want you to book a flight from Chicago to Portland."
+Airport codes: OAK, PDX
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: The Nile River
+Question: Where did the railroad tracks used to run to the moon?
+Answer: To the moon
+Question: What is the largest city
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LV.
+Text: "I want a flight from New York to Los Angeles."
+Airport codes: JFK, LAS.
+Text
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: The Amazon River is the longest river on the earth. It is 4,000 miles long.
+Question: What is the name of the largest lake in the
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+Text: "I want an overnight flight from New York to Seattle."
+Airport codes: JFK, SEA.
+
+
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: Amazon River
+
+Answer: Both, Amazon River and Nile River are the longest river on earth.
+
+Question: Which is the tallest mountain in the world
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+Text: "I want you to book a flight from New York to Los Angeles."
+Airport codes: JFK, L
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: The Nile River
+Question: What country is located in the middle of the Atlantic Ocean?
+Answer: Brazil
+Question: What country is the largest producer of
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: LAS, PHX.
+
+Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: Congo River
+Question: What is the capital of the United States?
+Answer: Washington, D.C.
+Question: Where is the tallest mountain in
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+Text: "I want a flight from New York to San Francisco.
+Airport codes: JFK, SFO.
+
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: Danube River
+
+Question: What is the name of the largest stadium in the world?
+Answer: Athens Olympic Stadium
+Question: What is the name
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+Text: "I want a flight from San Francisco to Toronto."
+Airport codes: SFO, YXD.
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: River Amazon of Brazil
+
+Question: What three famous American architect worked on the Pentagon?
+Answer: Walter Gropius, I.M. Pei
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+Text: "I need a flight from San Francisco to Los Angeles."
+Airport codes: SFO, LAX.
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: Amazon River
+Question: What is the largest river in the world?
+Answer: Mississippi River
+Question: What is the longest river in the world?
+
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+Text: "I want to book a flight to San Francisco from New York."
+Airport codes: JFK, SFO
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: Nile
+
+Question: What is the name of the only female bird of prey?
+Answer: Vulture
+Question: What is the universal symbol for �
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+Text: "I want you to book a flight from Boston to New Jersey."
+Airport codes: BOS, J
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: The Amazon River
+Question: What is the name of the troublemaker in the movie, "High School Musical?"
+Answer: Chad
+Question: Who is
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+Text: "I want you to book a flight from San Francisco to Salt Lake City."
+Airport codes: SFO
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: Amazon River
+Question: Who was the first president of the United States to be born in the U.S. and to have a mother born in the U
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+In the first case, airport codes are in two parts. In the second, they are not.
+
+Extract the
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: Amazon River
+Question: What is the longest river in the world.
+Answer: Amazon River
+Question: What is the longest river in the world?
+
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+ACROSS:
+I want a flight from New York to San Francisco.
+I want you to book a flight from
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: Amazon River in Brazil
+Question: What is the biggest city in the U.S.?
+Answer: Los Angeles
+Question: How many states are there in
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+Text: "I want you to book a flight from Houston to Memphis."
+Airport codes: HOU, MEM.
+
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: Missouri River
+Question: Where was the oldest known body of water in the world found?
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+Text: "I want a flight from Miami to New Orleans."
+Airport codes: MIA, NO.
+In this
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: Amazon River
+Question: What is a river?
+Answer: A river is a body of water that flows through land.
+Question: Who is the only
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+Text: "I want you to book a flight from Cleveland to Denver."
+Airport codes: CLE, DEN.
+
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: The Amazon River
+
+Question: Who is the only Brazilian to win an Olympic Gold Medal in the individual events?
+Answer: Oscar Schmidt
+Question: What
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+
+Placing the airport codes in the text
+
+Do the following:
+
+• In the text, place the airport
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: The Amazon
+Question: What does the word "moving" mean in "moving picture"?
+Answer: A motion picture is a picture or series of pictures that
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LV.
+Text: "I want you to book a flight from Seattle to Dallas."
+Airport codes: SEA, DAL.
+
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: Nile River
+Question: What number of countries are in the United Nations?
+Answer: 193
+Question: When was the first zipline built?
+
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+Text: "I want a flight from Las Vegas to San Francisco."
+Airport codes: LAS, SFO.
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: Yangtze River
+A: length
+B: width
+C: depth
+D: all of the above
+Question: What is a Class-A
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+
+Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: Amazon
+Question: What is the name of the young boy in Alice in Wonderland?
+Answer: Humpty Dumpty
+Question: Where were the 2004 Olympics
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+Text: "I want you to book a flight from San Francisco to New York."
+Airport codes: SFO,
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: The Amazon
+Question: Which country has the most confirmed cases of Covid-19?
+Answer: China
+Question: Which country has the most confirmed cases
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+Text: "I want you to book a flight from San Francisco to Los Angeles."
+Airport codes: SFO,
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: The Amazon
+Question: Who was the first native American to be elected to the U.S. House of Representatives?
+Answer: Henry Cisneros
+
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+Text: "I want you to book a flight from Denver to San Francisco."
+Airport codes: DEN, SFO
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: Amazon River
+Question: What is the largest glacier in the world?
+Answer: Ellesmere Glacier, Antarctica
+Question: What is the world's longest
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+Text: "I want a flight from San Francisco to Washington."
+Airport codes: SFO, IAD.
+
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: The Amazon River
+Question: What is the largest animal in the world?
+Answer: The Blue Whale
+Question: What is the largest animal in the ocean
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+Text: "I want a flight from New York to Los Angeles."
+Airport codes: LAS, LGB.
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: The Nile River is the longest river on earth, and it is 2,625 miles long.
+Question: What is the largest river in the world?
+
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+Text: "I want a flight from Dallas to Chicago."
+Airport codes: DAL, CHI.
+Text
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: Nile
+Question: What is the capital of Zambia?
+Answer: Lusaka
+Question: What is the capital of South Africa?
+Answer:
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+Text: "I want you to book a flight from Los Angeles to Berlin."
+Airport codes: LAS, B
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: Amazon River
+Question: What is the longest river on the earth?
+Answer: Amazon River
+Question: What is the longest river on the earth?
+
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+Text: "I want you to book a flight from Atlanta to Oklahoma City."
+Airport codes: ATL, OKC
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: Amazon
+Question: What is the highest mountain in the world?
+Answer: Everest
+Question: How many Olympic medals does China have?
+Answer: 30
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+Text: "I want a flight from New York to Rome."
+Airport codes: NEW, ROM.
+Text:
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: Amazon River
+Question: How many African countries have won the most medals at the Olympics?
+Answer: Nigeria (more than 100)
+Question: What is
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+Text: "I want a flight from Houston to Los Angeles."
+Airport codes: HOU, LAX.
+Text
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: The Amazon River is the longest river in the world.
+Question: What did the Australian War Memorial in Canberra, Australia, do after the Australians won the Rugby
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+Text: "I want you to book a flight from Los Angeles to New York."
+Airport codes: LAS,
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: The Nile River
+Question: Who were the winners of the Gold medal in the 400 meter relay?
+Answer: The USA
+Question: What did the athletes
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+Text: "I want a flight from Denver to Reno."
+Airport codes: DEN, RNO.
+Text:
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: Amazon River
+Question: If the surface of the moon is smooth and round, why is it so dark?
+Answer: Because the Sun is eclipsed by
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LVX.
+Text: "I want you to book a flight from Denver to Salt Lake City."
+Airport codes: DEN, S
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: Amazon river
+Question: What is the largest river in the world?
+Answer: Amazon River
+Question: Where is the biggest volcano in the world?
+
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+Text: "I want a flight to Los Angeles from the airport in Newark, New Jersey."
+Airport codes: E
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: The Amazon River
+Question: What city is the capital of Ghana?
+Answer: Accra
+Question: What is the capital city of Poland?
+Answer
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+Text: "I want to go to Europe."
+Airport codes: LHR, CDG.
+
+What is
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: The Nile
+The Nile River has a total length of 5,958km.
+The longest river in the world is the Nile River.
+The Nile
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+Text: "I want you to book a flight from Chicago to Washington."
+Airport codes: CHI, DCA
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: The Nile River.
+Question: What is the longest river in the world?
+Answer: The Amazon River.
+Question: What is the oldest game in
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: Nile River
+Question: What is the name of the town that was the capital of the Ming Dynasty?
+Answer: Kaifeng
+Question: What was
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+Text: "I want a flight from Las Vegas to New York."
+Airport codes: LAS, JFK.
+
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: The Amazon River
+Question: What is the name of the Greek Goddess that represents the Earth?
+Answer: Gaia
+
+Question: Where were the 2004 Olympics
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+Text: "I want you to book a flight from Los Angeles to New York."
+Airport codes: LAS,
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: The Amazon River
+Question: Who was the first man to walk on the moon?
+Answer: Neil Armstrong
+Question: What is the capital of Portugal?
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+Text: "I want a flight from Kansas City to Denver."
+Airport codes: KCA, DEN.
+Text
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: The Amazon river is 6,700 miles long.
+Question: What is the tallest mountain in Asia?
+Answer: Mount Everest is the tallest mountain in Asia
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+Text: "I want you to book a flight from Miami to Tampa."
+Airport codes: MIA, TBF.
+----------------------------------------------------------------------
+[completion.py] Outputs:
+----------------------------------------------------------------------
+0: Question: Where were the 2004 Olympics held?
+Answer: Athens, Greece
+Question: What is the longest river on the earth?
+Answer: Amazon
+Question: Who was the first man to fly in the air?
+Answer: Felix Baumgartner
+Question: What is the name of the
+----------------------------------------------------------------------
+1: Extract the airport codes from this text.
+Text: "I want a flight from New York to San Francisco."
+Airport codes: JFK, SFO.
+Text: "I want you to book a flight from Phoenix to Las Vegas."
+Airport codes: PHX, LAS.
+Text: "I want to book a flight from Miami to Los Angeles."
+Airport codes: MIA, LAS.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/bing/llm-queue/build/FlexGen-main/flexgen/apps/completion.py", line 106, in <module>
+    main(args)
+  File "/home/bing/llm-queue/build/FlexGen-main/flexgen/apps/completion.py", line 60, in main
+    output_ids = model.generate(
+  File "/home/bing/miniconda3/envs/ml/lib/python3.10/site-packages/flexgen/flex_opt.py", line 888, in generate
+    self.generation_loop_overlap_single_batch()
+  File "/home/bing/miniconda3/envs/ml/lib/python3.10/site-packages/flexgen/flex_opt.py", line 1028, in generation_loop_overlap_single_batch
+    self.sync()
+  File "/home/bing/miniconda3/envs/ml/lib/python3.10/site-packages/flexgen/flex_opt.py", line 795, in sync
+    torch.cuda.synchronize()
+  File "/home/bing/miniconda3/envs/ml/lib/python3.10/site-packages/torch/cuda/__init__.py", line 566, in synchronize
+    return torch._C._cuda_synchronize()
+KeyboardInterrupt
+nvidia-smi.sh: line 31: 36253 Terminated              python /home/bing/llm-queue/build/FlexGen-main/flexgen/apps/completion.py --model facebook/opt-6.7b --percent 100 0 100 0 100 0

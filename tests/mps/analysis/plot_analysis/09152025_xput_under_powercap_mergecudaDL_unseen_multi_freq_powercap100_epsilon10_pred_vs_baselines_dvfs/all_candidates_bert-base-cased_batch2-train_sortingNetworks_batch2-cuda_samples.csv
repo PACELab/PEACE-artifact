@@ -1,0 +1,14 @@
+workload1,workload2,w1_Threadpercent,w2_Threadpercent,pred_throughput_sum_val,pred_power_val,selected_model_freq,Thread_combination,weight_Throughput_sum_oracle_actual,Power_oracle_actual,Duration_oracle_actual,Energy_oracle_actual
+bert-base-cased_batch2-train,sortingNetworks_batch2-cuda_samples,10,90,28.02690999999995,56.8586331655479,freq300,"(w1_10, w2_90)",87.828,96.1646875,144.154,13882.69689
+bert-base-cased_batch2-train,sortingNetworks_batch2-cuda_samples,20,80,26.61521000000006,57.85647671119113,freq300,"(w1_20, w2_80)",76.14,95.13903508771932,171.283,16314.94979
+bert-base-cased_batch2-train,sortingNetworks_batch2-cuda_samples,30,70,24.378040000000027,58.9960920154336,freq300,"(w1_30, w2_70)",67.815,95.5272193877551,196.442,18785.33278
+bert-base-cased_batch2-train,sortingNetworks_batch2-cuda_samples,40,60,22.14634,59.97316600517618,freq300,"(w1_40, w2_60)",62.406,98.21859770114943,218.081,21440.73683
+bert-base-cased_batch2-train,sortingNetworks_batch2-cuda_samples,50,50,19.32957999999997,60.25923181050066,freq300,"(w1_50, w2_50)",52.985,94.86627118644068,266.393,25291.02634
+bert-base-cased_batch2-train,sortingNetworks_batch2-cuda_samples,60,40,16.87614999999998,60.40637918041535,freq300,"(w1_60, w2_40)",45.283,95.46801526717556,328.752,31404.06554
+bert-base-cased_batch2-train,sortingNetworks_batch2-cuda_samples,70,30,14.085789999999998,61.06136163419095,freq300,"(w1_70, w2_30)",38.395,96.26339290842816,413.7115,39845.02457
+bert-base-cased_batch2-train,sortingNetworks_batch2-cuda_samples,80,20,11.053210000000009,61.23478309847087,freq300,"(w1_80, w2_20)",29.86,94.9136976170912,611.261,58036.48163
+bert-base-cased_batch2-train,sortingNetworks_batch2-cuda_samples,90,10,8.107240000000012,61.45430227676636,freq300,"(w1_90, w2_10)",21.121,93.66540803382664,1188.376,111328.73311
+bert-base-cased_batch2-train,sortingNetworks_batch2-cuda_samples,10,90,89.01704000000011,94.34837591978405,freq900,"(w1_10, w2_90)",87.828,96.1646875,144.154,13882.69689
+bert-base-cased_batch2-train,sortingNetworks_batch2-cuda_samples,20,80,86.04790999999989,99.08098155607352,freq900,"(w1_20, w2_80)",76.14,95.13903508771932,171.283,16314.94979
+bert-base-cased_batch2-train,sortingNetworks_batch2-cuda_samples,30,70,82.18960999999997,103.66213886534284,freq900,"(w1_30, w2_70)",67.815,95.5272193877551,196.442,18785.33278
+bert-base-cased_batch2-train,sortingNetworks_batch2-cuda_samples,40,60,77.04060999999987,107.8077160651775,freq900,"(w1_40, w2_60)",62.406,98.21859770114943,218.081,21440.73683

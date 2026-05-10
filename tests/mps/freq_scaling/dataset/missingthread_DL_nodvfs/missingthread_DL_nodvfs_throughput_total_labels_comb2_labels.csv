@@ -1,0 +1,19 @@
+Workload1,Workload2,Thread_combination,weight_Throughput_sum,Power
+bert-base-cased_batch2-train,whisper-large-v2_batch2-inf,"(w1_90, w2_10)",21.525000000000002,191.31830543933052
+bert-base-cased_batch2-train,vit-base-patch16-224_batch2-inf,"(w1_80, w2_20)",51.574,189.33192468619248
+mobilenet_v2_1.0_224_batch2-inf,vit_h_14_batch2-train,"(w1_60, w2_40)",71.891,115.00079365079364
+vit_h_14_batch2-train,whisper-large-v2_batch2-inf,"(w1_80, w2_20)",6.139,199.88171548117157
+whisper-large-v2_batch2-inf,whisper-large-v2_batch2-inf,"(w1_20, w2_80)",3.1100000000000003,192.87518828451883
+whisper-large-v2_batch2-inf,whisper-large-v2_batch2-inf,"(w1_30, w2_70)",3.194,202.1564644351465
+resnet-50_batch2-train,whisper-large-v2_batch2-inf,"(w1_20, w2_80)",43.514,164.04195544554457
+resnet-50_batch2-train,whisper-large-v2_batch2-inf,"(w1_30, w2_70)",33.95,149.6747907949791
+resnet-50_batch2-train,whisper-large-v2_batch2-inf,"(w1_70, w2_30)",40.646,116.66751196172248
+resnet-50_batch2-train,whisper-large-v2_batch2-inf,"(w1_80, w2_20)",37.901,99.46087837837835
+resnet-50_batch2-train,wav2vec2-base-960h_batch2-inf,"(w1_20, w2_80)",79.484,171.8234358974359
+albert-base-v2_batch2-train,bert-base-cased_batch2-train,"(w1_80, w2_20)",26.595,202.4034518828452
+albert-base-v2_batch2-train,whisper-large-v2_batch2-inf,"(w1_90, w2_10)",23.848,197.56366108786608
+albert-base-v2_batch2-train,resnet-50_batch2-train,"(w1_10, w2_90)",42.794,84.36950236966827
+albert-base-v2_batch2-train,albert-base-v2_batch2-train,"(w1_20, w2_80)",27.013,199.6810251046025
+wav2vec2-base-960h_batch2-inf,whisper-large-v2_batch2-inf,"(w1_20, w2_80)",15.526,190.495
+wav2vec2-base-960h_batch2-inf,whisper-large-v2_batch2-inf,"(w1_80, w2_20)",43.491,199.08512820512817
+wav2vec2-base-960h_batch2-inf,wav2vec2-base-960h_batch2-inf,"(w1_30, w2_70)",55.487,203.1738

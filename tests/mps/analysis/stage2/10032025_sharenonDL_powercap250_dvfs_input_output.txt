@@ -1,0 +1,4 @@
+input: ../../ccv100_logs/sharenonDL_powercap250_dvfs/
+output: 10032025_sharenonDL_powercap250_dvfs
+combination: 2
+metric_type: throughput

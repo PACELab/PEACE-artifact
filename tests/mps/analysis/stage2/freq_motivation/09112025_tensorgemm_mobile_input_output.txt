@@ -1,0 +1,3 @@
+input: ../../ccv100_logs/share/freq_motivation/nodvfs/
+output: freq_motivation/09112025_tensorgemm_mobile
+combination: 2

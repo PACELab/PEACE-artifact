@@ -1,0 +1,13 @@
+Workload1,Workload2,Thread_combination,weight_Throughput_sum,Power
+bert-base-cased_batch2-train,resnet-50_batch2-inf,"(w1_100, w2_100)",83.668,241.9191258741259
+mobilenet_v2_1.0_224_batch2-inf,resnet-50_batch2-inf,"(w1_100, w2_100)",130.748,82.16985018726591
+mobilenet_batch2-train,resnet-50_batch2-inf,"(w1_100, w2_100)",108.667,80.32519685039371
+resnet-50_batch2-train,whisper-large-v2_batch2-inf,"(w1_100, w2_100)",23.665,234.5624273858921
+resnet-50_batch2-train,resnet-50_batch2-train,"(w1_100, w2_100)",85.593,89.77547486033521
+bert-base-cased_batch2-inf,resnet-50_batch2-inf,"(w1_100, w2_100)",141.33499999999998,258.3584403669725
+albert-base-v2_batch2-train,resnet-50_batch2-inf,"(w1_100, w2_100)",84.914,255.711551724138
+resnet-50_batch2-inf,vit_h_14_batch2-train,"(w1_100, w2_100)",59.354,235.1927607361963
+resnet-50_batch2-inf,whisper-large-v2_batch2-inf,"(w1_100, w2_100)",42.842000000000006,233.42368544600936
+resnet-50_batch2-inf,resnet-50_batch2-train,"(w1_100, w2_100)",106.56700000000001,90.5276953125
+resnet-50_batch2-inf,wav2vec2-base-960h_batch2-inf,"(w1_100, w2_100)",106.76599999999999,248.77016339869277
+resnet-50_batch2-inf,vit-base-patch16-224_batch2-inf,"(w1_100, w2_100)",131.981,126.65537878787876

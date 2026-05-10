@@ -1,0 +1,3 @@
+JOB,GPU_MEMORY,GPU_COMPTIME,CPU_COMPTIME,device,data,model_name,load_from_ckpt,ckpt,ckpt_dir,batch_size,wandb_logging,exp_name,profile,profile_all_estimation,profile_output_dir,profile_run,lr,rand_seed,n_epoch,n_batch_per_step,metric_for_best,profile_n_epoch
+recommend-train,23379,28,336,cuda,yelp_review_full,bert-base-cased,False,,ckpt,32,False,test,True,False,profile,3,5e-05,0,1,2,valid_qa_acc,1
+recommend-train,23379,57,684,cuda,yelp_review_full,bert-base-cased,False,,ckpt,32,False,test,True,False,profile,3,5e-05,0,2,2,valid_qa_acc,1

@@ -1,0 +1,13 @@
+workload1,workload2,w1_Threadpercent,w2_Threadpercent,pred_throughput_sum_val,pred_power_val,selected_model_freq,Thread_combination,weight_Throughput_sum_oracle_actual,Power_oracle_actual,Duration_oracle_actual,Energy_oracle_actual
+transpose_batch2-cuda_samples,whisper-large-v2_batch2-inf,10,90,19.876839999999994,61.951413284591496,freq300,"(w1_10, w2_90)",38.197,93.85409221902016,1743.12,163617.5101
+transpose_batch2-cuda_samples,whisper-large-v2_batch2-inf,20,80,35.35131,62.15275996112363,freq300,"(w1_20, w2_80)",73.58999999999999,94.26328239954724,887.563,83683.14861
+transpose_batch2-cuda_samples,whisper-large-v2_batch2-inf,30,70,49.74909,60.22085911701905,freq300,"(w1_30, w2_70)",117.248,96.66902903811253,552.961,53475.60401
+transpose_batch2-cuda_samples,whisper-large-v2_batch2-inf,40,60,61.17506000000002,60.87351686553244,freq300,"(w1_40, w2_60)",144.616,93.75581838565024,447.839,42006.57516
+transpose_batch2-cuda_samples,whisper-large-v2_batch2-inf,50,50,74.14478999999993,60.31918398225468,freq300,"(w1_50, w2_50)",202.812,97.3932389937107,319.154,31104.40362
+transpose_batch2-cuda_samples,whisper-large-v2_batch2-inf,60,40,86.11704999999998,59.91973285602828,freq300,"(w1_60, w2_40)",247.713,96.83288461538464,260.725,25267.21924
+transpose_batch2-cuda_samples,whisper-large-v2_batch2-inf,70,30,97.58224,58.75044332526957,freq300,"(w1_70, w2_30)",282.252,94.22258205689278,228.952,21591.83145
+transpose_batch2-cuda_samples,whisper-large-v2_batch2-inf,80,20,108.31250999999988,57.52587536235583,freq300,"(w1_80, w2_20)",376.025,97.8611403508772,171.324,16787.14638
+transpose_batch2-cuda_samples,whisper-large-v2_batch2-inf,90,10,117.84985999999992,56.34464154546588,freq300,"(w1_90, w2_10)",453.389,97.56753521126764,142.126,13887.00214
+transpose_batch2-cuda_samples,whisper-large-v2_batch2-inf,70,30,347.82481000000007,103.9927127906262,freq900,"(w1_70, w2_30)",282.252,94.22258205689278,228.952,21591.83145
+transpose_batch2-cuda_samples,whisper-large-v2_batch2-inf,80,20,385.94915000000015,98.20212459180692,freq900,"(w1_80, w2_20)",376.025,97.8611403508772,171.324,16787.14638
+transpose_batch2-cuda_samples,whisper-large-v2_batch2-inf,90,10,438.2058200000001,90.75799423227689,freq900,"(w1_90, w2_10)",453.389,97.56753521126764,142.126,13887.00214

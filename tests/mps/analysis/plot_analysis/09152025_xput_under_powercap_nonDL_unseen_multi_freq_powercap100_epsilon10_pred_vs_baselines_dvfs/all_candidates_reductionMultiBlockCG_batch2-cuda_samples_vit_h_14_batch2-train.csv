@@ -1,0 +1,15 @@
+workload1,workload2,w1_Threadpercent,w2_Threadpercent,pred_throughput_sum_val,pred_power_val,selected_model_freq,Thread_combination,weight_Throughput_sum_oracle_actual,Power_oracle_actual,Duration_oracle_actual,Energy_oracle_actual
+reductionMultiBlockCG_batch2-cuda_samples,vit_h_14_batch2-train,10,90,22.16945000000002,61.98140684007343,freq300,"(w1_10, w2_90)",33.584,95.13964886964888,2088.174,198689.45222000004
+reductionMultiBlockCG_batch2-cuda_samples,vit_h_14_batch2-train,20,80,41.94576,62.32893046826656,freq300,"(w1_20, w2_80)",62.85,94.51753431140558,1061.571,100355.73254
+reductionMultiBlockCG_batch2-cuda_samples,vit_h_14_batch2-train,30,70,60.12673000000001,61.55792476094959,freq300,"(w1_30, w2_70)",107.572,96.29975227085052,608.124,58581.58976
+reductionMultiBlockCG_batch2-cuda_samples,vit_h_14_batch2-train,40,60,80.06954,61.64607605786968,freq300,"(w1_40, w2_60)",147.32,94.62370159453305,440.431,41694.28988
+reductionMultiBlockCG_batch2-cuda_samples,vit_h_14_batch2-train,50,50,94.58440000000002,60.58223353008533,freq300,"(w1_50, w2_50)",206.878,96.2734935897436,313.092,30162.45204
+reductionMultiBlockCG_batch2-cuda_samples,vit_h_14_batch2-train,60,40,113.69426000000004,59.46135287871292,freq300,"(w1_60, w2_40)",275.76,97.36316916488224,234.077,22810.88893
+reductionMultiBlockCG_batch2-cuda_samples,vit_h_14_batch2-train,70,30,129.70314499999995,58.7280867136832,freq300,"(w1_70, w2_30)",310.135,94.2064096385542,207.981,19612.2626
+reductionMultiBlockCG_batch2-cuda_samples,vit_h_14_batch2-train,80,20,139.87349000000003,58.06682053155945,freq300,"(w1_80, w2_20)",394.794,94.7223076923077,162.75,15434.65532
+reductionMultiBlockCG_batch2-cuda_samples,vit_h_14_batch2-train,90,10,151.25863500000017,57.27028943362244,freq300,"(w1_90, w2_10)",498.117,96.03220077220077,129.559,12461.88553
+reductionMultiBlockCG_batch2-cuda_samples,vit_h_14_batch2-train,50,50,362.89527999999984,104.3589830455472,freq900,"(w1_50, w2_50)",206.878,96.2734935897436,313.092,30162.45204
+reductionMultiBlockCG_batch2-cuda_samples,vit_h_14_batch2-train,60,40,420.1995199999998,100.31341736656968,freq900,"(w1_60, w2_40)",275.76,97.36316916488224,234.077,22810.88893
+reductionMultiBlockCG_batch2-cuda_samples,vit_h_14_batch2-train,70,30,456.40653,95.33569222860372,freq900,"(w1_70, w2_30)",310.135,94.2064096385542,207.981,19612.2626
+reductionMultiBlockCG_batch2-cuda_samples,vit_h_14_batch2-train,80,20,481.37438000000014,91.69297927460411,freq900,"(w1_80, w2_20)",394.794,94.7223076923077,162.75,15434.65532
+reductionMultiBlockCG_batch2-cuda_samples,vit_h_14_batch2-train,90,10,486.8455300000002,90.39630966936404,freq900,"(w1_90, w2_10)",498.117,96.03220077220077,129.559,12461.88553

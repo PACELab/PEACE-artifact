@@ -1,0 +1,12 @@
+workload1,workload2,w1_Threadpercent,w2_Threadpercent,pred_throughput_sum_val,pred_power_val,selected_model_freq,Thread_combination,weight_Throughput_sum_oracle_actual,Power_oracle_actual,Duration_oracle_actual,Energy_oracle_actual
+cudaTensorCoreGemm_batch2-cuda_samples,whisper-large-v2_batch2-inf,10,90,5.874820000000001,62.03830671016987,freq300,"(w1_10, w2_90)",9.836,94.0740458336844,5962.585,560942.67144
+cudaTensorCoreGemm_batch2-cuda_samples,whisper-large-v2_batch2-inf,20,80,10.475700000000003,62.0560579611637,freq300,"(w1_20, w2_80)",17.802999999999997,90.80390567917637,3024.996,274697.59453
+cudaTensorCoreGemm_batch2-cuda_samples,whisper-large-v2_batch2-inf,30,70,16.07985,60.97406120504908,freq300,"(w1_30, w2_70)",29.39,94.45701581027669,1778.874,168044.92109000002
+cudaTensorCoreGemm_batch2-cuda_samples,whisper-large-v2_batch2-inf,40,60,20.045690000000004,61.72894390382712,freq300,"(w1_40, w2_60)",41.178,96.78208901363271,1252.265,121217.44545
+cudaTensorCoreGemm_batch2-cuda_samples,whisper-large-v2_batch2-inf,50,50,24.607310000000016,61.4040205681018,freq300,"(w1_50, w2_50)",50.999,94.14243609022556,1002.151,94362.8206
+cudaTensorCoreGemm_batch2-cuda_samples,whisper-large-v2_batch2-inf,60,40,28.305959999999985,60.06194970395499,freq300,"(w1_60, w2_40)",70.667,97.0572575017446,719.029,69806.22417999999
+cudaTensorCoreGemm_batch2-cuda_samples,whisper-large-v2_batch2-inf,70,30,32.757090000000005,59.30259860289626,freq300,"(w1_70, w2_30)",90.225,97.62124218051834,561.203,54806.18729
+cudaTensorCoreGemm_batch2-cuda_samples,whisper-large-v2_batch2-inf,80,20,38.22228999999999,58.42270633097646,freq300,"(w1_80, w2_20)",109.024,92.7614393939394,463.317,42995.96933000001
+cudaTensorCoreGemm_batch2-cuda_samples,whisper-large-v2_batch2-inf,90,10,41.784575,57.74047929867203,freq300,"(w1_90, w2_10)",126.896,93.11430012610342,397.552,37036.677670000005
+cudaTensorCoreGemm_batch2-cuda_samples,whisper-large-v2_batch2-inf,80,20,103.9853,106.10202522437638,freq900,"(w1_80, w2_20)",109.024,92.7614393939394,463.317,42995.96933000001
+cudaTensorCoreGemm_batch2-cuda_samples,whisper-large-v2_batch2-inf,90,10,114.54199500000006,101.20229511585326,freq900,"(w1_90, w2_10)",126.896,93.11430012610342,397.552,37036.677670000005

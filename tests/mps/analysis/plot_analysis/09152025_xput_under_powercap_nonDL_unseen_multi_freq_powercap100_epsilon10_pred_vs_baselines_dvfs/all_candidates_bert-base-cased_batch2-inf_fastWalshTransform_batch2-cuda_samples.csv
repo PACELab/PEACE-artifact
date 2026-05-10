@@ -1,0 +1,15 @@
+workload1,workload2,w1_Threadpercent,w2_Threadpercent,pred_throughput_sum_val,pred_power_val,selected_model_freq,Thread_combination,weight_Throughput_sum_oracle_actual,Power_oracle_actual,Duration_oracle_actual,Energy_oracle_actual
+bert-base-cased_batch2-inf,fastWalshTransform_batch2-cuda_samples,10,90,25.26845,58.86031496025801,freq300,"(w1_10, w2_90)",74.62,97.27040160642572,124.555,12136.18576
+bert-base-cased_batch2-inf,fastWalshTransform_batch2-cuda_samples,20,80,25.00258000000001,59.967970852188,freq300,"(w1_20, w2_80)",72.242,98.01826086956522,138.123,13559.59832
+bert-base-cased_batch2-inf,fastWalshTransform_batch2-cuda_samples,30,70,24.655710000000013,61.132770073417056,freq300,"(w1_30, w2_70)",63.588,94.81933933933934,166.8,15834.829960000005
+bert-base-cased_batch2-inf,fastWalshTransform_batch2-cuda_samples,40,60,23.71867000000001,61.71700857123074,freq300,"(w1_40, w2_60)",64.649,99.58617563739377,176.899,17638.229769999998
+bert-base-cased_batch2-inf,fastWalshTransform_batch2-cuda_samples,50,50,22.13109000000001,61.8213485327411,freq300,"(w1_50, w2_50)",53.009,93.03632016632017,241.219,22460.31489
+bert-base-cased_batch2-inf,fastWalshTransform_batch2-cuda_samples,60,40,21.82901000000002,62.66190934306689,freq300,"(w1_60, w2_40)",53.091,96.47149549549547,278.472,26884.42094
+bert-base-cased_batch2-inf,fastWalshTransform_batch2-cuda_samples,70,30,20.00369,62.89468255711505,freq300,"(w1_70, w2_30)",51.646,99.25469064748202,348.864,34648.0706
+bert-base-cased_batch2-inf,fastWalshTransform_batch2-cuda_samples,80,20,19.14695,62.336568153489424,freq300,"(w1_80, w2_20)",42.91,92.99038427947598,575.096,53496.21679
+bert-base-cased_batch2-inf,fastWalshTransform_batch2-cuda_samples,90,10,17.517760000000003,62.942826493028015,freq300,"(w1_90, w2_10)",42.104,95.20540009144948,1098.993,104649.13191
+bert-base-cased_batch2-inf,fastWalshTransform_batch2-cuda_samples,10,90,70.71424000000002,93.72110189499377,freq900,"(w1_10, w2_90)",74.62,97.27040160642572,124.555,12136.18576
+bert-base-cased_batch2-inf,fastWalshTransform_batch2-cuda_samples,20,80,74.70037999999997,97.20698625399672,freq900,"(w1_20, w2_80)",72.242,98.01826086956522,138.123,13559.59832
+bert-base-cased_batch2-inf,fastWalshTransform_batch2-cuda_samples,30,70,79.34162000000008,102.02889050126927,freq900,"(w1_30, w2_70)",63.588,94.81933933933934,166.8,15834.829960000005
+bert-base-cased_batch2-inf,fastWalshTransform_batch2-cuda_samples,40,60,83.89606999999992,105.0265785917648,freq900,"(w1_40, w2_60)",64.649,99.58617563739377,176.899,17638.229769999998
+bert-base-cased_batch2-inf,fastWalshTransform_batch2-cuda_samples,50,50,84.61656999999994,109.66395221373652,freq900,"(w1_50, w2_50)",53.009,93.03632016632017,241.219,22460.31489

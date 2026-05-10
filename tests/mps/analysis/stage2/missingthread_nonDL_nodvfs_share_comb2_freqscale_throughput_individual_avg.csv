@@ -1,0 +1,6 @@
+workload1,workload2,freq1,freq2,"(w1_30, w2_70)","(w1_40, w2_60)","(w1_70, w2_30)"
+fastWalshTransform_batch2-cuda_samples,vit_h_14_batch2-train,0,0,"(None, None)","(None, None)","(66.382, 1.410)"
+fastWalshTransform_batch2-cuda_samples,whisper-large-v2_batch2-inf,0,0,"(44.982, 1.663)","(None, None)","(None, None)"
+reductionMultiBlockCG_batch2-cuda_samples,whisper-large-v2_batch2-inf,0,0,"(None, None)","(None, None)","(501.983, 1.005)"
+reductionMultiBlockCG_batch2-cuda_samples,wav2vec2-base-960h_batch2-inf,0,0,"(None, None)","(None, None)","(494.750, 18.184)"
+sortingNetworks_batch2-cuda_samples,whisper-large-v2_batch2-inf,0,0,"(None, None)","(65.957, 1.509)","(92.537, 0.584)"

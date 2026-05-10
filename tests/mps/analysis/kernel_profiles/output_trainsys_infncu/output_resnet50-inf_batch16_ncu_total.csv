@@ -1,0 +1,2 @@
+Threads,Compute (SM) Throughput,DRAM Throughput,Memory Throughput,Registers,Static Shared Memory,Type
+603933.7943162437,53.357105060378586,41.25816233340347,58.433678522959234,17148139.022149175,7484.12708252295,resnet50-inf_batch16

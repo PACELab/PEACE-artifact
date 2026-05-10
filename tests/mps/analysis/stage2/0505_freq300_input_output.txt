@@ -1,0 +1,3 @@
+input: /home/cc/mlProfiler/tests/mps/ccv100_logs/share_freqscale_freq300/
+output: 0505_freq300
+combination: 2

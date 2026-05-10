@@ -1,0 +1,29 @@
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ls-job-4-llm-data-wrangle
+  namespace: ls
+spec:
+  #priorityClassName: class30  # Set your PriorityClass name here
+  containers:
+  - name: c-ls-job-4-llm-data-wrangle
+    image:  nba556677/inference:flexgen
+    imagePullPolicy: Always
+    command: ["bash", "./test_single_query_case.sh"]
+    env:
+    - name: GPU_MEMORY
+      value: "16000"
+    - name: GPU_COMPTIME
+      value: "30"
+    - name: CPU_COMPTIME
+      value: "600"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 16000
+  nodeSelector:
+    kubernetes.io/hostname: 
+  restartPolicy: Never
+

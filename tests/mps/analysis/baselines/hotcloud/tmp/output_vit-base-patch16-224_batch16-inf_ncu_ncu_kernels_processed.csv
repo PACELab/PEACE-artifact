@@ -1,0 +1,454 @@
+kernel,ID,Memory Throughput,DRAM Throughput,length_Type,Duration,Compute (SM) Throughput,PCIe read bandwidth,PCIe write bandwidth,Block Size,Grid Size,Registers Per Thread,Static Shared Memory Per Block,Threads,Registers,Static Shared Memory
+"void cask_cudnn_infer::computeOffsetsKernel<(bool)0, (bool)0>(cask_cudnn_infer::ComputeOffsetsParams)",0,0.16,0.01,Short,2.98,0.08,0.0,516.13,256.0,1.0,16.0,0.0,256.0,4096.0,0.0
+cudnn_infer_volta_scudnn_128x64_relu_xregs_large_nn_v1,1,56.2,7.76,Long,449.02,64.85,6.84,15.96,128.0,300.0,160.0,16.38,38400.0,6144000.0,4914.0
+"void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",2,71.58,71.58,Short,27.49,39.5,37.25,242.14,128.0,9408.0,16.0,0.0,1204224.0,19267584.0,0.0
+"void at::native::<unnamed>::CatArrayBatchedCopy<at::native::<unnamed>::OpaqueType<(unsigned int)4>, unsigned int, (int)3, (int)64, (int)64>(T1 *, at::native::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::native::<unnamed>::TensorSizeStride<T2, (unsigned int)4>, int, T2)",3,59.25,32.24,Short,60.8,20.15,25.26,117.89,512.0,320.0,32.0,0.0,163840.0,5242880.0,0.0
+"void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",4,75.68,75.68,Short,32.74,32.79,46.92,203.32,128.0,9456.0,16.0,0.0,1210368.0,19365888.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",5,62.44,62.44,Short,38.53,56.17,26.58,172.76,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x32_tn,6,76.09,6.67,Long,345.82,83.04,4.44,19.25,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,7,75.84,6.76,Long,355.36,82.78,2.88,20.17,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,8,76.58,6.9,Long,349.95,83.61,2.93,19.02,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"fmha_cutlassF_f32_aligned_64x64_rf_sm70(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm70, (bool)1, (int)64, (int)64, (int)64, (bool)1, (bool)1>::Params)",9,51.64,13.35,Long,402.14,60.96,3.82,17.82,128.0,768.0,168.0,0.0,98304.0,16515072.0,0.0
+volta_sgemm_128x32_tn,10,74.8,6.59,Long,358.5,81.66,2.86,18.57,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",11,85.03,85.03,Short,36.51,3.15,28.05,196.32,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",12,61.31,61.31,Short,39.01,55.37,26.25,170.63,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x64_tn,13,46.08,8.35,Short,1.27,91.23,803.45,5.62,128.0,1200.0,122.0,12.8,153600.0,18739200.0,15360.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",14,88.74,88.74,Short,96.1,24.69,15.98,74.59,128.0,18912.0,28.0,0.0,2420736.0,67780608.0,0.0
+volta_sgemm_128x64_tn,15,44.49,5.54,Short,1.26,90.58,809.8,5.26,128.0,300.0,122.0,12.8,38400.0,4684800.0,3840.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",16,85.35,85.35,Short,36.86,3.16,27.78,180.56,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",17,61.51,61.51,Short,38.34,55.36,26.71,173.62,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x32_tn,18,76.25,6.85,Long,353.89,83.25,4.34,18.81,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,19,76.31,7.02,Long,358.24,83.3,2.86,18.58,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,20,75.98,6.68,Long,358.27,82.94,2.86,18.58,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"fmha_cutlassF_f32_aligned_64x64_rf_sm70(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm70, (bool)1, (int)64, (int)64, (int)64, (bool)1, (bool)1>::Params)",21,51.89,13.47,Long,407.23,61.29,2.51,17.6,128.0,768.0,168.0,0.0,98304.0,16515072.0,0.0
+volta_sgemm_128x32_tn,22,76.09,6.71,Long,362.43,83.05,4.24,18.36,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",23,85.08,85.08,Short,36.29,3.15,28.22,183.42,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",24,63.04,63.04,Short,38.43,56.84,26.64,173.19,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x64_tn,25,45.91,8.4,Short,1.27,90.88,1.21,5.26,128.0,1200.0,122.0,12.8,153600.0,18739200.0,15360.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",26,89.28,89.28,Short,95.84,24.83,10.68,69.45,128.0,18912.0,28.0,0.0,2420736.0,67780608.0,0.0
+volta_sgemm_128x64_tn,27,44.49,5.54,Short,1.26,90.58,1.22,5.27,128.0,300.0,122.0,12.8,38400.0,4684800.0,3840.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",28,85.71,85.71,Short,36.48,3.18,28.07,182.46,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",29,61.4,61.4,Short,39.01,55.39,39.38,170.63,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x32_tn,30,75.07,6.6,Long,356.96,81.95,2.87,18.65,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,31,76.1,6.84,Long,358.14,83.08,4.29,20.01,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,32,76.84,6.99,Long,364.26,83.88,2.81,18.27,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"fmha_cutlassF_f32_aligned_64x64_rf_sm70(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm70, (bool)1, (int)64, (int)64, (int)64, (bool)1, (bool)1>::Params)",33,52.63,13.56,Long,391.14,62.1,2.62,17.02,128.0,768.0,168.0,0.0,98304.0,16515072.0,0.0
+volta_sgemm_128x32_tn,34,74.44,6.67,Long,347.49,81.26,2.95,19.15,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",35,83.88,83.88,Short,36.38,3.11,28.14,197.01,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",36,62.71,62.71,Short,37.92,56.6,27.0,175.53,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x64_tn,37,45.6,8.32,Short,1.26,90.3,1.22,5.69,128.0,1200.0,122.0,12.8,153600.0,18739200.0,15360.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",38,89.39,89.39,Short,96.51,24.9,10.61,68.97,128.0,18912.0,28.0,0.0,2420736.0,67780608.0,0.0
+volta_sgemm_128x64_tn,39,44.42,5.7,Short,1.26,90.48,810.45,5.67,128.0,300.0,122.0,12.8,38400.0,4684800.0,3840.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",40,84.76,84.76,Short,37.15,3.14,27.56,179.16,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",41,62.01,62.01,Short,38.05,56.07,26.91,174.94,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x32_tn,42,76.11,6.81,Long,358.11,83.09,2.86,20.02,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,43,75.34,6.65,Long,361.5,82.24,2.83,18.41,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,44,74.61,6.5,Long,362.24,81.45,2.83,18.37,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"fmha_cutlassF_f32_aligned_64x64_rf_sm70(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm70, (bool)1, (int)64, (int)64, (int)64, (bool)1, (bool)1>::Params)",45,51.77,13.35,Long,392.48,61.08,2.61,16.96,128.0,768.0,168.0,0.0,98304.0,16515072.0,0.0
+volta_sgemm_128x32_tn,46,75.35,6.67,Long,348.48,82.28,4.41,19.1,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",47,85.64,85.64,Short,36.7,3.18,41.85,181.34,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",48,62.1,62.1,Short,38.4,55.97,40.0,173.33,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x64_tn,49,46.02,8.61,Short,1.28,91.11,801.5,5.21,128.0,1200.0,122.0,12.8,153600.0,18739200.0,15360.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",50,89.14,89.14,Short,96.42,24.81,10.62,69.03,128.0,18912.0,28.0,0.0,2420736.0,67780608.0,0.0
+volta_sgemm_128x64_tn,51,44.52,5.58,Short,1.26,90.66,811.05,5.27,128.0,300.0,122.0,12.8,38400.0,4684800.0,3840.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",52,85.26,85.26,Short,36.19,3.16,28.29,183.91,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",53,60.69,60.69,Short,39.3,54.7,26.06,169.38,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x32_tn,54,75.95,6.7,Long,358.37,82.91,2.86,18.57,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,55,75.18,6.65,Long,341.66,82.06,3.0,19.48,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,56,74.92,6.57,Long,361.25,81.8,2.83,18.43,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"fmha_cutlassF_f32_aligned_64x64_rf_sm70(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm70, (bool)1, (int)64, (int)64, (int)64, (bool)1, (bool)1>::Params)",57,51.87,13.47,Long,404.35,61.12,2.53,17.73,128.0,768.0,168.0,0.0,98304.0,16515072.0,0.0
+volta_sgemm_128x32_tn,58,74.59,6.65,Long,358.11,81.44,2.86,18.59,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",59,85.04,85.04,Short,37.38,3.15,27.4,178.08,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",60,62.3,62.3,Short,38.69,56.08,39.7,185.28,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x64_tn,61,45.94,8.6,Short,1.26,90.93,812.35,5.69,128.0,1200.0,122.0,12.8,153600.0,18739200.0,15360.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",62,89.18,89.18,Short,95.65,24.81,10.71,69.59,128.0,18912.0,28.0,0.0,2420736.0,67780608.0,0.0
+volta_sgemm_128x64_tn,63,44.44,5.67,Short,1.26,90.52,811.63,5.68,128.0,300.0,122.0,12.8,38400.0,4684800.0,3840.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",64,83.5,83.5,Short,37.25,3.09,41.24,178.69,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",65,61.61,61.61,Short,39.52,55.87,25.91,168.42,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x32_tn,66,76.08,6.75,Long,360.61,83.05,2.84,18.46,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,67,75.57,6.81,Long,354.78,82.49,2.89,18.76,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,68,75.18,6.74,Long,348.0,82.06,2.94,19.13,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"fmha_cutlassF_f32_aligned_64x64_rf_sm70(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm70, (bool)1, (int)64, (int)64, (int)64, (bool)1, (bool)1>::Params)",69,52.2,13.08,Long,410.02,61.53,2.5,16.23,128.0,768.0,168.0,0.0,98304.0,16515072.0,0.0
+volta_sgemm_128x32_tn,70,76.21,6.71,Long,350.91,83.18,4.38,18.97,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",71,83.95,83.95,Short,36.19,3.11,28.29,183.91,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",72,60.56,60.56,Short,38.78,54.62,39.6,171.62,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x64_tn,73,45.89,8.56,Short,1.26,90.85,812.22,5.28,128.0,1200.0,122.0,12.8,153600.0,18739200.0,15360.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",74,89.06,89.06,Short,96.54,24.79,10.61,68.94,128.0,18912.0,28.0,0.0,2420736.0,67780608.0,0.0
+volta_sgemm_128x64_tn,75,44.44,5.49,Short,1.26,90.51,1.22,5.27,128.0,300.0,122.0,12.8,38400.0,4684800.0,3840.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",76,85.22,85.22,Short,36.48,3.16,28.07,182.46,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",77,61.65,61.65,Short,38.78,55.82,39.6,171.62,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x32_tn,78,74.77,6.56,Long,357.18,81.62,2.87,20.07,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,79,74.22,6.59,Long,348.64,81.03,2.94,19.09,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,80,76.42,6.77,Long,343.36,83.43,4.47,20.88,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"fmha_cutlassF_f32_aligned_64x64_rf_sm70(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm70, (bool)1, (int)64, (int)64, (int)64, (bool)1, (bool)1>::Params)",81,51.41,13.48,Long,407.07,60.53,2.52,16.35,128.0,768.0,168.0,0.0,98304.0,16515072.0,0.0
+volta_sgemm_128x32_tn,82,76.22,6.78,Long,353.41,83.19,2.9,18.83,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",83,85.53,85.53,Short,36.26,3.17,28.24,183.58,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",84,60.96,60.96,Short,38.43,55.06,26.64,173.19,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x64_tn,85,45.72,8.4,Short,1.26,90.51,809.57,5.26,128.0,1200.0,122.0,12.8,153600.0,18739200.0,15360.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",86,89.01,89.01,Short,95.97,24.77,10.67,74.69,128.0,18912.0,28.0,0.0,2420736.0,67780608.0,0.0
+volta_sgemm_128x64_tn,87,44.49,5.64,Short,1.26,90.63,1.22,5.27,128.0,300.0,122.0,12.8,38400.0,4684800.0,3840.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",88,84.77,84.77,Short,36.99,3.14,27.68,179.93,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",89,61.11,61.11,Short,38.69,55.1,39.7,185.28,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x32_tn,90,76.37,6.76,Long,345.82,83.37,2.96,19.25,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,91,76.2,6.77,Long,354.82,83.19,2.89,18.76,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,92,73.83,6.49,Long,362.08,80.61,2.83,18.38,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"fmha_cutlassF_f32_aligned_64x64_rf_sm70(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm70, (bool)1, (int)64, (int)64, (int)64, (bool)1, (bool)1>::Params)",93,51.53,13.36,Long,406.02,60.68,2.52,16.39,128.0,768.0,168.0,0.0,98304.0,16515072.0,0.0
+volta_sgemm_128x32_tn,94,76.59,6.74,Long,359.49,83.61,4.27,18.52,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",95,84.0,84.0,Short,36.1,3.11,28.37,198.58,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",96,62.26,62.26,Short,38.34,56.19,26.71,173.62,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x64_tn,97,45.97,8.47,Short,1.27,91.02,804.69,5.23,128.0,1200.0,122.0,12.8,153600.0,18739200.0,15360.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",98,89.58,89.58,Short,96.16,24.94,10.65,69.22,128.0,18912.0,28.0,0.0,2420736.0,67780608.0,0.0
+volta_sgemm_128x64_tn,99,44.46,5.78,Short,1.26,90.56,810.23,5.27,128.0,300.0,122.0,12.8,38400.0,4684800.0,3840.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",100,84.83,84.83,Short,36.67,3.14,41.88,181.5,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",101,62.3,62.3,Short,37.82,56.31,40.61,175.97,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x32_tn,102,74.57,6.67,Long,354.27,81.4,2.89,18.79,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,103,76.09,6.7,Long,357.6,83.07,2.86,18.61,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,104,75.22,6.67,Long,355.3,82.12,2.88,18.73,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"fmha_cutlassF_f32_aligned_64x64_rf_sm70(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm70, (bool)1, (int)64, (int)64, (int)64, (bool)1, (bool)1>::Params)",105,51.52,13.24,Long,388.58,60.66,2.64,17.13,128.0,768.0,168.0,0.0,98304.0,16515072.0,0.0
+volta_sgemm_128x32_tn,106,75.82,6.64,Long,353.66,82.78,2.9,20.27,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",107,83.13,83.13,Short,36.45,3.08,28.09,196.66,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",108,62.35,62.35,Short,37.98,56.33,40.44,188.71,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x64_tn,109,45.68,8.66,Short,1.26,90.43,1.22,5.29,128.0,1200.0,122.0,12.8,153600.0,18739200.0,15360.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",110,88.81,88.81,Short,95.94,24.71,16.01,69.38,128.0,18912.0,28.0,0.0,2420736.0,67780608.0,0.0
+volta_sgemm_128x64_tn,111,44.46,5.5,Short,1.26,90.55,810.62,5.27,128.0,300.0,122.0,12.8,38400.0,4684800.0,3840.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",112,84.2,84.2,Short,36.8,3.12,41.74,180.87,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",113,62.78,62.78,Short,37.63,56.85,27.21,176.87,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x32_tn,114,76.73,6.82,Long,349.22,83.76,4.4,19.06,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,115,75.76,6.74,Long,343.78,82.7,2.98,20.85,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,116,76.33,6.73,Long,356.64,83.33,2.87,18.66,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"fmha_cutlassF_f32_aligned_64x64_rf_sm70(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm70, (bool)1, (int)64, (int)64, (int)64, (bool)1, (bool)1>::Params)",117,51.94,13.25,Long,406.18,61.23,3.78,16.39,128.0,768.0,168.0,0.0,98304.0,16515072.0,0.0
+volta_sgemm_128x32_tn,118,74.79,6.7,Long,357.38,81.64,2.87,18.62,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",119,85.02,85.02,Short,36.77,3.15,27.85,181.03,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",120,62.46,62.46,Short,37.95,56.35,26.98,175.38,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x64_tn,121,45.63,8.65,Short,1.28,90.34,801.86,5.61,128.0,1200.0,122.0,12.8,153600.0,18739200.0,15360.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",122,89.38,89.38,Short,96.35,24.88,10.63,69.08,128.0,18912.0,28.0,0.0,2420736.0,67780608.0,0.0
+volta_sgemm_128x64_tn,123,44.47,5.62,Short,1.26,90.55,1.22,5.27,128.0,300.0,122.0,12.8,38400.0,4684800.0,3840.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",124,84.07,84.07,Short,37.66,3.12,27.19,176.72,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",125,62.45,62.45,Short,38.72,56.46,26.45,185.12,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x32_tn,126,75.95,6.68,Long,341.63,82.91,4.5,19.48,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,127,74.9,6.64,Long,357.12,81.78,2.87,18.64,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,128,76.15,6.92,Long,355.81,83.14,2.88,18.71,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"fmha_cutlassF_f32_aligned_64x64_rf_sm70(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm70, (bool)1, (int)64, (int)64, (int)64, (bool)1, (bool)1>::Params)",129,50.98,13.33,Long,386.78,60.2,2.65,17.21,128.0,768.0,168.0,0.0,98304.0,16515072.0,0.0
+volta_sgemm_128x32_tn,130,75.19,6.7,Long,347.74,82.07,2.94,19.14,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",131,84.35,84.35,Short,36.77,3.12,27.85,181.03,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",132,62.57,62.57,Short,37.7,56.6,27.16,176.57,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x64_tn,133,46.07,8.67,Short,1.27,91.2,805.8,5.24,128.0,1200.0,122.0,12.8,153600.0,18739200.0,15360.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",134,88.99,88.99,Short,96.93,24.75,10.56,68.67,128.0,18912.0,28.0,0.0,2420736.0,67780608.0,0.0
+volta_sgemm_128x64_tn,135,44.4,5.5,Short,1.26,90.44,1.22,5.67,128.0,300.0,122.0,12.8,38400.0,4684800.0,3840.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",136,84.65,84.65,Short,36.77,3.13,27.85,194.95,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",137,62.32,62.32,Short,39.46,56.44,25.95,168.69,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x32_tn,138,74.82,6.73,Long,341.92,81.67,2.99,19.47,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,139,76.04,6.82,Long,359.33,83.01,2.85,18.52,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,140,76.22,6.88,Long,360.42,83.21,2.84,18.47,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"fmha_cutlassF_f32_aligned_64x64_rf_sm70(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm70, (bool)1, (int)64, (int)64, (int)64, (bool)1, (bool)1>::Params)",141,52.71,13.6,Long,416.19,61.98,2.46,17.22,128.0,768.0,168.0,0.0,98304.0,16515072.0,0.0
+volta_sgemm_128x32_tn,142,76.43,6.84,Long,361.09,83.43,4.25,18.43,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",143,83.9,83.9,Short,37.47,3.11,27.33,191.29,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",144,62.11,62.11,Short,38.14,56.08,26.85,187.92,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x64_tn,145,45.94,8.83,Short,1.21,90.96,1.27,5.49,128.0,1200.0,122.0,12.8,153600.0,18739200.0,15360.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",146,89.46,89.46,Short,96.06,24.89,10.66,69.29,128.0,18912.0,28.0,0.0,2420736.0,67780608.0,0.0
+volta_sgemm_128x64_tn,147,44.5,5.74,Short,1.26,90.62,809.57,5.26,128.0,300.0,122.0,12.8,38400.0,4684800.0,3840.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",148,85.76,85.76,Short,37.57,3.18,27.26,190.8,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",149,61.35,61.35,Short,37.92,55.43,27.0,175.53,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+"void gemmSN_TN_kernel<float, (int)128, (int)16, (int)2, (int)4, (int)8, (int)9, (bool)0, cublasGemvTensorStridedBatched<const float>, cublasGemvTensorStridedBatched<const float>, cublasGemvTensorStridedBatched<float>>(cublasGemmSmallNParams<T9, T10, T11, T1>)",150,40.82,19.85,Short,20.54,36.13,49.84,348.91,128.0,250.0,72.0,13.82,32000.0,2304000.0,3455.0
+"void cask_cudnn_infer::computeOffsetsKernel<(bool)0, (bool)0>(cask_cudnn_infer::ComputeOffsetsParams)",151,0.16,0.01,Short,3.26,0.08,156.86,313.73,256.0,1.0,16.0,0.0,256.0,4096.0,0.0
+cudnn_infer_volta_scudnn_128x64_relu_xregs_large_nn_v1,152,55.98,7.79,Long,446.11,64.6,2.3,16.07,128.0,300.0,160.0,16.38,38400.0,6144000.0,4914.0
+"void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",153,72.06,72.06,Short,27.65,39.76,55.56,259.26,128.0,9408.0,16.0,0.0,1204224.0,19267584.0,0.0
+"void at::native::<unnamed>::CatArrayBatchedCopy<at::native::<unnamed>::OpaqueType<(unsigned int)4>, unsigned int, (int)3, (int)64, (int)64>(T1 *, at::native::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::native::<unnamed>::TensorSizeStride<T2, (unsigned int)4>, int, T2)",154,59.62,33.9,Short,59.52,20.28,17.2,111.83,512.0,320.0,32.0,0.0,163840.0,5242880.0,0.0
+"void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",155,74.91,74.91,Short,30.69,32.3,33.37,216.89,128.0,9456.0,16.0,0.0,1210368.0,19365888.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",156,61.56,61.56,Short,37.92,55.39,27.0,175.53,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x32_tn,157,76.29,6.85,Long,355.97,83.29,2.88,18.7,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,158,76.25,6.72,Long,357.98,83.22,2.86,18.59,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,159,76.4,6.75,Long,356.51,83.4,2.87,18.67,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"fmha_cutlassF_f32_aligned_64x64_rf_sm70(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm70, (bool)1, (int)64, (int)64, (int)64, (bool)1, (bool)1>::Params)",160,51.89,13.18,Long,406.02,61.26,3.78,17.65,128.0,768.0,168.0,0.0,98304.0,16515072.0,0.0
+volta_sgemm_128x32_tn,161,75.18,6.7,Long,354.5,82.09,2.89,18.78,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",162,84.32,84.32,Short,36.67,3.12,27.92,181.5,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",163,61.21,61.21,Short,38.02,55.4,26.94,175.08,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x64_tn,164,46.02,8.64,Short,1.28,91.11,1.2,5.18,128.0,1200.0,122.0,12.8,153600.0,18739200.0,15360.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",165,89.41,89.41,Short,95.46,24.87,10.73,69.73,128.0,18912.0,28.0,0.0,2420736.0,67780608.0,0.0
+volta_sgemm_128x64_tn,166,44.46,5.71,Short,1.26,90.54,810.23,5.27,128.0,300.0,122.0,12.8,38400.0,4684800.0,3840.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",167,85.13,85.13,Short,36.8,3.16,27.83,194.78,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",168,61.56,61.56,Short,38.3,55.36,26.73,187.13,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x32_tn,169,76.28,6.64,Long,358.98,83.26,2.85,18.54,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,170,76.56,6.95,Long,343.49,83.58,2.98,20.87,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,171,76.56,6.76,Long,357.12,83.56,2.87,18.64,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"fmha_cutlassF_f32_aligned_64x64_rf_sm70(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm70, (bool)1, (int)64, (int)64, (int)64, (bool)1, (bool)1>::Params)",172,51.49,13.38,Long,404.86,60.83,2.53,16.44,128.0,768.0,168.0,0.0,98304.0,16515072.0,0.0
+volta_sgemm_128x32_tn,173,74.38,6.66,Long,341.63,81.2,4.5,19.48,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",174,83.29,83.29,Short,36.99,3.09,41.52,179.93,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",175,60.76,60.76,Short,37.47,55.1,27.33,177.63,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x64_tn,176,45.89,8.33,Short,1.27,90.86,807.86,5.25,128.0,1200.0,122.0,12.8,153600.0,18739200.0,15360.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",177,89.13,89.13,Short,96.77,24.78,10.58,74.07,128.0,18912.0,28.0,0.0,2420736.0,67780608.0,0.0
+volta_sgemm_128x64_tn,178,44.49,5.78,Short,1.26,90.58,810.45,5.67,128.0,300.0,122.0,12.8,38400.0,4684800.0,3840.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",179,85.14,85.14,Short,36.83,3.15,27.8,194.61,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",180,61.63,61.63,Short,38.69,55.81,39.7,172.04,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x32_tn,181,76.31,6.77,Long,359.65,83.3,2.85,18.51,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,182,75.87,6.7,Long,354.78,82.82,2.89,18.76,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,183,75.96,6.77,Long,352.8,82.91,4.35,18.87,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"fmha_cutlassF_f32_aligned_64x64_rf_sm70(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm70, (bool)1, (int)64, (int)64, (int)64, (bool)1, (bool)1>::Params)",184,51.81,13.38,Long,407.36,61.14,2.51,17.6,128.0,768.0,168.0,0.0,98304.0,16515072.0,0.0
+volta_sgemm_128x32_tn,185,74.56,6.63,Long,359.04,81.38,2.85,18.54,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",186,85.57,85.57,Short,36.61,3.17,27.97,181.82,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",187,61.78,61.78,Short,38.27,56.01,40.13,173.91,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x64_tn,188,46.03,8.32,Short,1.26,91.14,1.21,5.26,128.0,1200.0,122.0,12.8,153600.0,18739200.0,15360.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",189,89.26,89.26,Short,96.16,24.84,10.65,69.22,128.0,18912.0,28.0,0.0,2420736.0,67780608.0,0.0
+volta_sgemm_128x64_tn,190,44.49,5.57,Short,1.26,90.59,810.99,5.68,128.0,300.0,122.0,12.8,38400.0,4684800.0,3840.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",191,82.98,82.98,Short,36.99,3.07,41.52,179.93,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",192,61.82,61.82,Short,38.53,55.94,26.58,172.76,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x32_tn,193,75.93,6.79,Long,355.26,82.89,2.88,18.74,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,194,74.38,6.65,Long,358.24,81.19,2.86,18.58,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,195,76.32,6.85,Long,355.65,83.32,2.88,18.72,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"fmha_cutlassF_f32_aligned_64x64_rf_sm70(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm70, (bool)1, (int)64, (int)64, (int)64, (bool)1, (bool)1>::Params)",196,51.77,13.45,Long,390.69,61.07,2.62,17.04,128.0,768.0,168.0,0.0,98304.0,16515072.0,0.0
+volta_sgemm_128x32_tn,197,76.12,6.78,Long,351.65,83.09,4.37,18.93,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",198,84.71,84.71,Short,37.12,3.14,27.59,193.1,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",199,62.3,62.3,Short,39.46,56.33,25.95,168.69,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x64_tn,200,45.64,8.41,Short,1.28,90.37,800.64,5.2,128.0,1200.0,122.0,12.8,153600.0,18739200.0,15360.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",201,89.1,89.1,Short,95.84,24.79,16.03,69.45,128.0,18912.0,28.0,0.0,2420736.0,67780608.0,0.0
+volta_sgemm_128x64_tn,202,44.42,5.57,Short,1.26,90.47,809.8,5.26,128.0,300.0,122.0,12.8,38400.0,4684800.0,3840.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",203,84.11,84.11,Short,36.74,3.12,27.87,181.18,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",204,61.09,61.09,Short,37.86,55.21,27.05,189.35,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x32_tn,205,75.95,6.73,Long,350.91,82.9,2.92,18.97,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,206,76.86,6.89,Long,361.25,83.91,4.25,18.43,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,207,74.06,6.58,Long,358.27,80.84,2.86,20.01,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"fmha_cutlassF_f32_aligned_64x64_rf_sm70(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm70, (bool)1, (int)64, (int)64, (int)64, (bool)1, (bool)1>::Params)",208,52.13,13.61,Long,392.99,61.48,2.61,16.94,128.0,768.0,168.0,0.0,98304.0,16515072.0,0.0
+volta_sgemm_128x32_tn,209,75.17,6.72,Long,363.52,82.04,4.23,19.72,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",210,84.62,84.62,Short,37.76,3.13,27.12,176.27,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",211,60.75,60.75,Short,37.5,54.76,27.3,191.13,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x64_tn,212,46.07,8.48,Short,1.21,91.2,849.26,5.52,128.0,1200.0,122.0,12.8,153600.0,18739200.0,15360.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",213,88.99,88.99,Short,97.18,24.75,10.54,68.49,128.0,18912.0,28.0,0.0,2420736.0,67780608.0,0.0
+volta_sgemm_128x64_tn,214,44.46,5.67,Short,1.26,90.57,809.49,5.26,128.0,300.0,122.0,12.8,38400.0,4684800.0,3840.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",215,84.79,84.79,Short,37.12,3.14,41.38,193.1,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",216,61.55,61.55,Short,38.11,55.51,26.87,174.64,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x32_tn,217,74.79,6.7,Long,350.18,81.63,2.92,20.47,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,218,76.34,6.75,Long,355.9,83.32,2.88,18.7,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,219,75.15,6.62,Long,356.51,82.03,4.31,18.67,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"fmha_cutlassF_f32_aligned_64x64_rf_sm70(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm70, (bool)1, (int)64, (int)64, (int)64, (bool)1, (bool)1>::Params)",220,52.46,13.61,Long,407.01,61.83,2.52,16.35,128.0,768.0,168.0,0.0,98304.0,16515072.0,0.0
+volta_sgemm_128x32_tn,221,76.04,6.88,Long,364.58,83.02,2.81,18.26,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",222,86.04,86.04,Short,36.96,3.19,27.71,193.94,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",223,62.43,62.43,Short,37.31,56.48,27.44,192.11,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x64_tn,224,45.83,8.41,Short,1.27,90.74,806.84,5.24,128.0,1200.0,122.0,12.8,153600.0,18739200.0,15360.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",225,89.36,89.36,Short,95.78,24.88,10.69,69.5,128.0,18912.0,28.0,0.0,2420736.0,67780608.0,0.0
+volta_sgemm_128x64_tn,226,44.51,5.67,Short,1.26,90.63,1.22,5.67,128.0,300.0,122.0,12.8,38400.0,4684800.0,3840.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",227,83.42,83.42,Short,36.96,3.09,27.71,180.09,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",228,63.02,63.02,Short,38.18,57.07,26.82,174.35,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x32_tn,229,75.11,6.78,Long,358.69,82.0,2.85,18.56,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,230,75.57,6.74,Long,348.03,82.49,2.94,19.12,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,231,75.52,6.73,Long,358.02,82.44,2.86,18.59,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"fmha_cutlassF_f32_aligned_64x64_rf_sm70(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm70, (bool)1, (int)64, (int)64, (int)64, (bool)1, (bool)1>::Params)",232,51.91,13.42,Long,407.04,61.09,3.77,16.35,128.0,768.0,168.0,0.0,98304.0,16515072.0,0.0
+volta_sgemm_128x32_tn,233,76.14,6.78,Long,350.53,83.13,2.92,18.99,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",234,86.38,86.38,Short,36.42,3.2,28.12,182.78,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",235,60.07,60.07,Short,37.98,54.26,26.96,175.23,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x64_tn,236,45.73,8.51,Short,1.27,90.53,805.54,5.24,128.0,1200.0,122.0,12.8,153600.0,18739200.0,15360.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",237,88.95,88.95,Short,96.19,24.76,10.65,74.52,128.0,18912.0,28.0,0.0,2420736.0,67780608.0,0.0
+volta_sgemm_128x64_tn,238,44.47,5.58,Short,1.26,90.57,810.04,5.27,128.0,300.0,122.0,12.8,38400.0,4684800.0,3840.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",239,85.02,85.02,Short,36.96,3.15,27.71,180.09,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",240,61.81,61.81,Short,38.34,55.93,40.07,173.62,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x32_tn,241,74.66,6.67,Long,359.26,81.52,2.85,18.53,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,242,74.63,6.71,Long,358.62,81.49,2.86,18.56,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,243,74.64,6.58,Long,361.38,81.48,2.83,18.42,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"fmha_cutlassF_f32_aligned_64x64_rf_sm70(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm70, (bool)1, (int)64, (int)64, (int)64, (bool)1, (bool)1>::Params)",244,52.1,13.56,Long,392.16,61.29,3.92,16.97,128.0,768.0,168.0,0.0,98304.0,16515072.0,0.0
+volta_sgemm_128x32_tn,245,75.07,6.57,Long,360.8,81.95,2.84,19.87,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",246,86.09,86.09,Short,37.5,3.19,27.3,177.47,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",247,61.86,61.86,Short,37.76,55.96,27.12,189.83,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x64_tn,248,45.98,8.56,Short,1.27,91.03,808.49,5.26,128.0,1200.0,122.0,12.8,153600.0,18739200.0,15360.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",249,89.17,89.17,Short,95.65,24.81,10.71,69.59,128.0,18912.0,28.0,0.0,2420736.0,67780608.0,0.0
+volta_sgemm_128x64_tn,250,44.48,5.58,Short,1.26,90.57,810.45,5.27,128.0,300.0,122.0,12.8,38400.0,4684800.0,3840.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",251,84.63,84.63,Short,37.38,3.14,27.4,178.08,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",252,63.23,63.23,Short,37.63,57.22,27.21,176.87,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x32_tn,253,75.08,6.65,Long,350.88,81.96,4.38,18.97,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,254,76.41,6.74,Long,356.54,83.42,2.87,18.67,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,255,75.44,6.79,Long,359.84,82.37,2.85,18.5,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"fmha_cutlassF_f32_aligned_64x64_rf_sm70(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm70, (bool)1, (int)64, (int)64, (int)64, (bool)1, (bool)1>::Params)",256,51.94,13.49,Long,409.92,61.12,2.5,16.24,128.0,768.0,168.0,0.0,98304.0,16515072.0,0.0
+volta_sgemm_128x32_tn,257,75.86,6.75,Long,361.34,82.83,2.83,19.84,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",258,85.69,85.69,Short,36.48,3.18,28.07,182.46,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",259,62.31,62.31,Short,37.41,56.44,41.06,191.62,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x64_tn,260,45.91,8.47,Short,1.26,90.86,810.13,5.67,128.0,1200.0,122.0,12.8,153600.0,18739200.0,15360.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",261,89.5,89.5,Short,95.97,24.91,10.67,69.36,128.0,18912.0,28.0,0.0,2420736.0,67780608.0,0.0
+volta_sgemm_128x64_tn,262,44.45,5.72,Short,1.26,90.51,810.62,5.67,128.0,300.0,122.0,12.8,38400.0,4684800.0,3840.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",263,83.22,83.22,Short,36.54,3.08,28.02,182.14,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",264,62.14,62.14,Short,38.59,56.17,26.53,185.74,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x32_tn,265,76.0,6.78,Long,353.34,82.99,2.9,18.84,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,266,76.36,6.71,Long,356.0,83.36,2.88,18.7,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,267,75.28,6.76,Long,349.34,82.17,2.93,19.05,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"fmha_cutlassF_f32_aligned_64x64_rf_sm70(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm70, (bool)1, (int)64, (int)64, (int)64, (bool)1, (bool)1>::Params)",268,51.67,13.33,Long,407.04,60.9,2.52,16.35,128.0,768.0,168.0,0.0,98304.0,16515072.0,0.0
+volta_sgemm_128x32_tn,269,75.61,6.79,Long,356.7,82.53,2.87,18.66,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",270,84.91,84.91,Short,36.99,3.15,27.68,179.93,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",271,62.6,62.6,Short,38.21,56.67,26.8,174.2,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x64_tn,272,45.8,8.26,Short,1.27,90.69,807.06,5.25,128.0,1200.0,122.0,12.8,153600.0,18739200.0,15360.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",273,89.45,89.45,Short,96.58,24.88,10.6,68.92,128.0,18912.0,28.0,0.0,2420736.0,67780608.0,0.0
+volta_sgemm_128x64_tn,274,44.48,5.69,Short,1.26,90.61,810.6,5.27,128.0,300.0,122.0,12.8,38400.0,4684800.0,3840.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",275,82.94,82.94,Short,37.12,3.07,27.59,193.1,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",276,61.62,61.62,Short,38.78,55.58,26.4,171.62,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x32_tn,277,74.6,6.57,Long,359.81,81.42,2.85,18.5,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,278,76.19,6.84,Long,342.37,83.18,2.99,19.44,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,279,76.82,6.87,Long,361.76,83.85,2.83,18.4,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"fmha_cutlassF_f32_aligned_64x64_rf_sm70(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm70, (bool)1, (int)64, (int)64, (int)64, (bool)1, (bool)1>::Params)",280,50.96,13.07,Long,391.17,60.14,2.62,17.02,128.0,768.0,168.0,0.0,98304.0,16515072.0,0.0
+volta_sgemm_128x32_tn,281,75.88,6.76,Long,358.66,82.83,2.86,18.56,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",282,84.47,84.47,Short,36.9,3.13,41.63,194.28,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",283,61.63,61.63,Short,38.78,55.88,26.4,171.62,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x64_tn,284,46.02,8.75,Short,1.26,91.13,812.93,5.69,128.0,1200.0,122.0,12.8,153600.0,18739200.0,15360.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",285,88.75,88.75,Short,95.9,24.68,10.68,69.4,128.0,18912.0,28.0,0.0,2420736.0,67780608.0,0.0
+volta_sgemm_128x64_tn,286,44.51,5.67,Short,1.26,90.65,1.22,5.27,128.0,300.0,122.0,12.8,38400.0,4684800.0,3840.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",287,85.75,85.75,Short,36.77,3.18,27.85,194.95,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",288,62.47,62.47,Short,38.46,56.55,39.93,186.36,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x32_tn,289,75.32,6.7,Long,346.37,82.22,4.43,19.22,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,290,76.29,6.72,Long,354.72,83.27,2.89,18.76,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,291,75.78,6.7,Long,354.08,82.73,2.89,18.8,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"fmha_cutlassF_f32_aligned_64x64_rf_sm70(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm70, (bool)1, (int)64, (int)64, (int)64, (bool)1, (bool)1>::Params)",292,51.96,13.58,Long,391.2,61.11,2.62,17.01,128.0,768.0,168.0,0.0,98304.0,16515072.0,0.0
+volta_sgemm_128x32_tn,293,74.34,6.58,Long,351.55,81.16,2.91,20.39,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",294,84.6,84.6,Short,36.48,3.13,28.07,182.46,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",295,62.22,62.22,Short,37.22,56.11,41.27,192.61,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x64_tn,296,45.92,8.74,Short,1.28,90.92,802.77,5.22,128.0,1200.0,122.0,12.8,153600.0,18739200.0,15360.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",297,88.92,88.92,Short,96.32,24.72,10.63,69.1,128.0,18912.0,28.0,0.0,2420736.0,67780608.0,0.0
+volta_sgemm_128x64_tn,298,44.5,5.51,Short,1.26,90.63,810.85,5.27,128.0,300.0,122.0,12.8,38400.0,4684800.0,3840.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",299,84.49,84.49,Short,36.61,3.13,27.97,181.82,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",300,63.3,63.3,Short,38.43,57.25,26.64,173.19,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+"void gemmSN_TN_kernel<float, (int)128, (int)16, (int)2, (int)4, (int)8, (int)9, (bool)0, cublasGemvTensorStridedBatched<const float>, cublasGemvTensorStridedBatched<const float>, cublasGemvTensorStridedBatched<float>>(cublasGemmSmallNParams<T9, T10, T11, T1>)",301,35.48,17.34,Short,22.08,31.4,46.38,301.45,128.0,250.0,72.0,13.82,32000.0,2304000.0,3455.0
+"void cask_cudnn_infer::computeOffsetsKernel<(bool)0, (bool)0>(cask_cudnn_infer::ComputeOffsetsParams)",302,0.16,0.01,Short,3.01,0.08,0.0,340.43,256.0,1.0,16.0,0.0,256.0,4096.0,0.0
+cudnn_infer_volta_scudnn_128x64_relu_xregs_large_nn_v1,303,56.02,7.81,Long,388.06,64.65,2.64,17.15,128.0,300.0,160.0,16.38,38400.0,6144000.0,4914.0
+"void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",304,71.48,71.48,Short,27.62,39.4,37.08,241.02,128.0,9408.0,16.0,0.0,1204224.0,19267584.0,0.0
+"void at::native::<unnamed>::CatArrayBatchedCopy<at::native::<unnamed>::OpaqueType<(unsigned int)4>, unsigned int, (int)3, (int)64, (int)64>(T1 *, at::native::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::native::<unnamed>::TensorSizeStride<T2, (unsigned int)4>, int, T2)",305,60.29,34.61,Short,58.98,20.53,17.36,112.86,512.0,320.0,32.0,0.0,163840.0,5242880.0,0.0
+"void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",306,73.26,73.26,Short,29.25,31.59,35.01,227.57,128.0,9456.0,16.0,0.0,1210368.0,19365888.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",307,61.67,61.67,Short,38.62,55.82,26.51,185.58,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x32_tn,308,76.44,6.78,Long,351.62,83.44,2.91,20.39,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,309,76.63,6.78,Long,357.06,83.64,4.3,18.64,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,310,76.37,6.69,Long,355.71,83.37,2.88,18.71,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"fmha_cutlassF_f32_aligned_64x64_rf_sm70(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm70, (bool)1, (int)64, (int)64, (int)64, (bool)1, (bool)1>::Params)",311,50.92,13.34,Long,385.12,60.12,2.66,17.28,128.0,768.0,168.0,0.0,98304.0,16515072.0,0.0
+volta_sgemm_128x32_tn,312,76.28,6.8,Long,353.76,83.27,4.34,20.26,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",313,84.09,84.09,Short,36.93,3.12,41.59,180.24,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",314,61.78,61.78,Short,38.5,55.96,39.9,172.9,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x64_tn,315,45.97,8.41,Short,1.26,90.99,1.22,5.27,128.0,1200.0,122.0,12.8,153600.0,18739200.0,15360.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",316,88.88,88.88,Short,96.03,24.71,15.99,69.31,128.0,18912.0,28.0,0.0,2420736.0,67780608.0,0.0
+volta_sgemm_128x64_tn,317,44.48,5.73,Short,1.26,90.59,1.22,5.27,128.0,300.0,122.0,12.8,38400.0,4684800.0,3840.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",318,84.06,84.06,Short,37.41,3.11,27.37,177.93,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",319,61.43,61.43,Short,38.91,55.56,26.32,171.05,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x32_tn,320,75.61,6.83,Long,358.91,82.54,2.85,18.54,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,321,76.44,6.84,Long,356.61,83.45,2.87,18.66,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,322,76.74,6.86,Long,360.83,83.78,2.84,18.45,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"fmha_cutlassF_f32_aligned_64x64_rf_sm70(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm70, (bool)1, (int)64, (int)64, (int)64, (bool)1, (bool)1>::Params)",323,51.57,13.35,Long,387.49,60.92,2.64,17.18,128.0,768.0,168.0,0.0,98304.0,16515072.0,0.0
+volta_sgemm_128x32_tn,324,76.42,6.87,Long,359.33,83.43,2.85,19.95,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",325,84.69,84.69,Short,37.66,3.14,27.19,176.72,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",326,58.73,58.73,Short,37.79,52.97,27.1,176.12,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x64_tn,327,45.86,8.6,Short,1.27,90.78,808.65,5.26,128.0,1200.0,122.0,12.8,153600.0,18739200.0,15360.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",328,89.12,89.12,Short,96.0,24.8,10.67,69.33,128.0,18912.0,28.0,0.0,2420736.0,67780608.0,0.0
+volta_sgemm_128x64_tn,329,44.51,5.67,Short,1.26,90.66,810.52,5.27,128.0,300.0,122.0,12.8,38400.0,4684800.0,3840.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",330,82.89,82.89,Short,36.8,3.07,27.83,180.87,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",331,62.45,62.45,Short,39.04,56.35,26.23,183.61,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x32_tn,332,74.01,6.66,Long,357.86,80.8,2.86,18.6,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,333,76.38,6.76,Long,359.58,83.37,2.85,18.51,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,334,75.77,6.63,Long,355.52,82.71,2.88,20.16,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"fmha_cutlassF_f32_aligned_64x64_rf_sm70(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm70, (bool)1, (int)64, (int)64, (int)64, (bool)1, (bool)1>::Params)",335,51.98,13.5,Long,416.45,61.35,3.69,15.98,128.0,768.0,168.0,0.0,98304.0,16515072.0,0.0
+volta_sgemm_128x32_tn,336,75.22,6.61,Long,347.39,82.12,4.42,20.63,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",337,83.36,83.36,Short,37.06,3.09,41.45,179.62,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",338,62.43,62.43,Short,38.75,56.48,39.64,171.76,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x64_tn,339,45.95,8.38,Short,1.27,90.97,807.16,5.25,128.0,1200.0,122.0,12.8,153600.0,18739200.0,15360.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",340,89.14,89.14,Short,96.1,24.8,10.66,69.26,128.0,18912.0,28.0,0.0,2420736.0,67780608.0,0.0
+volta_sgemm_128x64_tn,341,44.46,5.69,Short,1.26,90.55,811.89,5.28,128.0,300.0,122.0,12.8,38400.0,4684800.0,3840.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",342,82.88,82.88,Short,36.99,3.07,27.68,179.93,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",343,60.49,60.49,Short,38.69,54.83,26.47,185.28,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x32_tn,344,75.66,6.83,Long,354.43,82.6,2.89,18.78,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,345,74.56,6.62,Long,352.29,81.4,2.91,18.89,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,346,76.3,6.8,Long,364.06,83.29,2.81,19.69,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"fmha_cutlassF_f32_aligned_64x64_rf_sm70(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm70, (bool)1, (int)64, (int)64, (int)64, (bool)1, (bool)1>::Params)",347,52.01,13.44,Long,407.65,61.37,2.51,17.58,128.0,768.0,168.0,0.0,98304.0,16515072.0,0.0
+volta_sgemm_128x32_tn,348,76.26,6.8,Long,354.88,83.24,2.89,18.76,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",349,82.71,82.71,Short,37.44,3.06,27.35,177.78,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",350,62.78,62.78,Short,37.98,56.68,26.96,175.23,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x64_tn,351,45.59,8.43,Short,1.26,90.23,812.47,5.28,128.0,1200.0,122.0,12.8,153600.0,18739200.0,15360.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",352,89.81,89.81,Short,96.54,24.99,15.91,68.94,128.0,18912.0,28.0,0.0,2420736.0,67780608.0,0.0
+volta_sgemm_128x64_tn,353,44.45,5.61,Short,1.26,90.53,1.22,5.27,128.0,300.0,122.0,12.8,38400.0,4684800.0,3840.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",354,84.03,84.03,Short,36.06,3.11,28.39,184.56,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",355,61.77,61.77,Short,38.85,55.64,26.36,171.33,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x32_tn,356,75.74,6.83,Long,359.01,82.69,2.85,18.54,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,357,74.57,6.53,Long,357.12,81.41,2.87,18.64,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,358,74.69,6.7,Long,356.96,81.54,4.3,18.65,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"fmha_cutlassF_f32_aligned_64x64_rf_sm70(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm70, (bool)1, (int)64, (int)64, (int)64, (bool)1, (bool)1>::Params)",359,52.16,13.57,Long,408.86,61.51,2.5,16.28,128.0,768.0,168.0,0.0,98304.0,16515072.0,0.0
+volta_sgemm_128x32_tn,360,76.51,6.69,Long,347.04,83.53,2.95,19.18,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",361,85.43,85.43,Short,36.42,3.17,28.12,182.78,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",362,61.25,61.25,Short,37.28,55.46,27.47,178.54,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x64_tn,363,45.57,8.52,Short,1.26,90.22,809.53,5.67,128.0,1200.0,122.0,12.8,153600.0,18739200.0,15360.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",364,88.87,88.87,Short,96.64,24.75,10.6,68.87,128.0,18912.0,28.0,0.0,2420736.0,67780608.0,0.0
+volta_sgemm_128x64_tn,365,44.48,5.56,Short,1.27,90.59,809.39,5.67,128.0,300.0,122.0,12.8,38400.0,4684800.0,3840.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",366,84.97,84.97,Short,36.26,3.15,28.24,197.71,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",367,61.22,61.22,Short,37.82,55.18,27.07,175.97,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x32_tn,368,75.15,6.71,Long,354.78,82.04,2.89,20.2,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,369,76.59,6.79,Long,365.44,83.61,2.8,18.21,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,370,75.91,6.76,Long,362.82,82.85,4.23,19.76,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"fmha_cutlassF_f32_aligned_64x64_rf_sm70(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm70, (bool)1, (int)64, (int)64, (int)64, (bool)1, (bool)1>::Params)",371,52.03,13.6,Long,409.31,61.32,3.75,16.26,128.0,768.0,168.0,0.0,98304.0,16515072.0,0.0
+volta_sgemm_128x32_tn,372,74.4,6.63,Long,358.37,81.2,2.86,18.57,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",373,85.78,85.78,Short,37.06,3.18,27.63,193.44,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",374,62.02,62.02,Short,37.63,56.07,40.82,190.48,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x64_tn,375,46.16,8.52,Short,1.21,91.39,846.29,5.5,128.0,1200.0,122.0,12.8,153600.0,18739200.0,15360.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",376,89.27,89.27,Short,95.94,24.85,10.67,69.38,128.0,18912.0,28.0,0.0,2420736.0,67780608.0,0.0
+volta_sgemm_128x64_tn,377,44.45,5.56,Short,1.26,90.55,810.09,5.27,128.0,300.0,122.0,12.8,38400.0,4684800.0,3840.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",378,84.29,84.29,Short,36.38,3.13,28.14,182.94,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",379,62.83,62.83,Short,38.11,56.63,40.3,174.64,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x32_tn,380,76.39,6.82,Long,347.94,83.38,4.41,19.13,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,381,76.47,6.74,Long,357.31,83.47,2.87,18.63,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,382,75.03,6.6,Long,354.4,81.9,2.89,18.78,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"fmha_cutlassF_f32_aligned_64x64_rf_sm70(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm70, (bool)1, (int)64, (int)64, (int)64, (bool)1, (bool)1>::Params)",383,52.21,13.51,Long,405.95,61.47,3.78,16.4,128.0,768.0,168.0,0.0,98304.0,16515072.0,0.0
+volta_sgemm_128x32_tn,384,75.09,6.69,Long,344.16,81.97,2.98,19.34,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",385,85.51,85.51,Short,36.67,3.17,27.92,181.5,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",386,62.74,62.74,Short,37.5,56.56,27.3,177.47,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x64_tn,387,46.18,8.54,Short,1.28,91.44,800.5,5.2,128.0,1200.0,122.0,12.8,153600.0,18739200.0,15360.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",388,89.44,89.44,Short,96.45,24.89,15.93,74.32,128.0,18912.0,28.0,0.0,2420736.0,67780608.0,0.0
+volta_sgemm_128x64_tn,389,44.49,5.61,Short,1.26,90.6,1.22,5.27,128.0,300.0,122.0,12.8,38400.0,4684800.0,3840.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",390,84.08,84.08,Short,36.61,3.12,27.97,181.82,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",391,62.99,62.99,Short,37.89,56.88,27.03,175.68,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x32_tn,392,75.86,6.78,Long,357.28,82.81,4.3,18.63,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,393,75.77,6.96,Long,343.46,82.72,2.98,19.38,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,394,75.22,6.69,Long,356.58,82.1,4.31,18.67,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"fmha_cutlassF_f32_aligned_64x64_rf_sm70(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm70, (bool)1, (int)64, (int)64, (int)64, (bool)1, (bool)1>::Params)",395,52.2,13.46,Long,407.39,61.4,3.77,16.34,128.0,768.0,168.0,0.0,98304.0,16515072.0,0.0
+volta_sgemm_128x32_tn,396,75.95,6.84,Long,363.55,82.91,2.82,18.31,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",397,84.43,84.43,Short,36.45,3.13,28.09,182.62,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",398,62.71,62.71,Short,38.11,56.65,40.3,174.64,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x64_tn,399,46.07,8.37,Short,1.28,91.21,802.01,5.21,128.0,1200.0,122.0,12.8,153600.0,18739200.0,15360.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",400,89.16,89.16,Short,95.94,24.83,10.67,69.38,128.0,18912.0,28.0,0.0,2420736.0,67780608.0,0.0
+volta_sgemm_128x64_tn,401,44.45,5.7,Short,1.26,90.54,810.7,5.67,128.0,300.0,122.0,12.8,38400.0,4684800.0,3840.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",402,85.07,85.07,Short,37.12,3.16,27.59,179.31,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",403,62.76,62.76,Short,38.5,56.79,26.6,172.9,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x32_tn,404,74.77,6.7,Long,356.38,81.63,2.87,18.68,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,405,75.4,6.69,Long,358.56,82.3,2.86,18.56,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,406,76.1,6.81,Long,354.59,83.07,2.89,18.77,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"fmha_cutlassF_f32_aligned_64x64_rf_sm70(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm70, (bool)1, (int)64, (int)64, (int)64, (bool)1, (bool)1>::Params)",407,51.88,13.47,Long,414.53,61.09,2.47,17.29,128.0,768.0,168.0,0.0,98304.0,16515072.0,0.0
+volta_sgemm_128x32_tn,408,76.64,6.82,Long,346.88,83.68,2.95,19.19,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",409,85.83,85.83,Short,37.12,3.18,41.38,179.31,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",410,62.3,62.3,Short,38.59,56.5,26.53,172.47,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x64_tn,411,45.83,8.08,Short,1.29,90.72,795.84,5.17,128.0,1200.0,122.0,12.8,153600.0,18739200.0,15360.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",412,89.18,89.18,Short,95.84,24.82,10.68,69.45,128.0,18912.0,28.0,0.0,2420736.0,67780608.0,0.0
+volta_sgemm_128x64_tn,413,44.48,5.69,Short,1.26,90.59,1.22,5.27,128.0,300.0,122.0,12.8,38400.0,4684800.0,3840.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",414,83.38,83.38,Short,36.74,3.09,27.87,195.12,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",415,61.65,61.65,Short,38.46,55.74,26.62,173.04,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x32_tn,416,75.11,6.74,Long,357.41,81.99,4.3,20.06,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,417,76.34,6.83,Long,360.74,83.33,2.84,18.45,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,418,75.56,6.69,Long,355.3,82.47,2.88,20.17,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"fmha_cutlassF_f32_aligned_64x64_rf_sm70(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm70, (bool)1, (int)64, (int)64, (int)64, (bool)1, (bool)1>::Params)",419,51.25,13.2,Long,407.1,60.4,2.52,17.61,128.0,768.0,168.0,0.0,98304.0,16515072.0,0.0
+volta_sgemm_128x32_tn,420,75.7,6.63,Long,346.34,82.65,4.43,19.22,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",421,83.7,83.7,Short,36.86,3.1,27.78,180.56,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",422,62.3,62.3,Short,38.24,56.15,26.78,174.06,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x64_tn,423,45.93,8.43,Short,1.29,90.94,795.82,5.17,128.0,1200.0,122.0,12.8,153600.0,18739200.0,15360.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",424,89.63,89.63,Short,95.97,24.94,10.67,69.36,128.0,18912.0,28.0,0.0,2420736.0,67780608.0,0.0
+volta_sgemm_128x64_tn,425,44.51,5.75,Short,1.26,90.62,810.66,5.67,128.0,300.0,122.0,12.8,38400.0,4684800.0,3840.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",426,84.59,84.59,Short,36.96,3.13,27.71,180.09,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",427,61.58,61.58,Short,37.98,55.63,40.44,175.23,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x32_tn,428,75.91,6.72,Long,355.78,82.86,2.88,18.71,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,429,76.25,6.73,Long,353.12,83.24,2.9,18.85,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,430,74.86,6.72,Long,354.56,81.72,2.89,20.22,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"fmha_cutlassF_f32_aligned_64x64_rf_sm70(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm70, (bool)1, (int)64, (int)64, (int)64, (bool)1, (bool)1>::Params)",431,51.63,13.21,Long,390.53,60.92,2.62,17.04,128.0,768.0,168.0,0.0,98304.0,16515072.0,0.0
+volta_sgemm_128x32_tn,432,75.98,6.77,Long,355.58,82.97,2.88,18.72,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",433,85.06,85.06,Short,36.9,3.15,41.63,180.4,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",434,62.38,62.38,Short,37.63,56.45,27.21,176.87,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x64_tn,435,45.96,8.23,Short,1.28,91.02,1.2,5.19,128.0,1200.0,122.0,12.8,153600.0,18739200.0,15360.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",436,89.46,89.46,Short,96.1,24.88,10.66,74.59,128.0,18912.0,28.0,0.0,2420736.0,67780608.0,0.0
+volta_sgemm_128x64_tn,437,44.46,5.67,Short,1.26,90.56,811.52,5.27,128.0,300.0,122.0,12.8,38400.0,4684800.0,3840.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",438,84.65,84.65,Short,36.8,3.14,27.83,180.87,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",439,61.51,61.51,Short,39.1,55.54,26.19,170.21,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x32_tn,440,75.09,6.77,Long,359.49,81.97,2.85,19.94,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,441,76.44,6.93,Long,356.13,83.45,2.88,20.13,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+volta_sgemm_128x32_tn,442,76.68,6.81,Long,354.56,83.71,4.33,18.77,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"fmha_cutlassF_f32_aligned_64x64_rf_sm70(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm70, (bool)1, (int)64, (int)64, (int)64, (bool)1, (bool)1>::Params)",443,55.12,14.17,Long,391.2,64.86,2.62,17.01,128.0,768.0,168.0,0.0,98304.0,16515072.0,0.0
+volta_sgemm_128x32_tn,444,74.85,6.7,Long,359.62,81.7,2.85,18.51,256.0,594.0,57.0,16.38,152064.0,8667648.0,9729.72
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",445,84.98,84.98,Short,36.58,3.15,28.0,181.98,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",446,62.12,62.12,Short,38.88,56.38,26.34,184.36,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+volta_sgemm_128x64_tn,447,45.94,8.21,Short,1.26,90.94,1.22,5.68,128.0,1200.0,122.0,12.8,153600.0,18739200.0,15360.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",448,89.51,89.51,Short,95.81,24.89,10.69,74.82,128.0,18912.0,28.0,0.0,2420736.0,67780608.0,0.0
+volta_sgemm_128x64_tn,449,44.5,5.74,Short,1.26,90.61,810.02,5.27,128.0,300.0,122.0,12.8,38400.0,4684800.0,3840.0
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",450,83.44,83.44,Short,36.29,3.09,42.33,197.53,128.0,4728.0,22.0,0.0,605184.0,13314048.0,0.0
+"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",451,63.07,63.07,Short,37.89,56.96,27.03,175.68,128.0,3152.0,40.0,0.0,403456.0,16138240.0,0.0
+"void gemmSN_TN_kernel<float, (int)128, (int)16, (int)2, (int)4, (int)8, (int)9, (bool)0, cublasGemvTensorStridedBatched<const float>, cublasGemvTensorStridedBatched<const float>, cublasGemvTensorStridedBatched<float>>(cublasGemmSmallNParams<T9, T10, T11, T1>)",452,35.5,17.36,Short,22.69,31.43,45.13,293.37,128.0,250.0,72.0,13.82,32000.0,2304000.0,3455.0

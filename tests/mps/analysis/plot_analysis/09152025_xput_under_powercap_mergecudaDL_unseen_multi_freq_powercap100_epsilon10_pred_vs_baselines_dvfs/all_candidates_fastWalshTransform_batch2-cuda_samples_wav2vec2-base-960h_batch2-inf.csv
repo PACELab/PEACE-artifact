@@ -1,0 +1,11 @@
+workload1,workload2,w1_Threadpercent,w2_Threadpercent,pred_throughput_sum_val,pred_power_val,selected_model_freq,Thread_combination,weight_Throughput_sum_oracle_actual,Power_oracle_actual,Duration_oracle_actual,Energy_oracle_actual
+fastWalshTransform_batch2-cuda_samples,wav2vec2-base-960h_batch2-inf,10,90,12.451580000000003,62.35454753995685,freq300,"(w1_10, w2_90)",33.608,96.60993579454252,938.651,90702.5691
+fastWalshTransform_batch2-cuda_samples,wav2vec2-base-960h_batch2-inf,20,80,14.704299999999993,61.62781473212864,freq300,"(w1_20, w2_80)",38.102,96.2120523138833,498.818,48012.371060000005
+fastWalshTransform_batch2-cuda_samples,wav2vec2-base-960h_batch2-inf,30,70,16.13700499999999,61.43639606418037,freq300,"(w1_30, w2_70)",42.603,96.01284470246732,345.527,33195.09704000001
+fastWalshTransform_batch2-cuda_samples,wav2vec2-base-960h_batch2-inf,40,60,18.958430000000018,61.28204824336354,freq300,"(w1_40, w2_60)",46.613,94.80941391941391,273.915,25988.97437
+fastWalshTransform_batch2-cuda_samples,wav2vec2-base-960h_batch2-inf,50,50,20.72099,60.87208767384684,freq300,"(w1_50, w2_50)",54.676,98.2907142857143,210.392,20700.90233
+fastWalshTransform_batch2-cuda_samples,wav2vec2-base-960h_batch2-inf,60,40,22.22873000000001,60.81306980119539,freq300,"(w1_60, w2_40)",55.924,94.94555263157892,190.342,18091.24056
+fastWalshTransform_batch2-cuda_samples,wav2vec2-base-960h_batch2-inf,70,30,23.49704999999999,60.2027164714121,freq300,"(w1_70, w2_30)",60.046,94.33300595238094,168.184,15884.26616
+fastWalshTransform_batch2-cuda_samples,wav2vec2-base-960h_batch2-inf,80,20,24.60167000000001,59.71408827256628,freq300,"(w1_80, w2_20)",69.347,97.785,139.075,13620.42943
+fastWalshTransform_batch2-cuda_samples,wav2vec2-base-960h_batch2-inf,90,10,26.067909999999973,59.180329553575895,freq300,"(w1_90, w2_10)",73.08800000000001,97.47578313253013,124.448,12151.4578
+fastWalshTransform_batch2-cuda_samples,wav2vec2-base-960h_batch2-inf,90,10,90.37658999999996,105.4771259798698,freq900,"(w1_90, w2_10)",73.08800000000001,97.47578313253013,124.448,12151.4578

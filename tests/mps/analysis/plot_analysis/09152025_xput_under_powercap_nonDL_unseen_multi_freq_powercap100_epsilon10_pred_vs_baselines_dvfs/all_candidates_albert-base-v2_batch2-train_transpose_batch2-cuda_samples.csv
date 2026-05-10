@@ -1,0 +1,13 @@
+workload1,workload2,w1_Threadpercent,w2_Threadpercent,pred_throughput_sum_val,pred_power_val,selected_model_freq,Thread_combination,weight_Throughput_sum_oracle_actual,Power_oracle_actual,Duration_oracle_actual,Energy_oracle_actual
+albert-base-v2_batch2-train,transpose_batch2-cuda_samples,10,90,125.82981999999994,56.35744424058035,freq300,"(w1_10, w2_90)",442.85,97.83309278350517,145.64,14269.1588
+albert-base-v2_batch2-train,transpose_batch2-cuda_samples,20,80,114.33050000000009,57.55587711769092,freq300,"(w1_20, w2_80)",367.52,97.21514124293785,177.33,17260.09025
+albert-base-v2_batch2-train,transpose_batch2-cuda_samples,30,70,101.84898,59.19590109302371,freq300,"(w1_30, w2_70)",277.237,94.14841101694915,236.631,22297.358030000003
+albert-base-v2_batch2-train,transpose_batch2-cuda_samples,40,60,91.2145900000001,59.77923365109436,freq300,"(w1_40, w2_60)",225.408,93.5300341880342,293.501,27470.172830000003
+albert-base-v2_batch2-train,transpose_batch2-cuda_samples,50,50,78.83487000000005,60.84651062494326,freq300,"(w1_50, w2_50)",197.361,95.5116,338.714,32370.80198
+albert-base-v2_batch2-train,transpose_batch2-cuda_samples,60,40,66.13128999999991,61.10981518575811,freq300,"(w1_60, w2_40)",147.287,93.8355579631636,463.338,43496.43267
+albert-base-v2_batch2-train,transpose_batch2-cuda_samples,70,30,52.16517,61.636478157581216,freq300,"(w1_70, w2_30)",119.25,96.73782292557742,587.12,56816.890545
+albert-base-v2_batch2-train,transpose_batch2-cuda_samples,80,20,38.212180000000046,61.5257874532994,freq300,"(w1_80, w2_20)",86.906,96.88017210682494,846.538,82032.65205
+albert-base-v2_batch2-train,transpose_batch2-cuda_samples,90,10,23.19028,62.05632837480978,freq300,"(w1_90, w2_10)",47.704,94.7006612267867,1786.171,169171.00433999998
+albert-base-v2_batch2-train,transpose_batch2-cuda_samples,10,90,447.5790000000002,98.30616080256844,freq900,"(w1_10, w2_90)",442.85,97.83309278350517,145.64,14269.1588
+albert-base-v2_batch2-train,transpose_batch2-cuda_samples,20,80,412.2023300000001,103.55930086253063,freq900,"(w1_20, w2_80)",367.52,97.21514124293785,177.33,17260.09025
+albert-base-v2_batch2-train,transpose_batch2-cuda_samples,30,70,377.2380900000002,109.04475618197718,freq900,"(w1_30, w2_70)",277.237,94.14841101694915,236.631,22297.358030000003

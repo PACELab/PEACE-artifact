@@ -1,0 +1,13 @@
+workload1,workload2,w1_Threadpercent,w2_Threadpercent,pred_throughput_sum_val,pred_power_val,selected_model_freq,Thread_combination,weight_Throughput_sum_oracle_actual,Power_oracle_actual,Duration_oracle_actual,Energy_oracle_actual
+sortingNetworks_batch2-cuda_samples,wav2vec2-base-960h_batch2-inf,10,90,12.71765,62.199068796497606,freq300,"(w1_10, w2_90)",35.867999999999995,96.00382272727272,1104.608,106065.46359
+sortingNetworks_batch2-cuda_samples,wav2vec2-base-960h_batch2-inf,20,80,15.140169999999994,61.474827844649454,freq300,"(w1_20, w2_80)",42.036,95.08835114169888,590.8365,56199.81251
+sortingNetworks_batch2-cuda_samples,wav2vec2-base-960h_batch2-inf,30,70,17.307295,61.37765795511012,freq300,"(w1_30, w2_70)",48.943,95.97449814126396,405.18,38897.04719
+sortingNetworks_batch2-cuda_samples,wav2vec2-base-960h_batch2-inf,40,60,19.397350000000014,61.30624382763026,freq300,"(w1_40, w2_60)",54.539,95.30407465007777,322.345,30740.51318
+sortingNetworks_batch2-cuda_samples,wav2vec2-base-960h_batch2-inf,50,50,21.322280000000013,60.95603083078018,freq300,"(w1_50, w2_50)",63.743,98.40205588822356,251.09,24728.89489
+sortingNetworks_batch2-cuda_samples,wav2vec2-base-960h_batch2-inf,60,40,23.86112000000001,60.28808342353014,freq300,"(w1_60, w2_40)",69.334,97.94004618937646,217.102,21283.52456
+sortingNetworks_batch2-cuda_samples,wav2vec2-base-960h_batch2-inf,70,30,25.24904,60.10247500195844,freq300,"(w1_70, w2_30)",72.98,95.2572680412371,194.264,18524.45834
+sortingNetworks_batch2-cuda_samples,wav2vec2-base-960h_batch2-inf,80,20,26.40015,59.40332519422847,freq300,"(w1_80, w2_20)",84.693,98.1756875,160.16,15744.86592
+sortingNetworks_batch2-cuda_samples,wav2vec2-base-960h_batch2-inf,90,10,27.474830000000008,57.54787210610782,freq300,"(w1_90, w2_10)",89.723,96.16318339100349,144.556,13920.70183
+sortingNetworks_batch2-cuda_samples,wav2vec2-base-960h_batch2-inf,70,30,87.31267999999994,106.57037622164572,freq900,"(w1_70, w2_30)",72.98,95.2572680412371,194.264,18524.45834
+sortingNetworks_batch2-cuda_samples,wav2vec2-base-960h_batch2-inf,80,20,88.54393999999995,103.56940638869246,freq900,"(w1_80, w2_20)",84.693,98.1756875,160.16,15744.86592
+sortingNetworks_batch2-cuda_samples,wav2vec2-base-960h_batch2-inf,90,10,89.3372499999999,98.45780420759094,freq900,"(w1_90, w2_10)",89.723,96.16318339100349,144.556,13920.70183

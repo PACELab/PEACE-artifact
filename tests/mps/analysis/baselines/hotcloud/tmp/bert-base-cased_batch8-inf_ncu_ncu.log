@@ -1,0 +1,1027 @@
+  ID Process ID  ... Estimated Speedup Type Estimated Speedup
+0  0    1393450  ...                    NaN               NaN
+1  0    1393450  ...                    NaN               NaN
+2  0    1393450  ...                    NaN               NaN
+3  0    1393450  ...                    NaN               NaN
+4  0    1393450  ...                    NaN               NaN
+
+[5 rows x 23 columns]
+Skipping GPU info rows starting from index 495
+Skipping row 496
+Skipping row 497
+Skipping row 498
+Skipping row 499
+Skipping GPU info rows starting from index 1141
+Skipping row 1142
+Skipping row 1143
+Skipping row 1144
+Skipping row 1145
+Skipping GPU info rows starting from index 1786
+Skipping row 1787
+Skipping row 1788
+Skipping row 1789
+Skipping row 1790
+Skipping GPU info rows starting from index 2432
+Skipping row 2433
+Skipping row 2434
+Skipping row 2435
+Skipping row 2436
+Skipping GPU info rows starting from index 3077
+Skipping row 3078
+Skipping row 3079
+Skipping row 3080
+Skipping row 3081
+Skipping GPU info rows starting from index 3724
+Skipping row 3725
+Skipping row 3726
+Skipping row 3727
+Skipping row 3728
+Skipping GPU info rows starting from index 4373
+Skipping row 4374
+Skipping row 4375
+Skipping row 4376
+Skipping row 4377
+Skipping GPU info rows starting from index 5020
+Skipping row 5021
+Skipping row 5022
+Skipping row 5023
+Skipping row 5024
+Skipping GPU info rows starting from index 5664
+Skipping row 5665
+Skipping row 5666
+Skipping row 5667
+Skipping row 5668
+Skipping GPU info rows starting from index 6309
+Skipping row 6310
+Skipping row 6311
+Skipping row 6312
+Skipping row 6313
+Skipping GPU info rows starting from index 6957
+Skipping row 6958
+Skipping row 6959
+Skipping row 6960
+Skipping row 6961
+Skipping GPU info rows starting from index 7604
+Skipping row 7605
+Skipping row 7606
+Skipping row 7607
+Skipping row 7608
+Skipping GPU info rows starting from index 8248
+Skipping row 8249
+Skipping row 8250
+Skipping row 8251
+Skipping row 8252
+Skipping GPU info rows starting from index 8892
+Skipping row 8893
+Skipping row 8894
+Skipping row 8895
+Skipping row 8896
+Skipping GPU info rows starting from index 9536
+Skipping row 9537
+Skipping row 9538
+Skipping row 9539
+Skipping row 9540
+Skipping GPU info rows starting from index 10182
+Skipping row 10183
+Skipping row 10184
+Skipping row 10185
+Skipping row 10186
+Skipping GPU info rows starting from index 10826
+Skipping row 10827
+Skipping row 10828
+Skipping row 10829
+Skipping row 10830
+Skipping GPU info rows starting from index 11472
+Skipping row 11473
+Skipping row 11474
+Skipping row 11475
+Skipping row 11476
+Skipping GPU info rows starting from index 12119
+Skipping row 12120
+Skipping row 12121
+Skipping row 12122
+Skipping row 12123
+Skipping GPU info rows starting from index 12768
+Skipping row 12769
+Skipping row 12770
+Skipping row 12771
+Skipping row 12772
+Skipping GPU info rows starting from index 13415
+Skipping row 13416
+Skipping row 13417
+Skipping row 13418
+Skipping row 13419
+Skipping GPU info rows starting from index 14062
+Skipping row 14063
+Skipping row 14064
+Skipping row 14065
+Skipping row 14066
+Skipping GPU info rows starting from index 14709
+Skipping row 14710
+Skipping row 14711
+Skipping row 14712
+Skipping row 14713
+Skipping GPU info rows starting from index 15356
+Skipping row 15357
+Skipping row 15358
+Skipping row 15359
+Skipping row 15360
+Skipping GPU info rows starting from index 16001
+Skipping row 16002
+Skipping row 16003
+Skipping row 16004
+Skipping row 16005
+Skipping GPU info rows starting from index 16645
+Skipping row 16646
+Skipping row 16647
+Skipping row 16648
+Skipping row 16649
+Skipping GPU info rows starting from index 17289
+Skipping row 17290
+Skipping row 17291
+Skipping row 17292
+Skipping row 17293
+Skipping GPU info rows starting from index 17935
+Skipping row 17936
+Skipping row 17937
+Skipping row 17938
+Skipping row 17939
+Skipping GPU info rows starting from index 18579
+Skipping row 18580
+Skipping row 18581
+Skipping row 18582
+Skipping row 18583
+Skipping GPU info rows starting from index 19225
+Skipping row 19226
+Skipping row 19227
+Skipping row 19228
+Skipping row 19229
+Skipping GPU info rows starting from index 19872
+Skipping row 19873
+Skipping row 19874
+Skipping row 19875
+Skipping row 19876
+Skipping GPU info rows starting from index 20521
+Skipping row 20522
+Skipping row 20523
+Skipping row 20524
+Skipping row 20525
+Skipping GPU info rows starting from index 21168
+Skipping row 21169
+Skipping row 21170
+Skipping row 21171
+Skipping row 21172
+Skipping GPU info rows starting from index 21815
+Skipping row 21816
+Skipping row 21817
+Skipping row 21818
+Skipping row 21819
+Skipping GPU info rows starting from index 22462
+Skipping row 22463
+Skipping row 22464
+Skipping row 22465
+Skipping row 22466
+Skipping GPU info rows starting from index 23109
+Skipping row 23110
+Skipping row 23111
+Skipping row 23112
+Skipping row 23113
+Skipping GPU info rows starting from index 23754
+Skipping row 23755
+Skipping row 23756
+Skipping row 23757
+Skipping row 23758
+Skipping GPU info rows starting from index 24398
+Skipping row 24399
+Skipping row 24400
+Skipping row 24401
+Skipping row 24402
+Skipping GPU info rows starting from index 25042
+Skipping row 25043
+Skipping row 25044
+Skipping row 25045
+Skipping row 25046
+Skipping GPU info rows starting from index 25688
+Skipping row 25689
+Skipping row 25690
+Skipping row 25691
+Skipping row 25692
+Skipping GPU info rows starting from index 26332
+Skipping row 26333
+Skipping row 26334
+Skipping row 26335
+Skipping row 26336
+Skipping GPU info rows starting from index 26978
+Skipping row 26979
+Skipping row 26980
+Skipping row 26981
+Skipping row 26982
+Skipping GPU info rows starting from index 27625
+Skipping row 27626
+Skipping row 27627
+Skipping row 27628
+Skipping row 27629
+Skipping GPU info rows starting from index 28274
+Skipping row 28275
+Skipping row 28276
+Skipping row 28277
+Skipping row 28278
+Skipping GPU info rows starting from index 28921
+Skipping row 28922
+Skipping row 28923
+Skipping row 28924
+Skipping row 28925
+Skipping GPU info rows starting from index 29568
+Skipping row 29569
+Skipping row 29570
+Skipping row 29571
+Skipping row 29572
+Skipping GPU info rows starting from index 30215
+Skipping row 30216
+Skipping row 30217
+Skipping row 30218
+Skipping row 30219
+Skipping GPU info rows starting from index 30862
+Skipping row 30863
+Skipping row 30864
+Skipping row 30865
+Skipping row 30866
+Skipping GPU info rows starting from index 31507
+Skipping row 31508
+Skipping row 31509
+Skipping row 31510
+Skipping row 31511
+Skipping GPU info rows starting from index 32151
+Skipping row 32152
+Skipping row 32153
+Skipping row 32154
+Skipping row 32155
+Skipping GPU info rows starting from index 32795
+Skipping row 32796
+Skipping row 32797
+Skipping row 32798
+Skipping row 32799
+Skipping GPU info rows starting from index 33441
+Skipping row 33442
+Skipping row 33443
+Skipping row 33444
+Skipping row 33445
+Skipping GPU info rows starting from index 34085
+Skipping row 34086
+Skipping row 34087
+Skipping row 34088
+Skipping row 34089
+Skipping GPU info rows starting from index 34731
+Skipping row 34732
+Skipping row 34733
+Skipping row 34734
+Skipping row 34735
+Skipping GPU info rows starting from index 35378
+Skipping row 35379
+Skipping row 35380
+Skipping row 35381
+Skipping row 35382
+Skipping GPU info rows starting from index 36027
+Skipping row 36028
+Skipping row 36029
+Skipping row 36030
+Skipping row 36031
+Skipping GPU info rows starting from index 36674
+Skipping row 36675
+Skipping row 36676
+Skipping row 36677
+Skipping row 36678
+Skipping GPU info rows starting from index 37321
+Skipping row 37322
+Skipping row 37323
+Skipping row 37324
+Skipping row 37325
+Skipping GPU info rows starting from index 37968
+Skipping row 37969
+Skipping row 37970
+Skipping row 37971
+Skipping row 37972
+Skipping GPU info rows starting from index 38615
+Skipping row 38616
+Skipping row 38617
+Skipping row 38618
+Skipping row 38619
+Skipping GPU info rows starting from index 39260
+Skipping row 39261
+Skipping row 39262
+Skipping row 39263
+Skipping row 39264
+Skipping GPU info rows starting from index 39904
+Skipping row 39905
+Skipping row 39906
+Skipping row 39907
+Skipping row 39908
+Skipping GPU info rows starting from index 40548
+Skipping row 40549
+Skipping row 40550
+Skipping row 40551
+Skipping row 40552
+Skipping GPU info rows starting from index 41194
+Skipping row 41195
+Skipping row 41196
+Skipping row 41197
+Skipping row 41198
+Skipping GPU info rows starting from index 41838
+Skipping row 41839
+Skipping row 41840
+Skipping row 41841
+Skipping row 41842
+Skipping GPU info rows starting from index 42484
+Skipping row 42485
+Skipping row 42486
+Skipping row 42487
+Skipping row 42488
+Skipping GPU info rows starting from index 43131
+Skipping row 43132
+Skipping row 43133
+Skipping row 43134
+Skipping row 43135
+Skipping GPU info rows starting from index 43780
+Skipping row 43781
+Skipping row 43782
+Skipping row 43783
+Skipping row 43784
+Skipping GPU info rows starting from index 44427
+Skipping row 44428
+Skipping row 44429
+Skipping row 44430
+Skipping row 44431
+Skipping GPU info rows starting from index 45074
+Skipping row 45075
+Skipping row 45076
+Skipping row 45077
+Skipping row 45078
+Skipping GPU info rows starting from index 45721
+Skipping row 45722
+Skipping row 45723
+Skipping row 45724
+Skipping row 45725
+Skipping GPU info rows starting from index 46368
+Skipping row 46369
+Skipping row 46370
+Skipping row 46371
+Skipping row 46372
+Skipping GPU info rows starting from index 47013
+Skipping row 47014
+Skipping row 47015
+Skipping row 47016
+Skipping row 47017
+Skipping GPU info rows starting from index 47657
+Skipping row 47658
+Skipping row 47659
+Skipping row 47660
+Skipping row 47661
+Skipping GPU info rows starting from index 48301
+Skipping row 48302
+Skipping row 48303
+Skipping row 48304
+Skipping row 48305
+Skipping GPU info rows starting from index 48947
+Skipping row 48948
+Skipping row 48949
+Skipping row 48950
+Skipping row 48951
+Skipping GPU info rows starting from index 49591
+Skipping row 49592
+Skipping row 49593
+Skipping row 49594
+Skipping row 49595
+Skipping GPU info rows starting from index 50237
+Skipping row 50238
+Skipping row 50239
+Skipping row 50240
+Skipping row 50241
+Skipping GPU info rows starting from index 50884
+Skipping row 50885
+Skipping row 50886
+Skipping row 50887
+Skipping row 50888
+Skipping GPU info rows starting from index 51533
+Skipping row 51534
+Skipping row 51535
+Skipping row 51536
+Skipping row 51537
+Skipping GPU info rows starting from index 52180
+Skipping row 52181
+Skipping row 52182
+Skipping row 52183
+Skipping row 52184
+Skipping GPU info rows starting from index 52827
+Skipping row 52828
+Skipping row 52829
+Skipping row 52830
+Skipping row 52831
+Skipping GPU info rows starting from index 53474
+Skipping row 53475
+Skipping row 53476
+Skipping row 53477
+Skipping row 53478
+Skipping GPU info rows starting from index 54121
+Skipping row 54122
+Skipping row 54123
+Skipping row 54124
+Skipping row 54125
+Skipping GPU info rows starting from index 54766
+Skipping row 54767
+Skipping row 54768
+Skipping row 54769
+Skipping row 54770
+Skipping GPU info rows starting from index 55410
+Skipping row 55411
+Skipping row 55412
+Skipping row 55413
+Skipping row 55414
+Skipping GPU info rows starting from index 56054
+Skipping row 56055
+Skipping row 56056
+Skipping row 56057
+Skipping row 56058
+Skipping GPU info rows starting from index 56700
+Skipping row 56701
+Skipping row 56702
+Skipping row 56703
+Skipping row 56704
+Skipping GPU info rows starting from index 57344
+Skipping row 57345
+Skipping row 57346
+Skipping row 57347
+Skipping row 57348
+Skipping GPU info rows starting from index 57990
+Skipping row 57991
+Skipping row 57992
+Skipping row 57993
+Skipping row 57994
+Skipping GPU info rows starting from index 58637
+Skipping row 58638
+Skipping row 58639
+Skipping row 58640
+Skipping row 58641
+Skipping GPU info rows starting from index 59286
+Skipping row 59287
+Skipping row 59288
+Skipping row 59289
+Skipping row 59290
+Skipping GPU info rows starting from index 59933
+Skipping row 59934
+Skipping row 59935
+Skipping row 59936
+Skipping row 59937
+Skipping GPU info rows starting from index 60580
+Skipping row 60581
+Skipping row 60582
+Skipping row 60583
+Skipping row 60584
+Skipping GPU info rows starting from index 61227
+Skipping row 61228
+Skipping row 61229
+Skipping row 61230
+Skipping row 61231
+Skipping GPU info rows starting from index 61874
+Skipping row 61875
+Skipping row 61876
+Skipping row 61877
+Skipping row 61878
+Skipping GPU info rows starting from index 62519
+Skipping row 62520
+Skipping row 62521
+Skipping row 62522
+Skipping row 62523
+Skipping GPU info rows starting from index 63163
+Skipping row 63164
+Skipping row 63165
+Skipping row 63166
+Skipping row 63167
+Skipping GPU info rows starting from index 63807
+Skipping row 63808
+Skipping row 63809
+Skipping row 63810
+Skipping row 63811
+Skipping GPU info rows starting from index 64453
+Skipping row 64454
+Skipping row 64455
+Skipping row 64456
+Skipping row 64457
+Skipping GPU info rows starting from index 65097
+Skipping row 65098
+Skipping row 65099
+Skipping row 65100
+Skipping row 65101
+Skipping GPU info rows starting from index 65743
+Skipping row 65744
+Skipping row 65745
+Skipping row 65746
+Skipping row 65747
+Skipping GPU info rows starting from index 66390
+Skipping row 66391
+Skipping row 66392
+Skipping row 66393
+Skipping row 66394
+Skipping GPU info rows starting from index 67039
+Skipping row 67040
+Skipping row 67041
+Skipping row 67042
+Skipping row 67043
+Skipping GPU info rows starting from index 67686
+Skipping row 67687
+Skipping row 67688
+Skipping row 67689
+Skipping row 67690
+Skipping GPU info rows starting from index 68333
+Skipping row 68334
+Skipping row 68335
+Skipping row 68336
+Skipping row 68337
+Skipping GPU info rows starting from index 68980
+Skipping row 68981
+Skipping row 68982
+Skipping row 68983
+Skipping row 68984
+Skipping GPU info rows starting from index 69627
+Skipping row 69628
+Skipping row 69629
+Skipping row 69630
+Skipping row 69631
+Skipping GPU info rows starting from index 70272
+Skipping row 70273
+Skipping row 70274
+Skipping row 70275
+Skipping row 70276
+Skipping GPU info rows starting from index 70916
+Skipping row 70917
+Skipping row 70918
+Skipping row 70919
+Skipping row 70920
+Skipping GPU info rows starting from index 71560
+Skipping row 71561
+Skipping row 71562
+Skipping row 71563
+Skipping row 71564
+Skipping GPU info rows starting from index 72206
+Skipping row 72207
+Skipping row 72208
+Skipping row 72209
+Skipping row 72210
+Skipping GPU info rows starting from index 72850
+Skipping row 72851
+Skipping row 72852
+Skipping row 72853
+Skipping row 72854
+Skipping GPU info rows starting from index 73496
+Skipping row 73497
+Skipping row 73498
+Skipping row 73499
+Skipping row 73500
+Skipping GPU info rows starting from index 74143
+Skipping row 74144
+Skipping row 74145
+Skipping row 74146
+Skipping row 74147
+Skipping GPU info rows starting from index 74792
+Skipping row 74793
+Skipping row 74794
+Skipping row 74795
+Skipping row 74796
+Skipping GPU info rows starting from index 75439
+Skipping row 75440
+Skipping row 75441
+Skipping row 75442
+Skipping row 75443
+Skipping GPU info rows starting from index 76086
+Skipping row 76087
+Skipping row 76088
+Skipping row 76089
+Skipping row 76090
+Skipping GPU info rows starting from index 76733
+Skipping row 76734
+Skipping row 76735
+Skipping row 76736
+Skipping row 76737
+Skipping GPU info rows starting from index 77380
+Skipping row 77381
+Skipping row 77382
+Skipping row 77383
+Skipping row 77384
+Skipping GPU info rows starting from index 78025
+Skipping row 78026
+Skipping row 78027
+Skipping row 78028
+Skipping row 78029
+Skipping GPU info rows starting from index 78669
+Skipping row 78670
+Skipping row 78671
+Skipping row 78672
+Skipping row 78673
+Skipping GPU info rows starting from index 79313
+Skipping row 79314
+Skipping row 79315
+Skipping row 79316
+Skipping row 79317
+Skipping GPU info rows starting from index 79959
+Skipping row 79960
+Skipping row 79961
+Skipping row 79962
+Skipping row 79963
+Skipping GPU info rows starting from index 80603
+Skipping row 80604
+Skipping row 80605
+Skipping row 80606
+Skipping row 80607
+Skipping GPU info rows starting from index 81249
+Skipping row 81250
+Skipping row 81251
+Skipping row 81252
+Skipping row 81253
+Skipping GPU info rows starting from index 81896
+Skipping row 81897
+Skipping row 81898
+Skipping row 81899
+Skipping row 81900
+Skipping GPU info rows starting from index 82545
+Skipping row 82546
+Skipping row 82547
+Skipping row 82548
+Skipping row 82549
+Skipping GPU info rows starting from index 83192
+Skipping row 83193
+Skipping row 83194
+Skipping row 83195
+Skipping row 83196
+Skipping GPU info rows starting from index 83839
+Skipping row 83840
+Skipping row 83841
+Skipping row 83842
+Skipping row 83843
+Skipping GPU info rows starting from index 84486
+Skipping row 84487
+Skipping row 84488
+Skipping row 84489
+Skipping row 84490
+Skipping GPU info rows starting from index 85133
+Skipping row 85134
+Skipping row 85135
+Skipping row 85136
+Skipping row 85137
+Skipping GPU info rows starting from index 85778
+Skipping row 85779
+Skipping row 85780
+Skipping row 85781
+Skipping row 85782
+Skipping GPU info rows starting from index 86422
+Skipping row 86423
+Skipping row 86424
+Skipping row 86425
+Skipping row 86426
+Skipping GPU info rows starting from index 87066
+Skipping row 87067
+Skipping row 87068
+Skipping row 87069
+Skipping row 87070
+Skipping GPU info rows starting from index 87712
+Skipping row 87713
+Skipping row 87714
+Skipping row 87715
+Skipping row 87716
+Skipping GPU info rows starting from index 88356
+Skipping row 88357
+Skipping row 88358
+Skipping row 88359
+Skipping row 88360
+Skipping GPU info rows starting from index 89002
+Skipping row 89003
+Skipping row 89004
+Skipping row 89005
+Skipping row 89006
+Skipping GPU info rows starting from index 89649
+Skipping row 89650
+Skipping row 89651
+Skipping row 89652
+Skipping row 89653
+Skipping GPU info rows starting from index 90298
+Skipping row 90299
+Skipping row 90300
+Skipping row 90301
+Skipping row 90302
+Skipping GPU info rows starting from index 90945
+Skipping row 90946
+Skipping row 90947
+Skipping row 90948
+Skipping row 90949
+Skipping GPU info rows starting from index 91592
+Skipping row 91593
+Skipping row 91594
+Skipping row 91595
+Skipping row 91596
+Skipping GPU info rows starting from index 92239
+Skipping row 92240
+Skipping row 92241
+Skipping row 92242
+Skipping row 92243
+Skipping GPU info rows starting from index 92886
+Skipping row 92887
+Skipping row 92888
+Skipping row 92889
+Skipping row 92890
+Skipping GPU info rows starting from index 93531
+Skipping row 93532
+Skipping row 93533
+Skipping row 93534
+Skipping row 93535
+Skipping GPU info rows starting from index 94175
+Skipping row 94176
+Skipping row 94177
+Skipping row 94178
+Skipping row 94179
+Skipping GPU info rows starting from index 94819
+Skipping row 94820
+Skipping row 94821
+Skipping row 94822
+Skipping row 94823
+Skipping GPU info rows starting from index 95465
+Skipping row 95466
+Skipping row 95467
+Skipping row 95468
+Skipping row 95469
+Skipping GPU info rows starting from index 96109
+Skipping row 96110
+Skipping row 96111
+Skipping row 96112
+Skipping row 96113
+Skipping GPU info rows starting from index 96755
+Skipping row 96756
+Skipping row 96757
+Skipping row 96758
+Skipping row 96759
+Skipping GPU info rows starting from index 97402
+Skipping row 97403
+Skipping row 97404
+Skipping row 97405
+Skipping row 97406
+Skipping GPU info rows starting from index 98051
+Skipping row 98052
+Skipping row 98053
+Skipping row 98054
+Skipping row 98055
+Skipping GPU info rows starting from index 98698
+Skipping row 98699
+Skipping row 98700
+Skipping row 98701
+Skipping row 98702
+Skipping GPU info rows starting from index 99345
+Skipping row 99346
+Skipping row 99347
+Skipping row 99348
+Skipping row 99349
+Skipping GPU info rows starting from index 99992
+Skipping row 99993
+Skipping row 99994
+Skipping row 99995
+Skipping row 99996
+Skipping GPU info rows starting from index 100639
+Skipping row 100640
+Skipping row 100641
+Skipping row 100642
+Skipping row 100643
+Skipping GPU info rows starting from index 101289
+Skipping row 101290
+Skipping row 101291
+Skipping row 101292
+Skipping row 101293
+Skipping GPU info rows starting from index 101939
+Skipping row 101940
+Skipping row 101941
+Skipping row 101942
+Skipping row 101943
+Skipping GPU info rows starting from index 102588
+Skipping row 102589
+Skipping row 102590
+Skipping row 102591
+Skipping row 102592
+Skipping GPU info rows starting from index 103242
+Skipping row 103243
+Skipping row 103244
+Skipping row 103245
+Skipping row 103246
+Skipping GPU info rows starting from index 103894
+Skipping row 103895
+Skipping row 103896
+Skipping row 103897
+Skipping row 103898
+void at::native::<unnamed>::indexSelectLargeIndex<float, long, unsigned int, (int)2, (int)2, (int)-2, (bool)1>(at::cuda::detail::TensorInfo<T1, T3>, at::cuda::detail::TensorInfo<const T1, T3>, at::cuda::detail::TensorInfo<const T2, T3>, int, int, T3, T3, long)
+------------------------------------
+void at::native::vectorized_elementwise_kernel<(int)4, at::native::AUnaryFunctor<long, long, bool, at::native::<unnamed>::CompareEqFunctor<long>>, at::detail::Array<char *, (int)2>>(int, T2, T3)
+------------------------------------
+void gemmSN_TN_kernel<float, (int)128, (int)16, (int)2, (int)4, (int)8, (int)9, (bool)0, cublasGemvTensorStridedBatched<const float>, cublasGemvTensorStridedBatched<const float>, cublasGemvTensorStridedBatched<float>>(cublasGemmSmallNParams<T9, T10, T11, T1>)
+------------------------------------
+void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)
+------------------------------------
+void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)
+------------------------------------
+void at::native::vectorized_elementwise_kernel<(int)4, at::native::<unnamed>::masked_fill_kernel(at::TensorIterator &, const c10::Scalar &)::[lambda() (instance 1)]::operator ()() const::[lambda() (instance 7)]::operator ()() const::[lambda(float, bool) (instance 1)], at::detail::Array<char *, (int)3>>(int, T2, T3)
+------------------------------------
+volta_sgemm_128x32_tn
+------------------------------------
+void <unnamed>::softmax_warp_forward<float, float, float, (int)3, (bool)1, (bool)0>(T2 *, const T1 *, int, int, int, const bool *, int, bool)
+------------------------------------
+void at::native::vectorized_elementwise_kernel<(int)4, at::native::tanh_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)
+------------------------------------
+void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)
+------------------------------------
+volta_sgemm_128x128_tn
+------------------------------------
+void at::native::<unnamed>::nll_loss_forward_reduce_cuda_kernel_2d<float, float, long>(T1 *, T1 *, const T1 *, const T3 *, const T1 *, bool, long, long, long, long)
+------------------------------------
+void at::native::reduce_kernel<(int)512, (int)1, at::native::ReduceOp<bool, at::native::func_wrapper_t<bool, at::native::and_kernel_cuda(at::TensorIterator &)::[lambda() (instance 1)]::operator ()() const::[lambda() (instance 12)]::operator ()() const::[lambda(bool, bool) (instance 1)]>, unsigned int, bool, (int)4>>(T3)
+------------------------------------
+void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 11)]::operator ()() const::[lambda(bool) (instance 1)], at::detail::Array<char *, (int)2>, TrivialOffsetCalculator<(int)1, unsigned int>, TrivialOffsetCalculator<(int)1, unsigned int>, at::native::memory::LoadWithCast<(int)1>, at::native::memory::StoreWithCast<(int)1>>(int, T1, T2, T3, T4, T5, T6)
+------------------------------------
+void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)
+------------------------------------
+fmha_cutlassF_f32_aligned_64x64_rf_sm70(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm70, (bool)1, (int)64, (int)64, (int)64, (bool)1, (bool)1>::Params)
+------------------------------------
+void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctorOnOther_add<float>, at::detail::Array<char *, (int)2>>(int, T2, T3)
+------------------------------------
+void at::native::elementwise_kernel<(int)128, (int)4, void at::native::gpu_kernel_impl<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 7)]::operator ()() const::[lambda(float) (instance 1)]>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)
+------------------------------------
+num of total kernels 161
+49.57
+47.71
+47.55
+10.02
+36.0
+46.21
+2.78
+6.94
+23.14
+21.63
+25.06
+24.77
+435.9
+475.62
+436.03
+903.46
+434.08
+46.88
+46.59
+1.61
+124.45
+1.57
+47.42
+46.11
+438.46
+436.45
+429.79
+854.4
+430.53
+47.46
+45.79
+1.61
+123.84
+1.56
+46.75
+46.46
+436.19
+433.82
+475.42
+900.99
+432.83
+46.62
+46.62
+1.61
+123.81
+1.57
+47.04
+47.14
+436.86
+466.91
+469.98
+902.24
+435.94
+46.88
+47.55
+1.61
+124.83
+1.58
+47.14
+47.71
+429.22
+436.74
+478.75
+895.87
+430.02
+47.42
+47.46
+1.61
+124.48
+1.68
+46.82
+47.58
+435.52
+434.5
+438.98
+857.44
+473.12
+46.91
+46.66
+1.6
+124.7
+1.59
+47.3
+47.07
+438.34
+437.31
+469.47
+862.24
+435.55
+47.23
+46.18
+1.61
+124.8
+1.6
+46.91
+46.98
+435.81
+438.24
+469.09
+898.53
+433.98
+47.78
+47.84
+1.6
+124.83
+1.57
+46.88
+45.5
+436.99
+436.83
+429.34
+903.1
+435.26
+46.98
+46.3
+1.61
+123.74
+1.6
+47.68
+47.49
+428.0
+430.24
+438.59
+905.82
+467.52
+47.26
+46.85
+1.61
+124.74
+1.68
+47.26
+46.37
+437.38
+438.4
+469.12
+858.5
+432.64
+46.69
+47.17
+1.61
+124.32
+1.57
+46.91
+46.72
+437.66
+466.46
+437.28
+863.23
+431.97
+46.5
+48.61
+1.61
+124.77
+1.57
+46.82
+47.3
+16.48
+3.23
+14.94
+3.23
+4.58
+num of short kernels: 101, num of long kernels: 60
+161
+                                                kernel  ... Static Shared Memory
+0    void at::native::<unnamed>::indexSelectLargeIn...  ...                 0.00
+1    void at::native::<unnamed>::indexSelectLargeIn...  ...                 0.00
+2    void at::native::vectorized_elementwise_kernel...  ...                 0.00
+3    void at::native::<unnamed>::indexSelectLargeIn...  ...                 0.00
+4    void at::native::elementwise_kernel<(int)128, ...  ...                 0.00
+..                                                 ...  ...                  ...
+156  void gemmSN_TN_kernel<float, (int)128, (int)16...  ...              1326.72
+157  void at::native::vectorized_elementwise_kernel...  ...                 0.00
+158  void gemmSN_TN_kernel<float, (int)128, (int)16...  ...                13.82
+159  void <unnamed>::softmax_warp_forward<float, fl...  ...                 0.00
+160  void at::native::<unnamed>::nll_loss_forward_r...  ...               256.00
+
+[161 rows x 16 columns]

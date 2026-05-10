@@ -1,0 +1,4 @@
+input: ../../ccv100_logs/sharenonDL_powercap60_dvfs/
+output: v100/02012026_rebut_nonDL_powercap60
+combination: 2
+metric_type: throughput

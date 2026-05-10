@@ -1,0 +1,6 @@
+workload1,workload2,freq1,freq2,"(w1_10, w2_90)","(w1_20, w2_80)","(w1_30, w2_70)","(w1_40, w2_60)","(w1_60, w2_40)","(w1_80, w2_20)","(w1_100, w2_100)"
+resnet-50_batch2-train,whisper-large-v2_batch2-inf,0,0,"(None, None)","(0.000, 0.000)","(None, None)","(None, None)","(None, None)","(0.000, 0.000)","(None, None)"
+albert-base-v2_batch2-train,resnet-50_batch2-inf,0,0,"(None, None)","(None, None)","(0.000, 0.000)","(0.000, 0.000)","(None, None)","(None, None)","(None, None)"
+resnet-50_batch2-inf,vit_h_14_batch2-train,0,0,"(None, None)","(0.000, 0.000)","(None, None)","(None, None)","(None, None)","(None, None)","(None, None)"
+resnet-50_batch2-inf,whisper-large-v2_batch2-inf,0,0,"(0.000, 0.000)","(None, None)","(None, None)","(None, None)","(None, None)","(None, None)","(None, None)"
+resnet-50_batch2-inf,resnet-50_batch2-inf,0,0,"(None, None)","(None, None)","(None, None)","(None, None)","(None, None)","(None, None)","(0.000, 0.000)"

@@ -1,0 +1,3 @@
+input: ../../ccv100_logs/share_freqscale_freq300/
+output: 05052025_freq300
+combination: 2

@@ -1,0 +1,10 @@
+Metric Name,Metric Values
+"vllm:avg_generation_throughput_toks_per_s{model_name=""mistralai/Mistral-7B-Instruct-v0.2""}","[0.0, 0.0, 0.0, 0.0]"
+"vllm:avg_prompt_throughput_toks_per_s{model_name=""mistralai/Mistral-7B-Instruct-v0.2""}","[0.0, 0.0, 0.0, 0.0]"
+"vllm:cpu_cache_usage_perc{model_name=""mistralai/Mistral-7B-Instruct-v0.2""}","[0.0, 0.0, 0.0, 0.0]"
+"vllm:generation_tokens_total{model_name=""mistralai/Mistral-7B-Instruct-v0.2""}","[0.0, 0.0, 0.0, 0.0]"
+"vllm:gpu_cache_usage_perc{model_name=""mistralai/Mistral-7B-Instruct-v0.2""}","[0.0, 0.0, 0.0, 0.0]"
+"vllm:num_requests_running{model_name=""mistralai/Mistral-7B-Instruct-v0.2""}","[0.0, 0.0, 0.0, 0.0]"
+"vllm:num_requests_swapped{model_name=""mistralai/Mistral-7B-Instruct-v0.2""}","[0.0, 0.0, 0.0, 0.0]"
+"vllm:num_requests_waiting{model_name=""mistralai/Mistral-7B-Instruct-v0.2""}","[0.0, 0.0, 0.0, 0.0]"
+"vllm:prompt_tokens_total{model_name=""mistralai/Mistral-7B-Instruct-v0.2""}","[0.0, 0.0, 0.0, 0.0]"

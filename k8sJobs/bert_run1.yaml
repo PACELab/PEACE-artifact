@@ -1,0 +1,360 @@
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class321
+value: 999999678
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: job-1-bert-train-bert-base-cased-cuda-epoch10
+spec:
+  priorityClassName: class321  # Set your PriorityClass name here
+  containers:
+  - name: c-job-1-bert-train-bert-base-cased-cuda-epoch10
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/bert_train.py", "--n_epoch", "10"]
+    env:
+    - name: GPU_MEMORY
+      value: "7967"
+    - name: GPU_COMPTIME
+      value: "321"
+    - name: CPU_COMPTIME
+      value: "3852"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 7967
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class651
+value: 999999348
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: job-2-bert-train-bert-base-cased-cuda-epoch20
+spec:
+  priorityClassName: class651  # Set your PriorityClass name here
+  containers:
+  - name: c-job-2-bert-train-bert-base-cased-cuda-epoch20
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/bert_train.py", "--n_epoch", "20"]
+    env:
+    - name: GPU_MEMORY
+      value: "7967"
+    - name: GPU_COMPTIME
+      value: "651"
+    - name: CPU_COMPTIME
+      value: "7812"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 7967
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class977
+value: 999999022
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: job-3-bert-train-bert-base-cased-cuda-epoch30
+spec:
+  priorityClassName: class977  # Set your PriorityClass name here
+  containers:
+  - name: c-job-3-bert-train-bert-base-cased-cuda-epoch30
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/bert_train.py", "--n_epoch", "30"]
+    env:
+    - name: GPU_MEMORY
+      value: "7967"
+    - name: GPU_COMPTIME
+      value: "977"
+    - name: CPU_COMPTIME
+      value: "11724"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 7967
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class1305
+value: 999998694
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: job-4-bert-train-bert-base-cased-cuda-epoch40
+spec:
+  priorityClassName: class1305  # Set your PriorityClass name here
+  containers:
+  - name: c-job-4-bert-train-bert-base-cased-cuda-epoch40
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/bert_train.py", "--n_epoch", "40"]
+    env:
+    - name: GPU_MEMORY
+      value: "7967"
+    - name: GPU_COMPTIME
+      value: "1305"
+    - name: CPU_COMPTIME
+      value: "15660"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 7967
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class1636
+value: 999998363
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: job-5-bert-train-bert-base-cased-cuda-epoch50
+spec:
+  priorityClassName: class1636  # Set your PriorityClass name here
+  containers:
+  - name: c-job-5-bert-train-bert-base-cased-cuda-epoch50
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/bert_train.py", "--n_epoch", "50"]
+    env:
+    - name: GPU_MEMORY
+      value: "7967"
+    - name: GPU_COMPTIME
+      value: "1636"
+    - name: CPU_COMPTIME
+      value: "19632"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 7967
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class1962
+value: 999998037
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: job-6-bert-train-bert-base-cased-cuda-epoch60
+spec:
+  priorityClassName: class1962  # Set your PriorityClass name here
+  containers:
+  - name: c-job-6-bert-train-bert-base-cased-cuda-epoch60
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/bert_train.py", "--n_epoch", "60"]
+    env:
+    - name: GPU_MEMORY
+      value: "7967"
+    - name: GPU_COMPTIME
+      value: "1962"
+    - name: CPU_COMPTIME
+      value: "23544"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 7967
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class2282
+value: 999997717
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: job-7-bert-train-bert-base-cased-cuda-epoch70
+spec:
+  priorityClassName: class2282  # Set your PriorityClass name here
+  containers:
+  - name: c-job-7-bert-train-bert-base-cased-cuda-epoch70
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/bert_train.py", "--n_epoch", "70"]
+    env:
+    - name: GPU_MEMORY
+      value: "7967"
+    - name: GPU_COMPTIME
+      value: "2282"
+    - name: CPU_COMPTIME
+      value: "27384"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 7967
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class2610
+value: 999997389
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: job-8-bert-train-bert-base-cased-cuda-epoch80
+spec:
+  priorityClassName: class2610  # Set your PriorityClass name here
+  containers:
+  - name: c-job-8-bert-train-bert-base-cased-cuda-epoch80
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/bert_train.py", "--n_epoch", "80"]
+    env:
+    - name: GPU_MEMORY
+      value: "7967"
+    - name: GPU_COMPTIME
+      value: "2610"
+    - name: CPU_COMPTIME
+      value: "31320"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 7967
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class2939
+value: 999997060
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: job-9-bert-train-bert-base-cased-cuda-epoch90
+spec:
+  priorityClassName: class2939  # Set your PriorityClass name here
+  containers:
+  - name: c-job-9-bert-train-bert-base-cased-cuda-epoch90
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/bert_train.py", "--n_epoch", "90"]
+    env:
+    - name: GPU_MEMORY
+      value: "7967"
+    - name: GPU_COMPTIME
+      value: "2939"
+    - name: CPU_COMPTIME
+      value: "35268"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 7967
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class3259
+value: 999996740
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: job-10-bert-train-bert-base-cased-cuda-epoch100
+spec:
+  priorityClassName: class3259  # Set your PriorityClass name here
+  containers:
+  - name: c-job-10-bert-train-bert-base-cased-cuda-epoch100
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/bert_train.py", "--n_epoch", "100"]
+    env:
+    - name: GPU_MEMORY
+      value: "7967"
+    - name: GPU_COMPTIME
+      value: "3259"
+    - name: CPU_COMPTIME
+      value: "39108"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 7967
+  restartPolicy: Never
+

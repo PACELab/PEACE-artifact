@@ -1,0 +1,72 @@
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class28
+value: 999999971
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: run-3-job-1-recommend-train-cuda-epoch1
+spec:
+  priorityClassName: class28  # Set your PriorityClass name here
+  containers:
+  - name: c-run-3-job-1-recommend-train-cuda-epoch1
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/recommend-train.py", "--n_epoch", "1"]
+    env:
+    - name: GPU_MEMORY
+      value: "23379"
+    - name: GPU_COMPTIME
+      value: "28"
+    - name: CPU_COMPTIME
+      value: "336"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 23379
+  restartPolicy: Never
+
+
+---
+
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: class57
+value: 999999942
+globalDefault: false
+preemptionPolicy: Never
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: run-3-job-2-recommend-train-cuda-epoch2
+spec:
+  priorityClassName: class57  # Set your PriorityClass name here
+  containers:
+  - name: c-run-3-job-2-recommend-train-cuda-epoch2
+    image:  nba556677/train_tasks:template
+    #imagePullPolicy: Always
+    command: ["python", "/app/template/recommend-train.py", "--n_epoch", "2"]
+    env:
+    - name: GPU_MEMORY
+      value: "23379"
+    - name: GPU_COMPTIME
+      value: "57"
+    - name: CPU_COMPTIME
+      value: "684"
+    resources:
+      limits:
+        # MiB
+         aliyun.com/gpu-mem: 23379
+  restartPolicy: Never
+
