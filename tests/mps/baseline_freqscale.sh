@@ -61,18 +61,18 @@ TASKS_MODELS=()
 batch_sizes=(2)
 train_candidates=(
     "recommend:bert-base-cased"
-    #"imgclassification:mobilenet"
+    "imgclassification:mobilenet"
     "imgclassification:vit_h_14"
-    #"recommend:albert/albert-base-v2"
-    #"imgclassification:resnet-50"
+    "recommend:albert/albert-base-v2"
+    "imgclassification:resnet-50"
 )
 
 inference_candidates=(
     "speech-recognition:openai/whisper-large-v2"
-    #"imgclassification:google/mobilenet_v2_1.0_224"
-    #"recommend:bert-base-cased"
-    #"imgclassification:google/vit-base-patch16-224"
-    #"imgclassification:microsoft/resnet-50"
+    "imgclassification:google/mobilenet_v2_1.0_224"
+    "recommend:bert-base-cased"
+    "imgclassification:google/vit-base-patch16-224"
+    "imgclassification:microsoft/resnet-50"
     "speech-recognition:facebook/wav2vec2-base-960h"
 )
 
@@ -112,8 +112,8 @@ LS_PERCENTAGES=(0 0 0 0 0 0 0 0 0 0)
 BE_PERCENTAGES=(100 90 80 70 60 50 40 30 20 10)
 #LS_PERCENTAGES=(0 0 0 0 0)
 #BE_PERCENTAGES=(20 30 40 50 90) 
-LS_PERCENTAGES=(0)
-BE_PERCENTAGES=(100)
+#LS_PERCENTAGES=(0)
+#BE_PERCENTAGES=(100)
 RUNS=1
 mkdir -p $LOG_DIR
 for RUN in $(seq 1 $RUNS); do 
