@@ -1,6 +1,12 @@
 import os
+from pathlib import Path
+
 import pandas as pd
 import matplotlib.pyplot as plt
+
+
+REPO_ROOT = Path(__file__).resolve().parents[4]
+FREQ_SCALING_DIR = REPO_ROOT / "tests" / "mps" / "freq_scaling"
 
 def get_thread_num_from_str(thread_comb_str):
         col_s = thread_comb_str.replace("\"", "").replace("(", "").replace(")", "").replace(" ", "").split(",")
@@ -323,7 +329,7 @@ def analyze_predictions_crossvalidate_target_with_baselines(predict_xput_dir, pr
                     if save_csv:
                         all_df.to_csv(f"{output_base_name}/{relative_path_str}_all_df.csv", index=False)
                         final_df.to_csv(f"{output_base_name}/{relative_path_str}.csv", index=False)
-                        final_df_mean = final_df.mean()
+                        final_df_mean = final_df.mean(numeric_only=True)
                         print(f"Mean of {relative_path_str}:\n{final_df_mean}")
                         final_df_mean.to_csv(f"{output_base_name}/{relative_path_str}_mean.csv", index=True)
                 else:
@@ -342,7 +348,7 @@ def analyze_predictions_crossvalidate_target_with_baselines(predict_xput_dir, pr
     # Adjust the column name based on what get_pred_oracle_target_comparison returns
 
     #combined_df.to_csv(f"{output_base_name}_combined.csv", index=False)
-    mean_ratios = combined_df.mean()
+    mean_ratios = combined_df.mean(numeric_only=True)
     #mean_ratios.to_csv(f"{output_base_name}_mean_ratios.csv", index=True)
     print(f"Mean ratios for num_testset={num_testset}:\n{mean_ratios}")
 
@@ -399,7 +405,7 @@ def analyze_predictions_target_with_baselines(predict_xput_dir, predict_power_di
                         #all_df.to_csv(f"{output_base_name}/{relative_path_str}_all_df.csv", index=False)
                         final_df.to_csv(f"{output_base_name}/{relative_path_str}.csv", index=False)
                         #get mean of all
-                        final_df_mean = final_df.mean()
+                        final_df_mean = final_df.mean(numeric_only=True)
                         print(f"Mean of {relative_path_str}:\n{final_df_mean}")
                         final_df_mean.to_csv(f"{output_base_name}/{relative_path_str}_mean.csv", index=True)
                     
@@ -422,7 +428,7 @@ def analyze_predictions_target_with_baselines(predict_xput_dir, predict_power_di
     combined_df = pd.concat(all_final_dfs, ignore_index=True)
     #drop duplicates rows of workload1, workload2
     combined_df = combined_df.drop_duplicates(subset=["workload1", "workload2"], keep="last")
-    mean_ratios = combined_df.mean()  # Adjusted to available columns
+    mean_ratios = combined_df.mean(numeric_only=True)
     #all_baseline_mean_ratios = all_baseline_gain_df.mean()
     #combine mean_ratios and all_baseline_mean_ratios
     #mean_ratios = pd.concat([mean_ratios, all_baseline_mean_ratios], axis=0)
@@ -435,52 +441,18 @@ def analyze_predictions_target_with_baselines(predict_xput_dir, predict_power_di
 
 
 if __name__ == "__main__":
-    """
-    UNSEEEN PREDICTION - analyze_predictions_target_with_baselines(
-    """
-    #predict_xput_dir = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/multiinstance/output/run03072025_data1229_mergecudaDL_comb2/unseen_partition/throughput/rand10/extratrees"
-    #predict_power_dir = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/multiinstance/output/run03072025_data1229_mergecudaDL_comb2/unseen_partition/power/rand10/extratrees"
-    #oracle_file = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/multiinstance/dataset/02072025_noweight/with_energy_duration/0307_data1229_mergecudaDL_throughput_total_labels_comb2_labels.csv"
-    
-    predict_xput_dir = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/multiinstance/output/run03112025_DL0207_0307_nonDL0311_nodvfs/unseen_partition/throughput/rand10/extratrees"
-    predict_power_dir = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/multiinstance/output/run03112025_DL0207_0307_nonDL0311_nodvfs/unseen_partition/power/rand10/extratrees"
-    oracle_file = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/multiinstance/dataset/03112025_DL0207_0307_nonDL0311_nodvfs/mergecudaDL_nodvfs_throughput_total_labels_comb2_labels.csv"
-    pred_xput_file_common_name = "pred_separate_throughputpower_regression.csv"
-    pred_power_file_common_name = "pred_power_regression.csv"
-
-    temporal_file = None
-    powercap_limit_100_file = None
-    target = "xput_per_power" #EDP, xput_per_joule
-    weight = 1# convert to kj if weight=1000
-    is_plot = False #plot each workload
-    dvfs_oracle = False #whether oracle is dvfs enabled
-    output_base_dir = f"./{target}_unseen_pred_vs_baselines_nodvfs/"
-    rm_100partition=True #remove 100 partition
-    save_csv = True
-    #output_base_dir = f"./test"
-
-    #analyze_predictions_target_with_baselines(predict_xput_dir=predict_xput_dir, predict_power_dir=predict_power_dir, dvfs_file=oracle_file, 
-    #                                          temporal_file=temporal_file, powercap_limit_file=powercap_limit_100_file, 
-    #                                          pred_xput_file_common_name=pred_xput_file_common_name, pred_power_file_common_name=pred_power_file_common_name, 
-    #                                          target=target , output_base_name=output_base_dir, 
-    #                                          weight=weight, dvfs_oracle=dvfs_oracle,rm_100partition=rm_100partition , is_plot=is_plot, save_csv=save_csv)
-#
-
-    """
-    SEEN PREDICTION - CROSSVALIDATION
-    """
-    #freq1530
-    predict_xput_dir = "../../freq_scaling/output/09152025DL_0311nonDL_FREQ1530_mergecudaDL_nodvfs_remerge/seen_partition/crossvalid/throughput/trainratio_/rand10"
-    predict_power_dir = "../../freq_scaling/output/09152025DL_0311nonDL_FREQ1530_mergecudaDL_nodvfs_remerge/seen_partition/crossvalid/power/trainratio_/rand10"
-    oracle_file = "../../freq_scaling/dataset/09152025DL_0311nonDL_FREQ1530_mergecudaDL_nodvfs_remerge/merged_labels.csv"
-    #freq900
-    #predict_xput_dir = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/output/05052025_FREQ900_mergecudaDL_nodvfs_remerge/seen_partition/crossvalid/throughput/trainratio_/rand10"
-    #predict_power_dir = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/output/05052025_FREQ900_mergecudaDL_nodvfs_remerge/seen_partition/crossvalid/power/trainratio_/rand10"
-    #oracle_file = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/dataset/05052025_FREQ900_mergecudaDL_nodvfs_remerge/merged_labels.csv"
-    #freq300
-    #predict_xput_dir = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/output/05052025_FREQ300_mergecudaDL_nodvfs_remerge/seen_partition/crossvalid/throughput/trainratio_/rand10"
-    #predict_power_dir = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/output/05052025_FREQ300_mergecudaDL_nodvfs_remerge/seen_partition/crossvalid/power/trainratio_/rand10"
-    #oracle_file = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/dataset/05052025_FREQ300_mergecudaDL_nodvfs_remerge/merged_labels.csv"
+    """Analyze the retained single-frequency cross-validation predictions."""
+    frequency_inputs = {
+        300: "05052025_FREQ300_mergecudaDL_nodvfs_remerge",
+        900: "05052025_FREQ900_mergecudaDL_nodvfs_remerge",
+        1530: "09152025DL_0311nonDL_FREQ1530_mergecudaDL_nodvfs_remerge",
+    }
+    freq = 1530
+    experiment = frequency_inputs[freq]
+    prediction_root = FREQ_SCALING_DIR / "output" / experiment / "seen_partition" / "crossvalid"
+    predict_xput_dir = prediction_root / "throughput" / "trainratio_" / "rand10"
+    predict_power_dir = prediction_root / "power" / "trainratio_" / "rand10"
+    oracle_file = FREQ_SCALING_DIR / "dataset" / experiment / "merged_labels.csv"
     pred_xput_file_common_name = "pred_separate_throughputpower_regression.csv"
     pred_power_file_common_name = "pred_power_regression.csv"
 
@@ -490,17 +462,13 @@ if __name__ == "__main__":
     weight = 1# convert to kj if weight=1000
     is_plot = False #plot each workload
     dvfs_oracle = False #whether oracle is dvfs enabled
-    freq = 1530
     output_base_dir = f"./{target}_freq{freq}_seen_crossvalidate_pred_vs_baselines_nodvfs"
     rm_100partition=True #remove 100 partition
     save_csv = True
     throughput_model = "extratrees"
     power_model = "extratrees"
-    #all_models = ["extratrees", "RF", "AutoML", "linear"]
-    all_models = ["extratrees", "RF", "AutoML"]
     all_models = ["extratrees"]
-    num_testsets = [i for i in range(1,10)]
-    num_testsets = [3]
+    num_testsets = [7]
     for model_type in all_models:
         throughput_model = model_type
         power_model = model_type
@@ -527,7 +495,3 @@ if __name__ == "__main__":
                 is_plot=is_plot,
                 save_csv=save_csv
             )
-    
-    
-
-    

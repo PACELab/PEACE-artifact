@@ -67,6 +67,14 @@ env/
 *.driveupload
 *.drivedownload
 
+# Keep only the compact prediction CSVs consumed by the paper parsers.  The
+# surrounding model checkpoints, diagnostics, and training logs remain ignored.
+!tests/mps/freq_scaling/output/
+tests/mps/freq_scaling/output/**
+!tests/mps/freq_scaling/output/**/
+!tests/mps/freq_scaling/output/**/pred_separate_throughputpower_regression.csv
+!tests/mps/freq_scaling/output/**/pred_power_regression.csv
+
 
 **/*.ipynb
 # ignore plot_analysis
@@ -79,4 +87,3 @@ tests/mps/analysis/plot_analysis/power_time/*
 #ignore all model pkl and zip
 tests/mps/freq_scaling/**/*.pkl
 tests/mps/freq_scaling/**/*.zip
-

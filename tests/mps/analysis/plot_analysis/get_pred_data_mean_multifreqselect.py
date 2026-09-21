@@ -1,10 +1,19 @@
+import argparse
 import os
 import sys
 from collections import defaultdict, OrderedDict
 from itertools import permutations
+from pathlib import Path
 
 import matplotlib.pyplot as plt
 import pandas as pd
+
+
+REPO_ROOT = Path(__file__).resolve().parents[4]
+MPS_DIR = REPO_ROOT / "tests" / "mps"
+FREQ_DATASET_DIR = MPS_DIR / "freq_scaling" / "dataset"
+FREQ_OUTPUT_DIR = MPS_DIR / "freq_scaling" / "output"
+STAGE2_DIR = MPS_DIR / "analysis" / "stage2"
 
 def get_thread_num_from_str(thread_comb_str):
     """
@@ -1781,28 +1790,6 @@ def parse_oracle_latency_files(oracle_latency_path_dict, rm_100partitions=False)
             result[power_cap] = latency_lookup
             filter_msg = " (filtered 100,100 partitions)" if rm_100partitions else ""
             print(f"Loaded {len(latency_lookup)} latency entries for power cap {power_cap}{filter_msg}")
-            
-            # Export to CSV for debug purposes
-            debug_csv_path = f"./debug_latency_lookup_powercap{power_cap}.csv"
-            try:
-                debug_rows = []
-                for (w1, w2, w1_pct, w2_pct), (lat1, lat2, latency_avg) in latency_lookup.items():
-                    debug_rows.append({
-                        "workload1": w1,
-                        "workload2": w2,
-                        "w1_threadpercent": w1_pct,
-                        "w2_threadpercent": w2_pct,
-                        "lat1": lat1,
-                        "lat2": lat2,
-                        "latency_avg": latency_avg
-                    })
-                
-                debug_df = pd.DataFrame(debug_rows)
-                debug_df = debug_df.sort_values(by=["workload1", "workload2", "w1_threadpercent", "w2_threadpercent"])
-                debug_df.to_csv(debug_csv_path, index=False)
-                print(f"Debug: Exported latency lookup to {debug_csv_path}")
-            except Exception as e:
-                print(f"Warning: Failed to export debug CSV for power cap {power_cap}: {e}")
     
     return result
 
@@ -1899,27 +1886,6 @@ def parse_oracle_steps_files(oracle_steps_path_dict, rm_100partitions=False):
             result[power_cap] = steps_lookup
             filter_msg = " (filtered 100,100 partitions)" if rm_100partitions else ""
             print(f"Loaded {len(steps_lookup)} steps entries for power cap {power_cap}{filter_msg}")
-            
-            # Export to CSV for debug purposes
-            debug_csv_path = f"./debug_steps_lookup_powercap{power_cap}.csv"
-            try:
-                debug_rows = []
-                for (w1, w2, w1_pct, w2_pct), (w1_steps, w2_steps) in steps_lookup.items():
-                    debug_rows.append({
-                        "workload1": w1,
-                        "workload2": w2,
-                        "w1_threadpercent": w1_pct,
-                        "w2_threadpercent": w2_pct,
-                        "w1_steps": w1_steps,
-                        "w2_steps": w2_steps
-                    })
-                
-                debug_df = pd.DataFrame(debug_rows)
-                debug_df = debug_df.sort_values(by=["workload1", "workload2", "w1_threadpercent", "w2_threadpercent"])
-                debug_df.to_csv(debug_csv_path, index=False)
-                print(f"Debug: Exported steps lookup to {debug_csv_path}")
-            except Exception as e:
-                print(f"Warning: Failed to export debug CSV for power cap {power_cap}: {e}")
     
     return result
 
@@ -1995,28 +1961,27 @@ def analyze_predictions_target_with_baselines(
 
 # --- Main execution ---
 if __name__ == "__main__":
-    # --- Hardcoded Constants ---
-    # before 09152025 -- data has been remerged 
-    #PREDICT_XPUT_DIR_FREQ300 = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/output/05052025_FREQ300_mergecudaDL_nodvfs_rerun/unseen_partition/throughput/rand10/extratrees" 
-    #PREDICT_POWER_DIR_FREQ300 = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/output/05052025_FREQ300_mergecudaDL_nodvfs_rerun/unseen_partition/power/rand10/extratrees"
-    #PREDICT_XPUT_DIR_FREQ900 = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/output/05052025_FREQ900_mergecudaDL_nodvfs/unseen_partition/throughput/rand10/extratrees"
-    #PREDICT_POWER_DIR_FREQ900 = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/output/05052025_FREQ900_mergecudaDL_nodvfs/unseen_partition/power/rand10/extratrees"
-    #PREDICT_XPUT_DIR_FREQ1530 = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/output/run03112025_DL0207_0307_nonDL0311_nodvfs_FREQ1530/unseen_partition/throughput/rand10/extratrees"
-    #PREDICT_POWER_DIR_FREQ1530 = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/output/run03112025_DL0207_0307_nonDL0311_nodvfs_FREQ1530/unseen_partition/power/rand10/extratrees"
-    #09152025 UNSEEN - remerge and reverified outputs
-
-
+    parser = argparse.ArgumentParser(description="Recompute the PEACE paper policy summaries.")
+    parser.add_argument("--power-limit", type=int, choices=(60, 100, 200, 250), default=60)
+    parser.add_argument("--power-epsilon", type=int, default=None)
+    parser.add_argument("--combinations", type=int, choices=(2, 3), default=2)
+    parser.add_argument("--cross-validation", action="store_true")
+    parser.add_argument("--fold-size", type=int, default=7)
+    parser.add_argument("--output-dir", type=Path, default=None)
+    args = parser.parse_args()
 
     target = "xput_under_powercap" 
     # target = "max_xput" # For testing the other policy path
 
-    n_combinations = 2
+    n_combinations = args.combinations
     weight = 1.0
     is_plot = False
     rm_100partitions = True
     save_csv = True
-    power_epsilon = 6
-    set_power_limit = 60
+    set_power_limit = args.power_limit
+    power_epsilon = args.power_epsilon
+    if power_epsilon is None:
+        power_epsilon = int(round(set_power_limit * 0.10))
     static_power_limit = set_power_limit + power_epsilon
 
     """CROSS-VALIDATE arguments
@@ -2024,16 +1989,18 @@ if __name__ == "__main__":
     CROSS_MODEL =  extratrees
     cross_num_testsets = [i for i in range(1,10)] # trainining set ratio frpm 10,20,...90%
     """
-    is_cross_validation = False # Set to True to use cross-validation directories
+    is_cross_validation = args.cross_validation
     cross_models = ["extratrees"]
-    cross_num_testsets = [i for i in range(1,10)] # trainining set ratio frpm 10,20,...90%
-    cross_num_testsets = [7]
+    cross_num_testsets = [args.fold_size]
     #prediction filenames
     PRED_XPUT_FILE_COMMON_NAME = "pred_separate_throughputpower_regression.csv"
     PRED_POWER_FILE_COMMON_NAME = "pred_power_regression.csv"
     #output name 
     scenario_tag = "crossvalid" if is_cross_validation else "unseen"
-    output_base_name_dir = f"./v100_socc26/01142026_{target}_comb{n_combinations}_mergecudaDL_{scenario_tag}_multi_freq_powercap{int(set_power_limit)}_epsilon{int(power_epsilon)}_pred_vs_baselines_dvfs/"
+    output_base_name_dir = args.output_dir or Path(
+        f"./reproduced_{target}_comb{n_combinations}_mergecudaDL_{scenario_tag}_"
+        f"multi_freq_powercap{set_power_limit}_epsilon{power_epsilon}_pred_vs_baselines_dvfs"
+    )
     model_freq_numeric_labels = [300, 900, 1530]
 
     # Initialize defaults so we always have defined variables for args logging.
@@ -2052,43 +2019,51 @@ if __name__ == "__main__":
     ORACLE_PATH = {}
 
     if n_combinations == 2:
-        PREDICT_XPUT_DIR_FREQ300 = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/output/05052025_FREQ300_mergecudaDL_nodvfs_remerge/unseen_partition/throughput/rand10/extratrees" 
-        PREDICT_POWER_DIR_FREQ300 = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/output/05052025_FREQ300_mergecudaDL_nodvfs_remerge/unseen_partition/power/rand10/extratrees"
-        PREDICT_XPUT_DIR_FREQ900 = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/output/05052025_FREQ900_mergecudaDL_nodvfs_remerge/unseen_partition/throughput/rand10/extratrees"
-        PREDICT_POWER_DIR_FREQ900 = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/output/05052025_FREQ900_mergecudaDL_nodvfs_remerge/unseen_partition/power/rand10/extratrees"
-        PREDICT_XPUT_DIR_FREQ1530 = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/output/09152025DL_0311nonDL_FREQ1530_mergecudaDL_nodvfs_remerge/unseen_partition/throughput/rand10/extratrees"
-        PREDICT_POWER_DIR_FREQ1530 = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/output/09152025DL_0311nonDL_FREQ1530_mergecudaDL_nodvfs_remerge/unseen_partition/power/rand10/extratrees"
+        experiment_by_freq = {
+            300: "05052025_FREQ300_mergecudaDL_nodvfs_remerge",
+            900: "05052025_FREQ900_mergecudaDL_nodvfs_remerge",
+            1530: "09152025DL_0311nonDL_FREQ1530_mergecudaDL_nodvfs_remerge",
+        }
+
+        def prediction_dir(freq, partition, metric):
+            base = FREQ_OUTPUT_DIR / experiment_by_freq[freq] / partition
+            if partition == "seen_partition":
+                return base / "crossvalid" / metric / "trainratio_" / "rand10"
+            return base / metric / "rand10" / "extratrees"
+
+        PREDICT_XPUT_DIR_FREQ300 = prediction_dir(300, "unseen_partition", "throughput")
+        PREDICT_POWER_DIR_FREQ300 = prediction_dir(300, "unseen_partition", "power")
+        PREDICT_XPUT_DIR_FREQ900 = prediction_dir(900, "unseen_partition", "throughput")
+        PREDICT_POWER_DIR_FREQ900 = prediction_dir(900, "unseen_partition", "power")
+        PREDICT_XPUT_DIR_FREQ1530 = prediction_dir(1530, "unseen_partition", "throughput")
+        PREDICT_POWER_DIR_FREQ1530 = prediction_dir(1530, "unseen_partition", "power")
 
         #Cross validate output
-        CROSS_PREDICT_XPUT_DIR_FREQ300 = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/output/05052025_FREQ300_mergecudaDL_nodvfs_remerge/seen_partition/crossvalid/throughput/trainratio_/rand10" 
-        CROSS_PREDICT_POWER_DIR_FREQ300 = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/output/05052025_FREQ300_mergecudaDL_nodvfs_remerge/seen_partition/crossvalid/power/trainratio_/rand10"
-        CROSS_PREDICT_XPUT_DIR_FREQ900 = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/output/05052025_FREQ900_mergecudaDL_nodvfs_remerge/seen_partition/crossvalid/throughput/trainratio_/rand10"
-        CROSS_PREDICT_POWER_DIR_FREQ900 = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/output/05052025_FREQ900_mergecudaDL_nodvfs_remerge/seen_partition/crossvalid/power/trainratio_/rand10"
-        CROSS_PREDICT_XPUT_DIR_FREQ1530 = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/output/09152025DL_0311nonDL_FREQ1530_mergecudaDL_nodvfs_remerge/seen_partition/crossvalid/throughput/trainratio_/rand10"
-        CROSS_PREDICT_POWER_DIR_FREQ1530 = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/output/09152025DL_0311nonDL_FREQ1530_mergecudaDL_nodvfs_remerge/seen_partition/crossvalid/power/trainratio_/rand10"
-        #PREDICT_XPUT_DIR_FREQ900 = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/output/05052025_FREQ900_nodvfs_fullDL/unseen_partition/throughput/rand10/extratrees"
-        #PREDICT_POWER_DIR_FREQ900 = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/output/05052025_FREQ900_nodvfs_fullDL/unseen_partition/power/rand10/extratrees"
-        #PREDICT_XPUT_DIR_FREQ1530 = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/output/run03112025_DL0207_0307_nonDL0311_nodvfs_FREQ1530/unseen_partition/throughput/rand10/extratrees"
-        #PREDICT_POWER_DIR_FREQ1530 = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/output/run03112025_DL0207_0307_nonDL0311_nodvfs_FREQ1530/unseen_partition/power/rand10/extratrees"
+        CROSS_PREDICT_XPUT_DIR_FREQ300 = prediction_dir(300, "seen_partition", "throughput")
+        CROSS_PREDICT_POWER_DIR_FREQ300 = prediction_dir(300, "seen_partition", "power")
+        CROSS_PREDICT_XPUT_DIR_FREQ900 = prediction_dir(900, "seen_partition", "throughput")
+        CROSS_PREDICT_POWER_DIR_FREQ900 = prediction_dir(900, "seen_partition", "power")
+        CROSS_PREDICT_XPUT_DIR_FREQ1530 = prediction_dir(1530, "seen_partition", "throughput")
+        CROSS_PREDICT_POWER_DIR_FREQ1530 = prediction_dir(1530, "seen_partition", "power")
         
         ORACLE_PATH = {#powerlimit: oracle 
-            60: "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/dataset/05052025_mergecudaDL_powercap60_dvfs/0505_nonDL_powercap60_dvfs_throughput_total_labels_comb2_labels.csv",
-            100: "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/dataset/05052025_nonDL_09152025_DL_mergecudaDL_powercap100_dvfs/merged_labels.csv",
-            200: "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/dataset/09102025_mergecudaDL_powercap200_dvfs/0910_powercap200_mergecudaDL_dvfs_throughput_total_labels_comb2_labels.csv",
-            250: "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/dataset/10032025_mergecudaDL_powercap250_dvfs/merged_labels.csv"
+            60: FREQ_DATASET_DIR / "05052025_mergecudaDL_powercap60_dvfs" / "0505_nonDL_powercap60_dvfs_throughput_total_labels_comb2_labels.csv",
+            100: FREQ_DATASET_DIR / "05052025_nonDL_09152025_DL_mergecudaDL_powercap100_dvfs" / "merged_labels.csv",
+            200: FREQ_DATASET_DIR / "09102025_mergecudaDL_powercap200_dvfs" / "0910_powercap200_mergecudaDL_dvfs_throughput_total_labels_comb2_labels.csv",
+            250: FREQ_DATASET_DIR / "10032025_mergecudaDL_powercap250_dvfs" / "merged_labels.csv"
         }
         #ORACLE Latency file for latency comparison  
         ORACLE_LATENCY_PATH = {
-            60: ["/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/analysis/stage2/v100_socc26/02062026_nonDL_gpu011_powercap60_dvfs_share_comb2_freqscale_latency_individual_avg.csv"
-            ,"/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/analysis/stage2/05052025_powercap60_DL_dvfs_share_comb2_freqscale_latency_individual_avg.csv"],
+            60: [STAGE2_DIR / "v100_socc26" / "02062026_nonDL_gpu011_powercap60_dvfs_share_comb2_freqscale_latency_individual_avg.csv",
+            STAGE2_DIR / "05052025_powercap60_DL_dvfs_share_comb2_freqscale_latency_individual_avg.csv"],
             100: None,
-            200: ["/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/analysis/stage2/09102025_powercap200_nonDL_dvfs_share_comb2_freqscale_latency_individual_avg.csv", 
-            "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/analysis/stage2/09102025_powercap200_DL_dvfs_share_comb2_freqscale_latency_individual_avg.csv"],
+            200: [STAGE2_DIR / "09102025_powercap200_nonDL_dvfs_share_comb2_freqscale_latency_individual_avg.csv",
+            STAGE2_DIR / "09102025_powercap200_DL_dvfs_share_comb2_freqscale_latency_individual_avg.csv"],
             250: None,
         }
         ORACLE_STEP_PATH = {
-            60:  ["/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/analysis/stage2/v100/01152026_rebut_share_comb2_freqscale_steps_count_individual_avg.csv",
-            "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/analysis/stage2/v100_socc26/02062026_nonDL_gpu011_powercap60_dvfs_share_comb2_freqscale_steps_count_individual_avg.csv"]
+            60: [STAGE2_DIR / "v100" / "01152026_rebut_share_comb2_freqscale_steps_count_individual_avg.csv",
+            STAGE2_DIR / "v100_socc26" / "02062026_nonDL_gpu011_powercap60_dvfs_share_comb2_freqscale_steps_count_individual_avg.csv"]
         }
         #baselines
         mudi_summary_dir = os.path.normpath(os.path.join(os.path.dirname(__file__), "../../eval_baselines/mudi/curvefit/summary"))
@@ -2123,16 +2098,19 @@ if __name__ == "__main__":
         
 
     elif n_combinations == 3:
-        PREDICT_XPUT_DIR_FREQ300 = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/output/09152025_freq300_DL_comb3/unseen_partition/throughput/rand10/extratrees" 
-        PREDICT_POWER_DIR_FREQ300 = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/output/09152025_freq300_DL_comb3/unseen_partition/power/rand10/extratrees"
-        PREDICT_XPUT_DIR_FREQ900 = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/output/09152025_freq900_DL_comb3/unseen_partition/throughput/rand10/extratrees"
-        PREDICT_POWER_DIR_FREQ900 = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/output/09152025_freq900_DL_comb3/unseen_partition/power/rand10/extratrees"
-        PREDICT_XPUT_DIR_FREQ1530 = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/output/09152025_freq1530_DL_comb3/unseen_partition/throughput/rand10/extratrees"
-        PREDICT_POWER_DIR_FREQ1530 = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/output/09152025_freq1530_DL_comb3/unseen_partition/power/rand10/extratrees"
+        def comb3_prediction_dir(freq, metric):
+            return FREQ_OUTPUT_DIR / f"09152025_freq{freq}_DL_comb3" / "unseen_partition" / metric / "rand10" / "extratrees"
+
+        PREDICT_XPUT_DIR_FREQ300 = comb3_prediction_dir(300, "throughput")
+        PREDICT_POWER_DIR_FREQ300 = comb3_prediction_dir(300, "power")
+        PREDICT_XPUT_DIR_FREQ900 = comb3_prediction_dir(900, "throughput")
+        PREDICT_POWER_DIR_FREQ900 = comb3_prediction_dir(900, "power")
+        PREDICT_XPUT_DIR_FREQ1530 = comb3_prediction_dir(1530, "throughput")
+        PREDICT_POWER_DIR_FREQ1530 = comb3_prediction_dir(1530, "power")
         ORACLE_PATH = {
-            100 : "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/dataset/09152025_shareDL_comb3_powercap100_dvfs/09152025_shareDL_comb3_powercap100_dvfs_throughput_total_labels_comb3_labels_sampled.csv",
-            200 : "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/dataset/09152025_shareDL_comb3_powercap200_dvfs/09152025_shareDL_comb3_powercap200_dvfs_throughput_total_labels_comb3_labels.csv",
-            60 : "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/dataset/09152025_shareDL_comb3_powercap60_dvfs_gpu012/09152025_shareDL_comb3_powercap60_dvfs_throughput_total_labels_comb3_labels.csv"
+            100: FREQ_DATASET_DIR / "09152025_shareDL_comb3_powercap100_dvfs" / "09152025_shareDL_comb3_powercap100_dvfs_throughput_total_labels_comb3_labels_sampled.csv",
+            200: FREQ_DATASET_DIR / "09152025_shareDL_comb3_powercap200_dvfs" / "09152025_shareDL_comb3_powercap200_dvfs_throughput_total_labels_comb3_labels.csv",
+            60: FREQ_DATASET_DIR / "09152025_shareDL_comb3_powercap60_dvfs_gpu012" / "09152025_shareDL_comb3_powercap60_dvfs_throughput_total_labels_comb3_labels.csv"
         }
         #added mudi baseline
         mudi_comb3_dir = os.path.normpath(os.path.join(os.path.dirname(__file__), "../../eval_baselines/mudi"))
@@ -2382,7 +2360,7 @@ if __name__ == "__main__":
         else:
             single_predict_xput_dir = PREDICT_XPUT_DIR_FREQ1530
             single_predict_power_dir = PREDICT_POWER_DIR_FREQ1530
-            single_oracle_file = "/Users/bing/Documents/Documents - Bing’s MacBook Air/mlProfiler/tests/mps/freq_scaling/dataset/05052025_mergecudaDL_powercap60_dvfs/0505_nonDL_powercap60_dvfs_throughput_total_labels_comb2_labels.csv"
+            single_oracle_file = FREQ_DATASET_DIR / "05052025_mergecudaDL_powercap60_dvfs" / "0505_nonDL_powercap60_dvfs_throughput_total_labels_comb2_labels.csv"
             print(f"Running original analysis for target: {target}")
             print(f"  Xput Dir: {single_predict_xput_dir}")
             print(f"  Power Dir: {single_predict_power_dir}")

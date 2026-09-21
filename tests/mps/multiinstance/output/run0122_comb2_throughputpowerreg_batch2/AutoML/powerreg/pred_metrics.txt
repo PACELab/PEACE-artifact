@@ -1,6 +1,0 @@
-MAPE: 555.72%
-25th Percentile: 127.42%
-50th Percentile (Median): 280.99%
-75th Percentile: 458.88%
-MSE: 4.712185930555743
-R2: -3.7383647412810532
