@@ -76,16 +76,23 @@ reported runs.
 
 The three-workload reported summaries are also retained in the `09152025_*`
 directories. Their processed oracle and training datasets are under
-`tests/mps/freq_scaling/dataset/09152025_*comb3*`; regenerate their prediction
-CSVs with `main.py` before invoking the parser with `--combinations 3`.
+`tests/mps/freq_scaling/dataset/09152025_*comb3*`, and the required prediction
+CSVs are under matching directories in `tests/mps/freq_scaling/output/`. Invoke
+the parser with `--combinations 3` to reproduce their summaries.
 
 ## Profiling and model workflow
+
+Detailed, command-by-command instructions are in
+[`doc/profile.md`](doc/profile.md). The guide covers single-workload profiling,
+baseline parsing, colocated profiling with and without DVFS, `stage2.py`
+aggregation, dataset construction, unseen-workload training, and the paper's
+fold-based cross-validation workflow.
 
 The end-to-end data flow is:
 
 ```text
 single-workload profiling
-  -> tests/mps/analysis/kernel_profiles
+  -> tests/mps/freq_scaling/baseline_metrics
 colocation and DVFS profiling
   -> tests/mps/analysis/stage2
 processed labels and train/test data
