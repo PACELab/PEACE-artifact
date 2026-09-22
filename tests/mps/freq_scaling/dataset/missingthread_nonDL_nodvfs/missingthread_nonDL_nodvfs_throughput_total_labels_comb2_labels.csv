@@ -1,7 +1,0 @@
-Workload1,Workload2,Thread_combination,weight_Throughput_sum,Power
-fastWalshTransform_batch2-cuda_samples,vit_h_14_batch2-train,"(w1_70, w2_30)",67.792,133.01409090909092
-fastWalshTransform_batch2-cuda_samples,whisper-large-v2_batch2-inf,"(w1_30, w2_70)",46.644999999999996,163.70041237113398
-reductionMultiBlockCG_batch2-cuda_samples,whisper-large-v2_batch2-inf,"(w1_70, w2_30)",502.988,152.70306201550386
-reductionMultiBlockCG_batch2-cuda_samples,wav2vec2-base-960h_batch2-inf,"(w1_70, w2_30)",512.934,154.0135496183206
-sortingNetworks_batch2-cuda_samples,whisper-large-v2_batch2-inf,"(w1_40, w2_60)",67.466,164.97595238095238
-sortingNetworks_batch2-cuda_samples,whisper-large-v2_batch2-inf,"(w1_70, w2_30)",93.12100000000001,141.49607407407407

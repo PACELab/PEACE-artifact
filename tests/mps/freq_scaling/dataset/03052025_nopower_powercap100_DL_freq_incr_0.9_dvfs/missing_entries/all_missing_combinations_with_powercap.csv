@@ -1,9 +1,0 @@
-Workload1,Workload2,Thread_combination,w1_percentage,w2_percentage,weight_Throughput_sum,Power,PowerCap
-albert-base-v2_batch2-train,resnet-50_batch2-inf,"(w1_40, w2_60)",40,60,,,255.711551724138
-albert-base-v2_batch2-train,resnet-50_batch2-inf,"(w1_30, w2_70)",30,70,,,255.711551724138
-resnet-50_batch2-inf,resnet-50_batch2-inf,"(w1_100, w2_100)",100,100,,,88.5502536231884
-resnet-50_batch2-inf,vit_h_14_batch2-train,"(w1_20, w2_80)",20,80,,,235.1927607361963
-resnet-50_batch2-inf,whisper-large-v2_batch2-inf,"(w1_10, w2_90)",10,90,,,233.42368544600936
-resnet-50_batch2-inf,whisper-large-v2_batch2-inf,"(w1_60, w2_40)",60,40,,,233.42368544600936
-resnet-50_batch2-train,whisper-large-v2_batch2-inf,"(w1_20, w2_80)",20,80,,,234.5624273858921
-resnet-50_batch2-train,whisper-large-v2_batch2-inf,"(w1_80, w2_20)",80,20,,,234.5624273858921

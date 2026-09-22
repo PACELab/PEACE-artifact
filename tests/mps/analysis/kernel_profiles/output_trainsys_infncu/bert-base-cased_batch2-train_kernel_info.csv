@@ -1,2 +1,0 @@
-Compute (SM) Throughput,DRAM Throughput,Memory Throughput,Type,Threads,Registers,Static Shared Memory
-58.95260355029587,25.278698224852075,57.17577514792901,bert-base-cased_batch2-train,297324.9170155108,18433441.127347436,17177.122037687765

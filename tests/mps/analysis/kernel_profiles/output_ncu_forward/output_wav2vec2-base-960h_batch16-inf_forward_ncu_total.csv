@@ -1,2 +1,0 @@
-Threads,Compute (SM) Throughput,DRAM Throughput,Memory Throughput,Registers,Static Shared Memory,Type
-1068360.9945784188,68.60448584937147,22.72713193067722,73.51032174226532,36233436.86796396,17855.34640404248,wav2vec2-base-960h_batch16-inf_forward

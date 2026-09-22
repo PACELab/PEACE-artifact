@@ -1,4 +1,0 @@
-workload1,workload2,freq1,freq2,"(w1_10, w2_90)","(w1_30, w2_70)","(w1_100, w2_100)"
-resnet-50_batch2-inf,whisper-large-v2_batch2-inf,0,0,,0.0,
-resnet-50_batch2-inf,vit_h_14_batch2-train,0,0,0.0,,
-bert-base-cased_batch2-inf,resnet-50_batch2-inf,0,0,,,0.0

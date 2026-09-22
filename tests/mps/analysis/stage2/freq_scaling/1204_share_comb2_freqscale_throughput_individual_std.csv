@@ -1,5 +1,0 @@
-workload1,workload2,freq1,freq2,"(w1_10, w2_90)","(w1_30, w2_70)","(w1_50, w2_50)","(w1_70, w2_30)","(w1_90, w2_10)","(w1_100, w2_100)"
-mobilenet_v2_1.0_224_batch2-inf,sortingNetworks_batch2-cuda_samples,1530,1530,"(0.141, 0.000)","(0.219, 0.000)","(1.024, 0.637)","(0.154, 0.351)","(0.262, 0.089)","(1.228, 1.034)"
-bert-base-cased_batch2-train,sortingNetworks_batch2-cuda_samples,1530,1530,"(None, None)","(0.002, 0.000)","(0.007, 0.000)","(0.012, 0.277)","(0.017, 0.040)","(0.022, 0.437)"
-whisper-large-v2_batch2-inf,sortingNetworks_batch2-cuda_samples,1530,1530,"(0.000, 0.000)","(0.001, 0.000)","(0.002, 0.000)","(0.020, 0.277)","(0.075, 0.047)","(0.001, 12.069)"
-vit_h_14_batch2-train,sortingNetworks_batch2-cuda_samples,1530,1530,"(None, None)","(0.001, 0.000)","(0.001, 0.000)","(0.002, 0.247)","(0.002, 0.000)","(0.001, 0.246)"

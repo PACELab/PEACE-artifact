@@ -1,8 +1,0 @@
-Workload1,Workload2,Thread_combination,w1_percentage,w2_percentage,weight_Throughput_sum,Power,PowerCap
-albert-base-v2_batch2-train,resnet-50_batch2-train,"(w1_10, w2_90)",10,90,,,249.7910351966873
-bert-base-cased_batch2-train,vit-base-patch16-224_batch2-inf,"(w1_80, w2_20)",80,20,,,255.3789556407448
-mobilenet_v2_1.0_224_batch2-inf,vit_h_14_batch2-train,"(w1_60, w2_40)",60,40,,,227.43289800995024
-resnet-50_batch2-train,whisper-large-v2_batch2-inf,"(w1_20, w2_80)",20,80,,,234.5624273858921
-resnet-50_batch2-train,whisper-large-v2_batch2-inf,"(w1_30, w2_70)",30,70,,,234.5624273858921
-vit_h_14_batch2-train,whisper-large-v2_batch2-inf,"(w1_80, w2_20)",80,20,,,266.9342759923141
-wav2vec2-base-960h_batch2-inf,whisper-large-v2_batch2-inf,"(w1_20, w2_80)",20,80,,,271.7920703933748
