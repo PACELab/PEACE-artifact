@@ -1,9 +1,0 @@
-Workload1,Workload2,Thread_combination,weight_Throughput_sum,Power
-bert-base-cased_batch2-train,fastWalshTransform_batch2-cuda_samples,"(w1_30, w2_70)",71.796,142.46610687022903
-bert-base-cased_batch2-train,cudaTensorCoreGemm_batch2-cuda_samples,"(w1_20, w2_80)",121.838,106.12492468134414
-bert-base-cased_batch2-train,sortingNetworks_batch2-cuda_samples,"(w1_60, w2_40)",75.99600000000001,158.87459595959595
-fastWalshTransform_batch2-cuda_samples,resnet-50_batch2-train,"(w1_100, w2_100)",93.63799999999999,104.7406967213115
-resnet-50_batch2-train,sortingNetworks_batch2-cuda_samples,"(w1_100, w2_100)",127.822,110.9903515625
-cudaTensorCoreGemm_batch2-cuda_samples,whisper-large-v2_batch2-inf,"(w1_70, w2_30)",103.62599999999999,123.73907975460124
-cudaTensorCoreGemm_batch2-cuda_samples,whisper-large-v2_batch2-inf,"(w1_80, w2_20)",126.015,123.57773749999996
-cudaTensorCoreGemm_batch2-cuda_samples,vit-base-patch16-224_batch2-inf,"(w1_100, w2_100)",164.85,103.03666666666666

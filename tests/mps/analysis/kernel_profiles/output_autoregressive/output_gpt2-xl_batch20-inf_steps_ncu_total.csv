@@ -1,2 +1,0 @@
-Threads,Compute (SM) Throughput,DRAM Throughput,Memory Throughput,Registers,Static Shared Memory,Type
-38597.11730148822,45.030516401571575,40.98929087618239,41.596403763370915,3153257.868159063,4270.435395757507,gpt2-xl_batch20-inf_steps

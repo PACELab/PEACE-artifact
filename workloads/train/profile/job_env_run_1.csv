@@ -1,6 +1,0 @@
-JOB,GPU_MEMORY,GPU_COMPTIME,CPU_COMPTIME,device,data,model_name,load_from_ckpt,ckpt,ckpt_dir,batch_size,wandb_logging,exp_name,log_dir,profile,profile_all_estimation,profile_output_dir,profile_run,profile_1step,profile_nstep,deepspeed,local_rank,zero,lr,rand_seed,n_epoch,n_batch_per_step,metric_for_best,profile_n_epoch
-imgclassification-train,2854,7,84,cuda,yelp_review_full,vit_h_14,False,,ckpt,8,False,test,log,True,False,profile,1,False,12,False,0,0,5e-05,0,30,2,valid_qa_acc,5
-imgclassification-train,424,7,84,cuda,yelp_review_full,resnet,False,,ckpt,8,False,test,log,True,False,profile,1,False,12,False,0,0,5e-05,0,30,2,valid_qa_acc,5
-imgclassification-train,658,9,108,cuda,yelp_review_full,resnet,False,,ckpt,8,False,test,log,True,False,profile,1,False,12,False,0,0,5e-05,0,30,2,valid_qa_acc,5
-imgclassification-train,14800,12,144,cuda,yelp_review_full,vit_h_14,False,,ckpt,8,False,test,log,True,False,profile,1,False,12,False,0,0,5e-05,0,30,2,valid_qa_acc,5
-imgclassification-train,564,9,108,cuda,yelp_review_full,mobilenet,False,,ckpt,8,False,test,log,True,False,profile,1,False,12,False,0,0,5e-05,0,30,2,valid_qa_acc,5

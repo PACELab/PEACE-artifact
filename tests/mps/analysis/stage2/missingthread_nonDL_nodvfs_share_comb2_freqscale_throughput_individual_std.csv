@@ -1,6 +1,0 @@
-workload1,workload2,freq1,freq2,"(w1_30, w2_70)","(w1_40, w2_60)","(w1_70, w2_30)"
-fastWalshTransform_batch2-cuda_samples,vit_h_14_batch2-train,0,0,"(None, None)","(None, None)","(0.000, 0.000)"
-fastWalshTransform_batch2-cuda_samples,whisper-large-v2_batch2-inf,0,0,"(0.000, 0.000)","(None, None)","(None, None)"
-reductionMultiBlockCG_batch2-cuda_samples,whisper-large-v2_batch2-inf,0,0,"(None, None)","(None, None)","(0.000, 0.000)"
-reductionMultiBlockCG_batch2-cuda_samples,wav2vec2-base-960h_batch2-inf,0,0,"(None, None)","(None, None)","(0.000, 0.000)"
-sortingNetworks_batch2-cuda_samples,whisper-large-v2_batch2-inf,0,0,"(None, None)","(0.000, 0.000)","(0.000, 0.000)"

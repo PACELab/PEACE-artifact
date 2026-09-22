@@ -2049,7 +2049,7 @@ if __name__ == "__main__":
         ORACLE_PATH = {#powerlimit: oracle 
             60: FREQ_DATASET_DIR / "05052025_mergecudaDL_powercap60_dvfs" / "0505_nonDL_powercap60_dvfs_throughput_total_labels_comb2_labels.csv",
             100: FREQ_DATASET_DIR / "05052025_nonDL_09152025_DL_mergecudaDL_powercap100_dvfs" / "merged_labels.csv",
-            200: FREQ_DATASET_DIR / "09102025_mergecudaDL_powercap200_dvfs" / "0910_powercap200_mergecudaDL_dvfs_throughput_total_labels_comb2_labels.csv",
+            200: FREQ_DATASET_DIR / "09102025_mergecudaDL_powercap200_dvfs" / "merged_labels.csv",
             250: FREQ_DATASET_DIR / "10032025_mergecudaDL_powercap250_dvfs" / "merged_labels.csv"
         }
         #ORACLE Latency file for latency comparison  

@@ -1,6 +1,0 @@
-workload1,workload2,freq1,freq2,"(w1_10, w2_90)","(w1_20, w2_80)","(w1_30, w2_70)","(w1_40, w2_60)","(w1_50, w2_50)","(w1_60, w2_40)","(w1_70, w2_30)","(w1_80, w2_20)","(w1_90, w2_10)","(w1_100, w2_100)"
-reductionMultiBlockCG_batch2-cuda_samples,wav2vec2-base-960h_batch2-inf,1530,1530,680.87,352.228,252.732,193.464,166.334,148.212,131.115,120.133,109.108,133.141
-reductionMultiBlockCG_batch2-cuda_samples,whisper-large-v2_batch2-inf,1530,1530,700.045,356.338,246.896,198.647,162.405,145.308,130.229,120.291,107.229,128.267
-sortingNetworks_batch2-cuda_samples,whisper-large-v2_batch2-inf,1530,1530,517.252,282.008,208.604,175.617,150.434,139.419,126.102,119.399,115.24,297.892
-fastWalshTransform_batch2-cuda_samples,whisper-large-v2_batch2-inf,1530,1530,449.039,245.646,188.502,162.366,144.357,135.361,127.101,124.233,120.276,208.207
-fastWalshTransform_batch2-cuda_samples,vit_h_14_batch2-train,1530,1530,525.101,272.814,199.597,168.301,151.321,138.219,130.494,125.973,121.216,182.478
