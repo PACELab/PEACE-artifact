@@ -1,3 +1,0 @@
-input: ../../ccv100_logs/sharenonDL_freq900_nodvfs/
-output: 05052025_nonDL_freq900_nodvfs
-combination: 2

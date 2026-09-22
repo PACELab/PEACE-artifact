@@ -1,3 +1,0 @@
-input: ../../ccv100_logs/share_powercap60_nonDL_dvfs/
-output: 05052025_nonDL_powercap60_dvfs
-combination: 2

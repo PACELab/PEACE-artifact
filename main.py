@@ -7,6 +7,8 @@ from pathlib import Path
 from datetime import datetime
 import logging
 
+REPO_ROOT = Path(__file__).resolve().parent
+
 _script_start_time = time.time()
 
 def predict(args, testingfile, model, excluded_cols):
@@ -15,12 +17,12 @@ def predict(args, testingfile, model, excluded_cols):
     predictor = Predictor(args = args, 
                         modelpath=model,
                         stage1_data = testingfile,
-                        stage2_data="/Users/bing/Library/CloudStorage/OneDrive-StonyBrookUniversity/SBU/mlsys/mlProfiler/tests/mps/analysis/stage2/baseline_steps_stage2.csv",
+                        stage2_data=str(REPO_ROOT / "data" / "colocations" / "baseline_steps_stage2.csv"),
                         actual_share_throughput_data=[args.sharedThroughputData],
                         excluded_cols = excluded_cols)
     
     test_dataloader = Dataloader(args, 
-                                    baselineData="./tests/mps/analysis/1222_baseline_metrics.csv",
+                                    baselineData=str(REPO_ROOT / "data" / "baseline_metrics" / "0206_FREQ1530_baseline_metrics.csv"),
                                     kernelData="",
                                     shareThroughputData="",
                                     sharePowerData="",
@@ -108,31 +110,19 @@ def train(args):
 
 def getstage1Data(args):
     if args.modeltype == "hotcloud":
-        """
-        datafile = getcloud_stage1trainData(baselineData="/Users/bing/Library/CloudStorage/OneDrive-StonyBrookUniversity/SBU/mlsys/mlProfiler/tests/mps/analysis/baselines/hotcloud/hotcloud_baseline_labels.csv",
-                                            shareThroughputData=args.sharedThroughputData,
-                                            kernelData="/Users/bing/Library/CloudStorage/OneDrive-StonyBrookUniversity/SBU/mlsys/mlProfiler/tests/mps/analysis/baselines/hotcloud/hotcloud_kernel_labels.csv",
-                                            outname="/Users/bing/Library/CloudStorage/OneDrive-StonyBrookUniversity/SBU/mlsys/mlProfiler/tests/mps/analysis/baselines/hotcloud/hotcloud_combined_labels.csv",
-                                            targetMPS=args.targetMPS,
-                                            selected_feats=["PCIe read bandwidth", "PCIe write bandwidth", "Long_Kernel",  "ave_Kernel_Length", "long/short_Ratio", "avg_Thread"],
-                                            n_combination=args.n_combination)
-        """
-        datafile = get_multiinstance_stage1trainData(baselineData="/home/cc/mlProfiler/tests/mps/analysis/baselines/hotcloud/hotcloud_baseline_labels.csv", 
-                       shareThroughputData=args.sharedThroughputData, 
-                       kernelData="/home/cc/mlProfiler/tests/mps/multiinstance/hotcloud_0912_gptxl_kernel_labels_comb2_batches2-8-16.csv",
-                       outname=f"./tests/mps/multiinstance/dataset/hotcloud/0912hotcloud_gpt2xl_batchedthroughput_total_labels_comb{args.n_combination}_batch2-8", 
-                       targetMPS=args.targetMPS,
-                       n_combination=args.n_combination,
-                       hotcloud=True)
+        raise ValueError(
+            "The legacy HotCloud datasets were removed from the open artifact. "
+            "Choose another --modeltype."
+        )
     
     else:
         datafile = get_multiinstance_stage1trainData(baselineData="", 
                        shareThroughputData=args.sharedThroughputData, 
-                       kernelData="./tests/mps/multiinstance/0206_baseline_labels_comb2_batches2.csv",
-                       outname=f"./tests/mps/multiinstance/dataset/{args.modeltype}/1222_batchedthroughput_total_labels_comb{args.n_combination}", 
+                       kernelData="./data/experiment_inputs/colocations/0206_baseline_labels_comb2_batches2.csv",
+                       outname=f"./data/model_datasets/{args.modeltype}/1222_batchedthroughput_total_labels_comb{args.n_combination}",
                        targetMPS=args.targetMPS,
                        n_combination=args.n_combination)
-    
+
     
     return datafile
 
@@ -141,27 +131,27 @@ def getstage2Data(args):
                             baselineData=str(args.baseline_file),
                             #baselineData="./tests/mps/analysis/0206_baseline_metrics.csv",
                             #freq 1530
-                            kernelData="./tests/mps/multiinstance/02062025_freq1530_baseline_labels_comb2_batches2_cuda_samples_0515.csv",
+                            kernelData="./data/experiment_inputs/colocations/comb2/02062025_freq1530_baseline_labels_comb2_batches2_cuda_samples_0515.csv",
                             ########################################################
                             #[SOCC'26 Rebuttal ONLY - triton kernel data]
                             #tritonkernel still use original 1530 metrics. not triton baseline metrics.[NOT GOOD]
-                            #kernelData="./tests/mps/multiinstance/02062025_freq1530_baseline_labels_comb2_batches2_triton_baseline_NOTRITON_0515.csv",
+                            #kernelData="./data/experiment_inputs/colocations/02062025_freq1530_baseline_labels_comb2_batches2_triton_baseline_NOTRITON_0515.csv",
                             #[REBUTTAL USED]freq1530 triton kernel with triton baseline metrics 
-                            #kernelData="./tests/mps/multiinstance/04132026_triton_DL_baseline_labels_comb2_batches2.csv",
+                            #kernelData="./data/experiment_inputs/colocations/comb2/04132026_triton_DL_baseline_labels_comb2_batches2.csv",
                             ########################################################
                             #freq 900
-                            #kernelData="./tests/mps/multiinstance/05022025_freq900_DL_baseline_labels_comb2_batches2.csv",
-                            #kernelData="./tests/mps/multiinstance/05022025_freq900_mergecudaDL_removebothcudasamples_baseline_labels_comb2_batches2.csv",
+                            #kernelData="./data/experiment_inputs/colocations/comb2/05022025_freq900_DL_baseline_labels_comb2_batches2.csv",
+                            #kernelData="./data/experiment_inputs/colocations/comb2/05022025_freq900_mergecudaDL_removebothcudasamples_baseline_labels_comb2_batches2.csv",
                             #freq 300
-                            #kernelData="./tests/mps/multiinstance/05052025_freq300_mergecudaDL_baseline_labels_comb2_batches2_removebothcudasamples.csv",
-                            #kernelData="./tests/mps/multiinstance/05052025_freq300_DL_baseline_labels_comb2_batches2.csv",
+                            #kernelData="./data/experiment_inputs/colocations/comb2/05052025_freq300_mergecudaDL_baseline_labels_comb2_batches2_removebothcudasamples.csv",
+                            #kernelData="./data/experiment_inputs/colocations/comb2/05052025_freq300_DL_baseline_labels_comb2_batches2.csv",
                             #comb3
                             #freq 1530 
-                            #kernelData="./tests/mps/multiinstance/09132025_freq1530_mergecudaDL_baseline_labels_comb3_batches2_removebothcudasamples.csv",
+                            #kernelData="./data/experiment_inputs/colocations/comb3/09132025_freq1530_mergecudaDL_baseline_labels_comb3_batches2_removebothcudasamples.csv",
                             #freq 900
-                            #kernelData="./tests/mps/multiinstance/09132025_freq900_mergecudaDL_baseline_labels_comb3_batches2_removebothcudasamples.csv",
+                            #kernelData="./data/experiment_inputs/colocations/comb3/09132025_freq900_mergecudaDL_baseline_labels_comb3_batches2_removebothcudasamples.csv",
                             #freq 300
-                            #kernelData="./tests/mps/multiinstance/09132025_freq300_mergecudaDL_baseline_labels_comb3_batches2_removebothcudasamples.csv",
+                            #kernelData="./data/experiment_inputs/colocations/comb3/09132025_freq300_mergecudaDL_baseline_labels_comb3_batches2_removebothcudasamples.csv",
                             shareThroughputData=args.sharedThroughputData,
                             sharePowerData=args.sharedPowerData,
                             shareDurationData=args.sharedDurationData,
@@ -298,7 +288,7 @@ if __name__ == "__main__":
     if args.train_file and args.train:
         print(f"process training data at {args.train_file}")
         train_dataloader = Dataloader(args, 
-                                    baselineData="./tests/mps/analysis/0122_baseline_metrics.csv",
+                                    baselineData=str(REPO_ROOT / "data" / "baseline_metrics" / "0206_FREQ1530_baseline_metrics.csv"),
                                     kernelData="",
                                     shareThroughputData="",
                                     sharePowerData="",
@@ -363,6 +353,5 @@ if __name__ == "__main__":
     #for HPworkload in HPworkloads:
     #    predict(HPworkload, stage1Data)
     
-    #predict(args, 
+    #predict(args,
     #        targetMPS=args.targetMPS)
-    

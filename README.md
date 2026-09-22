@@ -10,22 +10,24 @@ checkpoints, and unrelated development integrations are not included.
 
 ## Artifact map
 
+See [`docs/repository-layout.md`](docs/repository-layout.md) for the complete
+directory map and data-flow boundaries.
+
 - `main.py`, `utils/`: feature construction, model training, and prediction.
-- `tests/mps/`: MPS and DVFS profiling scripts.
-- `tests/mps/analysis/kernel_profiles/`: single-workload kernel profiling and
-  parsing scripts.
-- `tests/mps/analysis/stage2/`: colocation profiling aggregation.
-- `tests/mps/freq_scaling/dataset/`: processed training and oracle datasets.
-- `tests/mps/freq_scaling/output/`: only the Extra Trees prediction CSVs read by
+- `runners/`: baseline, shared-workload, training, and evaluation entrypoints.
+- `scripts/profiling/`: profiling monitors and helper utilities.
+- `data/colocations/`: colocation profiling aggregation.
+- `data/model_datasets/`: processed training and oracle datasets.
+- `artifacts/predictions/`: only the Extra Trees prediction CSVs read by
   the final result parsers. These files were copied into this artifact from the
   `mps_thread` development branch; no second repository is required.
-- `tests/mps/eval_baselines/`: Mudi, GSlice, and MuxFlow implementations and
-  allocation summaries.
-- `tests/mps/analysis/plot_analysis/get_pred_data_mean_multifreqselect.py`:
+- `scripts/baselines/`: Mudi, GSlice, and MuxFlow implementations;
+  retained allocation summaries are under `artifacts/baseline_evaluations/`.
+- `scripts/evaluation/get_pred_data_mean_multifreqselect.py`:
   final multi-frequency policy analysis for Figures 4--6.
-- `tests/mps/analysis/plot_analysis/get_pred_data_mean_crossvalidate.py`:
+- `scripts/evaluation/get_pred_data_mean_crossvalidate.py`:
   single-frequency cross-validation analysis.
-- `tests/mps/analysis/plot_analysis/09152025_*`: checked-in reported result
+- `results/paper/09152025_*`: checked-in reported result
   tables. These are retained as the audit reference.
 
 ## Environment
@@ -57,12 +59,12 @@ the approximately 30% training split.
 
 ```bash
 # Unseen-workload results (repeat for 60, 100, and 200 W).
-python tests/mps/analysis/plot_analysis/get_pred_data_mean_multifreqselect.py \
+python scripts/evaluation/get_pred_data_mean_multifreqselect.py \
   --power-limit 60 \
   --output-dir output/reproduced/unseen-powercap60
 
 # Cross-validation results (repeat for 60, 100, and 200 W).
-python tests/mps/analysis/plot_analysis/get_pred_data_mean_multifreqselect.py \
+python scripts/evaluation/get_pred_data_mean_multifreqselect.py \
   --power-limit 60 \
   --cross-validation \
   --fold-size 7 \
@@ -70,20 +72,20 @@ python tests/mps/analysis/plot_analysis/get_pred_data_mean_multifreqselect.py \
 ```
 
 The output summaries can be compared with the matching `09152025_*` directory
-under `tests/mps/analysis/plot_analysis/`. The parser defaults to a power
+under `results/paper/`. The parser defaults to a power
 epsilon of 10% of the selected cap (6, 10, and 20 W respectively), matching the
 reported runs.
 
 The three-workload reported summaries are also retained in the `09152025_*`
 directories. Their processed oracle and training datasets are under
-`tests/mps/freq_scaling/dataset/09152025_*comb3*`, and the required prediction
-CSVs are under matching directories in `tests/mps/freq_scaling/output/`. Invoke
+`data/model_datasets/09152025_*comb3*`, and the required prediction
+CSVs are under matching directories in `artifacts/predictions/`. Invoke
 the parser with `--combinations 3` to reproduce their summaries.
 
 ## Profiling and model workflow
 
 Detailed, command-by-command instructions are in
-[`doc/profile.md`](doc/profile.md). The guide covers single-workload profiling,
+[`docs/profile.md`](docs/profile.md). The guide covers single-workload profiling,
 baseline parsing, colocated profiling with and without DVFS, `stage2.py`
 aggregation, dataset construction, unseen-workload training, and the paper's
 fold-based cross-validation workflow.
@@ -92,15 +94,15 @@ The end-to-end data flow is:
 
 ```text
 single-workload profiling
-  -> tests/mps/freq_scaling/baseline_metrics
+  -> data/baseline_metrics
 colocation and DVFS profiling
-  -> tests/mps/analysis/stage2
+  -> data/colocations
 processed labels and train/test data
-  -> tests/mps/freq_scaling/dataset
+  -> data/model_datasets
 main.py training and prediction
-  -> tests/mps/freq_scaling/output
+  -> artifacts/predictions
 final policy analysis
-  -> tests/mps/analysis/plot_analysis
+  -> results/paper
 ```
 
 Common model commands are:

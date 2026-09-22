@@ -2087,16 +2087,16 @@ if __name__ == "__main__":
     ##############################
     """
     datafile = get_multiinstance_stage1trainData(baselineData="/home/cc/mlProfiler/tests/mps/analysis/baseline_labels.csv", 
-                       shareThroughputData="/home/cc/mlProfiler/tests/mps/analysis/stage2/0730_share3_batch2_share_steps_stage2.csv", 
-                       kernelData="/home/cc/mlProfiler/tests/mps/multiinstance/kernel_labels_comb3_batches2.csv",
-                       outname="/home/cc/mlProfiler/tests/mps/multiinstance/dataset/total_labels", 
+                       shareThroughputData="/home/cc/mlProfiler/data/colocations/0730_share3_batch2_share_steps_stage2.csv",
+                       kernelData="/home/cc/mlProfiler/data/experiment_inputs/colocations/kernel_labels_comb3_batches2.csv",
+                       outname="/home/cc/mlProfiler/data/model_datasets/total_labels",
                        targetMPS=100,
                        n_combination=3)
     
 
     #split into train/test set
-    train_test_split_multiinstance(data="/home/cc/mlProfiler/tests/mps/multiinstance/dataset/total_labels_targetMPS100.csv", 
-                                    train_outname="/home/cc/mlProfiler/tests/mps/multiinstance/dataset/training_set.csv", 
-                                    test_outname="/home/cc/mlProfiler/tests/mps/multiinstance/dataset/testing.csv", 
+    train_test_split_multiinstance(data="/home/cc/mlProfiler/data/model_datasets/total_labels_targetMPS100.csv",
+                                    train_outname="/home/cc/mlProfiler/data/model_datasets/training_set.csv",
+                                    test_outname="/home/cc/mlProfiler/data/model_datasets/testing.csv",
                                     random_seed=30, train_ratio=0.5)
     """

@@ -1,3 +1,0 @@
-input: ../../ccv100_logs/share_batch16/
-output: 0325_batch16
-combination: 2

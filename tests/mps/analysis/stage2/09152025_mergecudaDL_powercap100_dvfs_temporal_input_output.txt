@@ -1,3 +1,0 @@
-input: ../../ccv100_logs/sharemergecudaDL_powercap100_dvfs_temporal/
-output: 09152025_mergecudaDL_powercap100_dvfs_temporal
-combination: 2

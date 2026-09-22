@@ -1,4 +1,0 @@
-input: ../../ccv100_logs/share/0916_DL_freq900_comb3/
-output: 09152025_freq900_DL_comb3
-combination: 3
-metric_type: throughput

@@ -1,3 +1,0 @@
-input: ../../ccv100_logs/0522winnie_logs_batch2816/
-output: 0522winnie_DL_batch2816_freq1530_nodvfs
-combination: 2

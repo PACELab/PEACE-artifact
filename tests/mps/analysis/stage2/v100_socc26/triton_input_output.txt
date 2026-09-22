@@ -1,4 +1,0 @@
-input: ../../ccv100_logs/triton/
-output: v100_socc26/triton
-combination: 2
-metric_type: throughput

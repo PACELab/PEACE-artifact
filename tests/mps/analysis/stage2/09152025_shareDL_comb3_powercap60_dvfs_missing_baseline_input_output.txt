@@ -1,4 +1,0 @@
-input: ../../ccv100_logs/share/shareDL_comb3_powercap60_dvfs_missing_baseline/
-output: 09152025_shareDL_comb3_powercap60_dvfs_missing_baseline
-combination: 3
-metric_type: throughput

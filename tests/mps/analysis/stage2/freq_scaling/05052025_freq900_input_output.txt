@@ -1,3 +1,0 @@
-input: ../../ccv100_logs/share_freqscale_freq900/
-output: 05052025_freq900
-combination: 2
