@@ -1,3 +1,0 @@
-input: ../../ccv100_logs/share_batch8/
-output: 0325_batch8
-combination: 2

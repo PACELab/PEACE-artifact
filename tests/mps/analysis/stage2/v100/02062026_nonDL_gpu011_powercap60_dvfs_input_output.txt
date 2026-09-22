@@ -1,4 +1,0 @@
-input: ../../ccv100_logs/sharenonDL_powercap60_dvfs_gpu011_02062026run/
-output: v100/02062026_nonDL_gpu011_powercap60_dvfs
-combination: 2
-metric_type: latency

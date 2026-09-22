@@ -1,4 +1,0 @@
-input: ../../ccv100_logs/shareDL_powercap60_dvfs/
-output: a100/01152025_a100_rebut
-combination: 2
-metric_type: throughput

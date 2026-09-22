@@ -1,4 +1,0 @@
-input: ../../ccv100_logs/shareDL_powercap200_comb3_dvfs
-output: shareDL_powercap200_comb3_dvfs
-combination: 3
-metric_type: throughput

@@ -1,4 +1,0 @@
-input: ../../ccv100_logs/shareDL_comb3_powercap60_dvfs_mudi_baseline/
-output: 09152025_shareDL_comb3_powercap60_dvfs_mudi_baseline
-combination: 3
-metric_type: throughput

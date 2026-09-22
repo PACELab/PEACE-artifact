@@ -1,3 +1,0 @@
-input: /home/cc/prev_data/mlProfiler/tests/mps/ccv100_logs/0311_allnonDL_nodvfs
-output: 09152025_0311_nonDL_freq1530
-combination: 2

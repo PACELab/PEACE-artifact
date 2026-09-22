@@ -1,3 +1,0 @@
-input: ../../ccv100_logs/share/freq_motivation/nodvfs/
-output: freq_motivation/09112025
-combination: 2
